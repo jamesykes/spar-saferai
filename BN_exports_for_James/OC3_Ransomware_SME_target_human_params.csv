@@ -1,0 +1,685 @@
+model_id,model_name,node_id,node_name,expert,benchmark,benchmark_task,low_ci,high_ci,mode,confidence,min,max
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 1,BountyBench,None,0.25,0.9,0.6,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 1,BountyBench,agentscope,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 1,BountyBench,imaginairy,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 1,BountyBench,librechat,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 1,BountyBench,paddle,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 1,BountyBench,fastapi,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 1,BountyBench,mlflow0,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 1,BountyBench,curl,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 1,BountyBench,gunicorn,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 1,BountyBench,mlflow1,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 1,BountyBench,pytorch,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 2,BountyBench,None,0.25,0.9,0.6,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 2,BountyBench,agentscope,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 2,BountyBench,imaginairy,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 2,BountyBench,librechat,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 2,BountyBench,paddle,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 2,BountyBench,fastapi,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 2,BountyBench,mlflow0,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 2,BountyBench,curl,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 2,BountyBench,gunicorn,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 2,BountyBench,mlflow1,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 2,BountyBench,pytorch,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 3,BountyBench,None,0.25,0.9,0.6,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 3,BountyBench,agentscope,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 3,BountyBench,imaginairy,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 3,BountyBench,librechat,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 3,BountyBench,paddle,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 3,BountyBench,fastapi,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 3,BountyBench,mlflow0,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 3,BountyBench,curl,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 3,BountyBench,gunicorn,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 3,BountyBench,mlflow1,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 3,BountyBench,pytorch,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 4,BountyBench,None,0.25,0.9,0.6,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 4,BountyBench,agentscope,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 4,BountyBench,imaginairy,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 4,BountyBench,librechat,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 4,BountyBench,paddle,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 4,BountyBench,fastapi,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 4,BountyBench,mlflow0,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 4,BountyBench,curl,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 4,BountyBench,gunicorn,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 4,BountyBench,mlflow1,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 4,BountyBench,pytorch,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 5,BountyBench,None,0.25,0.9,0.6,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 5,BountyBench,agentscope,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 5,BountyBench,imaginairy,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 5,BountyBench,librechat,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 5,BountyBench,paddle,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 5,BountyBench,fastapi,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 5,BountyBench,mlflow0,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 5,BountyBench,curl,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 5,BountyBench,gunicorn,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 5,BountyBench,mlflow1,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 5,BountyBench,pytorch,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 6,BountyBench,None,0.25,0.9,0.6,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 6,BountyBench,agentscope,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 6,BountyBench,imaginairy,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 6,BountyBench,librechat,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 6,BountyBench,paddle,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 6,BountyBench,fastapi,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 6,BountyBench,mlflow0,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 6,BountyBench,curl,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 6,BountyBench,gunicorn,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 6,BountyBench,mlflow1,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 6,BountyBench,pytorch,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 7,BountyBench,None,0.25,0.9,0.6,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 7,BountyBench,agentscope,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 7,BountyBench,imaginairy,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 7,BountyBench,librechat,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 7,BountyBench,paddle,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 7,BountyBench,fastapi,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 7,BountyBench,mlflow0,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 7,BountyBench,curl,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 7,BountyBench,gunicorn,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 7,BountyBench,mlflow1,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 7,BountyBench,pytorch,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 8,BountyBench,None,0.25,0.9,0.6,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 8,BountyBench,agentscope,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 8,BountyBench,imaginairy,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 8,BountyBench,librechat,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 8,BountyBench,paddle,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 8,BountyBench,fastapi,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 8,BountyBench,mlflow0,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 8,BountyBench,curl,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 8,BountyBench,gunicorn,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 8,BountyBench,mlflow1,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 8,BountyBench,pytorch,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 9,BountyBench,None,0.25,0.9,0.6,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 9,BountyBench,agentscope,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 9,BountyBench,imaginairy,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 9,BountyBench,librechat,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 9,BountyBench,paddle,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 9,BountyBench,fastapi,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 9,BountyBench,mlflow0,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 9,BountyBench,curl,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 9,BountyBench,gunicorn,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 9,BountyBench,mlflow1,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 9,BountyBench,pytorch,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 1,BountyBench,Agentscope,0.25,0.9,0.6000000000000001,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 1,BountyBench,LibreChat,0.25,0.9,0.6000000000000001,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 1,BountyBench,MLFlow,0.25,0.9,0.7000000000000001,0.75,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 1,BountyBench,Gunicorn,0.30000000000000004,0.9500000000000001,0.75,0.85,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 1,BountyBench,PyTorch,0.4,0.98,0.8,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 2,BountyBench,Agentscope,0.6000000000000001,0.7000000000000001,0.65,0.75,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 2,BountyBench,LibreChat,0.65,0.75,0.68,0.75,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 2,BountyBench,MLFlow,0.65,0.9,0.75,0.75,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 2,BountyBench,Gunicorn,0.92,0.98,0.9500000000000001,0.75,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 2,BountyBench,PyTorch,0.9500000000000001,0.99,0.97,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 3,BountyBench,Agentscope,0.6000000000000001,0.9999,0.8,0.9999,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 3,BountyBench,LibreChat,0.6000000000000001,0.9999,0.8,0.9999,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 3,BountyBench,MLFlow,0.6000000000000001,0.9999,0.8,0.9999,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 3,BountyBench,Gunicorn,0.6000000000000001,0.9999,0.8,0.9999,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 3,BountyBench,PyTorch,0.6000000000000001,0.9999,0.8,0.9999,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 4,BountyBench,Agentscope,0.25,0.9,0.6000000000000001,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 4,BountyBench,LibreChat,0.25,0.9,0.61,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 4,BountyBench,MLFlow,0.25,0.9,0.65,0.85,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 4,BountyBench,Gunicorn,0.25,0.9,0.65,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 4,BountyBench,PyTorch,0.30000000000000004,0.9500000000000001,0.75,0.85,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 5,BountyBench,Agentscope,0.6000000000000001,0.8,0.65,0.75,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 5,BountyBench,LibreChat,0.6000000000000001,0.8,0.65,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 5,BountyBench,MLFlow,0.6000000000000001,0.7000000000000001,0.65,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 5,BountyBench,Gunicorn,0.6000000000000001,0.9,0.65,0.55,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 5,BountyBench,PyTorch,0.6000000000000001,0.9,0.7000000000000001,0.5,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 6,BountyBench,Agentscope,0.4,0.7000000000000001,0.6000000000000001,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 6,BountyBench,LibreChat,0.4,0.7000000000000001,0.6000000000000001,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 6,BountyBench,MLFlow,0.45,0.8,0.7000000000000001,0.75,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 6,BountyBench,Gunicorn,0.5,0.85,0.75,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 6,BountyBench,PyTorch,0.5,0.9,0.8,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 7,BountyBench,Agentscope,0.6000000000000001,0.8,0.7000000000000001,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 7,BountyBench,LibreChat,0.6000000000000001,0.8,0.7000000000000001,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 7,BountyBench,MLFlow,0.7000000000000001,0.9,0.8,0.6,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 7,BountyBench,Gunicorn,0.8,0.9999,1.0,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 7,BountyBench,PyTorch,0.8,0.9999,1.0,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 8,BountyBench,Agentscope,0.6000000000000001,0.68,0.63,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 8,BountyBench,LibreChat,0.62,0.7000000000000001,0.65,0.75,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 8,BountyBench,MLFlow,0.65,0.78,0.7000000000000001,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 8,BountyBench,Gunicorn,0.68,0.8,0.73,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 8,BountyBench,PyTorch,0.72,0.85,0.78,0.6,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 9,BountyBench,Agentscope,0.6000000000000001,0.8,0.65,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 9,BountyBench,LibreChat,0.6000000000000001,0.85,0.7000000000000001,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 9,BountyBench,MLFlow,0.6000000000000001,0.7000000000000001,0.65,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 9,BountyBench,Gunicorn,0.6000000000000001,0.8,0.75,0.75,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758548793791-1-216,Initial Access,Expert 9,BountyBench,PyTorch,0.6000000000000001,0.9500000000000001,0.65,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 1,BountyBench,None,0.2,0.9,0.5,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 1,BountyBench,Agentscope,0.2,0.9,0.5,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 1,BountyBench,LibreChat,0.2,0.9,0.5,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 1,BountyBench,MLFlow,0.2,0.9,0.55,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 1,BountyBench,Gunicorn,0.2,0.9,0.55,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 1,BountyBench,PyTorch,0.25,0.98,0.75,0.85,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 2,BountyBench,None,0.2,0.9,0.5,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 2,BountyBench,Agentscope,0.5,0.6000000000000001,0.525,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 2,BountyBench,LibreChat,0.5,0.6000000000000001,0.55,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 2,BountyBench,MLFlow,0.55,0.75,0.6000000000000001,0.75,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 2,BountyBench,Gunicorn,0.58,0.7000000000000001,0.65,0.75,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 2,BountyBench,PyTorch,0.6000000000000001,0.85,0.8,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 3,BountyBench,None,0.2,0.9,0.5,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 3,BountyBench,Agentscope,0.7000000000000001,0.9999,0.85,0.9999,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 3,BountyBench,LibreChat,0.7000000000000001,0.9999,0.85,0.9999,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 3,BountyBench,MLFlow,0.7000000000000001,0.9999,0.85,0.9999,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 3,BountyBench,Gunicorn,0.7000000000000001,0.9999,0.85,0.9999,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 3,BountyBench,PyTorch,0.7000000000000001,0.9999,0.85,0.9999,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 4,BountyBench,None,0.2,0.9,0.5,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 4,BountyBench,Agentscope,0.2,0.9,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 4,BountyBench,LibreChat,0.2,0.9,0.5,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 4,BountyBench,MLFlow,0.2,0.9,0.55,0.75,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 4,BountyBench,Gunicorn,0.2,0.9,0.65,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 4,BountyBench,PyTorch,0.30000000000000004,0.9500000000000001,0.75,0.85,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 5,BountyBench,None,0.2,0.9,0.5,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 5,BountyBench,Agentscope,0.5,0.75,0.6000000000000001,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 5,BountyBench,LibreChat,0.5,0.7000000000000001,0.55,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 5,BountyBench,MLFlow,0.5,0.8,0.65,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 5,BountyBench,Gunicorn,0.5,0.65,0.6000000000000001,0.75,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 5,BountyBench,PyTorch,0.5,0.85,0.7000000000000001,0.85,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 6,BountyBench,None,0.2,0.9,0.5,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 6,BountyBench,Agentscope,0.4,0.7000000000000001,0.5,0.85,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 6,BountyBench,LibreChat,0.4,0.7000000000000001,0.5,0.85,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 6,BountyBench,MLFlow,0.4,0.7000000000000001,0.55,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 6,BountyBench,Gunicorn,0.45,0.75,0.6000000000000001,0.6,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 6,BountyBench,PyTorch,0.5,0.85,0.65,0.6,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 7,BountyBench,None,0.2,0.9,0.5,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 7,BountyBench,Agentscope,0.5,0.55,0.5,0.6,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 7,BountyBench,LibreChat,0.5,0.55,0.5,0.6,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 7,BountyBench,MLFlow,0.5,0.5700000000000001,0.5,0.6,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 7,BountyBench,Gunicorn,0.5,0.6000000000000001,0.55,0.6,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 7,BountyBench,PyTorch,0.5,0.65,0.6000000000000001,0.6,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 8,BountyBench,None,0.2,0.9,0.5,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 8,BountyBench,Agentscope,0.5,0.58,0.53,0.85,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 8,BountyBench,LibreChat,0.55,0.65,0.58,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 8,BountyBench,MLFlow,0.65,0.8,0.7000000000000001,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 8,BountyBench,Gunicorn,0.7000000000000001,0.85,0.75,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 8,BountyBench,PyTorch,0.8,0.9500000000000001,0.85,0.6,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 9,BountyBench,None,0.2,0.9,0.5,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 9,BountyBench,Agentscope,0.5,0.6000000000000001,0.52,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 9,BountyBench,LibreChat,0.5,0.62,0.53,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 9,BountyBench,MLFlow,0.55,0.77,0.6000000000000001,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 9,BountyBench,Gunicorn,0.5,0.75,0.55,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758552529633-2-398,Execution,Expert 9,BountyBench,PyTorch,0.5,0.8,0.6000000000000001,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 1,BountyBench,None,0.25,0.9,0.7,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 1,BountyBench,Agentscope,0.25,0.9,0.7000000000000001,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 1,BountyBench,LibreChat,0.25,0.9,0.7000000000000001,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 1,BountyBench,MLFlow,0.25,0.9,0.7000000000000001,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 1,BountyBench,Gunicorn,0.27,0.93,0.75,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 1,BountyBench,PyTorch,0.28,0.9400000000000001,0.75,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 2,BountyBench,None,0.25,0.9,0.7,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 2,BountyBench,Agentscope,0.7000000000000001,0.75,0.72,0.6,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 2,BountyBench,LibreChat,0.7000000000000001,0.8,0.74,0.6,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 2,BountyBench,MLFlow,0.7000000000000001,0.85,0.78,0.6,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 2,BountyBench,Gunicorn,0.75,0.9,0.8,0.6,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 2,BountyBench,PyTorch,0.8,0.92,0.85,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 3,BountyBench,None,0.25,0.9,0.7,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 3,BountyBench,Agentscope,0.7000000000000001,0.9999,0.85,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 3,BountyBench,LibreChat,0.7000000000000001,0.9999,0.85,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 3,BountyBench,MLFlow,0.7000000000000001,0.9999,0.85,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 3,BountyBench,Gunicorn,0.7000000000000001,0.9999,0.85,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 3,BountyBench,PyTorch,0.7000000000000001,0.9999,0.85,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 4,BountyBench,None,0.25,0.9,0.7,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 4,BountyBench,Agentscope,0.25,0.9,0.7000000000000001,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 4,BountyBench,LibreChat,0.25,0.9,0.7000000000000001,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 4,BountyBench,MLFlow,0.25,0.9,0.75,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 4,BountyBench,Gunicorn,0.25,0.9,0.8,0.75,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 4,BountyBench,PyTorch,0.30000000000000004,0.9500000000000001,0.85,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 5,BountyBench,None,0.25,0.9,0.7,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 5,BountyBench,Agentscope,0.7000000000000001,0.8,0.75,0.85,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 5,BountyBench,LibreChat,0.7000000000000001,0.75,0.73,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 5,BountyBench,MLFlow,0.7000000000000001,0.85,0.75,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 5,BountyBench,Gunicorn,0.7000000000000001,0.8,0.75,0.75,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 5,BountyBench,PyTorch,0.7000000000000001,0.9,0.8,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 6,BountyBench,None,0.25,0.9,0.7,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 6,BountyBench,Agentscope,0.4,0.8,0.7000000000000001,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 6,BountyBench,LibreChat,0.4,0.8,0.7000000000000001,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 6,BountyBench,MLFlow,0.4,0.8300000000000001,0.7000000000000001,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 6,BountyBench,Gunicorn,0.45,0.87,0.75,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 6,BountyBench,PyTorch,0.5,0.9,0.8,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 7,BountyBench,None,0.25,0.9,0.7,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 7,BountyBench,Agentscope,0.6999900000000001,0.7000000000000001,0.7000000000000001,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 7,BountyBench,LibreChat,0.6999900000000001,0.7000000000000001,0.7000000000000001,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 7,BountyBench,MLFlow,0.6999900000000001,0.7000000000000001,0.7000000000000001,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 7,BountyBench,Gunicorn,0.7000000000000001,0.75,0.725,0.6,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 7,BountyBench,PyTorch,0.7000000000000001,0.75,0.725,0.6,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 8,BountyBench,None,0.25,0.9,0.7,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 8,BountyBench,Agentscope,0.7000000000000001,0.75,0.7000000000000001,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 8,BountyBench,LibreChat,0.7000000000000001,0.78,0.71,0.85,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 8,BountyBench,MLFlow,0.75,0.85,0.78,0.75,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 8,BountyBench,Gunicorn,0.78,0.9,0.8200000000000001,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 8,BountyBench,PyTorch,0.8200000000000001,0.9500000000000001,0.88,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 9,BountyBench,None,0.25,0.9,0.7,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 9,BountyBench,Agentscope,0.7000000000000001,0.75,0.7000000000000001,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 9,BountyBench,LibreChat,0.7000000000000001,0.75,0.7000000000000001,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 9,BountyBench,MLFlow,0.7000000000000001,0.75,0.7000000000000001,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 9,BountyBench,Gunicorn,0.7000000000000001,0.75,0.75,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758553529063-4-293,Privilege Escalation,Expert 9,BountyBench,PyTorch,0.7000000000000001,0.75,0.75,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 1,CyBench,None,0.5,0.8,0.65,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 1,CyBench,Urgent,0.5,0.8,0.65,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 1,CyBench,PrimaryKnowledge,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 1,CyBench,PartialTenacity,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 1,CyBench,ShuffledAES,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 1,CyBench,Randsubware,0.75,0.98,0.85,0.85,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 2,CyBench,None,0.5,0.8,0.65,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 2,CyBench,Urgent,0.65,0.67,0.66,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 2,CyBench,PrimaryKnowledge,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 2,CyBench,PartialTenacity,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 2,CyBench,ShuffledAES,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 2,CyBench,Randsubware,0.725,0.9,0.8200000000000001,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 3,CyBench,None,0.5,0.8,0.65,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 3,CyBench,Urgent,0.65,0.9999,0.8,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 3,CyBench,PrimaryKnowledge,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 3,CyBench,PartialTenacity,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 3,CyBench,ShuffledAES,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 3,CyBench,Randsubware,0.65,0.9999,0.8,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 4,CyBench,None,0.5,0.8,0.65,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 4,CyBench,Urgent,0.5,0.8,0.7000000000000001,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 4,CyBench,PrimaryKnowledge,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 4,CyBench,PartialTenacity,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 4,CyBench,ShuffledAES,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 4,CyBench,Randsubware,0.6000000000000001,0.9500000000000001,0.9,0.85,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 5,CyBench,None,0.5,0.8,0.65,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 5,CyBench,Urgent,0.65,0.75,0.65,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 5,CyBench,PrimaryKnowledge,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 5,CyBench,PartialTenacity,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 5,CyBench,ShuffledAES,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 5,CyBench,Randsubware,0.65,0.75,0.65,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 6,CyBench,None,0.5,0.8,0.65,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 6,CyBench,Urgent,0.4,0.8,0.65,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 6,CyBench,PrimaryKnowledge,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 6,CyBench,PartialTenacity,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 6,CyBench,ShuffledAES,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 6,CyBench,Randsubware,0.6000000000000001,0.9500000000000001,0.8,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 7,CyBench,None,0.5,0.8,0.65,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 7,CyBench,Urgent,0.6499900000000001,0.65,0.65,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 7,CyBench,PrimaryKnowledge,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 7,CyBench,PartialTenacity,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 7,CyBench,ShuffledAES,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 7,CyBench,Randsubware,0.7000000000000001,0.9,0.85,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 8,CyBench,None,0.5,0.8,0.65,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 8,CyBench,Urgent,0.65,0.68,0.65,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 8,CyBench,PrimaryKnowledge,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 8,CyBench,PartialTenacity,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 8,CyBench,ShuffledAES,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 8,CyBench,Randsubware,0.68,0.78,0.71,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 9,CyBench,None,0.5,0.8,0.65,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 9,CyBench,Urgent,0.65,0.7000000000000001,0.67,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 9,CyBench,PrimaryKnowledge,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 9,CyBench,PartialTenacity,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 9,CyBench,ShuffledAES,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 9,CyBench,Randsubware,0.65,0.75,0.68,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 1,CyBench,Primary Knowledge,0.5,0.8,0.65,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 1,CyBench,Partial Tenacity,0.5,0.9500000000000001,0.75,0.85,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 1,CyBench,Shuffled AES,0.7000000000000001,0.98,0.85,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 2,CyBench,Primary Knowledge,0.65,0.7000000000000001,0.675,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 2,CyBench,Partial Tenacity,0.65,0.75,0.7000000000000001,0.75,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 2,CyBench,Shuffled AES,0.7000000000000001,0.9,0.8,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 3,CyBench,Primary Knowledge,0.65,0.9999,0.8,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 3,CyBench,Partial Tenacity,0.65,0.9999,0.8,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 3,CyBench,Shuffled AES,0.65,0.9999,0.8,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 4,CyBench,Primary Knowledge,0.5,0.8,0.75,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 4,CyBench,Partial Tenacity,0.55,0.85,0.8,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 4,CyBench,Shuffled AES,0.55,0.9,0.85,0.85,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 5,CyBench,Primary Knowledge,0.65,0.75,0.65,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 5,CyBench,Partial Tenacity,0.65,0.75,0.65,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 5,CyBench,Shuffled AES,0.65,0.75,0.65,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 6,CyBench,Primary Knowledge,0.4,0.8,0.65,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 6,CyBench,Partial Tenacity,0.4,0.8200000000000001,0.68,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 6,CyBench,Shuffled AES,0.5,0.9,0.75,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 7,CyBench,Primary Knowledge,0.6499900000000001,0.65,0.65,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 7,CyBench,Partial Tenacity,0.65,0.7000000000000001,0.67,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 7,CyBench,Shuffled AES,0.65,0.75,0.7000000000000001,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 8,CyBench,Primary Knowledge,0.65,0.7000000000000001,0.65,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 8,CyBench,Partial Tenacity,0.65,0.72,0.67,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 8,CyBench,Shuffled AES,0.67,0.75,0.6900000000000001,0.75,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 9,CyBench,Primary Knowledge,0.6499900000000001,0.65,0.65,0.75,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 9,CyBench,Partial Tenacity,0.6499900000000001,0.65,0.65,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758554382063-5-292,Lateral Movement,Expert 9,CyBench,Shuffled AES,0.65,0.68,0.65,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 1,CyBench,None,0.6,0.9,0.8,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 1,CyBench,Urgent,0.6000000000000001,0.9,0.8,0.55,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 1,CyBench,PrimaryKnowledge,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 1,CyBench,PartialTenacity,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 1,CyBench,ShuffledAES,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 1,CyBench,Randsubware,0.8,0.99,0.9,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 2,CyBench,None,0.6,0.9,0.8,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 2,CyBench,Urgent,0.8,0.8200000000000001,0.81,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 2,CyBench,PrimaryKnowledge,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 2,CyBench,PartialTenacity,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 2,CyBench,ShuffledAES,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 2,CyBench,Randsubware,0.85,0.96,0.92,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 3,CyBench,None,0.6,0.9,0.8,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 3,CyBench,Urgent,0.9,0.9999,0.9,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 3,CyBench,PrimaryKnowledge,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 3,CyBench,PartialTenacity,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 3,CyBench,ShuffledAES,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 3,CyBench,Randsubware,0.9,0.9999,0.9,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 4,CyBench,None,0.6,0.9,0.8,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 4,CyBench,Urgent,0.6000000000000001,0.9,0.8,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 4,CyBench,PrimaryKnowledge,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 4,CyBench,PartialTenacity,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 4,CyBench,ShuffledAES,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 4,CyBench,Randsubware,0.7000000000000001,0.9500000000000001,0.9,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 5,CyBench,None,0.6,0.9,0.8,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 5,CyBench,Urgent,0.8,0.9,0.8,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 5,CyBench,PrimaryKnowledge,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 5,CyBench,PartialTenacity,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 5,CyBench,ShuffledAES,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 5,CyBench,Randsubware,0.8,0.9,0.8,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 6,CyBench,None,0.6,0.9,0.8,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 6,CyBench,Urgent,0.65,0.9,0.8,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 6,CyBench,PrimaryKnowledge,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 6,CyBench,PartialTenacity,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 6,CyBench,ShuffledAES,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 6,CyBench,Randsubware,0.65,0.96,0.85,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 7,CyBench,None,0.6,0.9,0.8,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 7,CyBench,Urgent,0.8,0.9,0.8,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 7,CyBench,PrimaryKnowledge,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 7,CyBench,PartialTenacity,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 7,CyBench,ShuffledAES,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 7,CyBench,Randsubware,0.9,0.9999,0.999,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 8,CyBench,None,0.6,0.9,0.8,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 8,CyBench,Urgent,0.8,0.8200000000000001,0.8,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 8,CyBench,PrimaryKnowledge,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 8,CyBench,PartialTenacity,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 8,CyBench,ShuffledAES,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 8,CyBench,Randsubware,0.84,0.92,0.87,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 9,CyBench,None,0.6,0.9,0.8,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 9,CyBench,Urgent,0.7999900000000001,0.8,0.8,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 9,CyBench,PrimaryKnowledge,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 9,CyBench,PartialTenacity,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 9,CyBench,ShuffledAES,0.2,0.8,0.5,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 9,CyBench,Randsubware,0.8,0.9,0.85,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 1,CyBench,Primary Knowledge,0.6000000000000001,0.9,0.8,0.55,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 1,CyBench,Partial Tenacity,0.65,0.9500000000000001,0.8,0.6,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 1,CyBench,Shuffled AES,0.7000000000000001,0.9500000000000001,0.85,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 2,CyBench,Primary Knowledge,0.8,0.85,0.8250000000000001,0.85,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 2,CyBench,Partial Tenacity,0.8200000000000001,0.9,0.87,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 2,CyBench,Shuffled AES,0.85,0.9500000000000001,0.9,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 3,CyBench,Primary Knowledge,0.9,0.9999,0.9,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 3,CyBench,Partial Tenacity,0.9,0.9999,0.9,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 3,CyBench,Shuffled AES,0.9,0.9999,0.9,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 4,CyBench,Primary Knowledge,0.6000000000000001,0.9,0.8,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 4,CyBench,Partial Tenacity,0.6000000000000001,0.9,0.81,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 4,CyBench,Shuffled AES,0.7000000000000001,0.9,0.85,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 5,CyBench,Primary Knowledge,0.8,0.9,0.8,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 5,CyBench,Partial Tenacity,0.8,0.9,0.8,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 5,CyBench,Shuffled AES,0.8,0.9,0.8,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 6,CyBench,Primary Knowledge,0.65,0.9,0.8,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 6,CyBench,Partial Tenacity,0.65,0.91,0.81,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 6,CyBench,Shuffled AES,0.65,0.9500000000000001,0.8300000000000001,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 7,CyBench,Primary Knowledge,0.8,0.9,0.8,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 7,CyBench,Partial Tenacity,0.8,0.9500000000000001,0.85,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 7,CyBench,Shuffled AES,0.9,0.9999,0.99,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 8,CyBench,Primary Knowledge,0.8,0.85,0.81,0.85,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 8,CyBench,Partial Tenacity,0.81,0.88,0.8300000000000001,0.75,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 8,CyBench,Shuffled AES,0.8200000000000001,0.9,0.85,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 9,CyBench,Primary Knowledge,0.7999900000000001,0.8,0.8,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 9,CyBench,Partial Tenacity,0.8,0.85,0.8,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758555035714-7-445,Impact,Expert 9,CyBench,Shuffled AES,0.8,0.85,0.8,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 1,BountyBench,None,2.560985877727254,39.97687022716595,9.843993657249552,0.9,0.00103462503290459,54.687063990847136
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 1,BountyBench,Agentscope,25.000006814476574,60.00000708051982,39.99999748178416,0.9,13.785183382800595,81.18599852064602
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 1,BountyBench,LibreChat,25.000006814476574,60.00000708051982,39.99999748178416,0.9,13.785183382800595,81.18599852064602
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 1,BountyBench,MLFlow,25.000001954224903,69.99999889812472,42.000000289726984,0.7,7.510343985683309e-06,123.5850192810743
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 1,BountyBench,Gunicorn,25.00001016645626,64.9999962046337,42.000004513626564,0.6,0.000693398768986879,97.13473657107231
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 1,BountyBench,PyTorch,24.999998941150917,74.99999958144387,42.00000051667024,0.7,0.0022409783162877744,144.35677453290583
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 2,BountyBench,None,2.560985877727254,39.97687022716595,9.843993657249552,0.9,0.00103462503290459,54.687063990847136
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 2,BountyBench,Agentscope,52.4835613272038,171.80736508231985,45.060515676609036,0.5,0.00038967036704214733,864.6207467060295
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 2,BountyBench,LibreChat,74.51211689610908,236.6899776246323,67.67948631505098,0.5,6.482668108765133e-05,1150.912900350123
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 2,BountyBench,MLFlow,126.1106050496635,406.6230732548126,111.49625274891261,0.5,0.00018256220848280377,2011.4230422705132
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 2,BountyBench,Gunicorn,143.31645300811502,464.11126897091424,125.67403422328435,0.5,0.00016239702712504667,2307.1903460552394
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 2,BountyBench,PyTorch,162.28220966756788,529.3979014518095,140.29230966634657,0.5,0.003260352027373855,2653.7772407386037
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 3,BountyBench,None,2.560985877727254,39.97687022716595,9.843993657249552,0.9,0.00103462503290459,54.687063990847136
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 3,BountyBench,Agentscope,9.999992952637943,19.999998203288758,14.999998566558533,0.7,2.660977876892166,27.33900074002249
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 3,BountyBench,LibreChat,9.999992952637943,19.999998203288758,14.999998566558533,0.7,2.660977876892166,27.33900074002249
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 3,BountyBench,MLFlow,9.999992952637943,19.999998203288758,14.999998566558533,0.7,2.660977876892166,27.33900074002249
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 3,BountyBench,Gunicorn,9.999992952637943,19.999998203288758,14.999998566558533,0.7,2.660977876892166,27.33900074002249
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 3,BountyBench,PyTorch,9.999992952637943,19.999998203288758,14.999998566558533,0.7,2.660977876892166,27.33900074002249
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 4,BountyBench,None,2.560985877727254,39.97687022716595,9.843993657249552,0.9,0.00103462503290459,54.687063990847136
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 4,BountyBench,Agentscope,1.5287079776717531,39.999489423959695,9.960017893605023,0.95,0.000601991326967667,49.80425938719691
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 4,BountyBench,LibreChat,2.560985877727254,39.97687022716595,9.843993657249552,0.9,0.00103462503290459,54.687063990847136
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 4,BountyBench,MLFlow,10.000007487182016,49.999992452000384,24.999997990520097,0.8,0.0013067515517432798,68.46875619674654
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 4,BountyBench,Gunicorn,18.810501755962488,99.89942133388347,48.391828088719336,0.8,0.0005913548856290046,135.06007465897363
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 4,BountyBench,PyTorch,48.630325654583594,198.12187914335405,94.60861032826935,0.7,0.0010622784945496476,299.46772902456394
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 5,BountyBench,None,2.560985877727254,39.97687022716595,9.843993657249552,0.9,0.00103462503290459,54.687063990847136
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 5,BountyBench,Agentscope,8.371313582452428,49.527611135364616,16.864738304562678,0.75,0.0007484776918556086,78.1065828060267
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 5,BountyBench,LibreChat,8.344837198119606,49.25004822425575,11.985256295405296,0.7,0.0005157883060711696,88.42028236245278
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 5,BountyBench,MLFlow,8.658830039900876,49.53215774859012,17.786290428722353,0.75,3.6207080752899754e-10,77.09991780469103
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 5,BountyBench,Gunicorn,7.629419852752763,49.4576704935286,9.767398227312617,0.7,2.9739701788939506e-05,200.1320685598474
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 5,BountyBench,PyTorch,8.658830039900876,49.53215774859012,17.786290428722353,0.75,3.6207080752899754e-10,77.09991780469103
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 6,BountyBench,None,2.560985877727254,39.97687022716595,9.843993657249552,0.9,0.00103462503290459,54.687063990847136
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 6,BountyBench,Agentscope,3.569940968719474,29.939186432878937,10.335174204018482,0.9,0.0032467410641310295,64.33095787827727
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 6,BountyBench,LibreChat,3.569940968719474,29.939186432878937,10.335174204018482,0.9,0.0032467410641310295,64.33095787827727
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 6,BountyBench,MLFlow,5.165952952282682,39.99208757381797,11.976975641235086,0.8,0.00033552455865799575,61.008550800758364
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 6,BountyBench,Gunicorn,13.52981452670225,79.64003573909616,19.510897156613762,0.7,0.0004321039249007273,142.81059776263294
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 6,BountyBench,PyTorch,26.46573551298502,198.54854620942112,27.296555979652346,0.7,7.611810058627214e-07,874.1140853378108
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 7,BountyBench,None,2.560985877727254,39.97687022716595,9.843993657249552,0.9,0.00103462503290459,54.687063990847136
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 7,BountyBench,Agentscope,11.537366672391002,59.987028204902415,29.71567636923584,0.8,0.0006308692065102854,80.54093070591964
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 7,BountyBench,LibreChat,19.414694413896086,69.80559135489112,39.07928475181406,0.7,0.0010439008411970412,99.35365210330372
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 7,BountyBench,MLFlow,20.0631713655112,129.99790456780443,49.99001822320382,0.8,4.539058522335249e-06,187.44830317795828
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 7,BountyBench,Gunicorn,46.59393425343487,146.04477343296753,73.95302729419751,0.6,0.001581724018770381,239.92848298084445
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 7,BountyBench,PyTorch,51.645852471776536,156.2553565876285,83.73247243830131,0.6,0.0008474589301934474,250.6545186183812
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 8,BountyBench,None,2.560985877727254,39.97687022716595,9.843993657249552,0.9,0.00103462503290459,54.687063990847136
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 8,BountyBench,Agentscope,10.000003506363836,13.000000975267486,11.000001745134586,0.75,8.998030961843401,15.529103657432087
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 8,BountyBench,LibreChat,9.999999682623825,15.000001163497348,12.000007336342668,0.7,7.552950479914722,19.055583680274403
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 8,BountyBench,MLFlow,12.000001084339086,16.999999906599072,14.000001586043421,0.65,8.870326748289163,22.152940572772096
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 8,BountyBench,Gunicorn,12.999998527272261,19.9999960877783,15.999999946560752,0.6,7.38021853928616,27.801906076656827
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 8,BountyBench,PyTorch,15.000003586281037,25.000005888839926,17.999998010575425,0.55,8.189679687350804,39.3435713822807
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 9,BountyBench,None,2.560985877727254,39.97687022716595,9.843993657249552,0.9,0.00103462503290459,54.687063990847136
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 9,BountyBench,Agentscope,10.000002566890796,15.999998975479812,11.000000333453652,0.7,8.510635947866485,22.30255875940959
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 9,BountyBench,LibreChat,9.999994063939567,16.000004401414195,10.999996253694404,0.65,8.119176358101502,22.391379560862
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 9,BountyBench,MLFlow,10.999999875368989,20.000000489773537,14.000000324913117,0.7,7.472922535086122,27.769142227147732
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 9,BountyBench,Gunicorn,9.999992952637943,19.999998203288758,14.999998566558533,0.7,2.660977876892166,27.33900074002249
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758556505333-9-131,Number of Actors,Expert 9,BountyBench,PyTorch,9.99999997236533,20.000000046309744,14.000000002008909,0.65,3.7827872946119703,30.196278811637313
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 1,BountyBench,None,73.54623111317149,499.9016836846068,200.38931707370529,0.9,0.004415194482179182,987.1805077773176
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 1,BountyBench,Agentscope,73.54623111317149,499.9016836846068,200.38931707370529,0.9,0.004415194482179182,987.1805077773176
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 1,BountyBench,LibreChat,73.54623111317149,499.9016836846068,200.38931707370529,0.9,0.004415194482179182,987.1805077773176
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 1,BountyBench,MLFlow,157.07358724620588,891.8081582963166,238.27861030740152,0.7,0.0004464852916246525,1573.5298981808942
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 1,BountyBench,Gunicorn,240.70326543152024,981.5275145595012,282.81762954497935,0.6,0.0005394815490680797,1915.5690216869552
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 1,BountyBench,PyTorch,494.5723667866476,1941.4652002927157,434.69885013299626,0.55,0.0001641390905801001,9576.715034872966
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 2,BountyBench,None,73.54623111317149,499.9016836846068,200.38931707370529,0.9,0.004415194482179182,987.1805077773176
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 2,BountyBench,Agentscope,200.00000047864717,300.00000099787525,210.00000087230234,0.75,184.26730848067737,408.11133064292784
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 2,BountyBench,LibreChat,199.99999608458404,499.99999118616233,250.0000042304358,0.6,60.78668261796949,1507.3325747426175
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 2,BountyBench,MLFlow,330.7016740502222,1489.096572512851,334.37034171823893,0.6,0.000233929581536912,6802.518368043734
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 2,BountyBench,Gunicorn,622.4782607744683,1984.2833492489315,976.9358229129507,0.6,0.00027451058783679893,3296.955457218986
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 2,BountyBench,PyTorch,770.9288451733772,2497.256381068371,1196.1196037297236,0.6,0.0006752468938357678,4194.124607342558
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 3,BountyBench,None,73.54623111317149,499.9016836846068,200.38931707370529,0.9,0.004415194482179182,987.1805077773176
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 3,BountyBench,Agentscope,199.99999997211705,400.0000004332983,300.0000000031423,0.8,100.04114346734163,499.9588575835481
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 3,BountyBench,LibreChat,199.99999997211705,400.0000004332983,300.0000000031423,0.8,100.04114346734163,499.9588575835481
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 3,BountyBench,MLFlow,199.99999997211705,400.0000004332983,300.0000000031423,0.8,100.04114346734163,499.9588575835481
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 3,BountyBench,Gunicorn,199.99999997211705,400.0000004332983,300.0000000031423,0.8,100.04114346734163,499.9588575835481
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 3,BountyBench,PyTorch,199.99999997211705,400.0000004332983,300.0000000031423,0.8,100.04114346734163,499.9588575835481
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 4,BountyBench,None,73.54623111317149,499.9016836846068,200.38931707370529,0.9,0.004415194482179182,987.1805077773176
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 4,BountyBench,Agentscope,60.16066280870903,498.69960830397014,203.78155302458134,0.95,0.003700247936150462,840.0707594002092
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 4,BountyBench,LibreChat,73.54623111317149,499.9016836846068,200.38931707370529,0.9,0.004415194482179182,987.1805077773176
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 4,BountyBench,MLFlow,99.99999828767145,499.99999865799964,224.9999984692657,0.8,1.1338251977295584e-08,815.4644221882355
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 4,BountyBench,Gunicorn,200.00000140649593,749.9999975082163,300.0000017036127,0.75,80.57140139370792,1643.5724925304182
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 4,BountyBench,PyTorch,253.74539872627903,999.7736888564858,499.27487137150854,0.7,0.0007512048661808214,1487.127919172613
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 5,BountyBench,None,73.54623111317149,499.9016836846068,200.38931707370529,0.9,0.004415194482179182,987.1805077773176
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 5,BountyBench,Agentscope,174.52099269389603,598.5467185346153,308.61364566801,0.75,0.0031548472183751067,1320.2869832309104
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 5,BountyBench,LibreChat,174.52099269389603,598.5467185346153,308.61364566801,0.75,0.0031548472183751067,1320.2869832309104
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 5,BountyBench,MLFlow,174.52099269389603,598.5467185346153,308.61364566801,0.75,0.0031548472183751067,1320.2869832309104
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 5,BountyBench,Gunicorn,200.00000110099796,800.0000012650605,399.99999892272984,0.75,6.742978603796675e-07,1303.6631327513403
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 5,BountyBench,PyTorch,200.00000110099796,800.0000012650605,399.99999892272984,0.75,6.742978603796675e-07,1303.6631327513403
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 6,BountyBench,None,73.54623111317149,499.9016836846068,200.38931707370529,0.9,0.004415194482179182,987.1805077773176
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 6,BountyBench,Agentscope,76.91307633272226,498.28514374238745,206.37192579789973,0.9,0.0016290322278363738,964.2948412131909
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 6,BountyBench,LibreChat,76.91307633272226,498.28514374238745,206.37192579789973,0.9,0.0016290322278363738,964.2948412131909
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 6,BountyBench,MLFlow,99.99999948031046,700.0000005840102,219.9999994312848,0.8,4.833999720604854e-06,1322.485011990439
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 6,BountyBench,Gunicorn,154.04318225990414,845.7038688928292,243.52982864287998,0.7,1.54762774667825e-10,1469.6956424177338
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 6,BountyBench,PyTorch,266.0883565449903,1987.5863172825332,276.7509903687191,0.7,0.0011772633948078912,8729.303682540152
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 7,BountyBench,None,73.54623111317149,499.9016836846068,200.38931707370529,0.9,0.004415194482179182,987.1805077773176
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 7,BountyBench,Agentscope,199.99999905987914,300.0000079970405,220.00000063955514,0.8,183.9972517405622,384.00879297591143
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 7,BountyBench,LibreChat,200.0000000080542,349.999998059852,250.00000130893864,0.8,156.0117185989659,485.08577143182
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 7,BountyBench,MLFlow,249.9999996658882,449.99999947599997,350.000003774606,0.7,124.0493444542713,575.950641378907
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 7,BountyBench,Gunicorn,300.00000631133145,799.9999994699123,499.9999993287325,0.6,0.000773397630981479,1219.7169046914705
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 7,BountyBench,PyTorch,614.5170567521717,1972.2233555222963,959.8685344056097,0.6,0.0002387042727929604,3291.836635461417
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 8,BountyBench,None,73.54623111317149,499.9016836846068,200.38931707370529,0.9,0.004415194482179182,987.1805077773176
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 8,BountyBench,Agentscope,200.0000059759845,229.99999451465476,209.99999273446306,0.8,192.6458153417869,248.4525316520063
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 8,BountyBench,LibreChat,200.00001524419557,249.99999812679147,219.99999938224727,0.75,176.56838780163451,294.2864264010878
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 8,BountyBench,MLFlow,220.00000692319713,280.00000107286786,239.9999980512999,0.7,195.78354622496147,335.2085482180489
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 8,BountyBench,Gunicorn,230.00000336236312,300.0000042079805,259.9999981054194,0.65,180.13824059300572,372.77708822829203
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 8,BountyBench,PyTorch,259.9999987496135,349.9999929001001,300.0000010204007,0.6,189.20201071675058,439.9236110561892
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 9,BountyBench,None,73.54623111317149,499.9016836846068,200.38931707370529,0.9,0.004415194482179182,987.1805077773176
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 9,BountyBench,Agentscope,199.9999967769769,399.9999992206558,250.00000403262123,0.65,118.72940333754374,655.3841674083437
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 9,BountyBench,LibreChat,199.9999967769769,399.9999992206558,250.00000403262123,0.65,118.72940333754374,655.3841674083437
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 9,BountyBench,MLFlow,200.00000116504916,650.0000013088946,349.9999976075093,0.7,5.391241443000751e-06,1162.028891045774
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 9,BountyBench,Gunicorn,215.26850451735876,798.4657768681002,367.1927214440011,0.65,0.0008502671212180225,1290.247157341948
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1758557100534-14-225,Number of Attempts per Actor,Expert 9,BountyBench,PyTorch,229.83556639272135,996.4258184240122,345.22666785109124,0.65,0.0010096401811097626,1756.51107820893
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 1,CyBench,None,255676.52584873536,1496021.8330151467,663033.9374312292,0.9,0.0033174135209955028,2770286.08502552
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 1,CyBench,Urgent,469491.54461467057,1072597.2492965942,678437.5,0.55,-0.00015625,1941375.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 1,CyBench,Primary Knowledge,469491.54461467057,1072597.2492965942,678437.5,0.55,-0.00015625,1941375.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 1,CyBench,Partial Tenacity,469491.54461467057,1072597.2492965942,678437.5,0.55,-0.00015625,1941375.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 1,CyBench,Shuffled AES,551429.4918266325,1348342.5112116772,782812.5,0.55,-0.00015625,2619812.5
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 1,CyBench,Randsubware,628709.9616371023,1773050.1346651406,835000.0,0.55,-0.00015625,3976687.5
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 2,CyBench,None,255676.52584873536,1496021.8330151467,663033.9374312292,0.9,0.0033174135209955028,2770286.08502552
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 2,CyBench,Urgent,650000.0000119591,699999.9999933277,674999.9999925576,0.75,620612.1817905001,729387.8182498481
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 2,CyBench,Primary Knowledge,649999.9999963825,725000.0000015978,679999.9999994896,0.75,618086.6425622322,782015.136182684
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 2,CyBench,Partial Tenacity,699999.9999972095,999999.9999979897,850000.0000008863,0.6,450685.70209057775,1249314.2978936397
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 2,CyBench,Shuffled AES,799999.9999993764,1399999.9999987425,1100000.0000020564,0.5,97772.9845966626,2102227.0153896455
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 2,CyBench,Randsubware,1459041.3819329587,2519062.321295003,2037500.0,0.5,-0.00016406249999999998,3751875.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 3,CyBench,None,255676.52584873536,1496021.8330151467,663033.9374312292,0.9,0.0033174135209955028,2770286.08502552
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 3,CyBench,Urgent,649999.9999978279,1199999.999998202,799999.9999998248,0.9,583032.902399228,1591266.647071457
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 3,CyBench,Primary Knowledge,649999.9999978279,1199999.999998202,799999.9999998248,0.9,583032.902399228,1591266.647071457
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 3,CyBench,Partial Tenacity,649999.9999978279,1199999.999998202,799999.9999998248,0.9,583032.902399228,1591266.647071457
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 3,CyBench,Shuffled AES,649999.9999978279,1199999.999998202,799999.9999998248,0.9,583032.902399228,1591266.647071457
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 3,CyBench,Randsubware,649999.9999978279,1199999.999998202,799999.9999998248,0.9,583032.902399228,1591266.647071457
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 4,CyBench,None,255676.52584873536,1496021.8330151467,663033.9374312292,0.9,0.0033174135209955028,2770286.08502552
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 4,CyBench,Urgent,231261.24132886867,1491529.5157104454,702797.8639686025,0.95,0.0004431882958128353,2310842.1268455484
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 4,CyBench,Primary Knowledge,246845.75432391115,1492732.109055273,728974.211618783,0.95,9.153412372167232e-18,2261310.797581088
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 4,CyBench,Partial Tenacity,268546.53601146786,1495320.8158785882,764105.6669209893,0.95,0.002685717767690837,2200225.47471549
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 4,CyBench,Shuffled AES,299900.7711405633,1499983.128957453,812533.8848104916,0.95,0.00035753501205981563,2123356.2174188695
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 4,CyBench,Randsubware,299999.99999750865,1500000.0000014768,877500.0000093814,0.95,0.00070408488552171,1855320.4244881552
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 5,CyBench,None,255676.52584873536,1496021.8330151467,663033.9374312292,0.9,0.0033174135209955028,2770286.08502552
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 5,CyBench,Urgent,301762.56474573375,750210.8189428913,649468.7699705724,0.75,0.0008499191493382659,845516.9978208034
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 5,CyBench,Primary Knowledge,301762.56474573375,750210.8189428913,649468.7699705724,0.75,0.0008499191493382659,845516.9978208034
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 5,CyBench,Partial Tenacity,301762.56474573375,750210.8189428913,649468.7699705724,0.75,0.0008499191493382659,845516.9978208034
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 5,CyBench,Shuffled AES,327267.78574569564,754539.0785531681,691372.7043539188,0.75,9.81140538305588e-17,829899.0505498761
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 5,CyBench,Randsubware,374052.5212055761,759235.6588812057,796066.1381483078,0.75,0.0011190776838920994,797221.5934074484
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 6,CyBench,None,255676.52584873536,1496021.8330151467,663033.9374312292,0.9,0.0033174135209955028,2770286.08502552
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 6,CyBench,Urgent,400000.0000002928,1000000.0000002948,650000.0000001261,0.85,150026.54365207045,1517179.8403896994
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 6,CyBench,Primary Knowledge,400000.0000002928,1000000.0000002948,650000.0000001261,0.85,150026.54365207045,1517179.8403896994
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 6,CyBench,Partial Tenacity,399999.9999964723,1100000.000002159,675000.0000001607,0.75,42014.682143837905,1863687.562271355
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 6,CyBench,Shuffled AES,449999.99999929534,1200000.0000003965,724999.9999994624,0.65,75246.63170732386,1848451.9608217354
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 6,CyBench,Randsubware,600000.0000000346,1500000.0000001094,850000.0000000845,0.65,130989.23158674488,3407338.455554635
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 7,CyBench,None,255676.52584873536,1496021.8330151467,663033.9374312292,0.9,0.0033174135209955028,2770286.08502552
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 7,CyBench,Urgent,649999.9999996086,650000.0000100179,650000.0,0.5,649999.9999940001,650000.0000442681
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 7,CyBench,Primary Knowledge,649999.9999996086,650000.0000100179,650000.0,0.5,649999.9999940001,650000.0000442681
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 7,CyBench,Partial Tenacity,649999.999999649,715000.0000006225,682500.0000005872,0.5,567961.2037909867,797038.7962071904
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 7,CyBench,Shuffled AES,715000.0000019422,780000.0000019318,747499.9999997962,0.5,624360.0842212436,870639.9157948619
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 7,CyBench,Randsubware,779999.9999997725,910000.0000002263,845000.0000004733,0.5,613926.3290400936,1076073.6709576491
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 8,CyBench,None,255676.52584873536,1496021.8330151467,663033.9374312292,0.9,0.0033174135209955028,2770286.08502552
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 8,CyBench,Urgent,650000.0000057924,679999.9999943448,649999.9999977229,0.95,649685.8624547145,709065.451462278
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 8,CyBench,Primary Knowledge,649999.9999995533,699999.9999993006,659999.9999983262,0.85,643975.0520177858,744401.2594693913
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 8,CyBench,Partial Tenacity,660000.000003644,750000.0000003617,680000.0000000829,0.75,638643.7415787395,851085.4549042146
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 8,CyBench,Shuffled AES,679999.9999995541,850000.0000001454,709999.9999997021,0.7,634815.3571581078,1084512.0568680891
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 8,CyBench,Randsubware,709999.99999911,999999.999999373,750000.000000046,0.65,624907.036843458,1299983.33319478
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 9,CyBench,None,255676.52584873536,1496021.8330151467,663033.9374312292,0.9,0.0033174135209955028,2770286.08502552
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 9,CyBench,Urgent,649999.9999975507,650000.000006126,650000.0,0.75,649999.999995,650000.0000149999
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 9,CyBench,Primary Knowledge,649999.9999975507,650000.000006126,650000.0,0.75,649999.999995,650000.0000149999
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 9,CyBench,Partial Tenacity,649999.9999975507,650000.000006126,650000.0,0.75,649999.999995,650000.0000149999
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 9,CyBench,Shuffled AES,549999.9999979223,650000.0000025304,600000.00000736,0.75,482859.5695716251,717140.4303976016
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759417451956-6-654,Damage per Attack,Expert 9,CyBench,Randsubware,549999.9999979223,650000.0000025304,600000.00000736,0.75,482859.5695716251,717140.4303976016
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 1,CyBench,None,49999.99999818706,400000.000002593,164999.99999838384,0.9,0.0003214484196477315,570465.0496215723
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 1,CyBench,Urgent,119989.1743710108,282334.70448231196,172218.75,0.55,-0.00015625,527093.75
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 1,CyBench,Primary Knowledge,119989.1743710108,282334.70448231196,172218.75,0.55,-0.00015625,527093.75
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 1,CyBench,Partial Tenacity,146058.642210532,349180.0516466624,208750.0,0.55,-0.00015625,662781.25
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 1,CyBench,Shuffled AES,242582.3394924633,683783.9303601317,365312.5,0.6,-0.00015625,1325562.5
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 1,CyBench,Randsubware,336795.2757319569,1264043.3568135835,521875.0,0.65,-0.00015625,2666781.25
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 2,CyBench,None,49999.99999818706,400000.000002593,164999.99999838384,0.9,0.0003214484196477315,570465.0496215723
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 2,CyBench,Urgent,550000.0000080086,600000.0000028852,574999.9999948753,0.75,525021.4643651869,624978.5356731918
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 2,CyBench,Primary Knowledge,550000.0000005191,624999.9999992356,575000.0000001166,0.75,524767.870536668,689232.65225895
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 2,CyBench,Partial Tenacity,600000.0000013125,899999.999998262,750000.000001332,0.6,381133.63342025183,1118866.3665754162
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 2,CyBench,Shuffled AES,700000.0000000806,1200000.0000000817,950000.0000000226,0.5,122812.10893224002,1777187.8910681466
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 2,CyBench,Randsubware,1067985.7761156594,1767089.9540026526,1492968.75,0.5,-0.00010546874999999999,2487218.75
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 3,CyBench,None,49999.99999818706,400000.000002593,164999.99999838384,0.9,0.0003214484196477315,570465.0496215723
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 3,CyBench,Urgent,550000.0000088462,1200000.000001783,700000.0000007098,0.9,477961.73445383355,1983479.4995196322
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 3,CyBench,Primary Knowledge,550000.0000088462,1200000.000001783,700000.0000007098,0.9,477961.73445383355,1983479.4995196322
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 3,CyBench,Partial Tenacity,550000.0000088462,1200000.000001783,700000.0000007098,0.9,477961.73445383355,1983479.4995196322
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 3,CyBench,Shuffled AES,550000.0000088462,1200000.000001783,700000.0000007098,0.9,477961.73445383355,1983479.4995196322
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 3,CyBench,Randsubware,550000.0000088462,1200000.000001783,700000.0000007098,0.9,477961.73445383355,1983479.4995196322
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 4,CyBench,None,49999.99999818706,400000.000002593,164999.99999838384,0.9,0.0003214484196477315,570465.0496215723
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 4,CyBench,Urgent,82560.1199998649,951526.9856816627,510572.7561505046,0.95,0.0024023386605549583,1037812.3845949834
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 4,CyBench,Primary Knowledge,105004.20873581624,880821.9172810087,606193.6914110645,0.95,0.001758428963215237,926130.0972424974
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 4,CyBench,Partial Tenacity,124183.06070001627,1004649.2177903746,652499.0127538214,0.95,0.0007897733912723196,1071466.2752376702
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 4,CyBench,Shuffled AES,135418.9969069358,882375.25544205,665754.805218603,0.95,0.00232174427215068,919652.0869643376
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 4,CyBench,Randsubware,156234.79376188657,934370.4547275855,707753.75046179,0.95,0.0010995809221228687,975331.0960017284
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 5,CyBench,None,49999.99999818706,400000.000002593,164999.99999838384,0.9,0.0003214484196477315,570465.0496215723
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 5,CyBench,Urgent,253273.15769831152,650349.5503449569,549038.0148653672,0.75,0.0004982622569301086,741104.4474959723
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 5,CyBench,Primary Knowledge,253273.15769831152,650349.5503449569,549038.0148653672,0.75,0.0004982622569301086,741104.4474959723
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 5,CyBench,Partial Tenacity,253273.15769831152,650349.5503449569,549038.0148653672,0.75,0.0004982622569301086,741104.4474959723
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 5,CyBench,Shuffled AES,278386.8085477111,654079.4387296829,591057.7334762539,0.75,0.0006022608359119416,723651.247085162
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 5,CyBench,Randsubware,278386.8085477111,654079.4387296829,591057.7334762539,0.75,0.0006022608359119416,723651.247085162
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 6,CyBench,None,49999.99999818706,400000.000002593,164999.99999838384,0.9,0.0003214484196477315,570465.0496215723
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 6,CyBench,Urgent,300000.0000030978,849999.9999983386,550000.0000004042,0.85,20541.421917375148,1268020.481459782
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 6,CyBench,Primary Knowledge,300000.0000030978,849999.9999983386,550000.0000004042,0.85,20541.421917375148,1268020.481459782
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 6,CyBench,Partial Tenacity,299999.9999973511,900000.000004845,575000.0000045104,0.75,2.249830711621641e-06,1280950.7260076802
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 6,CyBench,Shuffled AES,400000.0000003998,1100000.000000786,625000.0000016252,0.65,43303.46643486801,1966385.319593158
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 6,CyBench,Randsubware,500000.00000053865,1300000.0000008484,750000.0000008588,0.65,14691.927247692256,2999589.019182407
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 7,CyBench,None,49999.99999818706,400000.000002593,164999.99999838384,0.9,0.0003214484196477315,570465.0496215723
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 7,CyBench,Urgent,550000.0000000924,550000.0000104726,550000.0,0.5,549999.999995,550000.0000406113
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 7,CyBench,Primary Knowledge,550000.0000000924,550000.0000104726,550000.0,0.5,549999.999995,550000.0000406113
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 7,CyBench,Partial Tenacity,549999.9999997027,605000.0000005269,577500.0000004966,0.5,480582.5570539111,674417.4429445469
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 7,CyBench,Shuffled AES,577499.9999954647,632500.0000021891,604999.999999438,0.5,507984.597448883,702015.4025459276
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 7,CyBench,Randsubware,605000.0000012026,687499.9999997949,632499.9999995239,0.5,530698.9416770658,820427.0650979324
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 8,CyBench,None,49999.99999818706,400000.000002593,164999.99999838384,0.9,0.0003214484196477315,570465.0496215723
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 8,CyBench,Urgent,550000.0000026887,580000.000001966,550000.0000001644,0.95,549654.5091294986,599139.8982984778
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 8,CyBench,Primary Knowledge,549999.9999961421,600000.0000012716,554999.99999997,0.85,546088.0905071207,671758.2678846698
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 8,CyBench,Partial Tenacity,555000.0000022297,650000.0000006263,564999.999998919,0.75,539704.4581475868,779513.7149643127
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 8,CyBench,Shuffled AES,564999.9999986526,750000.0000013222,580000.0000012489,0.7,527911.665335609,937518.7964838645
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 8,CyBench,Randsubware,580000.0000005274,850000.0000000461,600000.0000002343,0.65,509987.0469856453,1178164.11174651
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 9,CyBench,None,49999.99999818706,400000.000002593,164999.99999838384,0.9,0.0003214484196477315,570465.0496215723
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 9,CyBench,Urgent,549999.9999995758,649999.9999989516,549999.9999997608,0.75,538341.966114863,783262.6229476922
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 9,CyBench,Primary Knowledge,549999.9999990801,650000.0000004839,549999.9999995432,0.7,533748.3121095803,796334.1580290126
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 9,CyBench,Partial Tenacity,549999.9999990801,650000.0000004839,549999.9999995432,0.7,533748.3121095803,796334.1580290126
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 9,CyBench,Shuffled AES,449999.9999995594,649999.9999986822,559999.9999997268,0.65,264735.228319266,793931.297777985
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759418610308-7-652,Damage per Attack: Ransom,Expert 9,CyBench,Randsubware,449999.9999979646,749999.9999987753,649999.9999987886,0.65,66406.61957430468,912059.8283220568
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 1,CyBench,None,0.15,0.5,0.3,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 1,CyBench,Urgent,0.15,0.5,0.30000000000000004,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 1,CyBench,Primary Knowledge,0.15,0.5,0.30000000000000004,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 1,CyBench,Partial Tenacity,0.15,0.5,0.30000000000000004,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 1,CyBench,Shuffled AES,0.15,0.5,0.30000000000000004,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 1,CyBench,Randsubware,0.15,0.5,0.30000000000000004,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 2,CyBench,None,0.15,0.5,0.3,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 2,CyBench,Urgent,0.30000000000000004,0.35000000000000003,0.31,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 2,CyBench,Primary Knowledge,0.30000000000000004,0.375,0.32,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 2,CyBench,Partial Tenacity,0.30000000000000004,0.4,0.33,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 2,CyBench,Shuffled AES,0.30000000000000004,0.5,0.4,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 2,CyBench,Randsubware,0.30000000000000004,0.52,0.41000000000000003,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 3,CyBench,None,0.15,0.5,0.3,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 3,CyBench,Urgent,0.30000000000000004,0.8,0.6000000000000001,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 3,CyBench,Primary Knowledge,0.30000000000000004,0.8,0.6000000000000001,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 3,CyBench,Partial Tenacity,0.30000000000000004,0.8,0.6000000000000001,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 3,CyBench,Shuffled AES,0.30000000000000004,0.8,0.6000000000000001,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 3,CyBench,Randsubware,0.30000000000000004,0.8,0.6000000000000001,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 4,CyBench,None,0.15,0.5,0.3,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 4,CyBench,Urgent,0.15,0.5,0.31,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 4,CyBench,Primary Knowledge,0.15,0.5,0.31,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 4,CyBench,Partial Tenacity,0.15,0.5,0.31,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 4,CyBench,Shuffled AES,0.15,0.5,0.31,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 4,CyBench,Randsubware,0.15,0.5,0.31,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 5,CyBench,None,0.15,0.5,0.3,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 5,CyBench,Urgent,0.30000000000000004,0.6000000000000001,0.33,0.5,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 5,CyBench,Primary Knowledge,0.30000000000000004,0.6000000000000001,0.33,0.5,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 5,CyBench,Partial Tenacity,0.30000000000000004,0.6000000000000001,0.33,0.5,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 5,CyBench,Shuffled AES,0.30000000000000004,0.6000000000000001,0.33,0.5,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 5,CyBench,Randsubware,0.30000000000000004,0.6000000000000001,0.33,0.5,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 6,CyBench,None,0.15,0.5,0.3,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 6,CyBench,Urgent,0.2,0.5,0.30000000000000004,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 6,CyBench,Primary Knowledge,0.2,0.5,0.30000000000000004,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 6,CyBench,Partial Tenacity,0.2,0.54,0.31,0.8,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 6,CyBench,Shuffled AES,0.2,0.56,0.32,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 6,CyBench,Randsubware,0.2,0.6000000000000001,0.33,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 7,CyBench,None,0.15,0.5,0.3,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 7,CyBench,Urgent,0.1,0.4,0.30000000000000004,0.6,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 7,CyBench,Primary Knowledge,0.1,0.4,0.30000000000000004,0.6,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 7,CyBench,Partial Tenacity,0.1,0.4,0.30000000000000004,0.6,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 7,CyBench,Shuffled AES,0.1,0.4,0.30000000000000004,0.6,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 7,CyBench,Randsubware,0.1,0.4,0.30000000000000004,0.6,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 8,CyBench,None,0.15,0.5,0.3,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 8,CyBench,Urgent,0.30000000000000004,0.32,0.30000000000000004,0.95,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 8,CyBench,Primary Knowledge,0.30000000000000004,0.35000000000000003,0.31,0.85,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 8,CyBench,Partial Tenacity,0.31,0.38,0.33,0.75,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 8,CyBench,Shuffled AES,0.32,0.4,0.35000000000000003,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 8,CyBench,Randsubware,0.34,0.45,0.37,0.65,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 9,CyBench,None,0.15,0.5,0.3,0.9,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 9,CyBench,Urgent,0.30000000000000004,0.32,0.31,0.75,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 9,CyBench,Primary Knowledge,0.30000000000000004,0.32,0.31,0.75,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 9,CyBench,Partial Tenacity,0.30000000000000004,0.32,0.31,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 9,CyBench,Shuffled AES,0.30000000000000004,0.35000000000000003,0.34,0.7,0.0,1.0
+RM4 (human),OC3 + SME + Public Exploit and Ransomware (human-elicited),node-1759419709292-10-379,Financial Theft,Expert 9,CyBench,Randsubware,0.30000000000000004,0.37,0.34,0.7,0.0,1.0

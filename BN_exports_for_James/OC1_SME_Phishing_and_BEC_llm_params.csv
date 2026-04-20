@@ -1,0 +1,551 @@
+model_id,model_name,node_id,node_name,expert,benchmark,benchmark_task,low_ci,high_ci,mode,confidence,min,max
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Defensive Security Specialist,BountyBench,None,0.4,0.6,0.53,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Defensive Security Specialist,BountyBench,Agentscope,0.43,0.66,0.56,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Defensive Security Specialist,BountyBench,Imaginairy,0.41,0.56,0.52,0.65,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Defensive Security Specialist,BountyBench,librechat,0.4,0.62,0.54,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Defensive Security Specialist,BountyBench,Paddle,0.42,0.7,0.59,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Defensive Security Specialist,BountyBench,fastAPI,0.41,0.63,0.55,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Defensive Security Specialist,BountyBench,MLFlow0,0.41,0.65,0.56,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Defensive Security Specialist,BountyBench,cURL,0.4,0.62,0.55,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Defensive Security Specialist,BountyBench,gunicorn,0.4,0.62,0.54,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Defensive Security Specialist,BountyBench,MLFlow1,0.41,0.69,0.57,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Defensive Security Specialist,BountyBench,pytorchLightning,0.42,0.65,0.59,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Malware Reverse Engineer,BountyBench,None,0.4,0.6,0.53,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Malware Reverse Engineer,BountyBench,Agentscope,0.41,0.61,0.54,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Malware Reverse Engineer,BountyBench,Imaginairy,0.4,0.63,0.54,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Malware Reverse Engineer,BountyBench,librechat,0.4,0.61,0.54,0.65,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Malware Reverse Engineer,BountyBench,Paddle,0.42,0.64,0.56,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Malware Reverse Engineer,BountyBench,fastAPI,0.41,0.62,0.55,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Malware Reverse Engineer,BountyBench,MLFlow0,0.41,0.63,0.54,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Malware Reverse Engineer,BountyBench,cURL,0.42,0.65,0.55,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Malware Reverse Engineer,BountyBench,gunicorn,0.45,0.68,0.6,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Malware Reverse Engineer,BountyBench,MLFlow1,0.45,0.72,0.6,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Malware Reverse Engineer,BountyBench,pytorchLightning,0.43,0.65,0.56,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,AI/ML Security Researcher,BountyBench,None,0.4,0.6,0.53,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,AI/ML Security Researcher,BountyBench,Agentscope,0.4,0.66,0.56,0.73,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,AI/ML Security Researcher,BountyBench,Imaginairy,0.48,0.68,0.58,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,AI/ML Security Researcher,BountyBench,librechat,0.41,0.64,0.56,0.68,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,AI/ML Security Researcher,BountyBench,Paddle,0.44,0.65,0.57,0.73,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,AI/ML Security Researcher,BountyBench,fastAPI,0.43,0.66,0.56,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,AI/ML Security Researcher,BountyBench,MLFlow0,0.43,0.66,0.57,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,AI/ML Security Researcher,BountyBench,cURL,0.4,0.62,0.54,0.73,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,AI/ML Security Researcher,BountyBench,gunicorn,0.45,0.63,0.56,0.73,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,AI/ML Security Researcher,BountyBench,MLFlow1,0.42,0.61,0.56,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,AI/ML Security Researcher,BountyBench,pytorchLightning,0.44,0.67,0.58,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Threat Intelligence Analyst,BountyBench,None,0.4,0.6,0.53,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Threat Intelligence Analyst,BountyBench,Agentscope,0.42,0.66,0.57,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Threat Intelligence Analyst,BountyBench,Imaginairy,0.4,0.62,0.54,0.65,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Threat Intelligence Analyst,BountyBench,librechat,0.41,0.65,0.57,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Threat Intelligence Analyst,BountyBench,Paddle,0.4,0.62,0.54,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Threat Intelligence Analyst,BountyBench,fastAPI,0.42,0.67,0.56,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Threat Intelligence Analyst,BountyBench,MLFlow0,0.43,0.63,0.55,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Threat Intelligence Analyst,BountyBench,cURL,0.41,0.64,0.55,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Threat Intelligence Analyst,BountyBench,gunicorn,0.43,0.66,0.58,0.73,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Threat Intelligence Analyst,BountyBench,MLFlow1,0.42,0.62,0.56,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Threat Intelligence Analyst,BountyBench,pytorchLightning,0.48,0.64,0.56,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Security Software Developer,BountyBench,None,0.4,0.6,0.53,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Security Software Developer,BountyBench,Agentscope,0.42,0.63,0.56,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Security Software Developer,BountyBench,Imaginairy,0.4,0.61,0.54,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Security Software Developer,BountyBench,librechat,0.4,0.63,0.55,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Security Software Developer,BountyBench,Paddle,0.41,0.63,0.55,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Security Software Developer,BountyBench,fastAPI,0.45,0.68,0.58,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Security Software Developer,BountyBench,MLFlow0,0.42,0.7,0.6,0.73,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Security Software Developer,BountyBench,cURL,0.43,0.64,0.57,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Security Software Developer,BountyBench,gunicorn,0.42,0.63,0.56,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Security Software Developer,BountyBench,MLFlow1,0.41,0.65,0.56,0.68,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758548793791-1-216,Initial Access,Security Software Developer,BountyBench,pytorchLightning,0.43,0.66,0.56,0.85,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Defensive Security Specialist,CyBench,None,0.15,0.7,0.4,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Defensive Security Specialist,CyBench,LootStash,0.12,0.45,0.38,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Defensive Security Specialist,CyBench,Urgent,0.18,0.62,0.45,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Defensive Security Specialist,CyBench,Flag Command,0.16,0.72,0.42,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Defensive Security Specialist,CyBench,Primary Knowledge,0.19,0.73,0.47,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Defensive Security Specialist,CyBench,Labyrinth Linguist,0.25,0.75,0.5,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Defensive Security Specialist,CyBench,Partial Tenacity,0.18,0.55,0.46,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Defensive Security Specialist,CyBench,Data Siege,0.2,0.73,0.49,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Defensive Security Specialist,CyBench,Shuffled AES,0.15,0.72,0.41,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Defensive Security Specialist,CyBench,EzMaze,0.22,0.75,0.53,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Defensive Security Specialist,CyBench,Randsubware,0.19,0.73,0.48,0.65,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Malware Reverse Engineer,CyBench,None,0.15,0.7,0.4,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Malware Reverse Engineer,CyBench,LootStash,0.15,0.7,0.4,0.85,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Malware Reverse Engineer,CyBench,Urgent,0.22,0.55,0.44,0.65,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Malware Reverse Engineer,CyBench,Flag Command,0.18,0.52,0.43,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Malware Reverse Engineer,CyBench,Primary Knowledge,0.18,0.72,0.48,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Malware Reverse Engineer,CyBench,Labyrinth Linguist,0.22,0.65,0.51,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Malware Reverse Engineer,CyBench,Partial Tenacity,0.25,0.8,0.52,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Malware Reverse Engineer,CyBench,Data Siege,0.25,0.75,0.5,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Malware Reverse Engineer,CyBench,Shuffled AES,0.18,0.75,0.48,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Malware Reverse Engineer,CyBench,EzMaze,0.18,0.6,0.47,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Malware Reverse Engineer,CyBench,Randsubware,0.22,0.72,0.46,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,AI/ML Security Researcher,CyBench,None,0.15,0.7,0.4,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,AI/ML Security Researcher,CyBench,LootStash,0.16,0.71,0.44,0.65,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,AI/ML Security Researcher,CyBench,Urgent,0.12,0.73,0.4,0.85,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,AI/ML Security Researcher,CyBench,Flag Command,0.16,0.71,0.42,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,AI/ML Security Researcher,CyBench,Primary Knowledge,0.25,0.78,0.52,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,AI/ML Security Researcher,CyBench,Labyrinth Linguist,0.28,0.75,0.55,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,AI/ML Security Researcher,CyBench,Partial Tenacity,0.23,0.78,0.52,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,AI/ML Security Researcher,CyBench,Data Siege,0.3,0.75,0.55,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,AI/ML Security Researcher,CyBench,Shuffled AES,0.22,0.77,0.51,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,AI/ML Security Researcher,CyBench,EzMaze,0.2,0.68,0.52,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,AI/ML Security Researcher,CyBench,Randsubware,0.3,0.82,0.58,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Threat Intelligence Analyst,CyBench,None,0.15,0.7,0.4,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Threat Intelligence Analyst,CyBench,LootStash,0.15,0.55,0.4,0.85,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Threat Intelligence Analyst,CyBench,Urgent,0.2,0.65,0.5,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Threat Intelligence Analyst,CyBench,Flag Command,0.19,0.67,0.47,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Threat Intelligence Analyst,CyBench,Primary Knowledge,0.22,0.73,0.48,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Threat Intelligence Analyst,CyBench,Labyrinth Linguist,0.28,0.72,0.5,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Threat Intelligence Analyst,CyBench,Partial Tenacity,0.22,0.73,0.5,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Threat Intelligence Analyst,CyBench,Data Siege,0.42,0.7,0.53,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Threat Intelligence Analyst,CyBench,Shuffled AES,0.18,0.72,0.46,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Threat Intelligence Analyst,CyBench,EzMaze,0.2,0.75,0.47,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Threat Intelligence Analyst,CyBench,Randsubware,0.25,0.7,0.5,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Security Software Developer,CyBench,None,0.15,0.7,0.4,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Security Software Developer,CyBench,LootStash,0.15,0.74,0.43,0.78,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Security Software Developer,CyBench,Urgent,0.18,0.72,0.43,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Security Software Developer,CyBench,Flag Command,0.18,0.74,0.49,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Security Software Developer,CyBench,Primary Knowledge,0.19,0.72,0.47,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Security Software Developer,CyBench,Labyrinth Linguist,0.22,0.72,0.57,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Security Software Developer,CyBench,Partial Tenacity,0.25,0.73,0.53,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Security Software Developer,CyBench,Data Siege,0.24,0.74,0.48,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Security Software Developer,CyBench,Shuffled AES,0.23,0.73,0.53,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Security Software Developer,CyBench,EzMaze,0.18,0.75,0.45,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758555035714-7-445,Impact: Stored Data Manipulation,Security Software Developer,CyBench,Randsubware,0.22,0.77,0.58,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,None,17.550664692515696,150.15764675368558,68.86676615858411,0.9,0.000864408204761784,183.51558782610397
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,Agentscope,19.467959011169217,172.1523281862038,76.7560942608132,0.9,0.00018079047189614565,211.72335866648996
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,Imaginairy,39.01580848063433,118.31863943024541,72.07468649128407,0.65,1.2086838330397005e-05,170.3883399605013
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,librechat,65.00000017675961,91.99999872875145,77.00000700295091,0.85,54.988450462932846,107.16958158563249
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,Paddle,24.51786176791452,194.83820385727938,75.00227782702622,0.85,0.0006160659226662306,264.1497176131643
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,fastAPI,28.069160802139518,210.14228411023066,94.45440040645684,0.87,0.0008411634463467051,267.8201375052982
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,MLFlow0,36.686062597684625,183.28840125346713,73.48944631000703,0.73,0.0006959062387803588,283.4020412807637
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,cURL,80.00000155130616,140.00000468957677,105.0000016416343,0.9,64.96359444991339,169.32730051384675
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,gunicorn,85.00000942387156,180.0000016505112,119.99999767351008,0.85,53.15584237974893,281.3680062532717
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,MLFlow1,33.84462101718113,173.79815137302563,72.89708836418808,0.75,0.0006331091604534348,259.3244157912163
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,pytorchLightning,55.00000222435332,240.00000065120062,120.00000195160115,0.8,6.228980450361584e-05,382.0586426015751
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,None,17.550664692515696,150.15764675368558,68.86676615858411,0.9,0.000864408204761784,183.51558782610397
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,Agentscope,19.634080996461055,165.17077313027372,76.84104161110906,0.9,0.0008025944705516222,201.21537324159777
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,Imaginairy,28.75250695254267,174.63065902875246,72.72378229011795,0.8,0.0002699192871785509,246.61619331943626
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,librechat,35.62831491997113,188.67626713771847,75.86263549311317,0.75,0.0006158363112285206,284.9600609806889
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,Paddle,30.058706284835573,199.8005313442582,85.22547370575316,0.83,1.6720598220879492e-10,270.6906296808143
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,fastAPI,65.0000000895437,179.99999997327842,83.00000000958705,0.82,49.92927112511303,378.356462628196
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,MLFlow0,38.437571918220875,178.98885907530348,85.09203510600543,0.75,0.000569166673175322,256.8902890314562
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,cURL,79.9999985154358,164.99999905693167,124.99999507340848,0.72,10.266859662685782,222.95734335994163
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,gunicorn,33.67937497898575,163.95762043011734,73.75311407735298,0.75,0.0005615230563627211,239.51936189446096
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,MLFlow1,28.28398972356742,125.56668248344194,76.5264461992547,0.82,0.0008658158664126268,154.41339866655346
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,pytorchLightning,36.310177382980946,158.17945271289534,68.6684211981094,0.7,0.0006835868304417637,246.85893862265073
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,None,17.550664692515696,150.15764675368558,68.86676615858411,0.9,0.000864408204761784,183.51558782610397
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,Agentscope,30.355376172262865,111.95137684924555,84.40574079542489,0.85,0.0019870874409721427,125.2005418854356
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,Imaginairy,33.57380468522702,190.37356209438994,102.09287391852459,0.85,1.0096737586764892e-05,236.68322943234415
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,librechat,48.85159506001819,192.82030071133528,96.0674131635997,0.7,3.2660157166464127e-10,287.0607927641281
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,Paddle,30.05642052415962,167.70112782604605,76.9964462073695,0.8,0.00015876834195743028,230.40079035445152
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,fastAPI,40.343411893239505,220.59068902243266,122.10573909259598,0.85,0.0008675312792292435,271.7093937772749
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,MLFlow0,31.993676757550293,185.57980202168483,107.72024403334794,0.88,0.00037538919266114074,218.80241716397347
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,cURL,34.70214184025238,220.19151274959637,106.59299184124359,0.85,0.0005981533127442684,281.7863500096035
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,gunicorn,65.0000014522507,179.99999955707574,109.99999907434147,0.75,0.0005395796408068888,331.8806278779904
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,MLFlow1,31.02610716198286,174.97391198799247,85.29465767029379,0.82,0.0006847701723880256,231.0310363810584
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,pytorchLightning,44.15681203784176,197.48744141563415,82.39481196494444,0.7,0.0006547942952042316,312.0688673822667
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,None,17.550664692515696,150.15764675368558,68.86676615858411,0.9,0.000864408204761784,183.51558782610397
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,Agentscope,21.903735519857104,170.1474609814886,77.29551122174192,0.88,0.00041261331543103203,213.66850332989924
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,Imaginairy,79.99999917599945,150.00000007267698,105.00000031733052,0.75,54.36124401794187,207.78665622919166
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,librechat,45.28073686138956,178.1765315938839,89.13104157311311,0.7,0.0004983892885201802,264.8657372662808
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,Paddle,19.634080996461055,165.17077313027372,76.84104161110906,0.9,0.0008025944705516222,201.21537324159777
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,fastAPI,25.00000008874585,174.99999942485377,92.00000925238298,0.9,0.003906812225113267,209.18231849570242
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,MLFlow0,44.29128057518406,179.5960652464401,99.9819748761881,0.75,0.000579051210865592,243.86522385114688
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,cURL,39.126289161958546,183.28020559537188,77.43439331594797,0.72,0.0006257351702589574,282.175435843212
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,gunicorn,25.891441171612914,179.99899008333477,79.74601547858622,0.85,6.602668017842525e-11,235.82618130233698
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,MLFlow1,46.90010979551685,168.80378884670407,94.38771070547932,0.7,0.0006915774861578677,240.3742774680186
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,pytorchLightning,25.91077711916937,184.96381294752538,79.78389340250277,0.85,0.0005403022101413404,243.98301662800264
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,None,17.550664692515696,150.15764675368558,68.86676615858411,0.9,0.000864408204761784,183.51558782610397
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,Agentscope,26.963057383104,185.01557417068224,83.04102697586725,0.85,0.0006291538974997251,241.58705904278705
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,Imaginairy,28.52087158673513,170.2668915417301,87.20306391408732,0.85,0.00022409568115681878,214.50406959601867
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,librechat,52.81293154419125,217.2640703995978,102.37506081704026,0.7,0.0005138242663743231,329.9329640490107
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,Paddle,35.48240407932589,178.86662998316055,76.9005730430496,0.75,0.0006245849032419247,264.94046187922845
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,fastAPI,50.35603184805578,192.0085740962254,132.79203807392616,0.82,0.001135809885507052,225.95547047443327
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,MLFlow0,82.00000570316519,154.99999988996947,108.00000255853746,0.7,38.7858548163095,278.2445801267273
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,cURL,39.28854200961319,198.62367569321998,85.07058719277174,0.75,0.0005464178352127585,294.53974893757993
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,gunicorn,37.01124384152904,183.83565511840658,80.58377108549863,0.75,0.0006102302239501636,270.7101017324537
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,MLFlow1,32.00010845136424,185.56123060672104,81.57559501467126,0.8,0.0005794167517274111,258.1525762037744
+RM1,OC1 + SME + Phishing and BEC,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,pytorchLightning,30.477683726362592,180.19219199845088,93.09920530354546,0.85,0.0006233509576372667,226.44302081520019
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Defensive Security Specialist,CyBench,None,29999.999999607546,130000.00000033046,69999.99999726754,0.9,0.0009874922504964252,206061.46685664926
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Defensive Security Specialist,CyBench,LootStash,35121.139650985366,85281.77332780248,70808.26634679873,0.7,7.466844024456599e-05,100965.31191429865
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Defensive Security Specialist,CyBench,Urgent,66000.00000452902,82000.00000321752,71000.00000237519,0.85,62685.295396519374,94869.60124061535
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Defensive Security Specialist,CyBench,Flag Command,30000.000005125912,135000.00000034293,75000.00000048763,0.9,0.00031008053218533726,189537.65139695894
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Defensive Security Specialist,CyBench,Primary Knowledge,29999.999999443033,140000.00000482867,70999.99999786209,0.85,4.066048655072069e-06,216766.18021863222
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Defensive Security Specialist,CyBench,Labyrinth Linguist,37349.13515954316,139878.15822117968,74525.69951946911,0.7,1.4715210243513487e-05,203041.8203989475
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Defensive Security Specialist,CyBench,Partial Tenacity,66999.99999264708,82000.00000197523,72000.00000445623,0.7,60724.11689563862,96930.12182955726
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Defensive Security Specialist,CyBench,Data Siege,38474.204536757585,144659.69230938546,76697.07441273454,0.7,0.0008363879984151174,210381.28427432445
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Defensive Security Specialist,CyBench,Shuffled AES,73999.9999983388,95999.99999950206,81999.99999538803,0.75,66653.32318666577,110506.14268019178
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Defensive Security Specialist,CyBench,EzMaze,65000.00000233282,104999.9999994307,81999.99999924583,0.75,43805.80557273122,139740.21524949413
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Defensive Security Specialist,CyBench,Randsubware,41994.670299576974,161492.29411078375,83223.22611773413,0.7,0.0008064888766273074,237423.80900430426
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Malware Reverse Engineer,CyBench,None,29999.999999607546,130000.00000033046,69999.99999726754,0.9,0.0009874922504964252,206061.46685664926
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Malware Reverse Engineer,CyBench,LootStash,34999.999994128746,85000.00002053249,67999.99999904128,0.7,2796.187987945907,102431.3716155347
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Malware Reverse Engineer,CyBench,Urgent,29000.00000023094,132999.99999648574,69999.99999934938,0.9,2.339085902922062e-05,208642.87846385426
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Malware Reverse Engineer,CyBench,Flag Command,66999.99998797473,84999.99999853906,73500.00000043836,0.8,61631.6241840221,97685.75405464096
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Malware Reverse Engineer,CyBench,Primary Knowledge,60000.000001208544,105000.00000020396,80999.99999793418,0.7,34245.15295722845,135399.13558102987
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Malware Reverse Engineer,CyBench,Labyrinth Linguist,42000.000004908485,139999.99999940072,87999.99999666707,0.85,0.0005863711718247742,193159.78437246653
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Malware Reverse Engineer,CyBench,Partial Tenacity,38000.00000237,174999.9999964812,92000.00000054234,0.9,1.2612203757892476e-05,273900.28080460284
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Malware Reverse Engineer,CyBench,Data Siege,37179.72148103226,144960.75549347067,84110.02339363156,0.75,0.0006207212931761787,193764.80355620597
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Malware Reverse Engineer,CyBench,Shuffled AES,78000.00000006756,128000.00000077247,98000.00000052918,0.7,50208.921379886444,177620.3670427363
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Malware Reverse Engineer,CyBench,EzMaze,32739.7256465621,137959.66464334246,73651.10173446892,0.75,3.396783440340604e-05,190239.75599546576
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Malware Reverse Engineer,CyBench,Randsubware,33294.59045772096,105050.95667420351,74675.55771575285,0.75,0.001252431940363659,129155.05150620331
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,AI/ML Security Researcher,CyBench,None,29999.999999607546,130000.00000033046,69999.99999726754,0.9,0.0009874922504964252,206061.46685664926
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,AI/ML Security Researcher,CyBench,LootStash,30000.00000069227,120000.00000597659,69999.9999978123,0.9,0.0001611774362897181,168745.05038645258
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,AI/ML Security Researcher,CyBench,Urgent,33000.00000618398,111999.99999992688,70999.99999924189,0.87,0.0018899694955046005,150412.80886581884
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,AI/ML Security Researcher,CyBench,Flag Command,68000.00000114214,84999.99999889478,75000.00000309572,0.85,63056.34875779422,94095.18508540156
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,AI/ML Security Researcher,CyBench,Primary Knowledge,57999.99999847226,140000.00000126899,92999.99999946138,0.85,23221.06217320334,205052.1682919577
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,AI/ML Security Researcher,CyBench,Labyrinth Linguist,33000.00000114508,119999.99998657842,77999.99999593003,0.85,0.0006321415396128879,149510.1447075542
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,AI/ML Security Researcher,CyBench,Partial Tenacity,79999.99999999137,104999.99999977526,92000.00000049901,0.78,66103.78518550913,120895.64085014565
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,AI/ML Security Researcher,CyBench,Data Siege,40000.00000548202,159999.99999925567,88999.9999989167,0.85,0.0002684972645080083,240858.38851483737
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,AI/ML Security Researcher,CyBench,Shuffled AES,33000.00000482279,144999.99999746517,77000.00000424375,0.78,5.46532308435517e-05,200514.18745550577
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,AI/ML Security Researcher,CyBench,EzMaze,70000.0000012377,99999.99999896047,78000.00000276242,0.75,61866.97852525396,129494.0480160832
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,AI/ML Security Researcher,CyBench,Randsubware,65000.000000758606,115000.0000009359,87999.99999757102,0.8,40329.33101545328,147699.25815872892
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Threat Intelligence Analyst,CyBench,None,29999.999999607546,130000.00000033046,69999.99999726754,0.9,0.0009874922504964252,206061.46685664926
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Threat Intelligence Analyst,CyBench,LootStash,30000.00000105132,140000.0000008153,69999.99999821623,0.85,0.00010529528604075108,224648.91634061575
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Threat Intelligence Analyst,CyBench,Urgent,32000.000008025512,110000.00000759398,71000.00000156526,0.85,0.00013155381530751623,141999.9999020459
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Threat Intelligence Analyst,CyBench,Flag Command,64000.00000034953,87999.99999824967,72999.99999990861,0.75,54116.42093710673,109128.13596462694
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Threat Intelligence Analyst,CyBench,Primary Knowledge,32900.76939631364,155005.1355339006,84820.60923304938,0.8,0.0006954801034826917,201520.52919540767
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Threat Intelligence Analyst,CyBench,Labyrinth Linguist,32000.000001293763,165000.00000142178,80000.00000053155,0.88,2.867057170856975e-05,265890.4917138981
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Threat Intelligence Analyst,CyBench,Partial Tenacity,32000.000002676825,140000.000000535,79999.99999564173,0.87,7.582171114500468e-05,187554.510801712
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Threat Intelligence Analyst,CyBench,Data Siege,61999.99999904218,144999.99999278167,86999.99999915218,0.7,22534.525837175475,309043.16542294354
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Threat Intelligence Analyst,CyBench,Shuffled AES,32000.000002393877,144999.99999896655,75000.00000191032,0.85,0.00022044934756810145,222591.87570179655
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Threat Intelligence Analyst,CyBench,EzMaze,65000.00000024402,104999.99999992241,77999.9999994087,0.7,48262.311771076296,147860.58576908335
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Threat Intelligence Analyst,CyBench,Randsubware,50000.0000051206,180000.00001236703,115000.00000006708,0.85,0.0006509416710277166,229999.99938910027
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Security Software Developer,CyBench,None,29999.999999607546,130000.00000033046,69999.99999726754,0.9,0.0009874922504964252,206061.46685664926
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Security Software Developer,CyBench,LootStash,30000.00000159782,133000.00000184507,69999.99999832641,0.85,0.0002799549294942907,201482.20740745464
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Security Software Developer,CyBench,Urgent,32000.000000579457,107999.99998922907,74000.00000331367,0.87,6.076168677382192e-06,130129.77925501688
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Security Software Developer,CyBench,Flag Command,63000.0000025104,81999.9999927003,71500.00000284749,0.82,55065.26735354523,93497.68049829411
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Security Software Developer,CyBench,Primary Knowledge,31000.00000219617,142999.9999978712,74999.99999765791,0.88,0.00013216080882114977,217695.12371348534
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Security Software Developer,CyBench,Labyrinth Linguist,31000.000001352622,134999.99999549988,73999.99999875046,0.85,1.6457453824111857e-05,191812.59683730986
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Security Software Developer,CyBench,Partial Tenacity,32000.00000102762,142000.00000326836,77000.00000415991,0.85,0.0004436941749464755,202252.91176953842
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Security Software Developer,CyBench,Data Siege,73000.00000279689,125000.0000010599,88000.00000220403,0.87,64725.5811059431,163002.3255895464
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Security Software Developer,CyBench,Shuffled AES,37568.589969049266,144966.2049378528,85019.42188430685,0.75,0.0006811023080017756,192969.47897389714
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Security Software Developer,CyBench,EzMaze,29000.00000239188,144999.999998727,76000.00000464152,0.85,0.0002995761583932884,197619.80323941345
+RM1,OC1 + SME + Phishing and BEC,node-1759417451956-6-654,Damage per Attack,Security Software Developer,CyBench,Randsubware,62000.000001022054,118000.00000030873,87000.00000043941,0.83,41955.24695317949,146603.62034653552
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Defensive Security Specialist,BountyBench,None,0.6,0.95,0.8,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Defensive Security Specialist,BountyBench,Agentscope,0.63,0.94,0.83,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Defensive Security Specialist,BountyBench,Imaginairy,0.62,0.89,0.83,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Defensive Security Specialist,BountyBench,librechat,0.62,0.92,0.84,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Defensive Security Specialist,BountyBench,Paddle,0.63,0.9,0.82,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Defensive Security Specialist,BountyBench,fastAPI,0.7,0.92,0.85,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Defensive Security Specialist,BountyBench,MLFlow0,0.61,0.92,0.82,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Defensive Security Specialist,BountyBench,cURL,0.7,0.92,0.85,0.82,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Defensive Security Specialist,BountyBench,gunicorn,0.63,0.93,0.85,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Defensive Security Specialist,BountyBench,MLFlow1,0.62,0.94,0.83,0.85,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Defensive Security Specialist,BountyBench,pytorchLightning,0.7,0.93,0.84,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Malware Reverse Engineer,BountyBench,None,0.6,0.95,0.8,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Malware Reverse Engineer,BountyBench,Agentscope,0.68,0.93,0.86,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Malware Reverse Engineer,BountyBench,Imaginairy,0.62,0.92,0.83,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Malware Reverse Engineer,BountyBench,librechat,0.68,0.93,0.85,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Malware Reverse Engineer,BountyBench,Paddle,0.62,0.92,0.84,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Malware Reverse Engineer,BountyBench,fastAPI,0.63,0.92,0.82,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Malware Reverse Engineer,BountyBench,MLFlow0,0.6,0.9,0.81,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Malware Reverse Engineer,BountyBench,cURL,0.6,0.9,0.8,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Malware Reverse Engineer,BountyBench,gunicorn,0.62,0.92,0.83,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Malware Reverse Engineer,BountyBench,MLFlow1,0.62,0.91,0.82,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Malware Reverse Engineer,BountyBench,pytorchLightning,0.63,0.94,0.84,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,AI/ML Security Researcher,BountyBench,None,0.6,0.95,0.8,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,AI/ML Security Researcher,BountyBench,Agentscope,0.62,0.92,0.83,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,AI/ML Security Researcher,BountyBench,Imaginairy,0.62,0.95,0.85,0.73,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,AI/ML Security Researcher,BountyBench,librechat,0.63,0.93,0.85,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,AI/ML Security Researcher,BountyBench,Paddle,0.67,0.92,0.86,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,AI/ML Security Researcher,BountyBench,fastAPI,0.61,0.92,0.82,0.85,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,AI/ML Security Researcher,BountyBench,MLFlow0,0.65,0.92,0.85,0.78,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,AI/ML Security Researcher,BountyBench,cURL,0.62,0.93,0.84,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,AI/ML Security Researcher,BountyBench,gunicorn,0.65,0.92,0.84,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,AI/ML Security Researcher,BountyBench,MLFlow1,0.65,0.96,0.85,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,AI/ML Security Researcher,BountyBench,pytorchLightning,0.62,0.88,0.83,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Threat Intelligence Analyst,BountyBench,None,0.6,0.95,0.8,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Threat Intelligence Analyst,BountyBench,Agentscope,0.63,0.93,0.85,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Threat Intelligence Analyst,BountyBench,Imaginairy,0.6,0.9,0.81,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Threat Intelligence Analyst,BountyBench,librechat,0.62,0.92,0.83,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Threat Intelligence Analyst,BountyBench,Paddle,0.63,0.93,0.84,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Threat Intelligence Analyst,BountyBench,fastAPI,0.67,0.93,0.85,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Threat Intelligence Analyst,BountyBench,MLFlow0,0.65,0.93,0.85,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Threat Intelligence Analyst,BountyBench,cURL,0.63,0.93,0.83,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Threat Intelligence Analyst,BountyBench,gunicorn,0.65,0.92,0.83,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Threat Intelligence Analyst,BountyBench,MLFlow1,0.63,0.92,0.83,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Threat Intelligence Analyst,BountyBench,pytorchLightning,0.63,0.87,0.81,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Security Software Developer,BountyBench,None,0.6,0.95,0.8,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Security Software Developer,BountyBench,Agentscope,0.6,0.91,0.8,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Security Software Developer,BountyBench,Imaginairy,0.62,0.93,0.83,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Security Software Developer,BountyBench,librechat,0.66,0.91,0.84,0.77,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Security Software Developer,BountyBench,Paddle,0.62,0.92,0.83,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Security Software Developer,BountyBench,fastAPI,0.63,0.92,0.82,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Security Software Developer,BountyBench,MLFlow0,0.61,0.9,0.82,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Security Software Developer,BountyBench,cURL,0.61,0.92,0.81,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Security Software Developer,BountyBench,gunicorn,0.7,0.93,0.86,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Security Software Developer,BountyBench,MLFlow1,0.62,0.94,0.84,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759855842179-2-599,Resource Development,Security Software Developer,BountyBench,pytorchLightning,0.66,0.93,0.86,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Defensive Security Specialist,CyBench,None,0.35,0.65,0.5,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Defensive Security Specialist,CyBench,LootStash,0.36,0.56,0.51,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Defensive Security Specialist,CyBench,Urgent,0.35,0.67,0.51,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Defensive Security Specialist,CyBench,Flag Command,0.38,0.62,0.53,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Defensive Security Specialist,CyBench,Primary Knowledge,0.37,0.63,0.53,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Defensive Security Specialist,CyBench,Labyrinth Linguist,0.42,0.7,0.56,0.78,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Defensive Security Specialist,CyBench,Partial Tenacity,0.4,0.59,0.53,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Defensive Security Specialist,CyBench,Data Siege,0.4,0.65,0.55,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Defensive Security Specialist,CyBench,Shuffled AES,0.42,0.73,0.6,0.78,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Defensive Security Specialist,CyBench,EzMaze,0.38,0.7,0.55,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Defensive Security Specialist,CyBench,Randsubware,0.47,0.73,0.59,0.85,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Malware Reverse Engineer,CyBench,None,0.35,0.65,0.5,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Malware Reverse Engineer,CyBench,LootStash,0.36,0.62,0.51,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Malware Reverse Engineer,CyBench,Urgent,0.36,0.67,0.51,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Malware Reverse Engineer,CyBench,Flag Command,0.4,0.68,0.55,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Malware Reverse Engineer,CyBench,Primary Knowledge,0.37,0.68,0.53,0.85,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Malware Reverse Engineer,CyBench,Labyrinth Linguist,0.38,0.67,0.52,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Malware Reverse Engineer,CyBench,Partial Tenacity,0.4,0.72,0.56,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Malware Reverse Engineer,CyBench,Data Siege,0.41,0.66,0.55,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Malware Reverse Engineer,CyBench,Shuffled AES,0.38,0.68,0.52,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Malware Reverse Engineer,CyBench,EzMaze,0.4,0.7,0.54,0.65,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Malware Reverse Engineer,CyBench,Randsubware,0.4,0.73,0.57,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,AI/ML Security Researcher,CyBench,None,0.35,0.65,0.5,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,AI/ML Security Researcher,CyBench,LootStash,0.36,0.67,0.52,0.68,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,AI/ML Security Researcher,CyBench,Urgent,0.36,0.58,0.49,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,AI/ML Security Researcher,CyBench,Flag Command,0.38,0.71,0.55,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,AI/ML Security Researcher,CyBench,Primary Knowledge,0.38,0.74,0.57,0.73,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,AI/ML Security Researcher,CyBench,Labyrinth Linguist,0.4,0.7,0.56,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,AI/ML Security Researcher,CyBench,Partial Tenacity,0.37,0.62,0.55,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,AI/ML Security Researcher,CyBench,Data Siege,0.42,0.7,0.57,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,AI/ML Security Researcher,CyBench,Shuffled AES,0.38,0.68,0.54,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,AI/ML Security Researcher,CyBench,EzMaze,0.38,0.72,0.55,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,AI/ML Security Researcher,CyBench,Randsubware,0.42,0.68,0.57,0.73,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Threat Intelligence Analyst,CyBench,None,0.35,0.65,0.5,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Threat Intelligence Analyst,CyBench,LootStash,0.36,0.66,0.51,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Threat Intelligence Analyst,CyBench,Urgent,0.36,0.67,0.51,0.85,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Threat Intelligence Analyst,CyBench,Flag Command,0.38,0.68,0.53,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Threat Intelligence Analyst,CyBench,Primary Knowledge,0.37,0.68,0.53,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Threat Intelligence Analyst,CyBench,Labyrinth Linguist,0.38,0.7,0.56,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Threat Intelligence Analyst,CyBench,Partial Tenacity,0.36,0.6,0.51,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Threat Intelligence Analyst,CyBench,Data Siege,0.39,0.68,0.55,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Threat Intelligence Analyst,CyBench,Shuffled AES,0.41,0.66,0.55,0.78,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Threat Intelligence Analyst,CyBench,EzMaze,0.43,0.67,0.56,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Threat Intelligence Analyst,CyBench,Randsubware,0.37,0.62,0.52,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Security Software Developer,CyBench,None,0.35,0.65,0.5,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Security Software Developer,CyBench,LootStash,0.35,0.66,0.5,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Security Software Developer,CyBench,Urgent,0.4,0.68,0.56,0.78,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Security Software Developer,CyBench,Flag Command,0.38,0.67,0.52,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Security Software Developer,CyBench,Primary Knowledge,0.37,0.69,0.55,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Security Software Developer,CyBench,Labyrinth Linguist,0.365,0.67,0.515,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Security Software Developer,CyBench,Partial Tenacity,0.42,0.7,0.57,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Security Software Developer,CyBench,Data Siege,0.42,0.72,0.59,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Security Software Developer,CyBench,Shuffled AES,0.4,0.72,0.58,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Security Software Developer,CyBench,EzMaze,0.37,0.62,0.52,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856478056-5-658,Persistence,Security Software Developer,CyBench,Randsubware,0.39,0.71,0.55,0.78,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Defensive Security Specialist,CyBench,None,0.3,0.9,0.6,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Defensive Security Specialist,CyBench,LootStash,0.3,0.72,0.61,0.87,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Defensive Security Specialist,CyBench,Urgent,0.33,0.82,0.67,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Defensive Security Specialist,CyBench,Flag Command,0.4,0.7,0.64,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Defensive Security Specialist,CyBench,Primary Knowledge,0.33,0.89,0.64,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Defensive Security Specialist,CyBench,Labyrinth Linguist,0.5,0.85,0.71,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Defensive Security Specialist,CyBench,Partial Tenacity,0.37,0.76,0.65,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Defensive Security Specialist,CyBench,Data Siege,0.37,0.94,0.7,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Defensive Security Specialist,CyBench,Shuffled AES,0.35,0.88,0.68,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Defensive Security Specialist,CyBench,EzMaze,0.35,0.83,0.7,0.65,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Defensive Security Specialist,CyBench,Randsubware,0.58,0.87,0.76,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Malware Reverse Engineer,CyBench,None,0.3,0.9,0.6,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Malware Reverse Engineer,CyBench,LootStash,0.31,0.93,0.62,0.87,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Malware Reverse Engineer,CyBench,Urgent,0.33,0.84,0.66,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Malware Reverse Engineer,CyBench,Flag Command,0.32,0.93,0.62,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Malware Reverse Engineer,CyBench,Primary Knowledge,0.4,0.92,0.7,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Malware Reverse Engineer,CyBench,Labyrinth Linguist,0.31,0.92,0.64,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Malware Reverse Engineer,CyBench,Partial Tenacity,0.45,0.82,0.7,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Malware Reverse Engineer,CyBench,Data Siege,0.62,0.88,0.76,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Malware Reverse Engineer,CyBench,Shuffled AES,0.35,0.92,0.7,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Malware Reverse Engineer,CyBench,EzMaze,0.37,0.86,0.67,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Malware Reverse Engineer,CyBench,Randsubware,0.37,0.85,0.66,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,AI/ML Security Researcher,CyBench,None,0.3,0.9,0.6,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,AI/ML Security Researcher,CyBench,LootStash,0.33,0.87,0.64,0.78,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,AI/ML Security Researcher,CyBench,Urgent,0.35,0.93,0.68,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,AI/ML Security Researcher,CyBench,Flag Command,0.38,0.92,0.68,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,AI/ML Security Researcher,CyBench,Primary Knowledge,0.52,0.92,0.73,0.78,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,AI/ML Security Researcher,CyBench,Labyrinth Linguist,0.33,0.88,0.67,0.87,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,AI/ML Security Researcher,CyBench,Partial Tenacity,0.4,0.93,0.73,0.85,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,AI/ML Security Researcher,CyBench,Data Siege,0.4,0.87,0.73,0.83,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,AI/ML Security Researcher,CyBench,Shuffled AES,0.33,0.9,0.67,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,AI/ML Security Researcher,CyBench,EzMaze,0.32,0.95,0.65,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,AI/ML Security Researcher,CyBench,Randsubware,0.33,0.93,0.68,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Threat Intelligence Analyst,CyBench,None,0.3,0.9,0.6,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Threat Intelligence Analyst,CyBench,LootStash,0.31,0.91,0.61,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Threat Intelligence Analyst,CyBench,Urgent,0.38,0.83,0.7,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Threat Intelligence Analyst,CyBench,Flag Command,0.32,0.92,0.64,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Threat Intelligence Analyst,CyBench,Primary Knowledge,0.35,0.88,0.66,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Threat Intelligence Analyst,CyBench,Labyrinth Linguist,0.4,0.93,0.71,0.85,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Threat Intelligence Analyst,CyBench,Partial Tenacity,0.42,0.9,0.74,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Threat Intelligence Analyst,CyBench,Data Siege,0.4,0.9,0.7,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Threat Intelligence Analyst,CyBench,Shuffled AES,0.35,0.88,0.67,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Threat Intelligence Analyst,CyBench,EzMaze,0.4,0.85,0.7,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Threat Intelligence Analyst,CyBench,Randsubware,0.33,0.91,0.65,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Security Software Developer,CyBench,None,0.3,0.9,0.6,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Security Software Developer,CyBench,LootStash,0.3,0.9,0.6,0.85,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Security Software Developer,CyBench,Urgent,0.35,0.92,0.67,0.73,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Security Software Developer,CyBench,Flag Command,0.4,0.83,0.66,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Security Software Developer,CyBench,Primary Knowledge,0.45,0.87,0.71,0.85,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Security Software Developer,CyBench,Labyrinth Linguist,0.4,0.95,0.71,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Security Software Developer,CyBench,Partial Tenacity,0.38,0.94,0.72,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Security Software Developer,CyBench,Data Siege,0.48,0.94,0.78,0.78,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Security Software Developer,CyBench,Shuffled AES,0.35,0.93,0.68,0.78,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Security Software Developer,CyBench,EzMaze,0.5,0.82,0.71,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1759856532749-6-623,Discovery,Security Software Developer,CyBench,Randsubware,0.34,0.87,0.65,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Defensive Security Specialist,CyBench,None,0.25,0.7,0.56,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Defensive Security Specialist,CyBench,LootStash,0.25,0.71,0.57,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Defensive Security Specialist,CyBench,Urgent,0.27,0.67,0.58,0.6,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Defensive Security Specialist,CyBench,Flag Command,0.26,0.71,0.57,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Defensive Security Specialist,CyBench,Primary Knowledge,0.27,0.72,0.6,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Defensive Security Specialist,CyBench,Labyrinth Linguist,0.38,0.73,0.59,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Defensive Security Specialist,CyBench,Partial Tenacity,0.28,0.73,0.59,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Defensive Security Specialist,CyBench,Data Siege,0.53,0.76,0.64,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Defensive Security Specialist,CyBench,Shuffled AES,0.26,0.72,0.58,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Defensive Security Specialist,CyBench,EzMaze,0.27,0.77,0.59,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Defensive Security Specialist,CyBench,Randsubware,0.28,0.73,0.62,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Malware Reverse Engineer,CyBench,None,0.25,0.7,0.56,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Malware Reverse Engineer,CyBench,LootStash,0.25,0.71,0.56,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Malware Reverse Engineer,CyBench,Urgent,0.5,0.63,0.57,0.65,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Malware Reverse Engineer,CyBench,Flag Command,0.26,0.73,0.57,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Malware Reverse Engineer,CyBench,Primary Knowledge,0.29,0.77,0.62,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Malware Reverse Engineer,CyBench,Labyrinth Linguist,0.3,0.78,0.62,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Malware Reverse Engineer,CyBench,Partial Tenacity,0.3,0.72,0.58,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Malware Reverse Engineer,CyBench,Data Siege,0.29,0.76,0.61,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Malware Reverse Engineer,CyBench,Shuffled AES,0.32,0.74,0.63,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Malware Reverse Engineer,CyBench,EzMaze,0.28,0.76,0.61,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Malware Reverse Engineer,CyBench,Randsubware,0.25,0.73,0.57,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,AI/ML Security Researcher,CyBench,None,0.25,0.7,0.56,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,AI/ML Security Researcher,CyBench,LootStash,0.26,0.7,0.57,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,AI/ML Security Researcher,CyBench,Urgent,0.28,0.73,0.58,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,AI/ML Security Researcher,CyBench,Flag Command,0.25,0.71,0.57,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,AI/ML Security Researcher,CyBench,Primary Knowledge,0.26,0.74,0.59,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,AI/ML Security Researcher,CyBench,Labyrinth Linguist,0.32,0.76,0.62,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,AI/ML Security Researcher,CyBench,Partial Tenacity,0.29,0.76,0.62,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,AI/ML Security Researcher,CyBench,Data Siege,0.28,0.77,0.63,0.85,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,AI/ML Security Researcher,CyBench,Shuffled AES,0.28,0.77,0.61,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,AI/ML Security Researcher,CyBench,EzMaze,0.27,0.75,0.6,0.65,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,AI/ML Security Researcher,CyBench,Randsubware,0.26,0.82,0.61,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Threat Intelligence Analyst,CyBench,None,0.25,0.7,0.56,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Threat Intelligence Analyst,CyBench,LootStash,0.25,0.73,0.57,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Threat Intelligence Analyst,CyBench,Urgent,0.25,0.71,0.57,0.85,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Threat Intelligence Analyst,CyBench,Flag Command,0.26,0.71,0.57,0.85,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Threat Intelligence Analyst,CyBench,Primary Knowledge,0.27,0.73,0.58,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Threat Intelligence Analyst,CyBench,Labyrinth Linguist,0.28,0.72,0.59,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Threat Intelligence Analyst,CyBench,Partial Tenacity,0.32,0.78,0.68,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Threat Intelligence Analyst,CyBench,Data Siege,0.53,0.69,0.61,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Threat Intelligence Analyst,CyBench,Shuffled AES,0.3,0.75,0.62,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Threat Intelligence Analyst,CyBench,EzMaze,0.3,0.73,0.61,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Threat Intelligence Analyst,CyBench,Randsubware,0.28,0.77,0.61,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Security Software Developer,CyBench,None,0.25,0.7,0.56,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Security Software Developer,CyBench,LootStash,0.26,0.72,0.57,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Security Software Developer,CyBench,Urgent,0.25,0.7,0.56,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Security Software Developer,CyBench,Flag Command,0.26,0.72,0.57,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Security Software Developer,CyBench,Primary Knowledge,0.28,0.75,0.59,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Security Software Developer,CyBench,Labyrinth Linguist,0.27,0.72,0.59,0.73,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Security Software Developer,CyBench,Partial Tenacity,0.26,0.78,0.64,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Security Software Developer,CyBench,Data Siege,0.32,0.76,0.62,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Security Software Developer,CyBench,Shuffled AES,0.29,0.74,0.59,0.85,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Security Software Developer,CyBench,EzMaze,0.29,0.74,0.61,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760094857327-3-620,Execution,Security Software Developer,CyBench,Randsubware,0.28,0.75,0.6,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Defensive Security Specialist,CyBench,None,0.3,0.75,0.6,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Defensive Security Specialist,CyBench,LootStash,0.3,0.68,0.6,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Defensive Security Specialist,CyBench,Urgent,0.31,0.77,0.61,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Defensive Security Specialist,CyBench,Flag Command,0.3,0.76,0.61,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Defensive Security Specialist,CyBench,Primary Knowledge,0.32,0.73,0.62,0.85,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Defensive Security Specialist,CyBench,Labyrinth Linguist,0.31,0.68,0.61,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Defensive Security Specialist,CyBench,Partial Tenacity,0.31,0.73,0.61,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Defensive Security Specialist,CyBench,Data Siege,0.38,0.8,0.67,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Defensive Security Specialist,CyBench,Shuffled AES,0.32,0.77,0.62,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Defensive Security Specialist,CyBench,EzMaze,0.3,0.78,0.62,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Defensive Security Specialist,CyBench,Randsubware,0.29,0.68,0.61,0.85,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Malware Reverse Engineer,CyBench,None,0.3,0.75,0.6,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Malware Reverse Engineer,CyBench,LootStash,0.31,0.76,0.61,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Malware Reverse Engineer,CyBench,Urgent,0.3,0.72,0.6,0.85,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Malware Reverse Engineer,CyBench,Flag Command,0.32,0.72,0.61,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Malware Reverse Engineer,CyBench,Primary Knowledge,0.32,0.7,0.6,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Malware Reverse Engineer,CyBench,Labyrinth Linguist,0.4,0.8,0.65,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Malware Reverse Engineer,CyBench,Partial Tenacity,0.32,0.73,0.61,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Malware Reverse Engineer,CyBench,Data Siege,0.32,0.77,0.63,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Malware Reverse Engineer,CyBench,Shuffled AES,0.3,0.7,0.6,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Malware Reverse Engineer,CyBench,EzMaze,0.31,0.77,0.61,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Malware Reverse Engineer,CyBench,Randsubware,0.35,0.72,0.62,0.85,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,AI/ML Security Researcher,CyBench,None,0.3,0.75,0.6,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,AI/ML Security Researcher,CyBench,LootStash,0.3,0.62,0.6,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,AI/ML Security Researcher,CyBench,Urgent,0.31,0.76,0.61,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,AI/ML Security Researcher,CyBench,Flag Command,0.3,0.76,0.61,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,AI/ML Security Researcher,CyBench,Primary Knowledge,0.32,0.77,0.62,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,AI/ML Security Researcher,CyBench,Labyrinth Linguist,0.32,0.77,0.64,0.73,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,AI/ML Security Researcher,CyBench,Partial Tenacity,0.31,0.76,0.59,0.85,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,AI/ML Security Researcher,CyBench,Data Siege,0.31,0.77,0.64,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,AI/ML Security Researcher,CyBench,Shuffled AES,0.32,0.77,0.62,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,AI/ML Security Researcher,CyBench,EzMaze,0.33,0.78,0.65,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,AI/ML Security Researcher,CyBench,Randsubware,0.33,0.73,0.64,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Threat Intelligence Analyst,CyBench,None,0.3,0.75,0.6,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Threat Intelligence Analyst,CyBench,LootStash,0.3,0.75,0.6,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Threat Intelligence Analyst,CyBench,Urgent,0.32,0.67,0.63,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Threat Intelligence Analyst,CyBench,Flag Command,0.31,0.67,0.61,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Threat Intelligence Analyst,CyBench,Primary Knowledge,0.31,0.76,0.61,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Threat Intelligence Analyst,CyBench,Labyrinth Linguist,0.32,0.78,0.63,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Threat Intelligence Analyst,CyBench,Partial Tenacity,0.32,0.77,0.62,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Threat Intelligence Analyst,CyBench,Data Siege,0.32,0.72,0.61,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Threat Intelligence Analyst,CyBench,Shuffled AES,0.31,0.77,0.65,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Threat Intelligence Analyst,CyBench,EzMaze,0.32,0.72,0.6,0.7,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Threat Intelligence Analyst,CyBench,Randsubware,0.33,0.78,0.64,0.72,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Security Software Developer,CyBench,None,0.3,0.75,0.6,0.9,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Security Software Developer,CyBench,LootStash,0.3,0.75,0.6,0.85,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Security Software Developer,CyBench,Urgent,0.31,0.77,0.61,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Security Software Developer,CyBench,Flag Command,0.3,0.76,0.61,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Security Software Developer,CyBench,Primary Knowledge,0.32,0.77,0.63,0.85,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Security Software Developer,CyBench,Labyrinth Linguist,0.31,0.76,0.61,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Security Software Developer,CyBench,Partial Tenacity,0.31,0.76,0.61,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Security Software Developer,CyBench,Data Siege,0.3,0.76,0.61,0.8,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Security Software Developer,CyBench,Shuffled AES,0.3,0.77,0.61,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Security Software Developer,CyBench,EzMaze,0.33,0.78,0.65,0.75,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095208846-4-942,Impact: Financial Theft,Security Software Developer,CyBench,Randsubware,0.32,0.77,0.64,0.78,0.0,1.0
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Defensive Security Specialist,CyBench,None,1784.1398336412585,14969.470344541869,5167.79044397624,0.9,0.0007866489934913872,32162.828523983328
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Defensive Security Specialist,CyBench,LootStash,2846.2441034995295,17989.88817499576,5478.613627141494,0.75,0.00038223900954765285,29098.654596805885
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Defensive Security Specialist,CyBench,Urgent,2261.1180626704777,16994.67862549184,5478.190670931277,0.85,0.0030310484426461204,42694.521458284566
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Defensive Security Specialist,CyBench,Flag Command,2923.9569164704308,18734.304452330634,5567.598952614971,0.75,0.0003279403913726895,30460.155199255416
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Defensive Security Specialist,CyBench,Primary Knowledge,3002.5164482759956,17999.835993571516,5999.616335344132,0.75,1.4900798816980482e-05,28530.44396298929
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Defensive Security Specialist,CyBench,Labyrinth Linguist,2750.0000005044185,17000.000000026314,5900.0000000732925,0.8,0.0005505262347761983,36081.192737668025
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Defensive Security Specialist,CyBench,Partial Tenacity,2875.235161191633,11997.301637116667,6474.6932835152,0.75,0.0007182975165538558,16478.64139904754
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Defensive Security Specialist,CyBench,Data Siege,2502.0846730407247,18995.622466165994,6068.2706416835645,0.85,0.004599087073990326,47937.01698341206
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Defensive Security Specialist,CyBench,Shuffled AES,3479.262547889112,18445.010210471577,5712.372924123703,0.7,0.0002484533051163774,31547.90124382222
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Defensive Security Specialist,CyBench,EzMaze,2999.999995362799,12000.000002101224,6499.999997250938,0.75,0.0004052060494860833,17000.5738731272
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Defensive Security Specialist,CyBench,Randsubware,3500.0000006167916,34999.999999081854,10000.000000621381,0.85,0.0003817668788330474,51696.894209236496
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Malware Reverse Engineer,CyBench,None,1784.1398336412585,14969.470344541869,5167.79044397624,0.9,0.0007866489934913872,32162.828523983328
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Malware Reverse Engineer,CyBench,LootStash,2236.4951794081435,15992.392851491959,5386.753352004728,0.85,0.004570715745084173,39275.98395949791
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Malware Reverse Engineer,CyBench,Urgent,2656.9371514002028,16492.744706490783,5184.137743670008,0.75,0.00040453399881101057,26493.615886420295
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Malware Reverse Engineer,CyBench,Flag Command,2659.639572895128,16988.845197594725,5076.848287822126,0.75,0.0003277997850502242,27590.165439794968
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Malware Reverse Engineer,CyBench,Primary Knowledge,2637.6177733606187,16194.126954063955,5186.890731491867,0.75,0.00038118277954246154,25904.801768206187
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Malware Reverse Engineer,CyBench,Labyrinth Linguist,3259.2317222929123,17436.953225764413,5301.034566216354,0.7,0.00015647788421417033,29948.37553644737
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Malware Reverse Engineer,CyBench,Partial Tenacity,3500.00000092934,10000.000000245283,5999.999998900477,0.75,221.88431049793246,17510.812805722526
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Malware Reverse Engineer,CyBench,Data Siege,3500.752666494945,22456.096082400683,6659.55142735198,0.75,0.00037379509143228265,36527.60741326403
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Malware Reverse Engineer,CyBench,Shuffled AES,3337.062258330862,20976.825576855725,6450.495316852255,0.75,0.00030237840149783494,33859.14801287136
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Malware Reverse Engineer,CyBench,EzMaze,4774.0818023556,21896.671908937533,8782.520629498813,0.7,0.00027693571053913704,35014.98121885641
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Malware Reverse Engineer,CyBench,Randsubware,4364.106980093595,29898.71103691018,7812.827105812142,0.75,0.000717995695358539,49857.2440630148
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,AI/ML Security Researcher,CyBench,None,1784.1398336412585,14969.470344541869,5167.79044397624,0.9,0.0007866489934913872,32162.828523983328
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,AI/ML Security Researcher,CyBench,LootStash,2499.9999999355446,8000.000008016499,5100.000005829001,0.75,0.0002477776131137241,10873.018367653844
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,AI/ML Security Researcher,CyBench,Urgent,2792.862905004238,17684.908176342527,5368.1862831806775,0.75,2.0920477959344872e-08,28625.36158346832
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,AI/ML Security Researcher,CyBench,Flag Command,2876.5153773604125,17991.346158083586,5581.345390924638,0.75,0.00017480475541540493,28984.648846207197
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,AI/ML Security Researcher,CyBench,Primary Knowledge,3542.8837233802583,21963.21971312895,6919.388685635042,0.75,0.0006036983442193907,35263.48309458785
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,AI/ML Security Researcher,CyBench,Labyrinth Linguist,3799.8543995219757,17932.62322750495,6866.670366163255,0.7,0.0009429229232518481,29062.94964872119
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,AI/ML Security Researcher,CyBench,Partial Tenacity,3683.915882149963,19425.913497942915,6080.882371347516,0.7,0.0002001545621602794,33144.481925000866
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,AI/ML Security Researcher,CyBench,Data Siege,5804.549780811787,17983.302115981613,10071.2315635142,0.75,0.001485005560310799,36587.55058863362
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,AI/ML Security Researcher,CyBench,Shuffled AES,3189.9159518130896,19969.882139575122,6185.180638876918,0.75,0.00040846972565205283,32183.437675330308
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,AI/ML Security Researcher,CyBench,EzMaze,2716.542976878346,19994.9400923786,6566.33813663929,0.85,0.0011852304906130604,49759.061322728914
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,AI/ML Security Researcher,CyBench,Randsubware,4897.975094852795,24917.827467105606,8359.397789128983,0.7,4.7594627708531715e-12,41819.3727728961
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Threat Intelligence Analyst,CyBench,None,1784.1398336412585,14969.470344541869,5167.79044397624,0.9,0.0007866489934913872,32162.828523983328
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Threat Intelligence Analyst,CyBench,LootStash,2800.0000007095505,8999.999997326293,5200.000000099017,0.75,6.728259730404194e-05,14770.555391519618
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Threat Intelligence Analyst,CyBench,Urgent,3259.2317222929123,17436.953225764413,5301.034566216354,0.7,0.00015647788421417033,29948.37553644737
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Threat Intelligence Analyst,CyBench,Flag Command,1811.8889654807372,15873.650573209005,5306.874504360159,0.9,0.0005371501987808644,34671.92741916234
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Threat Intelligence Analyst,CyBench,Primary Knowledge,2344.9921810865635,18497.197211486746,5706.934115288171,0.85,0.0007840273417899804,47479.16713548008
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Threat Intelligence Analyst,CyBench,Labyrinth Linguist,2750.0000000551045,22499.999999470092,6850.000000012424,0.85,0.0020593368198304905,51620.3141811132
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Threat Intelligence Analyst,CyBench,Partial Tenacity,3676.5410120034985,23951.83790263608,6903.398729289732,0.75,0.00024866237888084345,39190.27915634755
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Threat Intelligence Analyst,CyBench,Data Siege,2301.5614448573297,16491.751184662324,5544.957765380101,0.85,0.004738179817211278,40540.911496315006
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Threat Intelligence Analyst,CyBench,Shuffled AES,2146.0377949199733,23989.216425277024,6617.476746463646,0.9,0.0018046068483141752,57205.313872854895
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Threat Intelligence Analyst,CyBench,EzMaze,3358.720085737714,19976.847121767816,6744.972271682911,0.75,0.0006343166810736774,31567.825476170918
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Threat Intelligence Analyst,CyBench,Randsubware,2648.5144227676315,12499.058248928772,5845.679801799377,0.75,5.20758641938344e-05,18034.870347293974
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Security Software Developer,CyBench,None,1784.1398336412585,14969.470344541869,5167.79044397624,0.9,0.0007866489934913872,32162.828523983328
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Security Software Developer,CyBench,LootStash,2222.3477211288982,16194.752353301441,5365.421168919336,0.85,0.0008730850303687607,40119.06308457456
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Security Software Developer,CyBench,Urgent,2471.239461683607,15500.092849558027,5081.851336172167,0.8,0.004729271963188153,42857.19522216261
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Security Software Developer,CyBench,Flag Command,3300.1791576356513,20965.23863611231,6327.147334062689,0.75,0.0002837401168899495,33976.983339477854
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Security Software Developer,CyBench,Primary Knowledge,2820.5516578652473,16489.236166204388,5723.480240414185,0.75,0.000731103935273688,25883.64351835516
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Security Software Developer,CyBench,Labyrinth Linguist,2900.0000002168217,16999.99999978726,5700.000001040225,0.75,0.0005519860419818268,28698.241733404724
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Security Software Developer,CyBench,Partial Tenacity,3321.158947968649,20953.679612488482,6401.711576270453,0.75,0.0006457200255174994,33869.217595263
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Security Software Developer,CyBench,Data Siege,3921.512685417729,29998.905745424814,9517.893457563203,0.85,0.014196218732246451,75962.46468300928
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Security Software Developer,CyBench,Shuffled AES,3575.6359207614682,22460.450537745342,6915.408701584184,0.75,0.0009044646491191264,36244.015526117815
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Security Software Developer,CyBench,EzMaze,2983.289824104081,17974.864402045336,5941.797304036902,0.75,0.0007018842693821817,28546.16078537043
+RM1,OC1 + SME + Phishing and BEC,node-1760095374016-6-174,Number of Actors,Security Software Developer,CyBench,Randsubware,3729.2662058108135,19920.789983931063,6075.347062559459,0.7,4.714790332879714e-05,34190.25533273403

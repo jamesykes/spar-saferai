@@ -1,0 +1,496 @@
+model_id,model_name,node_id,node_name,expert,benchmark,benchmark_task,low_ci,high_ci,mode,confidence,min,max
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Defensive Security Specialist,BountyBench,None,0.25,0.9,0.6,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Defensive Security Specialist,BountyBench,Agentscope,0.26,0.93,0.63,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Defensive Security Specialist,BountyBench,Imaginairy,0.27,0.87,0.63,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Defensive Security Specialist,BountyBench,librechat,0.3,0.88,0.7,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Defensive Security Specialist,BountyBench,Paddle,0.3,0.88,0.69,0.8,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Defensive Security Specialist,BountyBench,fastAPI,0.35,0.92,0.67,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Defensive Security Specialist,BountyBench,MLFlow0,0.3,0.85,0.64,0.85,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Defensive Security Specialist,BountyBench,cURL,0.29,0.92,0.65,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Defensive Security Specialist,BountyBench,gunicorn,0.26,0.93,0.68,0.78,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Defensive Security Specialist,BountyBench,MLFlow1,0.32,0.9,0.68,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Defensive Security Specialist,BountyBench,pytorchLightning,0.3,0.92,0.72,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Malware Reverse Engineer,BountyBench,None,0.25,0.9,0.6,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Malware Reverse Engineer,BountyBench,Agentscope,0.3,0.78,0.66,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Malware Reverse Engineer,BountyBench,Imaginairy,0.3,0.8,0.65,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Malware Reverse Engineer,BountyBench,librechat,0.28,0.82,0.67,0.65,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Malware Reverse Engineer,BountyBench,Paddle,0.3,0.93,0.68,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Malware Reverse Engineer,BountyBench,fastAPI,0.27,0.93,0.67,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Malware Reverse Engineer,BountyBench,MLFlow0,0.5,0.85,0.72,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Malware Reverse Engineer,BountyBench,cURL,0.3,0.94,0.73,0.85,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Malware Reverse Engineer,BountyBench,gunicorn,0.32,0.8,0.68,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Malware Reverse Engineer,BountyBench,MLFlow1,0.5,0.92,0.74,0.8,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Malware Reverse Engineer,BountyBench,pytorchLightning,0.5,0.85,0.69,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,AI/ML Security Researcher,BountyBench,None,0.25,0.9,0.6,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,AI/ML Security Researcher,BountyBench,Agentscope,0.28,0.82,0.64,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,AI/ML Security Researcher,BountyBench,Imaginairy,0.3,0.91,0.68,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,AI/ML Security Researcher,BountyBench,librechat,0.33,0.93,0.7,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,AI/ML Security Researcher,BountyBench,Paddle,0.28,0.93,0.67,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,AI/ML Security Researcher,BountyBench,fastAPI,0.3,0.85,0.7,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,AI/ML Security Researcher,BountyBench,MLFlow0,0.35,0.91,0.7,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,AI/ML Security Researcher,BountyBench,cURL,0.33,0.92,0.68,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,AI/ML Security Researcher,BountyBench,gunicorn,0.32,0.88,0.7,0.85,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,AI/ML Security Researcher,BountyBench,MLFlow1,0.55,0.82,0.69,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,AI/ML Security Researcher,BountyBench,pytorchLightning,0.35,0.92,0.72,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Threat Intelligence Analyst,BountyBench,None,0.25,0.9,0.6,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Threat Intelligence Analyst,BountyBench,Agentscope,0.27,0.93,0.63,0.85,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Threat Intelligence Analyst,BountyBench,Imaginairy,0.4,0.75,0.67,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Threat Intelligence Analyst,BountyBench,librechat,0.32,0.81,0.68,0.73,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Threat Intelligence Analyst,BountyBench,Paddle,0.28,0.88,0.64,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Threat Intelligence Analyst,BountyBench,fastAPI,0.36,0.89,0.74,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Threat Intelligence Analyst,BountyBench,MLFlow0,0.29,0.93,0.7,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Threat Intelligence Analyst,BountyBench,cURL,0.48,0.82,0.67,0.88,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Threat Intelligence Analyst,BountyBench,gunicorn,0.38,0.86,0.73,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Threat Intelligence Analyst,BountyBench,MLFlow1,0.28,0.93,0.66,0.85,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Threat Intelligence Analyst,BountyBench,pytorchLightning,0.35,0.95,0.7,0.85,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Security Software Developer,BountyBench,None,0.25,0.9,0.6,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Security Software Developer,BountyBench,Agentscope,0.27,0.84,0.68,0.73,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Security Software Developer,BountyBench,Imaginairy,0.28,0.76,0.66,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Security Software Developer,BountyBench,librechat,0.32,0.84,0.71,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Security Software Developer,BountyBench,Paddle,0.32,0.94,0.72,0.8,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Security Software Developer,BountyBench,fastAPI,0.3,0.85,0.7,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Security Software Developer,BountyBench,MLFlow0,0.29,0.91,0.68,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Security Software Developer,BountyBench,cURL,0.3,0.95,0.68,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Security Software Developer,BountyBench,gunicorn,0.3,0.92,0.69,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Security Software Developer,BountyBench,MLFlow1,0.35,0.85,0.72,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758548793791-1-216,Initial Access,Security Software Developer,BountyBench,pytorchLightning,0.36,0.87,0.69,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Defensive Security Specialist,BountyBench,None,0.2,0.9,0.5,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Defensive Security Specialist,BountyBench,Agentscope,0.2,0.8,0.51,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Defensive Security Specialist,BountyBench,Imaginairy,0.22,0.85,0.52,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Defensive Security Specialist,BountyBench,librechat,0.28,0.89,0.62,0.73,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Defensive Security Specialist,BountyBench,Paddle,0.25,0.92,0.56,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Defensive Security Specialist,BountyBench,fastAPI,0.3,0.75,0.55,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Defensive Security Specialist,BountyBench,MLFlow0,0.3,0.82,0.6,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Defensive Security Specialist,BountyBench,cURL,0.26,0.87,0.58,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Defensive Security Specialist,BountyBench,gunicorn,0.32,0.93,0.63,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Defensive Security Specialist,BountyBench,MLFlow1,0.25,0.91,0.57,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Defensive Security Specialist,BountyBench,pytorchLightning,0.35,0.82,0.58,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Malware Reverse Engineer,BountyBench,None,0.2,0.9,0.5,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Malware Reverse Engineer,BountyBench,Agentscope,0.23,0.77,0.53,0.65,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Malware Reverse Engineer,BountyBench,Imaginairy,0.25,0.68,0.56,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Malware Reverse Engineer,BountyBench,librechat,0.25,0.8,0.57,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Malware Reverse Engineer,BountyBench,Paddle,0.21,0.92,0.53,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Malware Reverse Engineer,BountyBench,fastAPI,0.28,0.85,0.62,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Malware Reverse Engineer,BountyBench,MLFlow0,0.38,0.9,0.66,0.73,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Malware Reverse Engineer,BountyBench,cURL,0.22,0.93,0.56,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Malware Reverse Engineer,BountyBench,gunicorn,0.25,0.78,0.58,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Malware Reverse Engineer,BountyBench,MLFlow1,0.3,0.75,0.62,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Malware Reverse Engineer,BountyBench,pytorchLightning,0.33,0.88,0.68,0.8,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,AI/ML Security Researcher,BountyBench,None,0.2,0.9,0.5,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,AI/ML Security Researcher,BountyBench,Agentscope,0.24,0.7,0.55,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,AI/ML Security Researcher,BountyBench,Imaginairy,0.22,0.88,0.53,0.77,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,AI/ML Security Researcher,BountyBench,librechat,0.23,0.87,0.53,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,AI/ML Security Researcher,BountyBench,Paddle,0.28,0.78,0.62,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,AI/ML Security Researcher,BountyBench,fastAPI,0.32,0.81,0.57,0.82,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,AI/ML Security Researcher,BountyBench,MLFlow0,0.24,0.92,0.58,0.73,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,AI/ML Security Researcher,BountyBench,cURL,0.22,0.92,0.53,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,AI/ML Security Researcher,BountyBench,gunicorn,0.37,0.78,0.62,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,AI/ML Security Researcher,BountyBench,MLFlow1,0.25,0.78,0.59,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,AI/ML Security Researcher,BountyBench,pytorchLightning,0.27,0.92,0.62,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Threat Intelligence Analyst,BountyBench,None,0.2,0.9,0.5,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Threat Intelligence Analyst,BountyBench,Agentscope,0.21,0.94,0.54,0.88,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Threat Intelligence Analyst,BountyBench,Imaginairy,0.21,0.87,0.52,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Threat Intelligence Analyst,BountyBench,librechat,0.52,0.69,0.6,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Threat Intelligence Analyst,BountyBench,Paddle,0.2,0.78,0.56,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Threat Intelligence Analyst,BountyBench,fastAPI,0.27,0.8,0.61,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Threat Intelligence Analyst,BountyBench,MLFlow0,0.25,0.86,0.57,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Threat Intelligence Analyst,BountyBench,cURL,0.21,0.92,0.52,0.85,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Threat Intelligence Analyst,BountyBench,gunicorn,0.27,0.93,0.63,0.82,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Threat Intelligence Analyst,BountyBench,MLFlow1,0.25,0.78,0.6,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Threat Intelligence Analyst,BountyBench,pytorchLightning,0.38,0.75,0.6,0.65,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Security Software Developer,BountyBench,None,0.2,0.9,0.5,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Security Software Developer,BountyBench,Agentscope,0.25,0.85,0.58,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Security Software Developer,BountyBench,Imaginairy,0.2,0.89,0.52,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Security Software Developer,BountyBench,librechat,0.29,0.93,0.59,0.73,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Security Software Developer,BountyBench,Paddle,0.22,0.91,0.53,0.65,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Security Software Developer,BountyBench,fastAPI,0.29,0.92,0.6,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Security Software Developer,BountyBench,MLFlow0,0.42,0.72,0.58,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Security Software Developer,BountyBench,cURL,0.28,0.83,0.57,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Security Software Developer,BountyBench,gunicorn,0.32,0.82,0.62,0.87,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Security Software Developer,BountyBench,MLFlow1,0.28,0.93,0.68,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758552529633-2-398,Execution,Security Software Developer,BountyBench,pytorchLightning,0.32,0.88,0.7,0.85,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Defensive Security Specialist,BountyBench,None,0.25,0.9,0.7,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Defensive Security Specialist,BountyBench,Agentscope,0.3,0.88,0.75,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Defensive Security Specialist,BountyBench,Imaginairy,0.26,0.92,0.74,0.68,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Defensive Security Specialist,BountyBench,librechat,0.28,0.92,0.76,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Defensive Security Specialist,BountyBench,Paddle,0.32,0.92,0.77,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Defensive Security Specialist,BountyBench,fastAPI,0.32,0.93,0.77,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Defensive Security Specialist,BountyBench,MLFlow0,0.27,0.93,0.74,0.8,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Defensive Security Specialist,BountyBench,cURL,0.35,0.94,0.79,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Defensive Security Specialist,BountyBench,gunicorn,0.31,0.93,0.76,0.83,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Defensive Security Specialist,BountyBench,MLFlow1,0.28,0.94,0.76,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Defensive Security Specialist,BountyBench,pytorchLightning,0.3,0.93,0.77,0.8,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Malware Reverse Engineer,BountyBench,None,0.25,0.9,0.7,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Malware Reverse Engineer,BountyBench,Agentscope,0.26,0.92,0.72,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Malware Reverse Engineer,BountyBench,Imaginairy,0.55,0.84,0.72,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Malware Reverse Engineer,BountyBench,librechat,0.27,0.93,0.75,0.85,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Malware Reverse Engineer,BountyBench,Paddle,0.32,0.93,0.76,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Malware Reverse Engineer,BountyBench,fastAPI,0.32,0.9,0.74,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Malware Reverse Engineer,BountyBench,MLFlow0,0.28,0.92,0.73,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Malware Reverse Engineer,BountyBench,cURL,0.33,0.92,0.76,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Malware Reverse Engineer,BountyBench,gunicorn,0.32,0.93,0.78,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Malware Reverse Engineer,BountyBench,MLFlow1,0.32,0.93,0.8,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Malware Reverse Engineer,BountyBench,pytorchLightning,0.3,0.94,0.78,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,AI/ML Security Researcher,BountyBench,None,0.25,0.9,0.7,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,AI/ML Security Researcher,BountyBench,Agentscope,0.3,0.85,0.73,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,AI/ML Security Researcher,BountyBench,Imaginairy,0.7,0.76,0.72,0.88,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,AI/ML Security Researcher,BountyBench,librechat,0.33,0.88,0.77,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,AI/ML Security Researcher,BountyBench,Paddle,0.28,0.94,0.76,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,AI/ML Security Researcher,BountyBench,fastAPI,0.28,0.92,0.73,0.85,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,AI/ML Security Researcher,BountyBench,MLFlow0,0.3,0.94,0.75,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,AI/ML Security Researcher,BountyBench,cURL,0.35,0.88,0.76,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,AI/ML Security Researcher,BountyBench,gunicorn,0.72,0.82,0.77,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,AI/ML Security Researcher,BountyBench,MLFlow1,0.32,0.93,0.8,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,AI/ML Security Researcher,BountyBench,pytorchLightning,0.58,0.94,0.83,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Threat Intelligence Analyst,BountyBench,None,0.25,0.9,0.7,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Threat Intelligence Analyst,BountyBench,Agentscope,0.31,0.92,0.76,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Threat Intelligence Analyst,BountyBench,Imaginairy,0.65,0.85,0.75,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Threat Intelligence Analyst,BountyBench,librechat,0.28,0.93,0.75,0.82,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Threat Intelligence Analyst,BountyBench,Paddle,0.3,0.92,0.75,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Threat Intelligence Analyst,BountyBench,fastAPI,0.3,0.91,0.76,0.73,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Threat Intelligence Analyst,BountyBench,MLFlow0,0.3,0.92,0.77,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Threat Intelligence Analyst,BountyBench,cURL,0.28,0.93,0.73,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Threat Intelligence Analyst,BountyBench,gunicorn,0.35,0.86,0.77,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Threat Intelligence Analyst,BountyBench,MLFlow1,0.28,0.88,0.74,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Threat Intelligence Analyst,BountyBench,pytorchLightning,0.31,0.93,0.78,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Security Software Developer,BountyBench,None,0.25,0.9,0.7,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Security Software Developer,BountyBench,Agentscope,0.3,0.91,0.74,0.85,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Security Software Developer,BountyBench,Imaginairy,0.27,0.8,0.72,0.8,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Security Software Developer,BountyBench,librechat,0.35,0.93,0.76,0.77,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Security Software Developer,BountyBench,Paddle,0.3,0.92,0.76,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Security Software Developer,BountyBench,fastAPI,0.32,0.93,0.76,0.78,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Security Software Developer,BountyBench,MLFlow0,0.3,0.93,0.77,0.8,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Security Software Developer,BountyBench,cURL,0.28,0.92,0.73,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Security Software Developer,BountyBench,gunicorn,0.3,0.88,0.76,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Security Software Developer,BountyBench,MLFlow1,0.35,0.92,0.76,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758553529063-4-293,Privilege Escalation,Security Software Developer,BountyBench,pytorchLightning,0.5,0.93,0.79,0.85,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,None,73.54623111317149,499.9016836846068,200.38931707370529,0.9,0.004415194482179182,987.1805077773176
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,Agentscope,189.99999888276525,269.9999981674415,235.9999942687577,0.75,118.9616727207453,313.0518024742676
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,Imaginairy,100.1695622156655,350.2049543085406,226.48716438152883,0.75,0.0012029850202852975,448.2024626267025
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,librechat,97.20604387062306,399.5521900679974,221.01896721132522,0.9,0.001289611113271733,627.4139149216237
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,Paddle,84.99999992326141,600.000003244333,235.0000004448591,0.85,0.00095431800949042,911.5341846319161
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,fastAPI,119.99999460963741,349.9999962647164,239.9999940727007,0.75,7.807758302452259e-05,457.2863368923772
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,MLFlow0,86.43112431827426,300.5716050688895,223.371072093701,0.82,0.0005474966205524655,344.7649628613541
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,cURL,79.07274832742289,574.960553639134,208.2305085777666,0.88,0.0009801926264609336,1266.2983586987866
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,gunicorn,114.59983863339649,418.83370955970497,229.93184434791198,0.7,1.2213085881499675e-10,600.8366561900434
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,MLFlow1,194.99998914155864,285.0000114592623,229.9999920463619,0.7,153.9171765048998,355.1535105527364
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,pytorchLightning,121.85046022439866,599.0108829726342,266.1107715463273,0.75,0.0003602404398757371,878.4695250831666
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,None,73.54623111317149,499.9016836846068,200.38931707370529,0.9,0.004415194482179182,987.1805077773176
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,Agentscope,199.9999981762571,325.00000256634644,254.99999950937422,0.75,140.52515306802644,409.00578012601727
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,Imaginairy,87.77112691591111,320.21261997761366,229.3212445644141,0.82,0.0005279255406286597,372.17759788251374
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,librechat,99.59432704445217,649.5104648342752,247.70793463454945,0.8,0.0006016332946086059,938.4999768846874
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,Paddle,75.00000147504404,589.9999986377553,210.00000000305477,0.85,3.783873769653843e-05,908.8876466327039
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,fastAPI,79.99999902993387,549.9999958963849,230.00000124410553,0.85,0.0006655420147821938,776.8460167840109
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,MLFlow0,128.69851004843233,645.6043154873371,222.28462035438602,0.7,0.0005346238377962492,1076.500343325132
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,cURL,180.0000046608946,280.0000080277248,229.9999974522359,0.85,139.40428848352292,320.59574938622944
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,gunicorn,108.36801497817704,549.5767704190646,261.6400405744328,0.78,7.123999102496153e-05,763.3571232504954
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,MLFlow1,90.82683858485974,549.9781161193908,229.86284124222556,0.8,0.0006910121663338134,775.9286651843449
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,pytorchLightning,81.65730544973593,649.9797942433877,249.75522751009174,0.85,0.0011793754767255712,881.5692218352738
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,None,73.54623111317149,499.9016836846068,200.38931707370529,0.9,0.004415194482179182,987.1805077773176
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,Agentscope,123.27711768878684,647.023031114528,228.90034088739077,0.72,0.0006156073427152429,1046.932396271218
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,Imaginairy,179.99999143376894,239.9999908626662,210.0000016856582,0.75,145.80343720700228,274.1965103878226
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,librechat,90.00000173407442,649.9999965768351,259.9999994741667,0.85,0.0010280292944266135,927.2164408472812
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,Paddle,84.99999980614997,290.00001582247273,224.9999955262839,0.88,0.0004269621031295895,318.08030907068274
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,fastAPI,219.99999906642208,324.99999147181234,264.9999997278803,0.87,188.33478228776335,379.0641157280942
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,MLFlow0,95.55236139116361,549.5882093679244,246.32166429668922,0.9,0.004491707391909478,1010.0328077603447
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,cURL,180.00000229604674,399.9999975074093,260.0000011180971,0.75,98.1633445729774,577.0924387090854
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,gunicorn,90.00001032362074,379.99999262050363,230.00000074954727,0.85,0.00012055056719257598,480.01719845269065
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,MLFlow1,100.00000309722026,449.99999867776023,229.99999905809196,0.85,0.0025102294000192964,718.6378246088055
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,pytorchLightning,92.53875326802194,600.0185837690086,284.56772431301215,0.85,0.00036793308444756247,772.1500348819864
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,None,73.54623111317149,499.9016836846068,200.38931707370529,0.9,0.004415194482179182,987.1805077773176
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,Agentscope,194.9999968518057,234.9999988021957,210.0000019755139,0.75,177.60112736500872,273.8566947891019
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,Imaginairy,180.0000043316947,229.99999407725005,204.99999750807768,0.75,150.44661444464447,259.5533899198244
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,librechat,85.00001407811718,319.99999673862425,214.99999792322802,0.9,0.0002476326965781443,377.4110436474374
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,Paddle,90.7424885511895,270.64294832412935,218.40939021645386,0.8,0.0008950573400980532,305.08556616204106
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,fastAPI,220.000003694427,350.00000010242,269.9999971770784,0.75,167.3519416606855,452.6830244749543
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,MLFlow0,79.99999820746673,575.0000010489101,214.99999881921923,0.85,4.4597400286994625e-05,933.9299569918885
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,cURL,85.0000000849669,574.9999983493475,220.00000078089533,0.85,0.00010479432149295556,991.7946875147769
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,gunicorn,90.00000339142998,599.9999998084913,259.999996572213,0.85,0.00046546668073766935,832.5570828444922
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,MLFlow1,85.00000205924886,649.9999995359477,259.99999823141206,0.88,0.0009212485619332321,960.2817506428137
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,pytorchLightning,119.99999471958724,380.00000028439325,240.00000234290667,0.75,0.0003572630851067618,527.1748482224999
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,None,73.54623111317149,499.9016836846068,200.38931707370529,0.9,0.004415194482179182,987.1805077773176
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,Agentscope,102.71569089624403,558.7163286483917,216.26303598120938,0.75,0.0008035109798883281,852.7530121550685
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,Imaginairy,79.99999669635646,249.99997261769946,210.0000037566732,0.85,0.002854792388700479,270.43493383453256
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,librechat,84.9999796212582,260.00000630595144,214.99999693181402,0.87,0.0020874866425416973,280.55382630089287
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,Paddle,79.99999914215661,625.0000033216593,244.99999905625845,0.88,0.0002747359723879424,932.8460403330255
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,fastAPI,96.14414051569852,450.45587048596263,298.6670933651064,0.87,4.7205074183777935e-05,516.1602463899826
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,MLFlow0,120.00000955684561,449.99999029578896,290.00000302290164,0.85,0.0004978056276579792,558.9974249355403
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,cURL,103.80886786319476,573.907856446843,216.94472232194926,0.75,0.0007634167679908264,881.5226830047696
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,gunicorn,99.99999428417169,500.0000015678857,249.99999901660735,0.87,0.00021912720205629358,760.8360302661825
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,MLFlow1,112.22238841621774,574.13939253889,242.02813224087845,0.75,0.00033822388725015065,855.4108589328018
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,pytorchLightning,126.68594947465334,797.4740415037329,244.61812735426804,0.75,0.0002827525785648931,1287.913950298066
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Defensive Security Specialist,BountyBench,None,2.560985877727254,39.97687022716595,9.843993657249552,0.9,0.00103462503290459,54.687063990847136
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Defensive Security Specialist,BountyBench,Agentscope,6.153366235569508,44.602024311364,10.324118867161005,0.75,0.0004391991683012304,75.95491529834592
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Defensive Security Specialist,BountyBench,Imaginairy,4.0232583460545195,47.89517691278322,10.664938597483644,0.85,0.0005760517789407025,71.76894031093025
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Defensive Security Specialist,BountyBench,librechat,5.522768330667742,49.75520205650566,11.442520652473572,0.8,0.0005123959051379465,79.52556033703645
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Defensive Security Specialist,BountyBench,Paddle,8.450205399454811,45.169828645856356,12.551558900670642,0.7,0.04683299916938958,162.2241136442021
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Defensive Security Specialist,BountyBench,fastAPI,3.4386253988446147,57.97516257870892,12.863738641330617,0.9,0.0010361564769037126,80.41553665170181
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Defensive Security Specialist,BountyBench,MLFlow0,6.00000160635327,25.000001434411793,11.999999110798152,0.75,0.0005827220128302917,41.62845232011408
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Defensive Security Specialist,BountyBench,cURL,6.444716317750191,44.66703498757451,11.396190686335004,0.75,0.00046601665226556706,74.80872729808885
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Defensive Security Specialist,BountyBench,gunicorn,5.999998616370557,22.00000167400675,10.999999180883368,0.75,0.00032166728004264444,44.31272252641541
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Defensive Security Specialist,BountyBench,MLFlow1,4.427028538315675,54.98739967131202,17.71611149045004,0.9,0.00042155711691070077,72.11813806830037
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Defensive Security Specialist,BountyBench,pytorchLightning,5.295420648073494,44.83145262151833,11.574084713288602,0.8,0.00020986610920287367,70.31007136307656
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Malware Reverse Engineer,BountyBench,None,2.560985877727254,39.97687022716595,9.843993657249552,0.9,0.00103462503290459,54.687063990847136
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Malware Reverse Engineer,BountyBench,Agentscope,7.291807639955145,44.417520404842286,9.999633775922172,0.7,3.103563251677327e-12,98.63860620496786
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Malware Reverse Engineer,BountyBench,Imaginairy,5.931173276818203,41.6246967960626,10.344573758991961,0.75,0.0003284287562970397,70.03901124489383
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Malware Reverse Engineer,BountyBench,librechat,5.522768330667742,49.75520205650566,11.442520652473572,0.8,0.0005123959051379465,79.52556033703645
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Malware Reverse Engineer,BountyBench,Paddle,7.426634875935653,45.510848470239594,10.107694375468977,0.7,1.5118758116398402e-12,108.38172926326644
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Malware Reverse Engineer,BountyBench,fastAPI,6.419638206873646,25.844986975191166,12.540730140769789,0.7,0.0010013373790018678,38.84514848218309
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Malware Reverse Engineer,BountyBench,MLFlow0,6.928828687130952,44.583420217429826,13.145366305743483,0.75,0.0009177931373800163,72.60804958222744
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Malware Reverse Engineer,BountyBench,cURL,4.968222502998223,43.788794863957776,10.502877185178704,0.8,0.0005990025290215105,69.52559580700995
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Malware Reverse Engineer,BountyBench,gunicorn,4.785383732365397,49.91875661262459,13.660653516644345,0.85,0.00042362240111085863,72.44333783455431
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Malware Reverse Engineer,BountyBench,MLFlow1,7.440329409707923,54.57688646703886,12.292802239287234,0.75,3.133708655942163e-10,93.36243707389677
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Malware Reverse Engineer,BountyBench,pytorchLightning,10.154253747887893,59.17337028368887,14.861081503334676,0.7,0.00047109004826274663,105.63536789232762
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,AI/ML Security Researcher,BountyBench,None,2.560985877727254,39.97687022716595,9.843993657249552,0.9,0.00103462503290459,54.687063990847136
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,AI/ML Security Researcher,BountyBench,Agentscope,5.4490461726846275,47.81705757107408,11.565433379466878,0.8,1.714815996155066e-10,75.8203170578144
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,AI/ML Security Researcher,BountyBench,Imaginairy,2.829464089172692,44.971916641764004,10.819383748053696,0.9,8.890954984846816e-10,61.7176446910563
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,AI/ML Security Researcher,BountyBench,librechat,6.0532692529628145,49.74418490292499,11.485842075078011,0.78,0.00032943399016324313,81.56878949326483
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,AI/ML Security Researcher,BountyBench,Paddle,4.4071695102952155,44.93233526465537,12.701890867164803,0.85,0.000415234582154629,64.84112720029117
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,AI/ML Security Researcher,BountyBench,fastAPI,7.440329409707923,54.57688646703886,12.292802239287234,0.75,3.133708655942163e-10,93.36243707389677
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,AI/ML Security Researcher,BountyBench,MLFlow0,5.554815493717614,49.80867462030689,11.5601041327038,0.8,0.0006330937360791776,79.49784749051383
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,AI/ML Security Researcher,BountyBench,cURL,6.91996977436135,47.633789196042244,12.327402864183025,0.75,1.511594710753487e-10,79.57258038790475
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,AI/ML Security Researcher,BountyBench,gunicorn,4.495207799606819,34.98458056832313,13.775887419378982,0.85,0.001444945510014398,47.18121922371397
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,AI/ML Security Researcher,BountyBench,MLFlow1,3.9999996172599492,45.000001920614665,15.999999490836434,0.9,0.002144695702043553,58.105716444675785
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,AI/ML Security Researcher,BountyBench,pytorchLightning,12.000001796140932,28.000002164161984,16.99999137709562,0.9,9.051163427896018,44.545857483351504
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Threat Intelligence Analyst,BountyBench,None,2.560985877727254,39.97687022716595,9.843993657249552,0.9,0.00103462503290459,54.687063990847136
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Threat Intelligence Analyst,BountyBench,Agentscope,7.061782940835375,53.5541649708878,11.151269072747926,0.75,4.8937999286406925e-15,102.62268646302923
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Threat Intelligence Analyst,BountyBench,Imaginairy,3.857407534973645,42.908461505004944,10.667426168104587,0.85,0.0006673218985489615,63.254031145123
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Threat Intelligence Analyst,BountyBench,librechat,5.8237404145381495,39.71813128425934,10.473280341460853,0.75,0.0005697973923859847,66.12062955706995
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Threat Intelligence Analyst,BountyBench,Paddle,7.066775328759824,49.61841354877641,12.318223616472835,0.75,0.00046701246760978303,83.50485031179252
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Threat Intelligence Analyst,BountyBench,fastAPI,3.8048294262847895,54.990494961139845,14.91491300635597,0.9,0.0012064616500111285,74.17551704806007
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Threat Intelligence Analyst,BountyBench,MLFlow0,4.61799102785603,51.915077710546775,12.697427765868035,0.85,5.280099320907197e-10,76.7256224239033
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Threat Intelligence Analyst,BountyBench,cURL,6.442994315954827,34.86374719526831,13.59599367577734,0.75,0.0003526866355500121,53.10339088777593
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Threat Intelligence Analyst,BountyBench,gunicorn,9.000004942663548,23.99999735376298,17.000005874082326,0.7,0.0006039856363700833,31.748197975853202
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Threat Intelligence Analyst,BountyBench,MLFlow1,9.28673077774911,35.010701009796435,15.205291947667906,0.7,0.0087191038934753,97.22710494935383
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Threat Intelligence Analyst,BountyBench,pytorchLightning,10.945884022123488,64.61974558130366,22.082468361410765,0.75,5.999127330182818e-06,101.8199025416548
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Security Software Developer,BountyBench,None,2.560985877727254,39.97687022716595,9.843993657249552,0.9,0.00103462503290459,54.687063990847136
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Security Software Developer,BountyBench,Agentscope,4.732762384941239,21.897857030657597,10.490459966293535,0.75,0.0007647233866656111,31.34930958315975
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Security Software Developer,BountyBench,Imaginairy,6.153366235569508,44.602024311364,10.324118867161005,0.75,0.0004391991683012304,75.95491529834592
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Security Software Developer,BountyBench,librechat,6.03857186509325,34.75030045747273,12.363380864281497,0.75,0.00012465625089423758,54.21681418608564
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Security Software Developer,BountyBench,Paddle,5.1654202849685955,54.90500687215451,14.619168397764458,0.85,0.0009896623179433096,80.04839098055359
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Security Software Developer,BountyBench,fastAPI,8.99999856189698,18.00000032933242,10.999999070325204,0.7,5.89044820477344,38.811403549445274
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Security Software Developer,BountyBench,MLFlow0,5.022987733514147,49.919287140734326,14.618709004989505,0.85,0.00021969776704818368,71.58468992925262
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Security Software Developer,BountyBench,cURL,8.714092672720364,54.35372043146994,11.618845393557095,0.7,2.6959885839057473e-13,166.14260614168683
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Security Software Developer,BountyBench,gunicorn,4.623564299352399,45.8341770676911,10.56745101161557,0.82,0.0005700821504931346,71.28268312556743
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Security Software Developer,BountyBench,MLFlow1,7.920546576995251,44.7637518988615,16.37374571597919,0.75,7.211603657437065e-05,69.35025815655138
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1758557100534-14-225,Number of Actors,Security Software Developer,BountyBench,pytorchLightning,10.464066983261663,44.96615809001125,19.916524539237223,0.7,0.0005205557402469885,69.72142430561168
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Defensive Security Specialist,CyBench,None,255676.52584873536,1496021.8330151467,663033.9374312292,0.9,0.0033174135209955028,2770286.08502552
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Defensive Security Specialist,CyBench,LootStash,288769.60910818225,1499271.7650410375,653317.5396008065,0.85,0.0007032855069141421,3144198.272292618
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Defensive Security Specialist,CyBench,Urgent,257275.8695868164,1393552.8565343414,649344.0156858128,0.9,9.704074289588885e-06,2493055.5153762884
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Defensive Security Specialist,CyBench,Flag Command,615000.0000004268,724999.9999991974,664999.9999988443,0.85,577825.747413952,775822.5578400632
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Defensive Security Specialist,CyBench,Primary Knowledge,579999.9999997176,849999.999999858,690000.0000000906,0.7,433366.2838193489,1094727.0169382032
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Defensive Security Specialist,CyBench,Labyrinth Linguist,549999.9999993362,849999.9999993597,700000.0000002247,0.7,340755.9217178284,1059244.0782775139
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Defensive Security Specialist,CyBench,Partial Tenacity,680000.0000000348,899999.9999995546,804999.9999997691,0.75,549103.8651067769,991781.1759621578
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Defensive Security Specialist,CyBench,Data Siege,450000.00000149314,1199999.9999976116,800000.0000027602,0.85,122907.42389700285,1624618.7029405995
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Defensive Security Specialist,CyBench,Shuffled AES,330000.00000130467,1850000.0000078445,920000.0000006557,0.85,0.0014333524005776825,2485595.298486898
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Defensive Security Specialist,CyBench,EzMaze,436829.1754085101,1384546.3959413331,840375.0,0.75,-0.0001875,2056843.75
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Defensive Security Specialist,CyBench,Randsubware,365000.0000067199,1164999.999993707,779999.9999924635,0.85,0.001322213047490746,1484027.0958726164
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Malware Reverse Engineer,CyBench,None,255676.52584873536,1496021.8330151467,663033.9374312292,0.9,0.0033174135209955028,2770286.08502552
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Malware Reverse Engineer,CyBench,LootStash,288769.60910818225,1499271.7650410375,653317.5396008065,0.85,0.0007032855069141421,3144198.272292618
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Malware Reverse Engineer,CyBench,Urgent,296056.626552263,1679800.1538571839,684098.6423399644,0.85,0.0011286318183394502,3688597.384703884
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Malware Reverse Engineer,CyBench,Flag Command,620000.0000030873,719999.9999994284,664999.9999928232,0.75,569496.098444032,787850.8247503988
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Malware Reverse Engineer,CyBench,Primary Knowledge,355431.473066548,1299946.9030761074,699312.5,0.75,-0.00015625,2073931.25
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Malware Reverse Engineer,CyBench,Labyrinth Linguist,407251.4433488607,1622268.0202781705,887187.5,0.8,-0.00015625,2403756.25
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Malware Reverse Engineer,CyBench,Partial Tenacity,620000.0000014321,844999.9999985172,721999.9999993953,0.72,510472.5304338296,982473.9715920555
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Malware Reverse Engineer,CyBench,Data Siege,339999.9999960321,880000.00000588,710000.0000036889,0.88,57487.772755768536,961605.253769533
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Malware Reverse Engineer,CyBench,Shuffled AES,511192.44659914257,1546380.9687119252,913281.25,0.7,-0.00015625,2468468.75
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Malware Reverse Engineer,CyBench,EzMaze,446655.98791545565,1725803.31982323,881968.75,0.75,-0.00015625,2838478.125
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Malware Reverse Engineer,CyBench,Randsubware,649999.9999997525,1499999.9999984985,1049999.9999985257,0.7,132809.95037903544,2102963.848033172
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,AI/ML Security Researcher,CyBench,None,255676.52584873536,1496021.8330151467,663033.9374312292,0.9,0.0033174135209955028,2770286.08502552
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,AI/ML Security Researcher,CyBench,LootStash,620000.0000029713,779999.9999990755,665000.0000010373,0.7,563907.1672289054,944810.15877605
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,AI/ML Security Researcher,CyBench,Urgent,649999.9999995856,900000.0000005881,759999.9999998248,0.7,511782.6203965546,1088172.6818251456
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,AI/ML Security Researcher,CyBench,Flag Command,284523.70440895826,1619474.098367107,657912.6304045342,0.85,0.00046683537680022673,3561845.724243034
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,AI/ML Security Researcher,CyBench,Primary Knowledge,387684.8203461743,1250110.7252951325,694093.75,0.7,-0.00015625,2081759.375
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,AI/ML Security Researcher,CyBench,Labyrinth Linguist,317904.97700086,1698070.1199924694,724305.6327841231,0.85,0.00014317571913251005,3614547.7053391393
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,AI/ML Security Researcher,CyBench,Partial Tenacity,378199.55806774675,1442137.1476770495,746281.25,0.75,-0.00015625,2354700.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,AI/ML Security Researcher,CyBench,Data Siege,690000.0000002297,1050000.0000006515,849999.9999999264,0.75,517831.9881191797,1286505.7531865162
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,AI/ML Security Researcher,CyBench,Shuffled AES,319999.9999988922,2000000.0000017383,780000.0000003912,0.82,2.996312405585864e-06,3275174.6393171013
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,AI/ML Security Researcher,CyBench,EzMaze,575000.0000051635,950000.0000004546,729999.9999992102,0.85,470975.942546683,1135111.2375854142
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,AI/ML Security Researcher,CyBench,Randsubware,432737.80441415857,1357317.88276082,835000.0,0.75,-0.00015625,1985734.375
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Threat Intelligence Analyst,CyBench,None,255676.52584873536,1496021.8330151467,663033.9374312292,0.9,0.0033174135209955028,2770286.08502552
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Threat Intelligence Analyst,CyBench,LootStash,580000.000001893,730000.0000067201,649999.9999984107,0.85,526418.5786053386,797511.4507035798
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Threat Intelligence Analyst,CyBench,Urgent,309999.99999943405,1600000.0000011297,674999.9999998129,0.82,0.002129232190707297,3291291.44850571
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Threat Intelligence Analyst,CyBench,Flag Command,339999.99999790965,1350000.0000019292,740000.0000018072,0.87,7.210316272471245e-05,2200055.949767659
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Threat Intelligence Analyst,CyBench,Primary Knowledge,650000.000006462,779999.9999921075,694999.9999995098,0.85,624773.7606971412,843570.8365620614
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Threat Intelligence Analyst,CyBench,Labyrinth Linguist,311382.2526178599,1599425.428744511,702563.75044002,0.85,0.0007162193492490682,3335257.6210356425
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Threat Intelligence Analyst,CyBench,Partial Tenacity,379999.9999932123,879999.9999980008,719999.9999932258,0.75,96568.28199483559,1013031.3193575116
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Threat Intelligence Analyst,CyBench,Data Siege,396656.4768398971,1516384.481220387,782812.5,0.75,-0.00015625,2479428.125
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Threat Intelligence Analyst,CyBench,Shuffled AES,329999.99999977293,1874999.9999992105,780000.0000020093,0.85,0.0003662521264223761,3706942.4145828066
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Threat Intelligence Analyst,CyBench,EzMaze,680000.0000001236,1250000.0000002044,840000.0000000007,0.75,536976.5844849893,1632107.2837226181
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Threat Intelligence Analyst,CyBench,Randsubware,620000.0000023262,1099999.9999998838,765000.0000020048,0.7,450860.1317542755,1514430.9162825989
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Security Software Developer,CyBench,None,255676.52584873536,1496021.8330151467,663033.9374312292,0.9,0.0033174135209955028,2770286.08502552
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Security Software Developer,CyBench,LootStash,500000.00000708195,1099999.9999965231,749999.9999985616,0.85,308639.3913830244,1450891.0287187328
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Security Software Developer,CyBench,Urgent,600000.000001244,724999.9999896946,655000.0000012215,0.87,558895.5135081033,790151.0160890317
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Security Software Developer,CyBench,Flag Command,279787.9015436492,1519987.8252779443,640060.81278713,0.85,0.00018364080309386642,3264072.983972799
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Security Software Developer,CyBench,Primary Knowledge,625000.0000012448,849999.9999977371,735000.0000056389,0.75,496837.9083161989,986878.516916772
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Security Software Developer,CyBench,Labyrinth Linguist,330000.0000001025,1750000.0000053444,849999.9999966004,0.83,0.0011014107643922196,2467738.3720761235
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Security Software Developer,CyBench,Partial Tenacity,650000.0000000414,899999.9999991485,774999.9999996852,0.72,489235.7583594508,1060764.2416394148
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Security Software Developer,CyBench,Data Siege,314999.9999990618,1950000.0000000114,747999.9999995999,0.85,0.0010639981449524528,4258205.890444781
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Security Software Developer,CyBench,Shuffled AES,332458.9024843683,1860665.0320396854,947617.1875,0.88,-0.00011328124999999999,2507283.59375
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Security Software Developer,CyBench,EzMaze,425308.88484215154,1518910.9344153854,835000.0,0.75,-0.00015625,2391231.25
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759417451956-6-654,Damage per Attack,Security Software Developer,CyBench,Randsubware,625000.0000000047,975000.0000003675,800000.000000007,0.72,393923.8705732239,1206076.129427823
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Defensive Security Specialist,CyBench,None,0.5,0.8,0.65,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Defensive Security Specialist,CyBench,LootStash,0.5,0.8,0.65,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Defensive Security Specialist,CyBench,Urgent,0.5,0.81,0.655,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Defensive Security Specialist,CyBench,Flag Command,0.51,0.82,0.66,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Defensive Security Specialist,CyBench,Primary Knowledge,0.52,0.75,0.67,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Defensive Security Specialist,CyBench,Labyrinth Linguist,0.54,0.83,0.69,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Defensive Security Specialist,CyBench,Partial Tenacity,0.55,0.81,0.71,0.73,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Defensive Security Specialist,CyBench,Data Siege,0.52,0.76,0.67,0.65,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Defensive Security Specialist,CyBench,Shuffled AES,0.53,0.76,0.69,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Defensive Security Specialist,CyBench,EzMaze,0.54,0.83,0.71,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Defensive Security Specialist,CyBench,Randsubware,0.53,0.9,0.72,0.85,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Malware Reverse Engineer,CyBench,None,0.5,0.8,0.65,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Malware Reverse Engineer,CyBench,LootStash,0.48,0.78,0.63,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Malware Reverse Engineer,CyBench,Urgent,0.5,0.72,0.66,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Malware Reverse Engineer,CyBench,Flag Command,0.5,0.77,0.65,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Malware Reverse Engineer,CyBench,Primary Knowledge,0.52,0.78,0.68,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Malware Reverse Engineer,CyBench,Labyrinth Linguist,0.52,0.82,0.67,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Malware Reverse Engineer,CyBench,Partial Tenacity,0.52,0.82,0.68,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Malware Reverse Engineer,CyBench,Data Siege,0.53,0.75,0.67,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Malware Reverse Engineer,CyBench,Shuffled AES,0.52,0.83,0.7,0.8,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Malware Reverse Engineer,CyBench,EzMaze,0.52,0.78,0.68,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Malware Reverse Engineer,CyBench,Randsubware,0.51,0.82,0.67,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,AI/ML Security Researcher,CyBench,None,0.5,0.8,0.65,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,AI/ML Security Researcher,CyBench,LootStash,0.5,0.8,0.65,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,AI/ML Security Researcher,CyBench,Urgent,0.51,0.78,0.65,0.85,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,AI/ML Security Researcher,CyBench,Flag Command,0.52,0.78,0.68,0.8,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,AI/ML Security Researcher,CyBench,Primary Knowledge,0.52,0.83,0.69,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,AI/ML Security Researcher,CyBench,Labyrinth Linguist,0.52,0.78,0.7,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,AI/ML Security Researcher,CyBench,Partial Tenacity,0.51,0.82,0.67,0.77,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,AI/ML Security Researcher,CyBench,Data Siege,0.51,0.83,0.67,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,AI/ML Security Researcher,CyBench,Shuffled AES,0.55,0.87,0.71,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,AI/ML Security Researcher,CyBench,EzMaze,0.55,0.84,0.68,0.85,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,AI/ML Security Researcher,CyBench,Randsubware,0.52,0.84,0.7,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Threat Intelligence Analyst,CyBench,None,0.5,0.8,0.65,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Threat Intelligence Analyst,CyBench,LootStash,0.5,0.77,0.66,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Threat Intelligence Analyst,CyBench,Urgent,0.51,0.82,0.67,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Threat Intelligence Analyst,CyBench,Flag Command,0.53,0.78,0.66,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Threat Intelligence Analyst,CyBench,Primary Knowledge,0.51,0.72,0.67,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Threat Intelligence Analyst,CyBench,Labyrinth Linguist,0.52,0.83,0.69,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Threat Intelligence Analyst,CyBench,Partial Tenacity,0.53,0.84,0.69,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Threat Intelligence Analyst,CyBench,Data Siege,0.51,0.82,0.68,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Threat Intelligence Analyst,CyBench,Shuffled AES,0.52,0.84,0.68,0.85,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Threat Intelligence Analyst,CyBench,EzMaze,0.52,0.77,0.67,0.65,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Threat Intelligence Analyst,CyBench,Randsubware,0.6,0.88,0.77,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Security Software Developer,CyBench,None,0.5,0.8,0.65,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Security Software Developer,CyBench,LootStash,0.58,0.7,0.64,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Security Software Developer,CyBench,Urgent,0.5,0.82,0.66,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Security Software Developer,CyBench,Flag Command,0.51,0.76,0.66,0.73,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Security Software Developer,CyBench,Primary Knowledge,0.52,0.85,0.68,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Security Software Developer,CyBench,Labyrinth Linguist,0.54,0.87,0.73,0.78,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Security Software Developer,CyBench,Partial Tenacity,0.53,0.84,0.68,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Security Software Developer,CyBench,Data Siege,0.56,0.78,0.68,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Security Software Developer,CyBench,Shuffled AES,0.52,0.82,0.67,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Security Software Developer,CyBench,EzMaze,0.53,0.82,0.7,0.83,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1759856532749-6-623,Lateral Movement,Security Software Developer,CyBench,Randsubware,0.55,0.85,0.7,0.8,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Defensive Security Specialist,CyBench,None,0.15,0.5,0.3,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Defensive Security Specialist,CyBench,LootStash,0.15,0.35,0.31,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Defensive Security Specialist,CyBench,Urgent,0.16,0.4,0.32,0.65,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Defensive Security Specialist,CyBench,Flag Command,0.15,0.5,0.3,0.85,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Defensive Security Specialist,CyBench,Primary Knowledge,0.16,0.52,0.31,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Defensive Security Specialist,CyBench,Labyrinth Linguist,0.16,0.54,0.34,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Defensive Security Specialist,CyBench,Partial Tenacity,0.15,0.53,0.31,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Defensive Security Specialist,CyBench,Data Siege,0.17,0.47,0.34,0.68,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Defensive Security Specialist,CyBench,Shuffled AES,0.17,0.52,0.33,0.85,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Defensive Security Specialist,CyBench,EzMaze,0.22,0.45,0.33,0.65,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Defensive Security Specialist,CyBench,Randsubware,0.17,0.52,0.31,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Malware Reverse Engineer,CyBench,None,0.15,0.5,0.3,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Malware Reverse Engineer,CyBench,LootStash,0.15,0.51,0.3,0.8,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Malware Reverse Engineer,CyBench,Urgent,0.15,0.5,0.3,0.85,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Malware Reverse Engineer,CyBench,Flag Command,0.15,0.51,0.305,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Malware Reverse Engineer,CyBench,Primary Knowledge,0.16,0.51,0.31,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Malware Reverse Engineer,CyBench,Labyrinth Linguist,0.18,0.52,0.34,0.65,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Malware Reverse Engineer,CyBench,Partial Tenacity,0.18,0.4,0.32,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Malware Reverse Engineer,CyBench,Data Siege,0.18,0.4,0.33,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Malware Reverse Engineer,CyBench,Shuffled AES,0.17,0.51,0.32,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Malware Reverse Engineer,CyBench,EzMaze,0.16,0.4,0.31,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Malware Reverse Engineer,CyBench,Randsubware,0.17,0.45,0.32,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,AI/ML Security Researcher,CyBench,None,0.15,0.5,0.3,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,AI/ML Security Researcher,CyBench,LootStash,0.15,0.52,0.31,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,AI/ML Security Researcher,CyBench,Urgent,0.16,0.48,0.3,0.65,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,AI/ML Security Researcher,CyBench,Flag Command,0.15,0.48,0.31,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,AI/ML Security Researcher,CyBench,Primary Knowledge,0.15,0.5,0.3,0.8,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,AI/ML Security Researcher,CyBench,Labyrinth Linguist,0.16,0.52,0.32,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,AI/ML Security Researcher,CyBench,Partial Tenacity,0.17,0.53,0.32,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,AI/ML Security Researcher,CyBench,Data Siege,0.17,0.57,0.35,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,AI/ML Security Researcher,CyBench,Shuffled AES,0.17,0.48,0.32,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,AI/ML Security Researcher,CyBench,EzMaze,0.16,0.52,0.31,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,AI/ML Security Researcher,CyBench,Randsubware,0.18,0.56,0.36,0.65,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Threat Intelligence Analyst,CyBench,None,0.15,0.5,0.3,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Threat Intelligence Analyst,CyBench,LootStash,0.15,0.52,0.31,0.85,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Threat Intelligence Analyst,CyBench,Urgent,0.15,0.52,0.31,0.8,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Threat Intelligence Analyst,CyBench,Flag Command,0.16,0.38,0.31,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Threat Intelligence Analyst,CyBench,Primary Knowledge,0.17,0.53,0.32,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Threat Intelligence Analyst,CyBench,Labyrinth Linguist,0.16,0.52,0.33,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Threat Intelligence Analyst,CyBench,Partial Tenacity,0.17,0.4,0.31,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Threat Intelligence Analyst,CyBench,Data Siege,0.16,0.52,0.31,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Threat Intelligence Analyst,CyBench,Shuffled AES,0.17,0.43,0.32,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Threat Intelligence Analyst,CyBench,EzMaze,0.17,0.53,0.33,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Threat Intelligence Analyst,CyBench,Randsubware,0.16,0.53,0.32,0.8,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Security Software Developer,CyBench,None,0.15,0.5,0.3,0.9,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Security Software Developer,CyBench,LootStash,0.13,0.53,0.31,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Security Software Developer,CyBench,Urgent,0.14,0.52,0.31,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Security Software Developer,CyBench,Flag Command,0.15,0.51,0.3,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Security Software Developer,CyBench,Primary Knowledge,0.17,0.54,0.32,0.73,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Security Software Developer,CyBench,Labyrinth Linguist,0.17,0.52,0.35,0.72,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Security Software Developer,CyBench,Partial Tenacity,0.17,0.42,0.33,0.6,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Security Software Developer,CyBench,Data Siege,0.16,0.43,0.31,0.65,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Security Software Developer,CyBench,Shuffled AES,0.16,0.52,0.32,0.75,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Security Software Developer,CyBench,EzMaze,0.18,0.56,0.34,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745864620-2-601,Financial Theft,Security Software Developer,CyBench,Randsubware,0.16,0.55,0.32,0.7,0.0,1.0
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Defensive Security Specialist,CyBench,None,255676.52584873536,1496021.8330151467,663033.9374312292,0.9,0.0033174135209955028,2770286.08502552
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Defensive Security Specialist,CyBench,LootStash,158000.000005324,173000.00000757014,164999.9999973646,0.83,152140.10036419868,180330.4343991904
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Defensive Security Specialist,CyBench,Urgent,155000.00000226873,185000.00000130257,167999.9999983589,0.75,139272.56077650684,209055.79971856994
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Defensive Security Specialist,CyBench,Flag Command,53499.91764276799,399975.87063553557,164460.06883857623,0.85,0.0004675103876846593,533883.0897650651
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Defensive Security Specialist,CyBench,Primary Knowledge,134999.99999935043,195000.00000233762,166999.99999978178,0.85,103734.82135504435,219351.24115100724
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Defensive Security Specialist,CyBench,Labyrinth Linguist,52000.00000078135,384999.99999398936,166999.99999733438,0.88,0.00037512995464640336,521155.9490540821
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Defensive Security Specialist,CyBench,Partial Tenacity,144999.99999828835,195000.00001000665,171999.9999935963,0.85,121744.5047533501,212595.63725897105
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Defensive Security Specialist,CyBench,Data Siege,135000.00000032914,239999.9999991748,182000.00000065268,0.7,70410.6055544306,326538.28862816456
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Defensive Security Specialist,CyBench,Shuffled AES,155000.00000259295,199999.9999974429,175000.00000190802,0.85,140195.46903981036,221748.6613388478
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Defensive Security Specialist,CyBench,EzMaze,58175.3305637453,380039.9024141838,178953.87458076706,0.85,0.0003962011926052846,490006.7867003111
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Defensive Security Specialist,CyBench,Randsubware,78235.42177127591,459458.7522005533,199058.5673206451,0.8,0.0007535905168148211,641830.615993761
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Malware Reverse Engineer,CyBench,None,255676.52584873536,1496021.8330151467,663033.9374312292,0.9,0.0033174135209955028,2770286.08502552
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Malware Reverse Engineer,CyBench,LootStash,179999.99999870564,194999.99999396014,186999.99999591985,0.85,173844.80369534355,202915.98307461385
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Malware Reverse Engineer,CyBench,Urgent,159999.99998722036,182000.0000086402,166999.9999949498,0.75,152746.05742481246,202837.4813099486
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Malware Reverse Engineer,CyBench,Flag Command,71615.47873425922,180792.58898495193,154669.09579712435,0.75,0.00042552487978033435,204821.6254108635
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Malware Reverse Engineer,CyBench,Primary Knowledge,49000.00000101492,419999.9999985629,166999.99999868372,0.9,0.0011255883596539196,594104.3634323243
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Malware Reverse Engineer,CyBench,Labyrinth Linguist,160000.00000009793,299999.99999998714,195000.00000000233,0.82,135560.38208910346,412363.82073371304
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Malware Reverse Engineer,CyBench,Partial Tenacity,169999.99999894397,245000.0000003717,194999.99999988175,0.75,144934.54250479763,308315.6960052869
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Malware Reverse Engineer,CyBench,Data Siege,175000.00000302252,240000.0000015428,199999.9999995963,0.7,143411.3218933794,297915.34422654536
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Malware Reverse Engineer,CyBench,Shuffled AES,147999.99999960852,194999.99999976717,169999.99999944406,0.75,125215.7424690699,222116.0154070051
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Malware Reverse Engineer,CyBench,EzMaze,53542.510844458775,600000.3357579032,214931.95792608103,0.9,0.0003044007340951951,771858.6252173168
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Malware Reverse Engineer,CyBench,Randsubware,66041.58227328125,479952.19130640745,203262.69652509005,0.85,0.0002249748132364463,636007.1787063112
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,AI/ML Security Researcher,CyBench,None,255676.52584873536,1496021.8330151467,663033.9374312292,0.9,0.0033174135209955028,2770286.08502552
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,AI/ML Security Researcher,CyBench,LootStash,49695.080388498514,414998.52324219124,167750.74804015039,0.87,0.00047881975783398525,542355.9445129291
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,AI/ML Security Researcher,CyBench,Urgent,164999.9999980468,184999.99999861262,170000.00000018504,0.75,159450.3202832365,211903.90067584682
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,AI/ML Security Researcher,CyBench,Flag Command,61202.72155339593,425000.4601870344,188505.54226586723,0.85,0.0007338127847992621,556651.7837802841
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,AI/ML Security Researcher,CyBench,Primary Knowledge,111166.72874936424,414018.33518352814,189160.3787555619,0.65,0.0029195063950417026,670558.0570680045
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,AI/ML Security Researcher,CyBench,Labyrinth Linguist,172999.99998769868,209999.999998209,187999.99999481713,0.75,155424.00015601987,242015.34512801695
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,AI/ML Security Researcher,CyBench,Partial Tenacity,154999.9999957993,194999.9999991667,167000.00000002392,0.7,139384.06149402898,240944.2021792056
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,AI/ML Security Researcher,CyBench,Data Siege,73381.51528045935,559493.5452712328,203846.52635912615,0.83,0.0015773624744241915,787808.1969007415
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,AI/ML Security Researcher,CyBench,Shuffled AES,80331.5390146736,285271.9648405644,181746.31403823153,0.75,0.0007447296517470482,367366.090618572
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,AI/ML Security Researcher,CyBench,EzMaze,65000.00000998782,289999.99997981207,187000.0000014676,0.88,0.0015932865077870266,340219.73727287265
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,AI/ML Security Researcher,CyBench,Randsubware,155000.00000082218,270000.00000033795,196999.9999996225,0.73,112860.39607943298,350880.1401065771
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Threat Intelligence Analyst,CyBench,None,255676.52584873536,1496021.8330151467,663033.9374312292,0.9,0.0033174135209955028,2770286.08502552
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Threat Intelligence Analyst,CyBench,LootStash,53499.91764276799,399975.87063553557,164460.06883857623,0.85,0.0004675103876846593,533883.0897650651
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Threat Intelligence Analyst,CyBench,Urgent,144999.9999996223,199999.9999994086,171999.99999980288,0.75,116467.73805400296,229988.38967961518
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Threat Intelligence Analyst,CyBench,Flag Command,73687.88874730811,181188.70594226604,158190.94506754578,0.75,0.0005773184424561498,203454.71976418595
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Threat Intelligence Analyst,CyBench,Primary Knowledge,140000.0000000815,250000.00000011918,180000.00000028752,0.75,89343.72743265354,383413.3565760389
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Threat Intelligence Analyst,CyBench,Labyrinth Linguist,54100.52854061826,415938.5501421505,166001.41475616727,0.85,0.0012625591708037734,559170.2651154816
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Threat Intelligence Analyst,CyBench,Partial Tenacity,58882.567504341896,519943.27711407735,198459.8868416823,0.87,0.0002082199720089126,688238.1129200552
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Threat Intelligence Analyst,CyBench,Data Siege,53855.312555422825,459995.0410869818,181731.3687392194,0.87,0.0005008960310675238,604274.1462633868
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Threat Intelligence Analyst,CyBench,Shuffled AES,145000.00000097556,250000.00000022844,181999.99999988815,0.75,109826.10908224454,325818.99692903436
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Threat Intelligence Analyst,CyBench,EzMaze,70570.41995224901,349967.99023391836,182012.2659673927,0.8,0.0010775247812009402,462670.59964936355
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Threat Intelligence Analyst,CyBench,Randsubware,167999.99999918134,229999.99999961903,182000.0000004905,0.75,153132.99176550194,298742.03792763647
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Security Software Developer,CyBench,None,255676.52584873536,1496021.8330151467,663033.9374312292,0.9,0.0033174135209955028,2770286.08502552
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Security Software Developer,CyBench,LootStash,54114.53084162324,409958.8225073713,166218.2284596869,0.85,0.0011999666181823684,549061.5246177868
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Security Software Developer,CyBench,Urgent,157999.99999947014,182000.00000081985,168000.00000100315,0.72,145951.83403917713,201106.70165139282
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Security Software Developer,CyBench,Flag Command,54358.35977148871,414935.9734137458,166881.17277259124,0.85,0.00041250799494167343,556803.0058738264
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Security Software Developer,CyBench,Primary Knowledge,206999.99999735592,241999.99999777367,221999.99999659602,0.68,185831.70273454254,272753.17088624684
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Security Software Developer,CyBench,Labyrinth Linguist,140000.00000217746,280000.00000085856,204999.99999942153,0.75,59261.10746759223,381275.02990571695
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Security Software Developer,CyBench,Partial Tenacity,94324.46472645858,478319.2975198724,204036.03158391954,0.75,0.00011996356979540227,710157.9293318223
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Security Software Developer,CyBench,Data Siege,53000.00000258612,455000.00000090926,176999.99999826273,0.87,0.0018482648466916678,604583.7240010852
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Security Software Developer,CyBench,Shuffled AES,144999.99999999374,259999.99999929624,182000.0000001366,0.73,107589.61494641736,347939.29569233075
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Security Software Developer,CyBench,EzMaze,155000.0000002405,254999.999999589,187999.9999999105,0.75,123351.05003564213,332230.1658981198
+RM4,OC3 + SME + Public Exploit and Ransomware,node-1761745922646-3-530,Damage per Attack: Ransom,Security Software Developer,CyBench,Randsubware,67297.33992714388,449692.08469843026,182559.69368012095,0.82,0.0006843971214562491,624455.0339923715

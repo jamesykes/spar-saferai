@@ -1,0 +1,1101 @@
+model_id,model_name,node_id,node_name,expert,benchmark,benchmark_task,low_ci,high_ci,mode,confidence,min,max
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Defensive Security Specialist,BountyBench,None,0.8,0.9,0.85,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Defensive Security Specialist,BountyBench,Agentscope,0.8,0.88,0.85,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Defensive Security Specialist,BountyBench,Imaginairy,0.81,0.89,0.85,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Defensive Security Specialist,BountyBench,librechat,0.798,0.903,0.852,0.87,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Defensive Security Specialist,BountyBench,Paddle,0.8,0.89,0.85,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Defensive Security Specialist,BountyBench,fastAPI,0.81,0.88,0.86,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Defensive Security Specialist,BountyBench,MLFlow0,0.8,0.89,0.86,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Defensive Security Specialist,BountyBench,cURL,0.8,0.91,0.86,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Defensive Security Specialist,BountyBench,gunicorn,0.8,0.91,0.87,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Defensive Security Specialist,BountyBench,MLFlow1,0.81,0.9,0.86,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Defensive Security Specialist,BountyBench,pytorchLightning,0.8,0.91,0.86,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Malware Reverse Engineer,BountyBench,None,0.8,0.9,0.85,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Malware Reverse Engineer,BountyBench,Agentscope,0.8,0.9,0.85,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Malware Reverse Engineer,BountyBench,Imaginairy,0.8,0.91,0.855,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Malware Reverse Engineer,BountyBench,librechat,0.8,0.9,0.85,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Malware Reverse Engineer,BountyBench,Paddle,0.8,0.86,0.85,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Malware Reverse Engineer,BountyBench,fastAPI,0.8,0.92,0.86,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Malware Reverse Engineer,BountyBench,MLFlow0,0.8,0.9,0.85,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Malware Reverse Engineer,BountyBench,cURL,0.803,0.906,0.854,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Malware Reverse Engineer,BountyBench,gunicorn,0.81,0.9,0.86,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Malware Reverse Engineer,BountyBench,MLFlow1,0.79,0.91,0.85,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Malware Reverse Engineer,BountyBench,pytorchLightning,0.8,0.91,0.86,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,AI/ML Security Researcher,BountyBench,None,0.8,0.9,0.85,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,AI/ML Security Researcher,BountyBench,Agentscope,0.8,0.89,0.85,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,AI/ML Security Researcher,BountyBench,Imaginairy,0.8,0.9,0.85,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,AI/ML Security Researcher,BountyBench,librechat,0.8,0.915,0.855,0.87,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,AI/ML Security Researcher,BountyBench,Paddle,0.8,0.87,0.85,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,AI/ML Security Researcher,BountyBench,fastAPI,0.8,0.905,0.853,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,AI/ML Security Researcher,BountyBench,MLFlow0,0.81,0.88,0.855,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,AI/ML Security Researcher,BountyBench,cURL,0.8,0.92,0.87,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,AI/ML Security Researcher,BountyBench,gunicorn,0.81,0.91,0.87,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,AI/ML Security Researcher,BountyBench,MLFlow1,0.81,0.91,0.86,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,AI/ML Security Researcher,BountyBench,pytorchLightning,0.81,0.92,0.87,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Threat Intelligence Analyst,BountyBench,None,0.8,0.9,0.85,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Threat Intelligence Analyst,BountyBench,Agentscope,0.8,0.91,0.85,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Threat Intelligence Analyst,BountyBench,Imaginairy,0.8,0.9,0.85,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Threat Intelligence Analyst,BountyBench,librechat,0.8,0.91,0.85,0.88,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Threat Intelligence Analyst,BountyBench,Paddle,0.8,0.89,0.86,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Threat Intelligence Analyst,BountyBench,fastAPI,0.81,0.88,0.855,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Threat Intelligence Analyst,BountyBench,MLFlow0,0.803,0.88,0.852,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Threat Intelligence Analyst,BountyBench,cURL,0.81,0.88,0.86,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Threat Intelligence Analyst,BountyBench,gunicorn,0.83,0.89,0.87,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Threat Intelligence Analyst,BountyBench,MLFlow1,0.8,0.9,0.85,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Threat Intelligence Analyst,BountyBench,pytorchLightning,0.81,0.91,0.87,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Security Software Developer,BountyBench,None,0.8,0.9,0.85,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Security Software Developer,BountyBench,Agentscope,0.8,0.9,0.85,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Security Software Developer,BountyBench,Imaginairy,0.81,0.89,0.85,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Security Software Developer,BountyBench,librechat,0.8,0.88,0.85,0.82,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Security Software Developer,BountyBench,Paddle,0.805,0.88,0.855,0.78,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Security Software Developer,BountyBench,fastAPI,0.8,0.92,0.86,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Security Software Developer,BountyBench,MLFlow0,0.8,0.903,0.851,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Security Software Developer,BountyBench,cURL,0.81,0.91,0.86,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Security Software Developer,BountyBench,gunicorn,0.81,0.88,0.86,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Security Software Developer,BountyBench,MLFlow1,0.8,0.88,0.86,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758552529633-2-398,Execution,Security Software Developer,BountyBench,pytorchLightning,0.81,0.9,0.86,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Defensive Security Specialist,BountyBench,None,0.75,0.95,0.8,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Defensive Security Specialist,BountyBench,Agentscope,0.75,0.96,0.8,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Defensive Security Specialist,BountyBench,Imaginairy,0.74,0.96,0.8,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Defensive Security Specialist,BountyBench,librechat,0.77,0.85,0.81,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Defensive Security Specialist,BountyBench,Paddle,0.76,0.85,0.81,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Defensive Security Specialist,BountyBench,fastAPI,0.76,0.95,0.81,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Defensive Security Specialist,BountyBench,MLFlow0,0.76,0.96,0.81,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Defensive Security Specialist,BountyBench,cURL,0.75,0.82,0.805,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Defensive Security Specialist,BountyBench,gunicorn,0.75,0.96,0.81,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Defensive Security Specialist,BountyBench,MLFlow1,0.76,0.87,0.82,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Defensive Security Specialist,BountyBench,pytorchLightning,0.77,0.89,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Malware Reverse Engineer,BountyBench,None,0.75,0.95,0.8,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Malware Reverse Engineer,BountyBench,Agentscope,0.76,0.84,0.8,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Malware Reverse Engineer,BountyBench,Imaginairy,0.75,0.83,0.8,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Malware Reverse Engineer,BountyBench,librechat,0.75,0.84,0.8,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Malware Reverse Engineer,BountyBench,Paddle,0.74,0.96,0.8,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Malware Reverse Engineer,BountyBench,fastAPI,0.75,0.95,0.81,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Malware Reverse Engineer,BountyBench,MLFlow0,0.75,0.95,0.8,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Malware Reverse Engineer,BountyBench,cURL,0.74,0.91,0.8,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Malware Reverse Engineer,BountyBench,gunicorn,0.76,0.93,0.83,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Malware Reverse Engineer,BountyBench,MLFlow1,0.75,0.87,0.81,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Malware Reverse Engineer,BountyBench,pytorchLightning,0.72,0.97,0.81,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,AI/ML Security Researcher,BountyBench,None,0.75,0.95,0.8,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,AI/ML Security Researcher,BountyBench,Agentscope,0.76,0.84,0.81,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,AI/ML Security Researcher,BountyBench,Imaginairy,0.76,0.84,0.815,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,AI/ML Security Researcher,BountyBench,librechat,0.76,0.85,0.81,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,AI/ML Security Researcher,BountyBench,Paddle,0.76,0.95,0.81,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,AI/ML Security Researcher,BountyBench,fastAPI,0.76,0.93,0.83,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,AI/ML Security Researcher,BountyBench,MLFlow0,0.75,0.96,0.81,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,AI/ML Security Researcher,BountyBench,cURL,0.77,0.88,0.83,0.73,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,AI/ML Security Researcher,BountyBench,gunicorn,0.76,0.95,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,AI/ML Security Researcher,BountyBench,MLFlow1,0.75,0.96,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,AI/ML Security Researcher,BountyBench,pytorchLightning,0.75,0.96,0.83,0.73,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Threat Intelligence Analyst,BountyBench,None,0.75,0.95,0.8,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Threat Intelligence Analyst,BountyBench,Agentscope,0.76,0.94,0.81,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Threat Intelligence Analyst,BountyBench,Imaginairy,0.75,0.96,0.8,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Threat Intelligence Analyst,BountyBench,librechat,0.76,0.86,0.83,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Threat Intelligence Analyst,BountyBench,Paddle,0.75,0.95,0.8,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Threat Intelligence Analyst,BountyBench,fastAPI,0.76,0.88,0.82,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Threat Intelligence Analyst,BountyBench,MLFlow0,0.77,0.93,0.82,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Threat Intelligence Analyst,BountyBench,cURL,0.75,0.93,0.805,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Threat Intelligence Analyst,BountyBench,gunicorn,0.77,0.91,0.82,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Threat Intelligence Analyst,BountyBench,MLFlow1,0.75,0.96,0.81,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Threat Intelligence Analyst,BountyBench,pytorchLightning,0.76,0.96,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Security Software Developer,BountyBench,None,0.75,0.95,0.8,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Security Software Developer,BountyBench,Agentscope,0.74,0.93,0.805,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Security Software Developer,BountyBench,Imaginairy,0.74,0.96,0.815,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Security Software Developer,BountyBench,librechat,0.75,0.97,0.82,0.78,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Security Software Developer,BountyBench,Paddle,0.74,0.95,0.8,0.87,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Security Software Developer,BountyBench,fastAPI,0.74,0.96,0.8,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Security Software Developer,BountyBench,MLFlow0,0.76,0.95,0.81,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Security Software Developer,BountyBench,cURL,0.755,0.965,0.815,0.68,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Security Software Developer,BountyBench,gunicorn,0.755,0.96,0.815,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Security Software Developer,BountyBench,MLFlow1,0.77,0.96,0.83,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758553529063-4-293,Persistence,Security Software Developer,BountyBench,pytorchLightning,0.77,0.91,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Defensive Security Specialist,CyBench,None,0.6,0.9,0.8,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Defensive Security Specialist,CyBench,LootStash,0.6,0.9,0.8,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Defensive Security Specialist,CyBench,Urgent,0.6,0.91,0.8,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Defensive Security Specialist,CyBench,Flag Command,0.59,0.92,0.81,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Defensive Security Specialist,CyBench,Primary Knowledge,0.6,0.91,0.81,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Defensive Security Specialist,CyBench,Labyrinth Linguist,0.61,0.91,0.82,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Defensive Security Specialist,CyBench,Partial Tenacity,0.6,0.87,0.83,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Defensive Security Specialist,CyBench,Data Siege,0.62,0.88,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Defensive Security Specialist,CyBench,Shuffled AES,0.61,0.91,0.82,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Defensive Security Specialist,CyBench,EzMaze,0.77,0.87,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Defensive Security Specialist,CyBench,Randsubware,0.61,0.92,0.83,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Malware Reverse Engineer,CyBench,None,0.6,0.9,0.8,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Malware Reverse Engineer,CyBench,LootStash,0.6,0.9,0.8,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Malware Reverse Engineer,CyBench,Urgent,0.63,0.88,0.81,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Malware Reverse Engineer,CyBench,Flag Command,0.6,0.82,0.81,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Malware Reverse Engineer,CyBench,Primary Knowledge,0.59,0.85,0.8,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Malware Reverse Engineer,CyBench,Labyrinth Linguist,0.78,0.83,0.81,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Malware Reverse Engineer,CyBench,Partial Tenacity,0.62,0.88,0.81,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Malware Reverse Engineer,CyBench,Data Siege,0.62,0.91,0.83,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Malware Reverse Engineer,CyBench,Shuffled AES,0.61,0.91,0.82,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Malware Reverse Engineer,CyBench,EzMaze,0.61,0.91,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Malware Reverse Engineer,CyBench,Randsubware,0.62,0.94,0.83,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,AI/ML Security Researcher,CyBench,None,0.6,0.9,0.8,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,AI/ML Security Researcher,CyBench,LootStash,0.6,0.91,0.81,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,AI/ML Security Researcher,CyBench,Urgent,0.6,0.82,0.8,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,AI/ML Security Researcher,CyBench,Flag Command,0.6,0.86,0.8,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,AI/ML Security Researcher,CyBench,Primary Knowledge,0.6,0.9,0.8,0.87,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,AI/ML Security Researcher,CyBench,Labyrinth Linguist,0.64,0.92,0.83,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,AI/ML Security Researcher,CyBench,Partial Tenacity,0.61,0.91,0.81,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,AI/ML Security Researcher,CyBench,Data Siege,0.63,0.9,0.83,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,AI/ML Security Researcher,CyBench,Shuffled AES,0.61,0.92,0.82,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,AI/ML Security Researcher,CyBench,EzMaze,0.6,0.9,0.8,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,AI/ML Security Researcher,CyBench,Randsubware,0.67,0.93,0.85,0.78,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Threat Intelligence Analyst,CyBench,None,0.6,0.9,0.8,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Threat Intelligence Analyst,CyBench,LootStash,0.6,0.9,0.8,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Threat Intelligence Analyst,CyBench,Urgent,0.61,0.87,0.81,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Threat Intelligence Analyst,CyBench,Flag Command,0.79,0.83,0.81,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Threat Intelligence Analyst,CyBench,Primary Knowledge,0.6,0.9,0.8,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Threat Intelligence Analyst,CyBench,Labyrinth Linguist,0.61,0.93,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Threat Intelligence Analyst,CyBench,Partial Tenacity,0.62,0.92,0.82,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Threat Intelligence Analyst,CyBench,Data Siege,0.63,0.95,0.84,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Threat Intelligence Analyst,CyBench,Shuffled AES,0.62,0.91,0.82,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Threat Intelligence Analyst,CyBench,EzMaze,0.62,0.91,0.83,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Threat Intelligence Analyst,CyBench,Randsubware,0.61,0.91,0.81,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Security Software Developer,CyBench,None,0.6,0.9,0.8,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Security Software Developer,CyBench,LootStash,0.6,0.9,0.8,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Security Software Developer,CyBench,Urgent,0.6,0.91,0.81,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Security Software Developer,CyBench,Flag Command,0.6,0.9,0.8,0.88,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Security Software Developer,CyBench,Primary Knowledge,0.63,0.87,0.81,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Security Software Developer,CyBench,Labyrinth Linguist,0.61,0.92,0.815,0.82,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Security Software Developer,CyBench,Partial Tenacity,0.61,0.87,0.82,0.73,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Security Software Developer,CyBench,Data Siege,0.61,0.91,0.81,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Security Software Developer,CyBench,Shuffled AES,0.61,0.92,0.81,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Security Software Developer,CyBench,EzMaze,0.63,0.92,0.86,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758555035714-7-445,Exfiltration,Security Software Developer,CyBench,Randsubware,0.62,0.91,0.83,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,None,0.9946017804325978,6.998761865170518,3.000617972975669,0.9,0.46666666666666634,8.066666666666668
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,Agentscope,2.072028474263604,5.0116550977742715,2.9881113596231823,0.75,1.4133333333333336,6.173333333333334
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,Imaginairy,1.2622958646721798,5.140462461011542,2.914482617649609,0.75,0.0,6.84
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,librechat,1.4192516568467313,6.074353019466094,2.910878107909739,0.7,0.0,8.571428571428571
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,Paddle,0.9640539917979831,5.983611397892634,3.0093305415737417,0.85,0.011764705882352455,7.4823529411764715
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,fastAPI,1.2558078130889585,7.0323830877555,2.9601187208506166,0.75,0.0,9.346666666666668
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,MLFlow0,1.7015973790702914,6.994601029935058,2.885032934544411,0.65,0.0,10.52820512820513
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,cURL,1.6410974184334646,7.246428113153358,3.8238333353137444,0.75,0.0,9.76
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,gunicorn,1.6410974184334646,7.246428113153358,3.8238333353137444,0.75,0.0,9.76
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,MLFlow1,1.8886772384224764,8.133206529445648,3.8117620345557754,0.7,0.0,11.657142857142858
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Defensive Security Specialist,BountyBench,pytorchLightning,2.0488847973031845,7.0187087170652624,3.9863000363419276,0.7,0.28571428571428514,9.571428571428571
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,None,0.9946017804325978,6.998761865170518,3.000617972975669,0.9,0.46666666666666634,8.066666666666668
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,Agentscope,1.9999977954508186,4.000002434770526,3.0000002195583493,0.85,1.3058823529411763,4.694117647058824
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,Imaginairy,3.059907959459326,3.9400762657939046,3.000110779286218,0.88,2.9999,4.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,librechat,2.072028474263604,5.0116550977742715,2.9881113596231823,0.75,1.4133333333333336,6.173333333333334
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,Paddle,1.167782771917355,5.109871139090718,2.938724734231928,0.8,0.0,6.6
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,fastAPI,1.0128546188703484,7.002875962239937,2.9983990779395495,0.88,0.3939393939393936,8.212121212121215
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,MLFlow0,1.6548341006720189,8.150260855860424,3.8571871757842313,0.75,0.0,11.108571428571429
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,cURL,1.5576479744508842,7.990701369516277,2.930000125691514,0.7,0.0,11.142857142857144
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,gunicorn,1.2622958646721798,5.140462461011542,2.914482617649609,0.75,0.0,6.84
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,MLFlow1,1.3125767206108634,8.012029810847084,2.964465137965857,0.75,0.01714285714285735,10.457142857142856
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Malware Reverse Engineer,BountyBench,pytorchLightning,2.0625741832977456,5.16522518794058,3.953034352421903,0.6,0.0,6.733333333333334
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,None,0.9946017804325978,6.998761865170518,3.000617972975669,0.9,0.46666666666666634,8.066666666666668
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,Agentscope,1.0409552763846563,7.0085613365307955,2.9945420192031054,0.85,0.2784313725490195,8.443137254901963
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,Imaginairy,1.0409552763846563,7.0085613365307955,2.9945420192031054,0.85,0.2784313725490195,8.443137254901963
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,librechat,2.072028474263604,5.0116550977742715,2.9881113596231823,0.75,1.4133333333333336,6.173333333333334
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,Paddle,2.1336767564759285,5.014202535759264,2.974302848597106,0.65,1.117948717948718,6.764102564102565
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,fastAPI,2.072028474263604,5.0116550977742715,2.9881113596231823,0.75,1.4133333333333336,6.173333333333334
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,MLFlow0,1.0409552763846563,7.0085613365307955,2.9945420192031054,0.85,0.2784313725490195,8.443137254901963
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,cURL,2.231675326676769,9.00306792182792,3.7813691202732147,0.65,0.0,13.826923076923077
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,gunicorn,1.0128546188703484,7.002875962239937,2.9983990779395495,0.88,0.3939393939393936,8.212121212121215
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,MLFlow1,1.9498397935358414,9.062619051407694,3.8332561702128816,0.7,0.0,13.035714285714286
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,AI/ML Security Researcher,BountyBench,pytorchLightning,3.1013698256504565,6.01368320951525,3.981828039358976,0.7,2.276190476190476,7.447619047619049
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,None,0.9946017804325978,6.998761865170518,3.000617972975669,0.9,0.46666666666666634,8.066666666666668
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,Agentscope,1.999996468543955,4.000002810437897,2.9999993163439216,0.75,1.08,4.92
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,Imaginairy,1.0128546188703484,7.002875962239937,2.9983990779395495,0.88,0.3939393939393936,8.212121212121215
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,librechat,1.4758301118227177,7.027064386331213,2.92410734990499,0.7,0.0,9.895238095238097
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,Paddle,2.1013698256504565,5.01368320951525,2.981828039358976,0.7,1.276190476190476,6.447619047619049
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,fastAPI,1.0904038515810262,7.016881951872645,2.9864335846950003,0.8,0.06666666666666643,8.866666666666667
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,MLFlow0,1.4758301118227177,7.027064386331213,2.92410734990499,0.7,0.0,9.895238095238097
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,cURL,1.2558078130889585,7.0323830877555,2.9601187208506166,0.75,0.0,9.346666666666668
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,gunicorn,1.3808230534138317,5.15876371652384,2.8874441357397904,0.7,0.0,7.114285714285715
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,MLFlow1,1.999996468543955,4.000002810437897,2.9999993163439216,0.75,1.08,4.92
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Threat Intelligence Analyst,BountyBench,pytorchLightning,1.945427078483706,8.967673348113152,5.017936105305476,0.85,0.34621848739495675,11.205042016806724
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,None,0.9946017804325978,6.998761865170518,3.000617972975669,0.9,0.46666666666666634,8.066666666666668
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,Agentscope,1.095933120597864,5.073965749088232,2.960503861996119,0.85,0.0,6.3882352941176475
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,Imaginairy,1.0409552763846563,7.0085613365307955,2.9945420192031054,0.85,0.2784313725490195,8.443137254901963
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,librechat,2.072028474263604,5.0116550977742715,2.9881113596231823,0.75,1.4133333333333336,6.173333333333334
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,Paddle,1.167782771917355,5.109871139090718,2.938724734231928,0.8,0.0,6.6
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,fastAPI,1.999996468543955,4.000002810437897,2.9999993163439216,0.75,1.08,4.92
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,MLFlow0,1.3125767206108634,8.012029810847084,2.964465137965857,0.75,0.01714285714285735,10.457142857142856
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,cURL,1.6548341006720189,8.150260855860424,3.8571871757842313,0.75,0.0,11.108571428571429
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,gunicorn,1.1736069786078016,8.014974984868573,2.987061108910976,0.85,0.46890756302520975,9.327731092436975
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,MLFlow1,2.1736069786078014,9.014974984868573,3.987061108910976,0.85,1.4689075630252098,10.327731092436975
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758556505333-9-131,Number of Attempts per Actor,Security Software Developer,BountyBench,pytorchLightning,1.9999929746626197,6.000008978676884,4.000001858069853,0.9,0.7999999999999998,7.2
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Defensive Security Specialist,BountyBench,None,2.9398480832030005,7.97140735714326,5.015167041070389,0.9,2.1999999999999997,9.2
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Defensive Security Specialist,BountyBench,Agentscope,2.964053991797983,7.983611397892634,5.009330541573742,0.85,2.0117647058823525,9.482352941176472
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Defensive Security Specialist,BountyBench,Imaginairy,2.9398480832030005,7.97140735714326,5.015167041070389,0.9,2.1999999999999997,9.2
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Defensive Security Specialist,BountyBench,librechat,2.9895555174224953,7.995484847568893,5.00278410153175,0.8,1.7999999999999994,9.8
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Defensive Security Specialist,BountyBench,Paddle,2.9398480832030005,7.97140735714326,5.015167041070389,0.9,2.1999999999999997,9.2
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Defensive Security Specialist,BountyBench,fastAPI,3.0409552763846563,9.008561336530796,4.994542019203106,0.85,2.2784313725490195,10.443137254901963
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Defensive Security Specialist,BountyBench,MLFlow0,4.017528181672503,9.007195937937347,5.995169092647011,0.75,2.5599999999999996,11.16
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Defensive Security Specialist,BountyBench,cURL,3.017528181672503,8.007195937937347,4.995169092647011,0.75,1.5599999999999996,10.16
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Defensive Security Specialist,BountyBench,gunicorn,2.964053991797983,7.983611397892634,5.009330541573742,0.85,2.0117647058823525,9.482352941176472
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Defensive Security Specialist,BountyBench,MLFlow1,2.999995590901637,7.000004869541052,5.000000439116699,0.85,1.6117647058823525,8.388235294117647
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Defensive Security Specialist,BountyBench,pytorchLightning,2.99999293708791,7.000005620875792,4.999998632687843,0.75,1.1600000000000001,8.84
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Malware Reverse Engineer,BountyBench,None,2.9398480832030005,7.97140735714326,5.015167041070389,0.9,2.1999999999999997,9.2
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Malware Reverse Engineer,BountyBench,Agentscope,2.9398480832030005,7.97140735714326,5.015167041070389,0.9,2.1999999999999997,9.2
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Malware Reverse Engineer,BountyBench,Imaginairy,2.9398480832030005,7.97140735714326,5.015167041070389,0.9,2.1999999999999997,9.2
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Malware Reverse Engineer,BountyBench,librechat,3.0904038515810264,9.016881951872644,4.986433584695,0.8,2.0666666666666664,10.866666666666667
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Malware Reverse Engineer,BountyBench,Paddle,2.964053991797983,7.983611397892634,5.009330541573742,0.85,2.0117647058823525,9.482352941176472
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Malware Reverse Engineer,BountyBench,fastAPI,3.0488847973031845,8.018708717065262,4.986300036341928,0.7,1.2857142857142851,10.571428571428571
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Malware Reverse Engineer,BountyBench,MLFlow0,2.9398480832030005,7.97140735714326,5.015167041070389,0.9,2.1999999999999997,9.2
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Malware Reverse Engineer,BountyBench,cURL,3.017528181672503,8.007195937937347,4.995169092647011,0.75,1.5599999999999996,10.16
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Malware Reverse Engineer,BountyBench,gunicorn,3.202739651300913,9.0273664190305,4.963656078717952,0.7,1.5523809523809522,11.895238095238097
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Malware Reverse Engineer,BountyBench,MLFlow1,2.999989405631865,9.000008431313688,5.999997949031764,0.75,0.2400000000000002,11.76
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Malware Reverse Engineer,BountyBench,pytorchLightning,2.9999933863524557,9.000007304311577,6.000000658675048,0.85,0.9176470588235288,11.08235294117647
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,AI/ML Security Researcher,BountyBench,None,2.9398480832030005,7.97140735714326,5.015167041070389,0.9,2.1999999999999997,9.2
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,AI/ML Security Researcher,BountyBench,Agentscope,2.9398480832030005,7.97140735714326,5.015167041070389,0.9,2.1999999999999997,9.2
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,AI/ML Security Researcher,BountyBench,Imaginairy,2.964053991797983,7.983611397892634,5.009330541573742,0.85,2.0117647058823525,9.482352941176472
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,AI/ML Security Researcher,BountyBench,librechat,3.000016818361969,6.999994799355928,5.000011058623923,0.8,1.4,8.6
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,AI/ML Security Researcher,BountyBench,Paddle,2.99999293708791,7.000005620875792,4.999998632687843,0.75,1.1600000000000001,8.84
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,AI/ML Security Researcher,BountyBench,fastAPI,2.964053991797983,7.983611397892634,5.009330541573742,0.85,2.0117647058823525,9.482352941176472
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,AI/ML Security Researcher,BountyBench,MLFlow0,3.017528181672503,8.007195937937347,4.995169092647011,0.75,1.5599999999999996,10.16
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,AI/ML Security Researcher,BountyBench,cURL,3.99999293708791,8.000005620875793,5.999998632687843,0.75,2.16,9.84
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,AI/ML Security Researcher,BountyBench,gunicorn,2.964053991797983,7.983611397892634,5.009330541573742,0.85,2.0117647058823525,9.482352941176472
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,AI/ML Security Researcher,BountyBench,MLFlow1,3.017528181672503,8.007195937937347,4.995169092647011,0.75,1.5599999999999996,10.16
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,AI/ML Security Researcher,BountyBench,pytorchLightning,2.9895555174224953,7.995484847568893,5.00278410153175,0.8,1.7999999999999994,9.8
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Threat Intelligence Analyst,BountyBench,None,2.9398480832030005,7.97140735714326,5.015167041070389,0.9,2.1999999999999997,9.2
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Threat Intelligence Analyst,BountyBench,Agentscope,2.964053991797983,7.983611397892634,5.009330541573742,0.85,2.0117647058823525,9.482352941176472
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Threat Intelligence Analyst,BountyBench,Imaginairy,2.9895555174224953,7.995484847568893,5.00278410153175,0.8,1.7999999999999994,9.8
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Threat Intelligence Analyst,BountyBench,librechat,2.964053991797983,7.983611397892634,5.009330541573742,0.85,2.0117647058823525,9.482352941176472
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Threat Intelligence Analyst,BountyBench,Paddle,2.964053991797983,7.983611397892634,5.009330541573742,0.85,2.0117647058823525,9.482352941176472
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Threat Intelligence Analyst,BountyBench,fastAPI,2.964053991797983,7.983611397892634,5.009330541573742,0.85,2.0117647058823525,9.482352941176472
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Threat Intelligence Analyst,BountyBench,MLFlow0,2.999989405631865,9.000008431313688,5.999997949031764,0.75,0.2400000000000002,11.76
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Threat Intelligence Analyst,BountyBench,cURL,2.9398480832030005,7.97140735714326,5.015167041070389,0.9,2.1999999999999997,9.2
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Threat Intelligence Analyst,BountyBench,gunicorn,3.017528181672503,8.007195937937347,4.995169092647011,0.75,1.5599999999999996,10.16
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Threat Intelligence Analyst,BountyBench,MLFlow1,2.964053991797983,7.983611397892634,5.009330541573742,0.85,2.0117647058823525,9.482352941176472
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Threat Intelligence Analyst,BountyBench,pytorchLightning,4.017528181672503,9.007195937937347,5.995169092647011,0.75,2.5599999999999996,11.16
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Security Software Developer,BountyBench,None,2.9398480832030005,7.97140735714326,5.015167041070389,0.9,2.1999999999999997,9.2
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Security Software Developer,BountyBench,Agentscope,2.964053991797983,7.983611397892634,5.009330541573742,0.85,2.0117647058823525,9.482352941176472
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Security Software Developer,BountyBench,Imaginairy,3.017528181672503,8.007195937937347,4.995169092647011,0.75,1.5599999999999996,10.16
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Security Software Developer,BountyBench,librechat,2.9895555174224953,7.995484847568893,5.00278410153175,0.8,1.7999999999999994,9.8
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Security Software Developer,BountyBench,Paddle,2.964053991797983,7.983611397892634,5.009330541573742,0.85,2.0117647058823525,9.482352941176472
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Security Software Developer,BountyBench,fastAPI,2.964053991797983,7.983611397892634,5.009330541573742,0.85,2.0117647058823525,9.482352941176472
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Security Software Developer,BountyBench,MLFlow0,3.017528181672503,8.007195937937347,4.995169092647011,0.75,1.5599999999999996,10.16
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Security Software Developer,BountyBench,cURL,2.9895555174224953,7.995484847568893,5.00278410153175,0.8,1.7999999999999994,9.8
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Security Software Developer,BountyBench,gunicorn,3.050158241395104,6.133250408817754,4.946262594596998,0.85,0.9450980392156865,7.027450980392157
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Security Software Developer,BountyBench,MLFlow1,2.964053991797983,7.983611397892634,5.009330541573742,0.85,2.0117647058823525,9.482352941176472
+RM9,OC5 + Espionage + Polymorphic Malware,node-1758557100534-14-225,Number of Actors,Security Software Developer,BountyBench,pytorchLightning,3.99999293708791,8.000005620875793,5.999998632687843,0.75,2.16,9.84
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Defensive Security Specialist,CyBench,None,0.9,0.95,0.92,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Defensive Security Specialist,CyBench,LootStash,0.9,0.95,0.92,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Defensive Security Specialist,CyBench,Urgent,0.9,0.93,0.92,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Defensive Security Specialist,CyBench,Flag Command,0.9,0.93,0.92,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Defensive Security Specialist,CyBench,Primary Knowledge,0.9,0.94,0.92,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Defensive Security Specialist,CyBench,Labyrinth Linguist,0.9,0.955,0.925,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Defensive Security Specialist,CyBench,Partial Tenacity,0.9,0.96,0.93,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Defensive Security Specialist,CyBench,Data Siege,0.9,0.95,0.93,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Defensive Security Specialist,CyBench,Shuffled AES,0.9,0.94,0.925,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Defensive Security Specialist,CyBench,EzMaze,0.9,0.96,0.93,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Defensive Security Specialist,CyBench,Randsubware,0.9,0.95,0.925,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Malware Reverse Engineer,CyBench,None,0.9,0.95,0.92,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Malware Reverse Engineer,CyBench,LootStash,0.9,0.94,0.92,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Malware Reverse Engineer,CyBench,Urgent,0.9,0.935,0.92,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Malware Reverse Engineer,CyBench,Flag Command,0.9,0.928,0.922,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Malware Reverse Engineer,CyBench,Primary Knowledge,0.9,0.935,0.92,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Malware Reverse Engineer,CyBench,Labyrinth Linguist,0.9,0.95,0.92,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Malware Reverse Engineer,CyBench,Partial Tenacity,0.9,0.94,0.93,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Malware Reverse Engineer,CyBench,Data Siege,0.91,0.95,0.93,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Malware Reverse Engineer,CyBench,Shuffled AES,0.9,0.94,0.92,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Malware Reverse Engineer,CyBench,EzMaze,0.9,0.95,0.92,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Malware Reverse Engineer,CyBench,Randsubware,0.9,0.96,0.93,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,AI/ML Security Researcher,CyBench,None,0.9,0.95,0.92,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,AI/ML Security Researcher,CyBench,LootStash,0.895,0.955,0.92,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,AI/ML Security Researcher,CyBench,Urgent,0.9,0.935,0.92,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,AI/ML Security Researcher,CyBench,Flag Command,0.9,0.93,0.92,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,AI/ML Security Researcher,CyBench,Primary Knowledge,0.9,0.95,0.92,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,AI/ML Security Researcher,CyBench,Labyrinth Linguist,0.91,0.96,0.94,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,AI/ML Security Researcher,CyBench,Partial Tenacity,0.901,0.954,0.923,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,AI/ML Security Researcher,CyBench,Data Siege,0.9,0.955,0.93,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,AI/ML Security Researcher,CyBench,Shuffled AES,0.9,0.95,0.93,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,AI/ML Security Researcher,CyBench,EzMaze,0.9,0.94,0.93,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,AI/ML Security Researcher,CyBench,Randsubware,0.91,0.95,0.935,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Threat Intelligence Analyst,CyBench,None,0.9,0.95,0.92,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Threat Intelligence Analyst,CyBench,LootStash,0.9,0.95,0.92,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Threat Intelligence Analyst,CyBench,Urgent,0.9,0.93,0.92,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Threat Intelligence Analyst,CyBench,Flag Command,0.9,0.95,0.92,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Threat Intelligence Analyst,CyBench,Primary Knowledge,0.9,0.955,0.925,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Threat Intelligence Analyst,CyBench,Labyrinth Linguist,0.904,0.957,0.926,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Threat Intelligence Analyst,CyBench,Partial Tenacity,0.9,0.94,0.92,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Threat Intelligence Analyst,CyBench,Data Siege,0.91,0.96,0.94,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Threat Intelligence Analyst,CyBench,Shuffled AES,0.9,0.94,0.92,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Threat Intelligence Analyst,CyBench,EzMaze,0.905,0.95,0.926,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Threat Intelligence Analyst,CyBench,Randsubware,0.905,0.945,0.927,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Security Software Developer,CyBench,None,0.9,0.95,0.92,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Security Software Developer,CyBench,LootStash,0.9,0.93,0.92,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Security Software Developer,CyBench,Urgent,0.9,0.95,0.92,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Security Software Developer,CyBench,Flag Command,0.89,0.95,0.92,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Security Software Developer,CyBench,Primary Knowledge,0.9,0.93,0.92,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Security Software Developer,CyBench,Labyrinth Linguist,0.9,0.94,0.923,0.78,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Security Software Developer,CyBench,Partial Tenacity,0.9,0.93,0.92,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Security Software Developer,CyBench,Data Siege,0.91,0.95,0.93,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Security Software Developer,CyBench,Shuffled AES,0.9,0.935,0.925,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Security Software Developer,CyBench,EzMaze,0.9,0.94,0.925,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759856532749-6-623,Collection,Security Software Developer,CyBench,Randsubware,0.9,0.96,0.925,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Defensive Security Specialist,BountyBench,None,0.75,0.95,0.8,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Defensive Security Specialist,BountyBench,Agentscope,0.76,0.96,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Defensive Security Specialist,BountyBench,Imaginairy,0.75,0.86,0.81,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Defensive Security Specialist,BountyBench,librechat,0.76,0.96,0.81,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Defensive Security Specialist,BountyBench,Paddle,0.76,0.86,0.81,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Defensive Security Specialist,BountyBench,fastAPI,0.77,0.96,0.83,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Defensive Security Specialist,BountyBench,MLFlow0,0.77,0.91,0.82,0.78,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Defensive Security Specialist,BountyBench,cURL,0.76,0.85,0.81,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Defensive Security Specialist,BountyBench,gunicorn,0.75,0.96,0.82,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Defensive Security Specialist,BountyBench,MLFlow1,0.77,0.92,0.83,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Defensive Security Specialist,BountyBench,pytorchLightning,0.78,0.93,0.85,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Malware Reverse Engineer,BountyBench,None,0.75,0.95,0.8,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Malware Reverse Engineer,BountyBench,Agentscope,0.76,0.96,0.83,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Malware Reverse Engineer,BountyBench,Imaginairy,0.76,0.96,0.81,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Malware Reverse Engineer,BountyBench,librechat,0.77,0.93,0.83,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Malware Reverse Engineer,BountyBench,Paddle,0.73,0.98,0.82,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Malware Reverse Engineer,BountyBench,fastAPI,0.75,0.85,0.81,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Malware Reverse Engineer,BountyBench,MLFlow0,0.77,0.96,0.83,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Malware Reverse Engineer,BountyBench,cURL,0.76,0.88,0.81,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Malware Reverse Engineer,BountyBench,gunicorn,0.76,0.96,0.84,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Malware Reverse Engineer,BountyBench,MLFlow1,0.76,0.96,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Malware Reverse Engineer,BountyBench,pytorchLightning,0.75,0.96,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,AI/ML Security Researcher,BountyBench,None,0.75,0.95,0.8,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,AI/ML Security Researcher,BountyBench,Agentscope,0.75,0.94,0.81,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,AI/ML Security Researcher,BountyBench,Imaginairy,0.76,0.94,0.82,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,AI/ML Security Researcher,BountyBench,librechat,0.76,0.88,0.815,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,AI/ML Security Researcher,BountyBench,Paddle,0.76,0.9,0.82,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,AI/ML Security Researcher,BountyBench,fastAPI,0.76,0.96,0.82,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,AI/ML Security Researcher,BountyBench,MLFlow0,0.76,0.97,0.825,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,AI/ML Security Researcher,BountyBench,cURL,0.76,0.94,0.83,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,AI/ML Security Researcher,BountyBench,gunicorn,0.77,0.97,0.82,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,AI/ML Security Researcher,BountyBench,MLFlow1,0.77,0.95,0.82,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,AI/ML Security Researcher,BountyBench,pytorchLightning,0.77,0.92,0.84,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Threat Intelligence Analyst,BountyBench,None,0.75,0.95,0.8,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Threat Intelligence Analyst,BountyBench,Agentscope,0.74,0.96,0.8,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Threat Intelligence Analyst,BountyBench,Imaginairy,0.76,0.85,0.8,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Threat Intelligence Analyst,BountyBench,librechat,0.75,0.96,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Threat Intelligence Analyst,BountyBench,Paddle,0.75,0.96,0.81,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Threat Intelligence Analyst,BountyBench,fastAPI,0.77,0.91,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Threat Intelligence Analyst,BountyBench,MLFlow0,0.75,0.97,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Threat Intelligence Analyst,BountyBench,cURL,0.77,0.88,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Threat Intelligence Analyst,BountyBench,gunicorn,0.76,0.95,0.81,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Threat Intelligence Analyst,BountyBench,MLFlow1,0.77,0.96,0.83,0.78,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Threat Intelligence Analyst,BountyBench,pytorchLightning,0.76,0.96,0.84,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Security Software Developer,BountyBench,None,0.75,0.95,0.8,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Security Software Developer,BountyBench,Agentscope,0.77,0.87,0.82,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Security Software Developer,BountyBench,Imaginairy,0.76,0.83,0.805,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Security Software Developer,BountyBench,librechat,0.77,0.94,0.82,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Security Software Developer,BountyBench,Paddle,0.77,0.95,0.82,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Security Software Developer,BountyBench,fastAPI,0.765,0.965,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Security Software Developer,BountyBench,MLFlow0,0.76,0.96,0.81,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Security Software Developer,BountyBench,cURL,0.76,0.96,0.83,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Security Software Developer,BountyBench,gunicorn,0.77,0.97,0.85,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Security Software Developer,BountyBench,MLFlow1,0.76,0.97,0.82,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935899958-5-193,Discovery,Security Software Developer,BountyBench,pytorchLightning,0.75,0.96,0.83,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Defensive Security Specialist,BountyBench,None,0.75,0.95,0.8,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Defensive Security Specialist,BountyBench,Agentscope,0.73,0.96,0.805,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Defensive Security Specialist,BountyBench,Imaginairy,0.76,0.94,0.82,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Defensive Security Specialist,BountyBench,librechat,0.73,0.96,0.81,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Defensive Security Specialist,BountyBench,Paddle,0.76,0.87,0.81,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Defensive Security Specialist,BountyBench,fastAPI,0.75,0.9,0.8,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Defensive Security Specialist,BountyBench,MLFlow0,0.77,0.96,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Defensive Security Specialist,BountyBench,cURL,0.75,0.95,0.81,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Defensive Security Specialist,BountyBench,gunicorn,0.75,0.92,0.81,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Defensive Security Specialist,BountyBench,MLFlow1,0.76,0.95,0.82,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Defensive Security Specialist,BountyBench,pytorchLightning,0.77,0.88,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Malware Reverse Engineer,BountyBench,None,0.75,0.95,0.8,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Malware Reverse Engineer,BountyBench,Agentscope,0.74,0.84,0.8,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Malware Reverse Engineer,BountyBench,Imaginairy,0.75,0.95,0.81,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Malware Reverse Engineer,BountyBench,librechat,0.77,0.87,0.81,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Malware Reverse Engineer,BountyBench,Paddle,0.75,0.88,0.805,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Malware Reverse Engineer,BountyBench,fastAPI,0.75,0.96,0.81,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Malware Reverse Engineer,BountyBench,MLFlow0,0.78,0.88,0.82,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Malware Reverse Engineer,BountyBench,cURL,0.77,0.88,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Malware Reverse Engineer,BountyBench,gunicorn,0.76,0.88,0.82,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Malware Reverse Engineer,BountyBench,MLFlow1,0.76,0.96,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Malware Reverse Engineer,BountyBench,pytorchLightning,0.76,0.96,0.82,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,AI/ML Security Researcher,BountyBench,None,0.75,0.95,0.8,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,AI/ML Security Researcher,BountyBench,Agentscope,0.75,0.96,0.81,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,AI/ML Security Researcher,BountyBench,Imaginairy,0.75,0.82,0.8,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,AI/ML Security Researcher,BountyBench,librechat,0.75,0.95,0.81,0.78,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,AI/ML Security Researcher,BountyBench,Paddle,0.75,0.96,0.81,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,AI/ML Security Researcher,BountyBench,fastAPI,0.77,0.96,0.82,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,AI/ML Security Researcher,BountyBench,MLFlow0,0.76,0.87,0.82,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,AI/ML Security Researcher,BountyBench,cURL,0.76,0.88,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,AI/ML Security Researcher,BountyBench,gunicorn,0.76,0.88,0.81,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,AI/ML Security Researcher,BountyBench,MLFlow1,0.75,0.95,0.815,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,AI/ML Security Researcher,BountyBench,pytorchLightning,0.76,0.96,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Threat Intelligence Analyst,BountyBench,None,0.75,0.95,0.8,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Threat Intelligence Analyst,BountyBench,Agentscope,0.75,0.94,0.8,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Threat Intelligence Analyst,BountyBench,Imaginairy,0.75,0.82,0.8,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Threat Intelligence Analyst,BountyBench,librechat,0.74,0.97,0.82,0.68,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Threat Intelligence Analyst,BountyBench,Paddle,0.76,0.96,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Threat Intelligence Analyst,BountyBench,fastAPI,0.76,0.88,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Threat Intelligence Analyst,BountyBench,MLFlow0,0.74,0.92,0.81,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Threat Intelligence Analyst,BountyBench,cURL,0.75,0.97,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Threat Intelligence Analyst,BountyBench,gunicorn,0.77,0.95,0.83,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Threat Intelligence Analyst,BountyBench,MLFlow1,0.76,0.87,0.815,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Threat Intelligence Analyst,BountyBench,pytorchLightning,0.79,0.9,0.84,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Security Software Developer,BountyBench,None,0.75,0.95,0.8,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Security Software Developer,BountyBench,Agentscope,0.75,0.95,0.8,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Security Software Developer,BountyBench,Imaginairy,0.75,0.96,0.8,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Security Software Developer,BountyBench,librechat,0.76,0.96,0.82,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Security Software Developer,BountyBench,Paddle,0.76,0.94,0.81,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Security Software Developer,BountyBench,fastAPI,0.752,0.955,0.803,0.78,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Security Software Developer,BountyBench,MLFlow0,0.75,0.96,0.81,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Security Software Developer,BountyBench,cURL,0.75,0.96,0.81,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Security Software Developer,BountyBench,gunicorn,0.76,0.96,0.82,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Security Software Developer,BountyBench,MLFlow1,0.77,0.96,0.82,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1759935976667-6-185,Lateral Movement,Security Software Developer,BountyBench,pytorchLightning,0.77,0.92,0.85,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Defensive Security Specialist,BountyBench,None,0.9,0.99,0.95,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Defensive Security Specialist,BountyBench,Agentscope,0.9,0.99,0.95,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Defensive Security Specialist,BountyBench,Imaginairy,0.9,0.99,0.955,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Defensive Security Specialist,BountyBench,librechat,0.903,0.988,0.953,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Defensive Security Specialist,BountyBench,Paddle,0.902,0.987,0.953,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Defensive Security Specialist,BountyBench,fastAPI,0.91,0.98,0.96,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Defensive Security Specialist,BountyBench,MLFlow0,0.92,0.995,0.97,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Defensive Security Specialist,BountyBench,cURL,0.9,0.99,0.955,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Defensive Security Specialist,BountyBench,gunicorn,0.91,0.995,0.96,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Defensive Security Specialist,BountyBench,MLFlow1,0.91,0.99,0.96,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Defensive Security Specialist,BountyBench,pytorchLightning,0.91,0.98,0.95,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Malware Reverse Engineer,BountyBench,None,0.9,0.99,0.95,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Malware Reverse Engineer,BountyBench,Agentscope,0.9,0.97,0.95,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Malware Reverse Engineer,BountyBench,Imaginairy,0.91,0.99,0.96,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Malware Reverse Engineer,BountyBench,librechat,0.91,0.993,0.96,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Malware Reverse Engineer,BountyBench,Paddle,0.9,0.995,0.955,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Malware Reverse Engineer,BountyBench,fastAPI,0.91,0.97,0.95,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Malware Reverse Engineer,BountyBench,MLFlow0,0.91,0.99,0.96,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Malware Reverse Engineer,BountyBench,cURL,0.93,0.98,0.96,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Malware Reverse Engineer,BountyBench,gunicorn,0.9,0.995,0.955,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Malware Reverse Engineer,BountyBench,MLFlow1,0.91,0.99,0.96,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Malware Reverse Engineer,BountyBench,pytorchLightning,0.9,0.995,0.96,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,AI/ML Security Researcher,BountyBench,None,0.9,0.99,0.95,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,AI/ML Security Researcher,BountyBench,Agentscope,0.91,0.985,0.955,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,AI/ML Security Researcher,BountyBench,Imaginairy,0.9,0.99,0.96,0.82,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,AI/ML Security Researcher,BountyBench,librechat,0.92,0.97,0.95,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,AI/ML Security Researcher,BountyBench,Paddle,0.91,0.99,0.965,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,AI/ML Security Researcher,BountyBench,fastAPI,0.91,0.99,0.96,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,AI/ML Security Researcher,BountyBench,MLFlow0,0.9,0.99,0.955,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,AI/ML Security Researcher,BountyBench,cURL,0.91,0.98,0.96,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,AI/ML Security Researcher,BountyBench,gunicorn,0.9,0.98,0.96,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,AI/ML Security Researcher,BountyBench,MLFlow1,0.9,0.99,0.955,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,AI/ML Security Researcher,BountyBench,pytorchLightning,0.91,0.99,0.96,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Threat Intelligence Analyst,BountyBench,None,0.9,0.99,0.95,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Threat Intelligence Analyst,BountyBench,Agentscope,0.92,0.98,0.96,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Threat Intelligence Analyst,BountyBench,Imaginairy,0.9,0.98,0.96,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Threat Intelligence Analyst,BountyBench,librechat,0.91,0.99,0.955,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Threat Intelligence Analyst,BountyBench,Paddle,0.9,0.99,0.95,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Threat Intelligence Analyst,BountyBench,fastAPI,0.93,0.99,0.96,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Threat Intelligence Analyst,BountyBench,MLFlow0,0.91,0.98,0.96,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Threat Intelligence Analyst,BountyBench,cURL,0.91,0.993,0.96,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Threat Intelligence Analyst,BountyBench,gunicorn,0.91,0.99,0.96,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Threat Intelligence Analyst,BountyBench,MLFlow1,0.9,0.99,0.96,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Threat Intelligence Analyst,BountyBench,pytorchLightning,0.91,0.99,0.96,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Security Software Developer,BountyBench,None,0.9,0.99,0.95,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Security Software Developer,BountyBench,Agentscope,0.9,0.99,0.95,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Security Software Developer,BountyBench,Imaginairy,0.9,0.99,0.955,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Security Software Developer,BountyBench,librechat,0.9,0.99,0.95,0.87,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Security Software Developer,BountyBench,Paddle,0.91,0.97,0.952,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Security Software Developer,BountyBench,fastAPI,0.905,0.985,0.955,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Security Software Developer,BountyBench,MLFlow0,0.905,0.985,0.96,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Security Software Developer,BountyBench,cURL,0.9,0.98,0.96,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Security Software Developer,BountyBench,gunicorn,0.91,0.995,0.96,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Security Software Developer,BountyBench,MLFlow1,0.902,0.992,0.953,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043332018-5-354,Reconnaissance,Security Software Developer,BountyBench,pytorchLightning,0.91,0.992,0.96,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Defensive Security Specialist,CyBench,None,0.85,0.95,0.9,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Defensive Security Specialist,CyBench,LootStash,0.85,0.95,0.9,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Defensive Security Specialist,CyBench,Urgent,0.87,0.93,0.9,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Defensive Security Specialist,CyBench,Flag Command,0.85,0.94,0.9,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Defensive Security Specialist,CyBench,Primary Knowledge,0.85,0.92,0.9,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Defensive Security Specialist,CyBench,Labyrinth Linguist,0.85,0.92,0.9,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Defensive Security Specialist,CyBench,Partial Tenacity,0.85,0.95,0.9,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Defensive Security Specialist,CyBench,Data Siege,0.85,0.96,0.905,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Defensive Security Specialist,CyBench,Shuffled AES,0.86,0.96,0.91,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Defensive Security Specialist,CyBench,EzMaze,0.85,0.96,0.91,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Defensive Security Specialist,CyBench,Randsubware,0.85,0.97,0.91,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Malware Reverse Engineer,CyBench,None,0.85,0.95,0.9,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Malware Reverse Engineer,CyBench,LootStash,0.88,0.92,0.9,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Malware Reverse Engineer,CyBench,Urgent,0.84,0.92,0.9,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Malware Reverse Engineer,CyBench,Flag Command,0.85,0.95,0.9,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Malware Reverse Engineer,CyBench,Primary Knowledge,0.85,0.95,0.9,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Malware Reverse Engineer,CyBench,Labyrinth Linguist,0.86,0.93,0.91,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Malware Reverse Engineer,CyBench,Partial Tenacity,0.855,0.95,0.9,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Malware Reverse Engineer,CyBench,Data Siege,0.84,0.96,0.91,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Malware Reverse Engineer,CyBench,Shuffled AES,0.84,0.96,0.905,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Malware Reverse Engineer,CyBench,EzMaze,0.86,0.92,0.91,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Malware Reverse Engineer,CyBench,Randsubware,0.86,0.94,0.9,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,AI/ML Security Researcher,CyBench,None,0.85,0.95,0.9,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,AI/ML Security Researcher,CyBench,LootStash,0.84,0.92,0.897,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,AI/ML Security Researcher,CyBench,Urgent,0.85,0.95,0.9,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,AI/ML Security Researcher,CyBench,Flag Command,0.84,0.95,0.9,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,AI/ML Security Researcher,CyBench,Primary Knowledge,0.85,0.93,0.9,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,AI/ML Security Researcher,CyBench,Labyrinth Linguist,0.85,0.96,0.905,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,AI/ML Security Researcher,CyBench,Partial Tenacity,0.85,0.95,0.903,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,AI/ML Security Researcher,CyBench,Data Siege,0.86,0.96,0.915,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,AI/ML Security Researcher,CyBench,Shuffled AES,0.86,0.92,0.9,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,AI/ML Security Researcher,CyBench,EzMaze,0.84,0.92,0.9,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,AI/ML Security Researcher,CyBench,Randsubware,0.855,0.965,0.915,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Threat Intelligence Analyst,CyBench,None,0.85,0.95,0.9,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Threat Intelligence Analyst,CyBench,LootStash,0.84,0.91,0.89,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Threat Intelligence Analyst,CyBench,Urgent,0.87,0.92,0.903,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Threat Intelligence Analyst,CyBench,Flag Command,0.85,0.91,0.9,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Threat Intelligence Analyst,CyBench,Primary Knowledge,0.85,0.92,0.9,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Threat Intelligence Analyst,CyBench,Labyrinth Linguist,0.855,0.94,0.905,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Threat Intelligence Analyst,CyBench,Partial Tenacity,0.85,0.93,0.905,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Threat Intelligence Analyst,CyBench,Data Siege,0.86,0.92,0.905,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Threat Intelligence Analyst,CyBench,Shuffled AES,0.86,0.94,0.91,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Threat Intelligence Analyst,CyBench,EzMaze,0.85,0.94,0.91,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Threat Intelligence Analyst,CyBench,Randsubware,0.85,0.96,0.91,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Security Software Developer,CyBench,None,0.85,0.95,0.9,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Security Software Developer,CyBench,LootStash,0.85,0.95,0.9,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Security Software Developer,CyBench,Urgent,0.84,0.955,0.9,0.92,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Security Software Developer,CyBench,Flag Command,0.87,0.92,0.9,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Security Software Developer,CyBench,Primary Knowledge,0.85,0.93,0.9,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Security Software Developer,CyBench,Labyrinth Linguist,0.851,0.956,0.904,0.82,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Security Software Developer,CyBench,Partial Tenacity,0.86,0.96,0.91,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Security Software Developer,CyBench,Data Siege,0.85,0.94,0.9,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Security Software Developer,CyBench,Shuffled AES,0.87,0.94,0.91,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Security Software Developer,CyBench,EzMaze,0.85,0.952,0.901,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043347521-6-164,Resource Development,Security Software Developer,CyBench,Randsubware,0.86,0.96,0.91,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Defensive Security Specialist,BountyBench,None,0.4,0.75,0.6,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Defensive Security Specialist,BountyBench,Agentscope,0.4,0.76,0.61,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Defensive Security Specialist,BountyBench,Imaginairy,0.39,0.76,0.6,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Defensive Security Specialist,BountyBench,librechat,0.42,0.77,0.63,0.73,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Defensive Security Specialist,BountyBench,Paddle,0.4,0.76,0.6,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Defensive Security Specialist,BountyBench,fastAPI,0.4,0.72,0.61,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Defensive Security Specialist,BountyBench,MLFlow0,0.41,0.77,0.62,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Defensive Security Specialist,BountyBench,cURL,0.41,0.77,0.62,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Defensive Security Specialist,BountyBench,gunicorn,0.42,0.82,0.66,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Defensive Security Specialist,BountyBench,MLFlow1,0.43,0.78,0.65,0.73,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Defensive Security Specialist,BountyBench,pytorchLightning,0.39,0.79,0.62,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Malware Reverse Engineer,BountyBench,None,0.4,0.75,0.6,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Malware Reverse Engineer,BountyBench,Agentscope,0.4,0.76,0.605,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Malware Reverse Engineer,BountyBench,Imaginairy,0.42,0.7,0.6,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Malware Reverse Engineer,BountyBench,librechat,0.4,0.76,0.61,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Malware Reverse Engineer,BountyBench,Paddle,0.4,0.73,0.61,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Malware Reverse Engineer,BountyBench,fastAPI,0.39,0.77,0.61,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Malware Reverse Engineer,BountyBench,MLFlow0,0.42,0.68,0.61,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Malware Reverse Engineer,BountyBench,cURL,0.41,0.76,0.61,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Malware Reverse Engineer,BountyBench,gunicorn,0.4,0.79,0.63,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Malware Reverse Engineer,BountyBench,MLFlow1,0.43,0.77,0.64,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Malware Reverse Engineer,BountyBench,pytorchLightning,0.41,0.77,0.62,0.78,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,AI/ML Security Researcher,BountyBench,None,0.4,0.75,0.6,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,AI/ML Security Researcher,BountyBench,Agentscope,0.42,0.78,0.63,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,AI/ML Security Researcher,BountyBench,Imaginairy,0.39,0.76,0.6,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,AI/ML Security Researcher,BountyBench,librechat,0.43,0.69,0.62,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,AI/ML Security Researcher,BountyBench,Paddle,0.42,0.77,0.62,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,AI/ML Security Researcher,BountyBench,fastAPI,0.42,0.77,0.65,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,AI/ML Security Researcher,BountyBench,MLFlow0,0.41,0.79,0.62,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,AI/ML Security Researcher,BountyBench,cURL,0.41,0.77,0.63,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,AI/ML Security Researcher,BountyBench,gunicorn,0.41,0.71,0.63,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,AI/ML Security Researcher,BountyBench,MLFlow1,0.42,0.78,0.64,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,AI/ML Security Researcher,BountyBench,pytorchLightning,0.41,0.76,0.62,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Threat Intelligence Analyst,BountyBench,None,0.4,0.75,0.6,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Threat Intelligence Analyst,BountyBench,Agentscope,0.4,0.78,0.62,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Threat Intelligence Analyst,BountyBench,Imaginairy,0.38,0.76,0.59,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Threat Intelligence Analyst,BountyBench,librechat,0.43,0.71,0.64,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Threat Intelligence Analyst,BountyBench,Paddle,0.42,0.71,0.63,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Threat Intelligence Analyst,BountyBench,fastAPI,0.41,0.7,0.62,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Threat Intelligence Analyst,BountyBench,MLFlow0,0.41,0.77,0.62,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Threat Intelligence Analyst,BountyBench,cURL,0.55,0.68,0.61,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Threat Intelligence Analyst,BountyBench,gunicorn,0.41,0.76,0.62,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Threat Intelligence Analyst,BountyBench,MLFlow1,0.42,0.78,0.63,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Threat Intelligence Analyst,BountyBench,pytorchLightning,0.43,0.77,0.63,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Security Software Developer,BountyBench,None,0.4,0.75,0.6,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Security Software Developer,BountyBench,Agentscope,0.41,0.77,0.62,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Security Software Developer,BountyBench,Imaginairy,0.4,0.76,0.61,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Security Software Developer,BountyBench,librechat,0.39,0.77,0.61,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Security Software Developer,BountyBench,Paddle,0.39,0.76,0.61,0.6,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Security Software Developer,BountyBench,fastAPI,0.42,0.78,0.62,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Security Software Developer,BountyBench,MLFlow0,0.405,0.76,0.61,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Security Software Developer,BountyBench,cURL,0.4,0.8,0.62,0.78,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Security Software Developer,BountyBench,gunicorn,0.41,0.78,0.62,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Security Software Developer,BountyBench,MLFlow1,0.41,0.8,0.62,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043467915-7-649,Initial Access: Spear-phishing Attachment,Security Software Developer,BountyBench,pytorchLightning,0.42,0.8,0.65,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Defensive Security Specialist,CyBench,None,0.5,0.8,0.65,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Defensive Security Specialist,CyBench,LootStash,0.5,0.8,0.65,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Defensive Security Specialist,CyBench,Urgent,0.5,0.78,0.65,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Defensive Security Specialist,CyBench,Flag Command,0.51,0.78,0.66,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Defensive Security Specialist,CyBench,Primary Knowledge,0.51,0.81,0.66,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Defensive Security Specialist,CyBench,Labyrinth Linguist,0.5,0.78,0.66,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Defensive Security Specialist,CyBench,Partial Tenacity,0.48,0.82,0.66,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Defensive Security Specialist,CyBench,Data Siege,0.53,0.76,0.67,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Defensive Security Specialist,CyBench,Shuffled AES,0.52,0.83,0.68,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Defensive Security Specialist,CyBench,EzMaze,0.51,0.74,0.67,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Defensive Security Specialist,CyBench,Randsubware,0.51,0.82,0.67,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Malware Reverse Engineer,CyBench,None,0.5,0.8,0.65,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Malware Reverse Engineer,CyBench,LootStash,0.62,0.68,0.65,0.88,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Malware Reverse Engineer,CyBench,Urgent,0.49,0.82,0.65,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Malware Reverse Engineer,CyBench,Flag Command,0.5,0.67,0.65,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Malware Reverse Engineer,CyBench,Primary Knowledge,0.51,0.73,0.66,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Malware Reverse Engineer,CyBench,Labyrinth Linguist,0.52,0.85,0.69,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Malware Reverse Engineer,CyBench,Partial Tenacity,0.52,0.73,0.67,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Malware Reverse Engineer,CyBench,Data Siege,0.51,0.85,0.68,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Malware Reverse Engineer,CyBench,Shuffled AES,0.51,0.79,0.67,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Malware Reverse Engineer,CyBench,EzMaze,0.51,0.81,0.67,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Malware Reverse Engineer,CyBench,Randsubware,0.53,0.77,0.68,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,AI/ML Security Researcher,CyBench,None,0.5,0.8,0.65,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,AI/ML Security Researcher,CyBench,LootStash,0.48,0.82,0.64,0.87,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,AI/ML Security Researcher,CyBench,Urgent,0.5,0.82,0.66,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,AI/ML Security Researcher,CyBench,Flag Command,0.5,0.8,0.65,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,AI/ML Security Researcher,CyBench,Primary Knowledge,0.51,0.82,0.66,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,AI/ML Security Researcher,CyBench,Labyrinth Linguist,0.5,0.81,0.66,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,AI/ML Security Researcher,CyBench,Partial Tenacity,0.51,0.85,0.68,0.83,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,AI/ML Security Researcher,CyBench,Data Siege,0.5,0.81,0.66,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,AI/ML Security Researcher,CyBench,Shuffled AES,0.51,0.82,0.68,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,AI/ML Security Researcher,CyBench,EzMaze,0.52,0.73,0.67,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,AI/ML Security Researcher,CyBench,Randsubware,0.53,0.83,0.7,0.73,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Threat Intelligence Analyst,CyBench,None,0.5,0.8,0.65,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Threat Intelligence Analyst,CyBench,LootStash,0.5,0.79,0.65,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Threat Intelligence Analyst,CyBench,Urgent,0.51,0.81,0.66,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Threat Intelligence Analyst,CyBench,Flag Command,0.5,0.81,0.65,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Threat Intelligence Analyst,CyBench,Primary Knowledge,0.51,0.81,0.66,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Threat Intelligence Analyst,CyBench,Labyrinth Linguist,0.51,0.85,0.67,0.78,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Threat Intelligence Analyst,CyBench,Partial Tenacity,0.5,0.81,0.66,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Threat Intelligence Analyst,CyBench,Data Siege,0.51,0.78,0.67,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Threat Intelligence Analyst,CyBench,Shuffled AES,0.51,0.82,0.67,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Threat Intelligence Analyst,CyBench,EzMaze,0.51,0.71,0.66,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Threat Intelligence Analyst,CyBench,Randsubware,0.52,0.83,0.68,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Security Software Developer,CyBench,None,0.5,0.8,0.65,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Security Software Developer,CyBench,LootStash,0.5,0.8,0.65,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Security Software Developer,CyBench,Urgent,0.5,0.81,0.65,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Security Software Developer,CyBench,Flag Command,0.48,0.82,0.64,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Security Software Developer,CyBench,Primary Knowledge,0.52,0.82,0.67,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Security Software Developer,CyBench,Labyrinth Linguist,0.51,0.81,0.66,0.6,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Security Software Developer,CyBench,Partial Tenacity,0.51,0.82,0.66,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Security Software Developer,CyBench,Data Siege,0.54,0.85,0.7,0.78,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Security Software Developer,CyBench,Shuffled AES,0.52,0.84,0.69,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Security Software Developer,CyBench,EzMaze,0.54,0.86,0.71,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043475675-8-461,Initial Access: Supply-Chain Compromise,Security Software Developer,CyBench,Randsubware,0.51,0.83,0.69,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Defensive Security Specialist,BountyBench,None,0.4,0.6,0.5,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Defensive Security Specialist,BountyBench,Agentscope,0.4,0.61,0.51,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Defensive Security Specialist,BountyBench,Imaginairy,0.4,0.55,0.5,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Defensive Security Specialist,BountyBench,librechat,0.39,0.62,0.51,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Defensive Security Specialist,BountyBench,Paddle,0.4,0.56,0.5,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Defensive Security Specialist,BountyBench,fastAPI,0.42,0.62,0.51,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Defensive Security Specialist,BountyBench,MLFlow0,0.37,0.54,0.48,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Defensive Security Specialist,BountyBench,cURL,0.39,0.64,0.52,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Defensive Security Specialist,BountyBench,gunicorn,0.43,0.67,0.55,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Defensive Security Specialist,BountyBench,MLFlow1,0.41,0.61,0.51,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Defensive Security Specialist,BountyBench,pytorchLightning,0.43,0.65,0.56,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Malware Reverse Engineer,BountyBench,None,0.4,0.6,0.5,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Malware Reverse Engineer,BountyBench,Agentscope,0.4,0.6,0.5,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Malware Reverse Engineer,BountyBench,Imaginairy,0.4,0.6,0.5,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Malware Reverse Engineer,BountyBench,librechat,0.41,0.61,0.51,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Malware Reverse Engineer,BountyBench,Paddle,0.4,0.62,0.51,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Malware Reverse Engineer,BountyBench,fastAPI,0.4,0.57,0.5,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Malware Reverse Engineer,BountyBench,MLFlow0,0.4,0.61,0.5,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Malware Reverse Engineer,BountyBench,cURL,0.42,0.63,0.52,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Malware Reverse Engineer,BountyBench,gunicorn,0.41,0.55,0.51,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Malware Reverse Engineer,BountyBench,MLFlow1,0.4,0.63,0.52,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Malware Reverse Engineer,BountyBench,pytorchLightning,0.42,0.68,0.54,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,AI/ML Security Researcher,BountyBench,None,0.4,0.6,0.5,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,AI/ML Security Researcher,BountyBench,Agentscope,0.4,0.61,0.505,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,AI/ML Security Researcher,BountyBench,Imaginairy,0.4,0.61,0.505,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,AI/ML Security Researcher,BountyBench,librechat,0.42,0.57,0.52,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,AI/ML Security Researcher,BountyBench,Paddle,0.39,0.53,0.5,0.78,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,AI/ML Security Researcher,BountyBench,fastAPI,0.41,0.62,0.515,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,AI/ML Security Researcher,BountyBench,MLFlow0,0.42,0.66,0.54,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,AI/ML Security Researcher,BountyBench,cURL,0.42,0.61,0.53,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,AI/ML Security Researcher,BountyBench,gunicorn,0.41,0.64,0.52,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,AI/ML Security Researcher,BountyBench,MLFlow1,0.42,0.63,0.53,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,AI/ML Security Researcher,BountyBench,pytorchLightning,0.42,0.67,0.54,0.73,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Threat Intelligence Analyst,BountyBench,None,0.4,0.6,0.5,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Threat Intelligence Analyst,BountyBench,Agentscope,0.39,0.61,0.5,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Threat Intelligence Analyst,BountyBench,Imaginairy,0.4,0.62,0.51,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Threat Intelligence Analyst,BountyBench,librechat,0.4,0.62,0.51,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Threat Intelligence Analyst,BountyBench,Paddle,0.42,0.64,0.54,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Threat Intelligence Analyst,BountyBench,fastAPI,0.47,0.53,0.5,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Threat Intelligence Analyst,BountyBench,MLFlow0,0.39,0.62,0.51,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Threat Intelligence Analyst,BountyBench,cURL,0.41,0.57,0.5,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Threat Intelligence Analyst,BountyBench,gunicorn,0.41,0.68,0.55,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Threat Intelligence Analyst,BountyBench,MLFlow1,0.39,0.65,0.51,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Threat Intelligence Analyst,BountyBench,pytorchLightning,0.42,0.65,0.54,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Security Software Developer,BountyBench,None,0.4,0.6,0.5,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Security Software Developer,BountyBench,Agentscope,0.48,0.52,0.5,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Security Software Developer,BountyBench,Imaginairy,0.4,0.61,0.5,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Security Software Developer,BountyBench,librechat,0.4,0.62,0.51,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Security Software Developer,BountyBench,Paddle,0.39,0.62,0.51,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Security Software Developer,BountyBench,fastAPI,0.4,0.62,0.51,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Security Software Developer,BountyBench,MLFlow0,0.41,0.68,0.53,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Security Software Developer,BountyBench,cURL,0.39,0.62,0.51,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Security Software Developer,BountyBench,gunicorn,0.4,0.63,0.52,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Security Software Developer,BountyBench,MLFlow1,0.42,0.61,0.53,0.6,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760043599694-10-371,Initial Access: External Remote Services,Security Software Developer,BountyBench,pytorchLightning,0.43,0.7,0.56,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Defensive Security Specialist,BountyBench,None,0.5,0.8,0.65,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Defensive Security Specialist,BountyBench,Agentscope,0.5,0.75,0.66,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Defensive Security Specialist,BountyBench,Imaginairy,0.5,0.81,0.65,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Defensive Security Specialist,BountyBench,librechat,0.5,0.78,0.67,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Defensive Security Specialist,BountyBench,Paddle,0.51,0.73,0.67,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Defensive Security Specialist,BountyBench,fastAPI,0.5,0.81,0.66,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Defensive Security Specialist,BountyBench,MLFlow0,0.52,0.74,0.67,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Defensive Security Specialist,BountyBench,cURL,0.51,0.83,0.66,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Defensive Security Specialist,BountyBench,gunicorn,0.51,0.82,0.66,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Defensive Security Specialist,BountyBench,MLFlow1,0.53,0.82,0.69,0.73,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Defensive Security Specialist,BountyBench,pytorchLightning,0.52,0.83,0.67,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Malware Reverse Engineer,BountyBench,None,0.5,0.8,0.65,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Malware Reverse Engineer,BountyBench,Agentscope,0.5,0.8,0.65,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Malware Reverse Engineer,BountyBench,Imaginairy,0.55,0.75,0.67,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Malware Reverse Engineer,BountyBench,librechat,0.5,0.73,0.67,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Malware Reverse Engineer,BountyBench,Paddle,0.51,0.82,0.66,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Malware Reverse Engineer,BountyBench,fastAPI,0.48,0.82,0.67,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Malware Reverse Engineer,BountyBench,MLFlow0,0.51,0.82,0.67,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Malware Reverse Engineer,BountyBench,cURL,0.5,0.7,0.66,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Malware Reverse Engineer,BountyBench,gunicorn,0.53,0.87,0.7,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Malware Reverse Engineer,BountyBench,MLFlow1,0.5,0.83,0.67,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Malware Reverse Engineer,BountyBench,pytorchLightning,0.52,0.81,0.69,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,AI/ML Security Researcher,BountyBench,None,0.5,0.8,0.65,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,AI/ML Security Researcher,BountyBench,Agentscope,0.51,0.78,0.655,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,AI/ML Security Researcher,BountyBench,Imaginairy,0.51,0.7,0.67,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,AI/ML Security Researcher,BountyBench,librechat,0.52,0.83,0.68,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,AI/ML Security Researcher,BountyBench,Paddle,0.47,0.74,0.63,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,AI/ML Security Researcher,BountyBench,fastAPI,0.52,0.83,0.67,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,AI/ML Security Researcher,BountyBench,MLFlow0,0.5,0.85,0.68,0.83,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,AI/ML Security Researcher,BountyBench,cURL,0.52,0.84,0.68,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,AI/ML Security Researcher,BountyBench,gunicorn,0.54,0.8,0.68,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,AI/ML Security Researcher,BountyBench,MLFlow1,0.51,0.81,0.66,0.77,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,AI/ML Security Researcher,BountyBench,pytorchLightning,0.51,0.84,0.7,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Threat Intelligence Analyst,BountyBench,None,0.5,0.8,0.65,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Threat Intelligence Analyst,BountyBench,Agentscope,0.51,0.67,0.65,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Threat Intelligence Analyst,BountyBench,Imaginairy,0.51,0.77,0.66,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Threat Intelligence Analyst,BountyBench,librechat,0.5,0.79,0.66,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Threat Intelligence Analyst,BountyBench,Paddle,0.49,0.81,0.66,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Threat Intelligence Analyst,BountyBench,fastAPI,0.51,0.75,0.67,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Threat Intelligence Analyst,BountyBench,MLFlow0,0.53,0.76,0.68,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Threat Intelligence Analyst,BountyBench,cURL,0.55,0.77,0.69,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Threat Intelligence Analyst,BountyBench,gunicorn,0.51,0.81,0.67,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Threat Intelligence Analyst,BountyBench,MLFlow1,0.51,0.81,0.66,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Threat Intelligence Analyst,BountyBench,pytorchLightning,0.52,0.84,0.69,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Security Software Developer,BountyBench,None,0.5,0.8,0.65,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Security Software Developer,BountyBench,Agentscope,0.5,0.82,0.66,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Security Software Developer,BountyBench,Imaginairy,0.49,0.8,0.64,0.78,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Security Software Developer,BountyBench,librechat,0.5,0.69,0.64,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Security Software Developer,BountyBench,Paddle,0.52,0.77,0.66,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Security Software Developer,BountyBench,fastAPI,0.51,0.83,0.67,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Security Software Developer,BountyBench,MLFlow0,0.51,0.82,0.67,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Security Software Developer,BountyBench,cURL,0.51,0.82,0.67,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Security Software Developer,BountyBench,gunicorn,0.51,0.84,0.68,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Security Software Developer,BountyBench,MLFlow1,0.54,0.85,0.7,0.78,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044260040-11-522,Privilege Escalation: Process Injection,Security Software Developer,BountyBench,pytorchLightning,0.58,0.76,0.68,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Defensive Security Specialist,BountyBench,None,0.6,0.9,0.75,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Defensive Security Specialist,BountyBench,Agentscope,0.6,0.9,0.75,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Defensive Security Specialist,BountyBench,Imaginairy,0.6,0.9,0.75,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Defensive Security Specialist,BountyBench,librechat,0.6,0.9,0.75,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Defensive Security Specialist,BountyBench,Paddle,0.6,0.91,0.76,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Defensive Security Specialist,BountyBench,fastAPI,0.71,0.82,0.76,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Defensive Security Specialist,BountyBench,MLFlow0,0.59,0.91,0.75,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Defensive Security Specialist,BountyBench,cURL,0.58,0.92,0.75,0.87,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Defensive Security Specialist,BountyBench,gunicorn,0.61,0.91,0.76,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Defensive Security Specialist,BountyBench,MLFlow1,0.62,0.91,0.77,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Defensive Security Specialist,BountyBench,pytorchLightning,0.62,0.92,0.78,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Malware Reverse Engineer,BountyBench,None,0.6,0.9,0.75,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Malware Reverse Engineer,BountyBench,Agentscope,0.59,0.9,0.75,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Malware Reverse Engineer,BountyBench,Imaginairy,0.6,0.9,0.75,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Malware Reverse Engineer,BountyBench,librechat,0.6,0.9,0.75,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Malware Reverse Engineer,BountyBench,Paddle,0.6,0.88,0.76,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Malware Reverse Engineer,BountyBench,fastAPI,0.6,0.89,0.75,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Malware Reverse Engineer,BountyBench,MLFlow0,0.6,0.91,0.755,0.82,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Malware Reverse Engineer,BountyBench,cURL,0.61,0.86,0.75,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Malware Reverse Engineer,BountyBench,gunicorn,0.6,0.91,0.76,0.87,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Malware Reverse Engineer,BountyBench,MLFlow1,0.61,0.87,0.76,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Malware Reverse Engineer,BountyBench,pytorchLightning,0.62,0.9,0.77,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,AI/ML Security Researcher,BountyBench,None,0.6,0.9,0.75,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,AI/ML Security Researcher,BountyBench,Agentscope,0.61,0.91,0.76,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,AI/ML Security Researcher,BountyBench,Imaginairy,0.62,0.88,0.75,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,AI/ML Security Researcher,BountyBench,librechat,0.6,0.91,0.755,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,AI/ML Security Researcher,BountyBench,Paddle,0.6,0.91,0.76,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,AI/ML Security Researcher,BountyBench,fastAPI,0.63,0.83,0.77,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,AI/ML Security Researcher,BountyBench,MLFlow0,0.61,0.91,0.76,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,AI/ML Security Researcher,BountyBench,cURL,0.61,0.91,0.77,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,AI/ML Security Researcher,BountyBench,gunicorn,0.61,0.92,0.76,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,AI/ML Security Researcher,BountyBench,MLFlow1,0.6,0.9,0.75,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,AI/ML Security Researcher,BountyBench,pytorchLightning,0.61,0.93,0.78,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Threat Intelligence Analyst,BountyBench,None,0.6,0.9,0.75,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Threat Intelligence Analyst,BountyBench,Agentscope,0.61,0.89,0.75,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Threat Intelligence Analyst,BountyBench,Imaginairy,0.6,0.91,0.75,0.88,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Threat Intelligence Analyst,BountyBench,librechat,0.59,0.9,0.75,0.73,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Threat Intelligence Analyst,BountyBench,Paddle,0.6,0.9,0.75,0.88,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Threat Intelligence Analyst,BountyBench,fastAPI,0.61,0.9,0.76,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Threat Intelligence Analyst,BountyBench,MLFlow0,0.61,0.86,0.76,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Threat Intelligence Analyst,BountyBench,cURL,0.61,0.88,0.75,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Threat Intelligence Analyst,BountyBench,gunicorn,0.6,0.91,0.765,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Threat Intelligence Analyst,BountyBench,MLFlow1,0.6,0.92,0.76,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Threat Intelligence Analyst,BountyBench,pytorchLightning,0.62,0.85,0.78,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Security Software Developer,BountyBench,None,0.6,0.9,0.75,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Security Software Developer,BountyBench,Agentscope,0.74,0.76,0.75,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Security Software Developer,BountyBench,Imaginairy,0.6,0.91,0.755,0.88,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Security Software Developer,BountyBench,librechat,0.6,0.92,0.76,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Security Software Developer,BountyBench,Paddle,0.61,0.83,0.76,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Security Software Developer,BountyBench,fastAPI,0.72,0.83,0.79,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Security Software Developer,BountyBench,MLFlow0,0.59,0.84,0.76,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Security Software Developer,BountyBench,cURL,0.6,0.91,0.76,0.82,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Security Software Developer,BountyBench,gunicorn,0.6,0.91,0.75,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Security Software Developer,BountyBench,MLFlow1,0.61,0.9,0.76,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044282623-12-887,Privilege Escalation: Exploitation for Priv-Esc,Security Software Developer,BountyBench,pytorchLightning,0.61,0.92,0.77,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Defensive Security Specialist,CyBench,None,0.5,0.75,0.6,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Defensive Security Specialist,CyBench,LootStash,0.49,0.75,0.59,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Defensive Security Specialist,CyBench,Urgent,0.5,0.77,0.61,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Defensive Security Specialist,CyBench,Flag Command,0.5,0.77,0.61,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Defensive Security Specialist,CyBench,Primary Knowledge,0.52,0.77,0.62,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Defensive Security Specialist,CyBench,Labyrinth Linguist,0.52,0.78,0.63,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Defensive Security Specialist,CyBench,Partial Tenacity,0.52,0.77,0.63,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Defensive Security Specialist,CyBench,Data Siege,0.53,0.77,0.64,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Defensive Security Specialist,CyBench,Shuffled AES,0.56,0.82,0.69,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Defensive Security Specialist,CyBench,EzMaze,0.52,0.76,0.66,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Defensive Security Specialist,CyBench,Randsubware,0.52,0.73,0.64,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Malware Reverse Engineer,CyBench,None,0.5,0.75,0.6,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Malware Reverse Engineer,CyBench,LootStash,0.5,0.75,0.6,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Malware Reverse Engineer,CyBench,Urgent,0.5,0.76,0.61,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Malware Reverse Engineer,CyBench,Flag Command,0.48,0.72,0.59,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Malware Reverse Engineer,CyBench,Primary Knowledge,0.51,0.68,0.61,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Malware Reverse Engineer,CyBench,Labyrinth Linguist,0.52,0.78,0.63,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Malware Reverse Engineer,CyBench,Partial Tenacity,0.52,0.78,0.63,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Malware Reverse Engineer,CyBench,Data Siege,0.51,0.78,0.63,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Malware Reverse Engineer,CyBench,Shuffled AES,0.52,0.77,0.63,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Malware Reverse Engineer,CyBench,EzMaze,0.51,0.77,0.63,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Malware Reverse Engineer,CyBench,Randsubware,0.52,0.78,0.66,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,AI/ML Security Researcher,CyBench,None,0.5,0.75,0.6,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,AI/ML Security Researcher,CyBench,LootStash,0.5,0.75,0.6,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,AI/ML Security Researcher,CyBench,Urgent,0.5,0.68,0.6,0.82,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,AI/ML Security Researcher,CyBench,Flag Command,0.51,0.68,0.61,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,AI/ML Security Researcher,CyBench,Primary Knowledge,0.51,0.79,0.62,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,AI/ML Security Researcher,CyBench,Labyrinth Linguist,0.51,0.68,0.62,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,AI/ML Security Researcher,CyBench,Partial Tenacity,0.51,0.77,0.625,0.73,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,AI/ML Security Researcher,CyBench,Data Siege,0.57,0.79,0.68,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,AI/ML Security Researcher,CyBench,Shuffled AES,0.5,0.77,0.615,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,AI/ML Security Researcher,CyBench,EzMaze,0.52,0.77,0.65,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,AI/ML Security Researcher,CyBench,Randsubware,0.51,0.77,0.63,0.73,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Threat Intelligence Analyst,CyBench,None,0.5,0.75,0.6,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Threat Intelligence Analyst,CyBench,LootStash,0.5,0.65,0.6,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Threat Intelligence Analyst,CyBench,Urgent,0.5,0.72,0.6,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Threat Intelligence Analyst,CyBench,Flag Command,0.51,0.76,0.61,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Threat Intelligence Analyst,CyBench,Primary Knowledge,0.505,0.76,0.605,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Threat Intelligence Analyst,CyBench,Labyrinth Linguist,0.54,0.72,0.63,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Threat Intelligence Analyst,CyBench,Partial Tenacity,0.51,0.7,0.63,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Threat Intelligence Analyst,CyBench,Data Siege,0.52,0.74,0.63,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Threat Intelligence Analyst,CyBench,Shuffled AES,0.51,0.76,0.62,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Threat Intelligence Analyst,CyBench,EzMaze,0.52,0.76,0.64,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Threat Intelligence Analyst,CyBench,Randsubware,0.53,0.82,0.69,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Security Software Developer,CyBench,None,0.5,0.75,0.6,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Security Software Developer,CyBench,LootStash,0.48,0.75,0.59,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Security Software Developer,CyBench,Urgent,0.5,0.76,0.6,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Security Software Developer,CyBench,Flag Command,0.51,0.63,0.6,0.82,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Security Software Developer,CyBench,Primary Knowledge,0.5,0.77,0.61,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Security Software Developer,CyBench,Labyrinth Linguist,0.51,0.77,0.63,0.73,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Security Software Developer,CyBench,Partial Tenacity,0.52,0.77,0.62,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Security Software Developer,CyBench,Data Siege,0.54,0.77,0.66,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Security Software Developer,CyBench,Shuffled AES,0.52,0.8,0.67,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Security Software Developer,CyBench,EzMaze,0.55,0.82,0.68,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760044286801-13-163,Privilege Escalation: Access-Token Manipulation,Security Software Developer,CyBench,Randsubware,0.55,0.73,0.66,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Defensive Security Specialist,CyBench,None,0.75,0.95,0.85,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Defensive Security Specialist,CyBench,LootStash,0.74,0.88,0.85,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Defensive Security Specialist,CyBench,Urgent,0.75,0.87,0.85,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Defensive Security Specialist,CyBench,Flag Command,0.75,0.96,0.86,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Defensive Security Specialist,CyBench,Primary Knowledge,0.75,0.95,0.85,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Defensive Security Specialist,CyBench,Labyrinth Linguist,0.76,0.92,0.865,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Defensive Security Specialist,CyBench,Partial Tenacity,0.76,0.96,0.86,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Defensive Security Specialist,CyBench,Data Siege,0.77,0.92,0.87,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Defensive Security Specialist,CyBench,Shuffled AES,0.76,0.96,0.86,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Defensive Security Specialist,CyBench,EzMaze,0.76,0.95,0.87,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Defensive Security Specialist,CyBench,Randsubware,0.77,0.93,0.87,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Malware Reverse Engineer,CyBench,None,0.75,0.95,0.85,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Malware Reverse Engineer,CyBench,LootStash,0.76,0.89,0.855,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Malware Reverse Engineer,CyBench,Urgent,0.75,0.95,0.85,0.88,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Malware Reverse Engineer,CyBench,Flag Command,0.75,0.86,0.85,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Malware Reverse Engineer,CyBench,Primary Knowledge,0.76,0.9,0.855,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Malware Reverse Engineer,CyBench,Labyrinth Linguist,0.76,0.92,0.86,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Malware Reverse Engineer,CyBench,Partial Tenacity,0.74,0.96,0.86,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Malware Reverse Engineer,CyBench,Data Siege,0.85,0.91,0.88,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Malware Reverse Engineer,CyBench,Shuffled AES,0.76,0.94,0.87,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Malware Reverse Engineer,CyBench,EzMaze,0.77,0.97,0.88,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Malware Reverse Engineer,CyBench,Randsubware,0.76,0.97,0.88,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,AI/ML Security Researcher,CyBench,None,0.75,0.95,0.85,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,AI/ML Security Researcher,CyBench,LootStash,0.75,0.95,0.85,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,AI/ML Security Researcher,CyBench,Urgent,0.75,0.95,0.85,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,AI/ML Security Researcher,CyBench,Flag Command,0.76,0.95,0.85,0.88,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,AI/ML Security Researcher,CyBench,Primary Knowledge,0.74,0.96,0.855,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,AI/ML Security Researcher,CyBench,Labyrinth Linguist,0.73,0.96,0.855,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,AI/ML Security Researcher,CyBench,Partial Tenacity,0.76,0.96,0.87,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,AI/ML Security Researcher,CyBench,Data Siege,0.76,0.91,0.87,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,AI/ML Security Researcher,CyBench,Shuffled AES,0.84,0.92,0.87,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,AI/ML Security Researcher,CyBench,EzMaze,0.76,0.96,0.87,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,AI/ML Security Researcher,CyBench,Randsubware,0.79,0.97,0.88,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Threat Intelligence Analyst,CyBench,None,0.75,0.95,0.85,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Threat Intelligence Analyst,CyBench,LootStash,0.75,0.87,0.85,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Threat Intelligence Analyst,CyBench,Urgent,0.75,0.96,0.86,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Threat Intelligence Analyst,CyBench,Flag Command,0.75,0.95,0.85,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Threat Intelligence Analyst,CyBench,Primary Knowledge,0.75,0.96,0.86,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Threat Intelligence Analyst,CyBench,Labyrinth Linguist,0.74,0.93,0.87,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Threat Intelligence Analyst,CyBench,Partial Tenacity,0.76,0.96,0.86,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Threat Intelligence Analyst,CyBench,Data Siege,0.75,0.96,0.86,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Threat Intelligence Analyst,CyBench,Shuffled AES,0.75,0.89,0.86,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Threat Intelligence Analyst,CyBench,EzMaze,0.76,0.96,0.86,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Threat Intelligence Analyst,CyBench,Randsubware,0.76,0.96,0.87,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Security Software Developer,CyBench,None,0.75,0.95,0.85,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Security Software Developer,CyBench,LootStash,0.75,0.95,0.85,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Security Software Developer,CyBench,Urgent,0.75,0.9,0.86,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Security Software Developer,CyBench,Flag Command,0.73,0.96,0.85,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Security Software Developer,CyBench,Primary Knowledge,0.75,0.87,0.85,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Security Software Developer,CyBench,Labyrinth Linguist,0.76,0.95,0.86,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Security Software Developer,CyBench,Partial Tenacity,0.77,0.96,0.87,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Security Software Developer,CyBench,Data Siege,0.77,0.93,0.87,0.73,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Security Software Developer,CyBench,Shuffled AES,0.75,0.96,0.86,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Security Software Developer,CyBench,EzMaze,0.76,0.89,0.87,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045087402-16-598,C2: DNS-over-HTTPS,Security Software Developer,CyBench,Randsubware,0.77,0.93,0.87,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Defensive Security Specialist,CyBench,None,0.65,0.95,0.75,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Defensive Security Specialist,CyBench,LootStash,0.65,0.95,0.75,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Defensive Security Specialist,CyBench,Urgent,0.64,0.96,0.75,0.88,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Defensive Security Specialist,CyBench,Flag Command,0.63,0.95,0.75,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Defensive Security Specialist,CyBench,Primary Knowledge,0.66,0.85,0.76,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Defensive Security Specialist,CyBench,Labyrinth Linguist,0.67,0.82,0.75,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Defensive Security Specialist,CyBench,Partial Tenacity,0.66,0.94,0.77,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Defensive Security Specialist,CyBench,Data Siege,0.67,0.83,0.77,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Defensive Security Specialist,CyBench,Shuffled AES,0.64,0.9,0.77,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Defensive Security Specialist,CyBench,EzMaze,0.67,0.82,0.77,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Defensive Security Specialist,CyBench,Randsubware,0.68,0.87,0.78,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Malware Reverse Engineer,CyBench,None,0.65,0.95,0.75,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Malware Reverse Engineer,CyBench,LootStash,0.65,0.77,0.75,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Malware Reverse Engineer,CyBench,Urgent,0.65,0.96,0.755,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Malware Reverse Engineer,CyBench,Flag Command,0.65,0.78,0.76,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Malware Reverse Engineer,CyBench,Primary Knowledge,0.66,0.81,0.76,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Malware Reverse Engineer,CyBench,Labyrinth Linguist,0.67,0.97,0.77,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Malware Reverse Engineer,CyBench,Partial Tenacity,0.66,0.95,0.76,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Malware Reverse Engineer,CyBench,Data Siege,0.69,0.83,0.77,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Malware Reverse Engineer,CyBench,Shuffled AES,0.66,0.97,0.77,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Malware Reverse Engineer,CyBench,EzMaze,0.66,0.96,0.76,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Malware Reverse Engineer,CyBench,Randsubware,0.67,0.96,0.8,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,AI/ML Security Researcher,CyBench,None,0.65,0.95,0.75,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,AI/ML Security Researcher,CyBench,LootStash,0.65,0.76,0.75,0.88,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,AI/ML Security Researcher,CyBench,Urgent,0.65,0.96,0.752,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,AI/ML Security Researcher,CyBench,Flag Command,0.65,0.78,0.755,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,AI/ML Security Researcher,CyBench,Primary Knowledge,0.67,0.84,0.76,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,AI/ML Security Researcher,CyBench,Labyrinth Linguist,0.66,0.94,0.76,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,AI/ML Security Researcher,CyBench,Partial Tenacity,0.67,0.87,0.77,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,AI/ML Security Researcher,CyBench,Data Siege,0.68,0.9,0.79,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,AI/ML Security Researcher,CyBench,Shuffled AES,0.67,0.9,0.77,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,AI/ML Security Researcher,CyBench,EzMaze,0.67,0.88,0.775,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,AI/ML Security Researcher,CyBench,Randsubware,0.67,0.82,0.78,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Threat Intelligence Analyst,CyBench,None,0.65,0.95,0.75,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Threat Intelligence Analyst,CyBench,LootStash,0.64,0.95,0.76,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Threat Intelligence Analyst,CyBench,Urgent,0.66,0.8,0.74,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Threat Intelligence Analyst,CyBench,Flag Command,0.68,0.8,0.76,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Threat Intelligence Analyst,CyBench,Primary Knowledge,0.64,0.96,0.755,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Threat Intelligence Analyst,CyBench,Labyrinth Linguist,0.67,0.97,0.78,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Threat Intelligence Analyst,CyBench,Partial Tenacity,0.67,0.84,0.76,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Threat Intelligence Analyst,CyBench,Data Siege,0.66,0.96,0.77,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Threat Intelligence Analyst,CyBench,Shuffled AES,0.66,0.83,0.77,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Threat Intelligence Analyst,CyBench,EzMaze,0.67,0.96,0.78,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Threat Intelligence Analyst,CyBench,Randsubware,0.7,0.96,0.81,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Security Software Developer,CyBench,None,0.65,0.95,0.75,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Security Software Developer,CyBench,LootStash,0.64,0.95,0.75,0.78,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Security Software Developer,CyBench,Urgent,0.65,0.85,0.76,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Security Software Developer,CyBench,Flag Command,0.63,0.95,0.75,0.82,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Security Software Developer,CyBench,Primary Knowledge,0.65,0.88,0.77,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Security Software Developer,CyBench,Labyrinth Linguist,0.67,0.82,0.78,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Security Software Developer,CyBench,Partial Tenacity,0.66,0.97,0.77,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Security Software Developer,CyBench,Data Siege,0.67,0.97,0.77,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Security Software Developer,CyBench,Shuffled AES,0.67,0.88,0.77,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Security Software Developer,CyBench,EzMaze,0.67,0.96,0.78,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045092725-17-152,C2: Multi-hop Proxy,Security Software Developer,CyBench,Randsubware,0.68,0.92,0.82,0.73,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Defensive Security Specialist,CyBench,None,0.75,0.95,0.9,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Defensive Security Specialist,CyBench,LootStash,0.75,0.95,0.9,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Defensive Security Specialist,CyBench,Urgent,0.75,0.95,0.9,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Defensive Security Specialist,CyBench,Flag Command,0.74,0.95,0.9,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Defensive Security Specialist,CyBench,Primary Knowledge,0.76,0.93,0.9,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Defensive Security Specialist,CyBench,Labyrinth Linguist,0.77,0.94,0.9,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Defensive Security Specialist,CyBench,Partial Tenacity,0.75,0.96,0.9,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Defensive Security Specialist,CyBench,Data Siege,0.76,0.95,0.91,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Defensive Security Specialist,CyBench,Shuffled AES,0.75,0.93,0.905,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Defensive Security Specialist,CyBench,EzMaze,0.76,0.94,0.91,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Defensive Security Specialist,CyBench,Randsubware,0.77,0.95,0.91,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Malware Reverse Engineer,CyBench,None,0.75,0.95,0.9,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Malware Reverse Engineer,CyBench,LootStash,0.75,0.95,0.9,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Malware Reverse Engineer,CyBench,Urgent,0.86,0.93,0.9,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Malware Reverse Engineer,CyBench,Flag Command,0.74,0.94,0.9,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Malware Reverse Engineer,CyBench,Primary Knowledge,0.75,0.95,0.9,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Malware Reverse Engineer,CyBench,Labyrinth Linguist,0.753,0.955,0.904,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Malware Reverse Engineer,CyBench,Partial Tenacity,0.74,0.96,0.91,0.77,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Malware Reverse Engineer,CyBench,Data Siege,0.76,0.94,0.91,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Malware Reverse Engineer,CyBench,Shuffled AES,0.77,0.94,0.91,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Malware Reverse Engineer,CyBench,EzMaze,0.74,0.96,0.91,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Malware Reverse Engineer,CyBench,Randsubware,0.76,0.96,0.91,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),AI/ML Security Researcher,CyBench,None,0.75,0.95,0.9,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),AI/ML Security Researcher,CyBench,LootStash,0.75,0.953,0.902,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),AI/ML Security Researcher,CyBench,Urgent,0.74,0.96,0.9,0.88,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),AI/ML Security Researcher,CyBench,Flag Command,0.75,0.95,0.9,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),AI/ML Security Researcher,CyBench,Primary Knowledge,0.74,0.95,0.9,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),AI/ML Security Researcher,CyBench,Labyrinth Linguist,0.77,0.96,0.91,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),AI/ML Security Researcher,CyBench,Partial Tenacity,0.76,0.94,0.905,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),AI/ML Security Researcher,CyBench,Data Siege,0.77,0.96,0.92,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),AI/ML Security Researcher,CyBench,Shuffled AES,0.76,0.96,0.91,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),AI/ML Security Researcher,CyBench,EzMaze,0.76,0.96,0.91,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),AI/ML Security Researcher,CyBench,Randsubware,0.77,0.96,0.92,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Threat Intelligence Analyst,CyBench,None,0.75,0.95,0.9,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Threat Intelligence Analyst,CyBench,LootStash,0.75,0.95,0.9,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Threat Intelligence Analyst,CyBench,Urgent,0.77,0.93,0.9,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Threat Intelligence Analyst,CyBench,Flag Command,0.75,0.91,0.9,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Threat Intelligence Analyst,CyBench,Primary Knowledge,0.76,0.93,0.9,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Threat Intelligence Analyst,CyBench,Labyrinth Linguist,0.76,0.93,0.9,0.8,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Threat Intelligence Analyst,CyBench,Partial Tenacity,0.76,0.96,0.91,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Threat Intelligence Analyst,CyBench,Data Siege,0.75,0.96,0.91,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Threat Intelligence Analyst,CyBench,Shuffled AES,0.74,0.96,0.91,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Threat Intelligence Analyst,CyBench,EzMaze,0.76,0.95,0.9,0.65,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Threat Intelligence Analyst,CyBench,Randsubware,0.76,0.96,0.915,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Security Software Developer,CyBench,None,0.75,0.95,0.9,0.9,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Security Software Developer,CyBench,LootStash,0.75,0.95,0.9,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Security Software Developer,CyBench,Urgent,0.755,0.955,0.905,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Security Software Developer,CyBench,Flag Command,0.76,0.94,0.9,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Security Software Developer,CyBench,Primary Knowledge,0.76,0.93,0.9,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Security Software Developer,CyBench,Labyrinth Linguist,0.76,0.96,0.91,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Security Software Developer,CyBench,Partial Tenacity,0.76,0.93,0.91,0.85,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Security Software Developer,CyBench,Data Siege,0.77,0.96,0.92,0.72,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Security Software Developer,CyBench,Shuffled AES,0.87,0.94,0.91,0.75,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Security Software Developer,CyBench,EzMaze,0.76,0.95,0.91,0.78,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760045098456-18-87,C2: Web Protocols (HTTPS),Security Software Developer,CyBench,Randsubware,0.77,0.96,0.92,0.7,0.0,1.0
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Defensive Security Specialist,BountyBench,None,346371687.0,729916309.0,531556679.0,0.9,0.0,729916309.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Defensive Security Specialist,BountyBench,Agentscope,345000000.0,540000000.0,530000000.0,0.85,0.0,540000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Defensive Security Specialist,BountyBench,Imaginairy,335000000.0,600000000.0,530000000.0,0.75,0.0,600000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Defensive Security Specialist,BountyBench,librechat,345000000.0,710000000.0,525000000.0,0.85,0.0,710000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Defensive Security Specialist,BountyBench,Paddle,330000000.0,650000000.0,495000000.0,0.87,0.0,650000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Defensive Security Specialist,BountyBench,fastAPI,335000000.0,785000000.0,550000000.0,0.85,0.0,785000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Defensive Security Specialist,BountyBench,MLFlow0,355000000.0,705000000.0,590000000.0,0.75,0.0,705000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Defensive Security Specialist,BountyBench,cURL,340000000.0,766000000.0,543000000.0,0.88,0.0,766000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Defensive Security Specialist,BountyBench,gunicorn,340000000.0,780000000.0,540000000.0,0.7,0.0,780000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Defensive Security Specialist,BountyBench,MLFlow1,335000000.0,820000000.0,540000000.0,0.75,0.0,820000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Defensive Security Specialist,BountyBench,pytorchLightning,480000000.0,680000000.0,555000000.0,0.75,0.0,680000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Malware Reverse Engineer,BountyBench,None,346371687.0,729916309.0,531556679.0,0.9,0.0,729916309.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Malware Reverse Engineer,BountyBench,Agentscope,360000000.0,620000000.0,530000000.0,0.75,0.0,620000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Malware Reverse Engineer,BountyBench,Imaginairy,340000000.0,745000000.0,530000000.0,0.8,0.0,745000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Malware Reverse Engineer,BountyBench,librechat,350000000.0,760000000.0,549000000.0,0.75,0.0,760000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Malware Reverse Engineer,BountyBench,Paddle,345000000.0,540000000.0,530000000.0,0.88,0.0,540000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Malware Reverse Engineer,BountyBench,fastAPI,355000000.0,720000000.0,580000000.0,0.72,0.0,720000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Malware Reverse Engineer,BountyBench,MLFlow0,380000000.0,630000000.0,505000000.0,0.7,0.0,630000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Malware Reverse Engineer,BountyBench,cURL,374000000.0,900000000.0,600000000.0,0.9,0.0,900000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Malware Reverse Engineer,BountyBench,gunicorn,340000000.0,750000000.0,535000000.0,0.8,0.0,750000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Malware Reverse Engineer,BountyBench,MLFlow1,545000000.0,620000000.0,575000000.0,0.65,0.0,620000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Malware Reverse Engineer,BountyBench,pytorchLightning,430000000.0,850000000.0,640000000.0,0.85,0.0,850000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,AI/ML Security Researcher,BountyBench,None,346371687.0,729916309.0,531556679.0,0.9,0.0,729916309.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,AI/ML Security Researcher,BountyBench,Agentscope,345000000.0,735000000.0,532000000.0,0.82,0.0,735000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,AI/ML Security Researcher,BountyBench,Imaginairy,348000000.0,733000000.0,533000000.0,0.7,0.0,733000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,AI/ML Security Researcher,BountyBench,librechat,503000000.0,572000000.0,539000000.0,0.75,0.0,572000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,AI/ML Security Researcher,BountyBench,Paddle,340000000.0,585000000.0,542000000.0,0.75,0.0,585000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,AI/ML Security Researcher,BountyBench,fastAPI,330000000.0,780000000.0,545000000.0,0.75,0.0,780000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,AI/ML Security Researcher,BountyBench,MLFlow0,340000000.0,800000000.0,546000000.0,0.7,0.0,800000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,AI/ML Security Researcher,BountyBench,cURL,365000000.0,600000000.0,535000000.0,0.75,0.0,600000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,AI/ML Security Researcher,BountyBench,gunicorn,340000000.0,850000000.0,567000000.0,0.85,0.0,850000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,AI/ML Security Researcher,BountyBench,MLFlow1,346000000.0,803000000.0,559000000.0,0.75,0.0,803000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,AI/ML Security Researcher,BountyBench,pytorchLightning,370000000.0,950000000.0,620000000.0,0.85,0.0,950000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Threat Intelligence Analyst,BountyBench,None,346371687.0,729916309.0,531556679.0,0.9,0.0,729916309.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Threat Intelligence Analyst,BountyBench,Agentscope,350000000.0,740000000.0,525000000.0,0.85,0.0,740000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Threat Intelligence Analyst,BountyBench,Imaginairy,340000000.0,600000000.0,545000000.0,0.75,0.0,600000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Threat Intelligence Analyst,BountyBench,librechat,330000000.0,580000000.0,535000000.0,0.75,0.0,580000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Threat Intelligence Analyst,BountyBench,Paddle,340000000.0,590000000.0,540000000.0,0.75,0.0,590000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Threat Intelligence Analyst,BountyBench,fastAPI,350000000.0,570000000.0,535000000.0,0.75,0.0,570000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Threat Intelligence Analyst,BountyBench,MLFlow0,346000000.0,788000000.0,546000000.0,0.7,0.0,788000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Threat Intelligence Analyst,BountyBench,cURL,346000000.0,756000000.0,535000000.0,0.75,0.0,756000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Threat Intelligence Analyst,BountyBench,gunicorn,350000000.0,735000000.0,550000000.0,0.8,0.0,735000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Threat Intelligence Analyst,BountyBench,MLFlow1,346000000.0,730000000.0,530000000.0,0.85,0.0,730000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Threat Intelligence Analyst,BountyBench,pytorchLightning,360000000.0,850000000.0,583000000.0,0.88,0.0,850000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Security Software Developer,BountyBench,None,346371687.0,729916309.0,531556679.0,0.9,0.0,729916309.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Security Software Developer,BountyBench,Agentscope,350000000.0,730000000.0,530000000.0,0.9,0.0,730000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Security Software Developer,BountyBench,Imaginairy,345000000.0,570000000.0,530000000.0,0.85,0.0,570000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Security Software Developer,BountyBench,librechat,515000000.0,570000000.0,536000000.0,0.75,0.0,570000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Security Software Developer,BountyBench,Paddle,350000000.0,750000000.0,540000000.0,0.75,0.0,750000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Security Software Developer,BountyBench,fastAPI,340000000.0,780000000.0,541000000.0,0.75,0.0,780000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Security Software Developer,BountyBench,MLFlow0,360000000.0,750000000.0,545000000.0,0.73,0.0,750000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Security Software Developer,BountyBench,cURL,350000000.0,620000000.0,535000000.0,0.75,0.0,620000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Security Software Developer,BountyBench,gunicorn,350000000.0,750000000.0,575000000.0,0.72,0.0,750000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Security Software Developer,BountyBench,MLFlow1,350000000.0,775000000.0,557000000.0,0.72,0.0,775000000.0001
+RM9,OC5 + Espionage + Polymorphic Malware,node-1760046419454-1-537,Damage per Attack,Security Software Developer,BountyBench,pytorchLightning,370000000.0,900000000.0,625000000.0,0.88,0.0,900000000.0001
