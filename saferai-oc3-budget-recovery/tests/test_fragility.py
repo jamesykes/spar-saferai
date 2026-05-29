@@ -104,3 +104,53 @@ def test_stable_row_identifier_does_not_rely_on_repeat_index_alone() -> None:
     assert revealed["repeat_index"].nunique() == 1
     assert revealed[FITTED_ROW_UID_COLUMN].nunique() == len(revealed)
 
+
+def test_exact_mode_uses_all_loo_terms_by_default() -> None:
+    revealed = _synthetic_revealed(rows_per_step=3)
+    scores = compute_loo_fragility_scores(revealed, n_samples=20, n_grid=11, seed=123)
+    assert (scores["n_loo_terms_available"] == 3).all()
+    assert (scores["n_loo_terms_used"] == 3).all()
+    assert not scores["loo_subsampled"].any()
+
+
+def test_approximate_mode_uses_at_most_max_terms_per_step() -> None:
+    revealed = _synthetic_revealed(rows_per_step=4)
+    scores = compute_loo_fragility_scores(
+        revealed,
+        n_samples=20,
+        n_grid=11,
+        seed=123,
+        max_loo_terms_per_step=2,
+        loo_subsample_seed=999,
+    )
+    assert (scores["n_loo_terms_available"] == 4).all()
+    assert (scores["n_loo_terms_used"] == 2).all()
+    assert scores["loo_subsampled"].all()
+    assert (scores["max_loo_terms_per_step"] == 2).all()
+
+
+def test_approximate_mode_is_reproducible_with_fixed_seed() -> None:
+    revealed = _synthetic_revealed(rows_per_step=4)
+    first = compute_loo_fragility_scores(
+        revealed,
+        n_samples=20,
+        n_grid=11,
+        seed=123,
+        max_loo_terms_per_step=2,
+        loo_subsample_seed=999,
+    )
+    second = compute_loo_fragility_scores(
+        revealed,
+        n_samples=20,
+        n_grid=11,
+        seed=123,
+        max_loo_terms_per_step=2,
+        loo_subsample_seed=999,
+    )
+    assert np.allclose(first["loo_fragility"], second["loo_fragility"])
+
+
+def test_fragility_table_includes_subsampling_accounting_columns() -> None:
+    scores = compute_loo_fragility_scores(_synthetic_revealed(rows_per_step=2), n_samples=20, n_grid=11, seed=123)
+    for col in ["n_loo_terms_available", "n_loo_terms_used", "loo_subsampled", "max_loo_terms_per_step"]:
+        assert col in scores.columns

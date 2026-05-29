@@ -51,6 +51,8 @@ def compute_loo_fragility_scores(
     n_grid: int = 501,
     seed: int = 12345,
     common_random_numbers: bool = True,
+    max_loo_terms_per_step: int | None = None,
+    loo_subsample_seed: int | None = None,
 ) -> pd.DataFrame:
     """Compute LOO output fragility for each expected MITRE-step input."""
 
@@ -58,6 +60,8 @@ def compute_loo_fragility_scores(
         raise ValueError("n_samples must be positive.")
     if n_grid < 2:
         raise ValueError("n_grid must be at least 2.")
+    if max_loo_terms_per_step is not None and max_loo_terms_per_step <= 0:
+        raise ValueError("max_loo_terms_per_step must be positive when provided.")
 
     revealed = usable_fit_rows(revealed_df)
     grid = make_quantile_grid(n_grid)
@@ -70,9 +74,19 @@ def compute_loo_fragility_scores(
         step_rows = revealed.loc[revealed["step_name"].eq(step_label)].copy()
         distances: list[float] = []
         n_failed = 0
+        n_available = int(len(step_rows)) if len(step_rows) >= 2 else 0
+        loo_rows = _select_loo_rows(
+            step_rows=step_rows,
+            step_index=step_index,
+            seed=seed,
+            max_loo_terms_per_step=max_loo_terms_per_step,
+            loo_subsample_seed=loo_subsample_seed,
+        )
+        n_used = int(len(loo_rows))
+        loo_subsampled = bool(n_available > n_used)
 
         if len(step_rows) >= 2:
-            for loo_index, row in enumerate(step_rows.to_dict(orient="records")):
+            for loo_index, row in enumerate(loo_rows.to_dict(orient="records")):
                 try:
                     perturbed = loo_perturbed_revealed_df(
                         revealed, step_label=step_label, row_id=str(row[FITTED_ROW_UID_COLUMN])
@@ -119,13 +133,22 @@ def compute_loo_fragility_scores(
                 "max_loo_distance": max_distance,
                 "min_loo_distance": min_distance,
                 "n_loo_terms": int(len(finite_distances)),
+                "n_loo_terms_available": n_available,
+                "n_loo_terms_used": n_used,
+                "loo_subsampled": loo_subsampled,
+                "max_loo_terms_per_step": max_loo_terms_per_step,
                 "n_failed_loo_terms": int(n_failed),
                 "sample_seed": int(seed),
                 "n_samples": int(n_samples),
                 "n_grid": int(n_grid),
             }
         )
-    return pd.DataFrame(rows)
+    out = pd.DataFrame(rows)
+    out.attrs["total_loo_terms_available"] = int(out["n_loo_terms_available"].sum())
+    out.attrs["total_loo_terms_used"] = int(out["n_loo_terms_used"].sum())
+    out.attrs["any_loo_subsampled"] = bool(out["loo_subsampled"].any())
+    out.attrs["max_loo_terms_per_step"] = max_loo_terms_per_step
+    return out
 
 
 def _ensure_stable_row_id(df: pd.DataFrame) -> pd.DataFrame:
@@ -139,3 +162,20 @@ def _loo_seed(seed: int, step_index: int, loo_index: int, common_random_numbers:
         return int(seed + (step_index + 1) * 100_000 + loo_index)
     return int(seed + (step_index + 1) * 10_000_000 + loo_index * 101)
 
+
+def _select_loo_rows(
+    step_rows: pd.DataFrame,
+    step_index: int,
+    seed: int,
+    max_loo_terms_per_step: int | None,
+    loo_subsample_seed: int | None,
+) -> pd.DataFrame:
+    if len(step_rows) < 2:
+        return step_rows.iloc[0:0].copy()
+    if max_loo_terms_per_step is None or len(step_rows) <= max_loo_terms_per_step:
+        return step_rows.copy()
+
+    base_seed = seed if loo_subsample_seed is None else loo_subsample_seed
+    rng = np.random.default_rng(int(base_seed + (step_index + 1) * 1_000_003))
+    chosen_positions = rng.choice(len(step_rows), size=max_loo_terms_per_step, replace=False)
+    return step_rows.iloc[np.sort(chosen_positions)].copy()

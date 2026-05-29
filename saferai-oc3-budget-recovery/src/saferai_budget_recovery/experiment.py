@@ -44,6 +44,8 @@ def run_policy_recovery(
     n_grid: int = 501,
     fragility_kwargs: dict | None = None,
     fragility_recompute_every: int = 1,
+    reference_samples: np.ndarray | None = None,
+    reference_quantiles: np.ndarray | None = None,
 ) -> tuple[pd.DataFrame, dict]:
     """Run a small recovery loop for one policy and one reveal seed."""
 
@@ -67,11 +69,20 @@ def run_policy_recovery(
         )
 
     grid = quantile_grid(n_grid)
-    reference_df = sample_full_reference_p_success(
-        usable_df, n_samples=n_reference_samples, seed=reference_seed
-    )
-    reference_samples = reference_df["p_success"].to_numpy(dtype=float)
-    reference_quantiles = empirical_quantiles(reference_samples, grid)
+    reference_sampling_start = time.perf_counter()
+    reference_reused = reference_samples is not None or reference_quantiles is not None
+    if reference_samples is None:
+        reference_df = sample_full_reference_p_success(
+            usable_df, n_samples=n_reference_samples, seed=reference_seed
+        )
+        reference_samples = reference_df["p_success"].to_numpy(dtype=float)
+    else:
+        reference_samples = np.asarray(reference_samples, dtype=float)
+    if reference_quantiles is None:
+        reference_quantiles = empirical_quantiles(reference_samples, grid)
+    else:
+        reference_quantiles = np.asarray(reference_quantiles, dtype=float)
+    reference_sampling_seconds = time.perf_counter() - reference_sampling_start
 
     rng = np.random.default_rng(reveal_seed)
     selected_step_counts: dict[str, int] = {}
@@ -79,6 +90,13 @@ def run_policy_recovery(
     decision_count = 0
     cached_fragility_scores: pd.DataFrame | None = None
     decisions_since_recompute = fragility_recompute_every
+    fragility_runtime_seconds = 0.0
+    budget_sampling_seconds = 0.0
+    fragility_recomputation_count = 0
+    total_loo_terms_available = 0
+    total_loo_terms_used = 0
+    any_loo_subsampled = False
+    fragility_runtime_diagnostics: list[dict[str, Any]] = []
 
     rows: list[dict[str, Any]] = []
     for target_budget in budgets_used:
@@ -91,11 +109,43 @@ def run_policy_recovery(
             else:
                 recompute = cached_fragility_scores is None or decisions_since_recompute >= fragility_recompute_every
                 if recompute:
+                    fragility_start = time.perf_counter()
                     selected_row_id, cached_fragility_scores = choose_next_greedy_fragility(
                         revealed_df,
                         unrevealed_df,
                         rng,
                         fragility_kwargs=fragility_kwargs or {},
+                    )
+                    fragility_elapsed = time.perf_counter() - fragility_start
+                    fragility_runtime_seconds += fragility_elapsed
+                    fragility_recomputation_count += 1
+                    available = int(cached_fragility_scores["n_loo_terms_available"].sum())
+                    used = int(cached_fragility_scores["n_loo_terms_used"].sum())
+                    total_loo_terms_available += available
+                    total_loo_terms_used += used
+                    any_loo_subsampled = any_loo_subsampled or bool(cached_fragility_scores["loo_subsampled"].any())
+                    finite_scores = cached_fragility_scores.loc[np.isfinite(cached_fragility_scores["loo_fragility"])]
+                    if finite_scores.empty:
+                        top_fragile_step = None
+                        top_fragility = None
+                    else:
+                        top_row = finite_scores.sort_values("loo_fragility", ascending=False).iloc[0]
+                        top_fragile_step = str(top_row["step_name"])
+                        top_fragility = float(top_row["loo_fragility"])
+                    fragility_runtime_diagnostics.append(
+                        {
+                            "policy_name": policy_name,
+                            "reveal_seed": int(reveal_seed),
+                            "recomputation_index": int(fragility_recomputation_count),
+                            "revealed_count_at_recomputation": int(len(revealed_df)),
+                            "runtime_seconds": float(fragility_elapsed),
+                            "total_loo_terms_available": available,
+                            "total_loo_terms_used": used,
+                            "max_loo_terms_per_step": (fragility_kwargs or {}).get("max_loo_terms_per_step"),
+                            "loo_subsampled": bool(cached_fragility_scores["loo_subsampled"].any()),
+                            "top_fragile_step": top_fragile_step,
+                            "top_fragility": top_fragility,
+                        }
                     )
                     decisions_since_recompute = 0
                 else:
@@ -125,11 +175,13 @@ def run_policy_recovery(
             budget_samples = reference_samples
             budget_quantiles = reference_quantiles
         else:
+            budget_sampling_start = time.perf_counter()
             budget_df = sample_p_success_from_revealed(
                 revealed_df, n_samples=n_budget_samples, seed=sample_seed
             )
             budget_samples = budget_df["p_success"].to_numpy(dtype=float)
             budget_quantiles = empirical_quantiles(budget_samples, grid)
+            budget_sampling_seconds += time.perf_counter() - budget_sampling_start
         distance = squared_wasserstein2_from_quantiles(budget_quantiles, reference_quantiles, grid)
         step_counts = _step_counts(revealed_df)
         balance = _step_balance_diagnostics(step_counts, target_budget)
@@ -175,6 +227,25 @@ def run_policy_recovery(
         "selected_step_counts": selected_step_counts,
         "fallback_count": int(fallback_count),
         "decision_count": int(decision_count),
+        "reference_sampling_seconds": float(reference_sampling_seconds),
+        "reference_reused": bool(reference_reused),
+        "budget_sampling_seconds": float(budget_sampling_seconds),
+        "fragility_runtime_seconds": float(fragility_runtime_seconds),
+        "fragility_recomputation_count": int(fragility_recomputation_count),
+        "avg_fragility_recompute_seconds": (
+            float(fragility_runtime_seconds / fragility_recomputation_count)
+            if fragility_recomputation_count
+            else 0.0
+        ),
+        "total_loo_terms_available": int(total_loo_terms_available),
+        "total_loo_terms_used": int(total_loo_terms_used),
+        "loo_terms_used_fraction": (
+            float(total_loo_terms_used / total_loo_terms_available)
+            if total_loo_terms_available
+            else None
+        ),
+        "any_loo_subsampled": bool(any_loo_subsampled),
+        "fragility_runtime_diagnostics": fragility_runtime_diagnostics,
     }
     return result_df, diagnostics
 

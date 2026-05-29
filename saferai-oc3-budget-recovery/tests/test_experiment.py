@@ -5,7 +5,9 @@ import pandas as pd
 import pytest
 
 from saferai_budget_recovery import config
+from saferai_budget_recovery.distances import empirical_quantiles, quantile_grid
 from saferai_budget_recovery.experiment import run_policy_recovery
+from saferai_budget_recovery.sampling import sample_full_reference_p_success
 
 
 def _complete_fit_df(rows_per_group: int = 2) -> pd.DataFrame:
@@ -121,3 +123,73 @@ def test_old_uniform_policy_name_is_rejected() -> None:
             n_budget_samples=40,
             n_grid=21,
         )
+
+
+def test_reference_samples_and_quantiles_can_be_reused() -> None:
+    fit_df = _complete_fit_df()
+    grid = quantile_grid(21)
+    reference_samples = sample_full_reference_p_success(fit_df, n_samples=60, seed=22)[
+        "p_success"
+    ].to_numpy()
+    reference_quantiles = empirical_quantiles(reference_samples, grid)
+    results, diagnostics = run_policy_recovery(
+        fit_df,
+        policy_name="uniform_step_balanced",
+        budgets=[45, 50],
+        reveal_seed=11,
+        reference_seed=22,
+        sample_seed_base=33,
+        n_reference_samples=60,
+        n_budget_samples=40,
+        n_grid=21,
+        reference_samples=reference_samples,
+        reference_quantiles=reference_quantiles,
+    )
+    assert diagnostics["reference_reused"] is True
+    assert diagnostics["reference_sampling_seconds"] < 0.1
+    assert np.isfinite(results["squared_wasserstein2_to_full_reference"]).all()
+
+
+def test_runtime_metadata_fields_are_present() -> None:
+    _, diagnostics = run_policy_recovery(
+        _complete_fit_df(),
+        policy_name="greedy_loo_fragility",
+        budgets=[45, 50],
+        reveal_seed=11,
+        reference_seed=22,
+        sample_seed_base=33,
+        n_reference_samples=60,
+        n_budget_samples=40,
+        n_grid=21,
+        fragility_kwargs={"n_samples": 15, "n_grid": 7, "max_loo_terms_per_step": 2},
+        fragility_recompute_every=5,
+    )
+    for key in [
+        "reference_sampling_seconds",
+        "budget_sampling_seconds",
+        "fragility_runtime_seconds",
+        "fragility_recomputation_count",
+        "avg_fragility_recompute_seconds",
+        "total_loo_terms_available",
+        "total_loo_terms_used",
+    ]:
+        assert key in diagnostics
+
+
+def test_approximate_fragility_settings_are_recorded_in_diagnostics() -> None:
+    _, diagnostics = run_policy_recovery(
+        _complete_fit_df(),
+        policy_name="greedy_loo_fragility",
+        budgets=[45, 50],
+        reveal_seed=11,
+        reference_seed=22,
+        sample_seed_base=33,
+        n_reference_samples=60,
+        n_budget_samples=40,
+        n_grid=21,
+        fragility_kwargs={"n_samples": 15, "n_grid": 7, "max_loo_terms_per_step": 2},
+        fragility_recompute_every=5,
+    )
+    assert diagnostics["fragility_kwargs"]["max_loo_terms_per_step"] == 2
+    assert diagnostics["any_loo_subsampled"] is True
+    assert diagnostics["total_loo_terms_used"] <= diagnostics["total_loo_terms_available"]
