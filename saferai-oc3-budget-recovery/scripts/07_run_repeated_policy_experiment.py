@@ -17,6 +17,7 @@ sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
 from saferai_budget_recovery import config
 from saferai_budget_recovery.analysis import (
+    DISTANCE_COL,
     compute_auc_by_seed_policy,
     compute_policy_differences,
     compute_policy_differences_against_baseline,
@@ -140,6 +141,39 @@ CONFIGURATIONS = {
             "Removed exploration_bonus_c0.25 and exploration_bonus_c1.0 after the 5-seed all-c-values run was still too slow; kept exploration_bonus_c0.5.",
         ],
     },
+    "EXPLORATION_BONUS_SENSITIVITY_DEV": {
+        "budgets": [45, 90, 180, 360, 720, 1200],
+        "reveal_seeds": [101, 202, 303, 404, 505],
+        "policy_specs": [
+            {"name": "uniform_step_balanced", "policy_name": "uniform_step_balanced", "policy_kwargs": {}},
+            {
+                "name": "exploration_bonus_c0.25",
+                "policy_name": "exploration_bonus_loo_fragility",
+                "policy_kwargs": {"c": 0.25},
+            },
+            {
+                "name": "exploration_bonus_c0.5",
+                "policy_name": "exploration_bonus_loo_fragility",
+                "policy_kwargs": {"c": 0.5},
+            },
+            {
+                "name": "exploration_bonus_c1.0",
+                "policy_name": "exploration_bonus_loo_fragility",
+                "policy_kwargs": {"c": 1.0},
+            },
+        ],
+        "n_reference_samples": 40_000,
+        "n_budget_samples": 12_000,
+        "n_grid": 401,
+        "fragility_kwargs": {
+            "n_samples": 600,
+            "n_grid": 151,
+            "max_loo_terms_per_step": 20,
+        },
+        "fragility_recompute_every": 90,
+        "reference_seed": 907000,
+        "sample_seed_base": 1008000,
+    },
     "MORE_EXACT_DEV": {
         "budgets": [45, 90, 180, 360, 720],
         "reveal_seeds": [101, 202, 303],
@@ -157,7 +191,7 @@ CONFIGURATIONS = {
         "sample_seed_base": 1008000,
     },
 }
-MODE = os.environ.get("SAFERAI_EXPERIMENT_MODE", "V8_ALL_POLICIES_DEV")
+MODE = os.environ.get("SAFERAI_EXPERIMENT_MODE", "EXPLORATION_BONUS_SENSITIVITY_DEV")
 
 
 def main() -> None:
@@ -246,6 +280,13 @@ def main() -> None:
     concentration_df = summarize_concentration_by_budget(results_df)
     selected_step_counts_df = _selected_step_counts_df(run_diagnostics)
     fragility_runtime_df = pd.DataFrame(fragility_runtime_rows)
+    c_value_summary_df = _exploration_bonus_c_value_summary(
+        results_df=results_df,
+        differences_df=differences_df,
+        auc_df=auc_df,
+        concentration_df=concentration_df,
+        max_budget=max(settings["budgets"]),
+    )
 
     paths = {
         "results": OUTPUT_DIR / f"{prefix}_repeated_policy_results.csv",
@@ -256,6 +297,7 @@ def main() -> None:
         "win_by_seed": OUTPUT_DIR / f"{prefix}_win_rate_by_seed.csv",
         "concentration": OUTPUT_DIR / f"{prefix}_concentration_by_budget.csv",
         "selected_step_counts": OUTPUT_DIR / f"{prefix}_selected_step_counts.csv",
+        "c_value_summary": OUTPUT_DIR / f"{prefix}_c_value_summary.csv",
         "report": OUTPUT_DIR / f"{prefix}_repeated_policy_experiment_report.json",
         "fragility_runtime": OUTPUT_DIR / f"{prefix}_fragility_runtime_diagnostics.csv",
     }
@@ -267,6 +309,7 @@ def main() -> None:
     win_by_seed_df.to_csv(paths["win_by_seed"], index=False)
     concentration_df.to_csv(paths["concentration"], index=False)
     selected_step_counts_df.to_csv(paths["selected_step_counts"], index=False)
+    c_value_summary_df.to_csv(paths["c_value_summary"], index=False)
     fragility_runtime_df.to_csv(paths["fragility_runtime"], index=False)
 
     runtime = time.perf_counter() - start
@@ -285,6 +328,7 @@ def main() -> None:
         win_by_seed_df=win_by_seed_df,
         concentration_df=concentration_df,
         selected_step_counts_df=selected_step_counts_df,
+        c_value_summary_df=c_value_summary_df,
         run_diagnostics=run_diagnostics,
         fragility_runtime_df=fragility_runtime_df,
         runtime=runtime,
@@ -305,6 +349,19 @@ def main() -> None:
     )
     print("AUC summary:")
     print(auc_summary.to_string())
+    if not c_value_summary_df.empty:
+        print("Exploration-bonus c-value summary:")
+        print(
+            c_value_summary_df[
+                [
+                    "c",
+                    "average_auc",
+                    "win_fraction_vs_uniform",
+                    "mean_l1_imbalance_at_1200",
+                    "mean_max_min_ratio_at_1200",
+                ]
+            ].to_string(index=False)
+        )
     largest_budget = max(settings["budgets"])
     largest_concentration = concentration_df.loc[concentration_df["budget"].eq(largest_budget)]
     if not largest_concentration.empty:
@@ -341,6 +398,7 @@ def _make_report(
     win_by_seed_df: pd.DataFrame,
     concentration_df: pd.DataFrame,
     selected_step_counts_df: pd.DataFrame,
+    c_value_summary_df: pd.DataFrame,
     run_diagnostics: list[dict[str, Any]],
     fragility_runtime_df: pd.DataFrame,
     runtime: float,
@@ -421,6 +479,8 @@ def _make_report(
         "win_rate_by_seed": win_by_seed_df.to_dict(orient="records"),
         "concentration_by_budget": concentration_df.to_dict(orient="records"),
         "selected_step_counts": selected_step_counts_df.to_dict(orient="records"),
+        "exploration_bonus_c_value_summary": c_value_summary_df.to_dict(orient="records"),
+        "exploration_bonus_sensitivity": _exploration_bonus_sensitivity_notes(c_value_summary_df),
         "fragility_approximation_diagnostics": _fragility_approximation(fragility_runtime_df),
         "interpretation_notes": {
             "best_average_auc_policy": str(best_auc_policy),
@@ -564,6 +624,166 @@ def _selected_step_counts_df(run_diagnostics: list[dict[str, Any]]) -> pd.DataFr
             ]
         )
     return pd.DataFrame(rows).sort_values(["reveal_seed", "step_name"]).reset_index(drop=True)
+
+
+def _exploration_bonus_c_value_summary(
+    results_df: pd.DataFrame,
+    differences_df: pd.DataFrame,
+    auc_df: pd.DataFrame,
+    concentration_df: pd.DataFrame,
+    max_budget: int,
+) -> pd.DataFrame:
+    """Summarize exploration-bonus sensitivity over c values."""
+
+    exploration_policies = sorted(
+        policy for policy in results_df["policy_name"].unique() if str(policy).startswith("exploration_bonus_c")
+    )
+    rows: list[dict[str, Any]] = []
+    for policy in exploration_policies:
+        c_value = _parse_exploration_bonus_c(policy)
+        policy_results = results_df.loc[results_df["policy_name"].eq(policy)]
+        policy_auc = auc_df.loc[auc_df["policy_name"].eq(policy), "auc_distance"].to_numpy(dtype=float)
+        policy_diff = differences_df.loc[differences_df["policy_name"].eq(policy)]
+        policy_concentration = concentration_df.loc[
+            concentration_df["policy_name"].eq(policy) & concentration_df["budget"].eq(max_budget)
+        ]
+        policy_results_at_max_budget = policy_results.loc[policy_results["budget"].eq(max_budget)]
+
+        if policy_concentration.empty:
+            concentration_row: dict[str, Any] = {}
+        else:
+            concentration_row = policy_concentration.iloc[0].to_dict()
+
+        rows.append(
+            {
+                "policy_name": str(policy),
+                "c": float(c_value),
+                "average_auc": float(np.mean(policy_auc)) if len(policy_auc) else np.nan,
+                "median_auc": float(np.median(policy_auc)) if len(policy_auc) else np.nan,
+                "average_distance_across_all_budgets_and_seeds": float(policy_results[DISTANCE_COL].mean()),
+                "win_fraction_vs_uniform": (
+                    float(policy_diff["policy_better"].mean()) if not policy_diff.empty else np.nan
+                ),
+                f"mean_l1_imbalance_at_{max_budget}": _float_or_nan(
+                    concentration_row.get("mean_step_count_l1_imbalance")
+                ),
+                f"median_l1_imbalance_at_{max_budget}": _float_or_nan(
+                    concentration_row.get("median_step_count_l1_imbalance")
+                ),
+                f"max_l1_imbalance_at_{max_budget}": _float_or_nan(
+                    concentration_row.get("max_step_count_l1_imbalance")
+                ),
+                f"mean_max_min_ratio_at_{max_budget}": _float_or_nan(
+                    concentration_row.get("mean_max_min_revealed_row_ratio")
+                ),
+                f"min_step_count_at_{max_budget}_mean": float(
+                    policy_results_at_max_budget["min_revealed_rows_per_step"].mean()
+                )
+                if not policy_results_at_max_budget.empty
+                else np.nan,
+                f"max_step_count_at_{max_budget}_mean": float(
+                    policy_results_at_max_budget["max_revealed_rows_per_step"].mean()
+                )
+                if not policy_results_at_max_budget.empty
+                else np.nan,
+            }
+        )
+    if not rows:
+        return pd.DataFrame()
+    return pd.DataFrame(rows).sort_values("c").reset_index(drop=True)
+
+
+def _exploration_bonus_sensitivity_notes(c_value_summary_df: pd.DataFrame) -> dict[str, Any]:
+    """Return compact interpretation diagnostics for the c sensitivity table."""
+
+    if c_value_summary_df.empty:
+        return {}
+
+    max_budget = _max_budget_from_c_summary(c_value_summary_df)
+    l1_col = f"mean_l1_imbalance_at_{max_budget}"
+    ordered = c_value_summary_df.sort_values("c").reset_index(drop=True)
+    auc_values = ordered["average_auc"].to_numpy(dtype=float)
+    l1_values = ordered[l1_col].to_numpy(dtype=float) if l1_col in ordered else np.array([])
+    win_values = ordered["win_fraction_vs_uniform"].to_numpy(dtype=float)
+
+    best_auc_row = ordered.loc[ordered["average_auc"].idxmin()]
+    best_win_row = ordered.loc[ordered["win_fraction_vs_uniform"].idxmax()]
+    lowest_concentration_row = ordered.loc[ordered[l1_col].idxmin()] if l1_col in ordered else None
+    c05 = ordered.loc[np.isclose(ordered["c"].to_numpy(dtype=float), 0.5)]
+
+    return {
+        "lowest_average_auc_c": float(best_auc_row["c"]),
+        "lowest_average_auc_policy": str(best_auc_row["policy_name"]),
+        "best_win_rate_c": float(best_win_row["c"]),
+        "best_win_rate_policy": str(best_win_row["policy_name"]),
+        "lowest_concentration_c_at_largest_budget": (
+            float(lowest_concentration_row["c"]) if lowest_concentration_row is not None else None
+        ),
+        "lowest_concentration_policy_at_largest_budget": (
+            str(lowest_concentration_row["policy_name"]) if lowest_concentration_row is not None else None
+        ),
+        "increasing_c_reduces_mean_l1_concentration_monotonically": _is_nonincreasing(l1_values),
+        "increasing_c_reduces_average_auc_monotonically": _is_nonincreasing(auc_values),
+        "increasing_c_improves_win_fraction_monotonically": _is_nondecreasing(win_values),
+        "c_0_5_summary": c05.iloc[0].to_dict() if not c05.empty else None,
+        "c_0_5_is_reasonable_default_diagnostic": _c05_default_diagnostic(ordered, l1_col),
+        "note": (
+            "These are development sensitivity diagnostics for approximate exploration-bonus LOO "
+            "fragility with max_loo_terms_per_step=20, not a final tuned-policy claim."
+        ),
+    }
+
+
+def _parse_exploration_bonus_c(policy_name: str) -> float:
+    prefix = "exploration_bonus_c"
+    if not policy_name.startswith(prefix):
+        raise ValueError(f"Policy name does not look like an exploration-bonus c policy: {policy_name!r}")
+    return float(policy_name[len(prefix):])
+
+
+def _max_budget_from_c_summary(c_value_summary_df: pd.DataFrame) -> int:
+    for column in c_value_summary_df.columns:
+        prefix = "mean_l1_imbalance_at_"
+        if column.startswith(prefix):
+            return int(column[len(prefix):])
+    raise ValueError("c-value summary does not include a mean_l1_imbalance_at_<budget> column.")
+
+
+def _c05_default_diagnostic(ordered_c_summary: pd.DataFrame, l1_col: str) -> str:
+    c05 = ordered_c_summary.loc[np.isclose(ordered_c_summary["c"].to_numpy(dtype=float), 0.5)]
+    if c05.empty:
+        return "c=0.5 was not included in this run."
+    row = c05.iloc[0]
+    auc_rank = int(ordered_c_summary["average_auc"].rank(method="min").loc[row.name])
+    concentration_rank = int(ordered_c_summary[l1_col].rank(method="min").loc[row.name])
+    win_rank = int(
+        ordered_c_summary["win_fraction_vs_uniform"].rank(method="min", ascending=False).loc[row.name]
+    )
+    return (
+        f"c=0.5 ranks {auc_rank} by average AUC, {win_rank} by win fraction, "
+        f"and {concentration_rank} by mean L1 concentration at the largest budget among "
+        f"{len(ordered_c_summary)} c values."
+    )
+
+
+def _is_nonincreasing(values: np.ndarray) -> bool | None:
+    finite = values[np.isfinite(values)]
+    if len(finite) < 2:
+        return None
+    return bool(np.all(np.diff(finite) <= 0))
+
+
+def _is_nondecreasing(values: np.ndarray) -> bool | None:
+    finite = values[np.isfinite(values)]
+    if len(finite) < 2:
+        return None
+    return bool(np.all(np.diff(finite) >= 0))
+
+
+def _float_or_nan(value: Any) -> float:
+    if value is None:
+        return np.nan
+    return float(value)
 
 
 def _steps_never_selected_after_initial_seed(run_diagnostics: list[dict[str, Any]]) -> list[str]:

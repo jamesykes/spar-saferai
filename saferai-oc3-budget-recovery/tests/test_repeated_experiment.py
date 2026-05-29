@@ -92,3 +92,109 @@ def test_repeated_experiment_script_exposes_v8_all_policies_mode() -> None:
     assert "exploration_bonus_c0.5" in policy_names
     assert settings["fragility_kwargs"]["max_loo_terms_per_step"] == 20
     assert module.MODE in module.CONFIGURATIONS
+
+
+def test_repeated_experiment_script_exposes_exploration_bonus_sensitivity_mode() -> None:
+    script_path = Path(__file__).resolve().parents[1] / "scripts" / "07_run_repeated_policy_experiment.py"
+    spec = importlib.util.spec_from_file_location("run_repeated_policy_experiment_bonus", script_path)
+    assert spec is not None
+    assert spec.loader is not None
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    settings = module.CONFIGURATIONS["EXPLORATION_BONUS_SENSITIVITY_DEV"]
+    policy_names = {spec["name"] for spec in settings["policy_specs"]}
+    assert policy_names == {
+        "uniform_step_balanced",
+        "exploration_bonus_c0.25",
+        "exploration_bonus_c0.5",
+        "exploration_bonus_c1.0",
+    }
+    assert settings["n_reference_samples"] == 40_000
+    assert settings["n_budget_samples"] == 12_000
+    assert settings["fragility_kwargs"]["max_loo_terms_per_step"] == 20
+    assert module.MODE == "EXPLORATION_BONUS_SENSITIVITY_DEV"
+
+
+def test_exploration_bonus_c_value_summary() -> None:
+    script_path = Path(__file__).resolve().parents[1] / "scripts" / "07_run_repeated_policy_experiment.py"
+    spec = importlib.util.spec_from_file_location("run_repeated_policy_experiment_summary", script_path)
+    assert spec is not None
+    assert spec.loader is not None
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+
+    results = pd.DataFrame(
+        [
+            {
+                "policy_name": "exploration_bonus_c0.25",
+                "reveal_seed": 1,
+                "budget": 1200,
+                "squared_wasserstein2_to_full_reference": 2.0,
+                "min_revealed_rows_per_step": 10,
+                "max_revealed_rows_per_step": 30,
+            },
+            {
+                "policy_name": "exploration_bonus_c0.5",
+                "reveal_seed": 1,
+                "budget": 1200,
+                "squared_wasserstein2_to_full_reference": 1.0,
+                "min_revealed_rows_per_step": 12,
+                "max_revealed_rows_per_step": 25,
+            },
+            {
+                "policy_name": "uniform_step_balanced",
+                "reveal_seed": 1,
+                "budget": 1200,
+                "squared_wasserstein2_to_full_reference": 1.5,
+                "min_revealed_rows_per_step": 20,
+                "max_revealed_rows_per_step": 21,
+            },
+        ]
+    )
+    differences = pd.DataFrame(
+        [
+            {"policy_name": "exploration_bonus_c0.25", "policy_better": False},
+            {"policy_name": "exploration_bonus_c0.5", "policy_better": True},
+        ]
+    )
+    auc = pd.DataFrame(
+        [
+            {"policy_name": "exploration_bonus_c0.25", "auc_distance": 20.0},
+            {"policy_name": "exploration_bonus_c0.5", "auc_distance": 10.0},
+        ]
+    )
+    concentration = pd.DataFrame(
+        [
+            {
+                "policy_name": "exploration_bonus_c0.25",
+                "budget": 1200,
+                "mean_step_count_l1_imbalance": 30.0,
+                "median_step_count_l1_imbalance": 30.0,
+                "max_step_count_l1_imbalance": 30.0,
+                "mean_max_min_revealed_row_ratio": 3.0,
+            },
+            {
+                "policy_name": "exploration_bonus_c0.5",
+                "budget": 1200,
+                "mean_step_count_l1_imbalance": 20.0,
+                "median_step_count_l1_imbalance": 20.0,
+                "max_step_count_l1_imbalance": 20.0,
+                "mean_max_min_revealed_row_ratio": 2.0,
+            },
+        ]
+    )
+    summary = module._exploration_bonus_c_value_summary(
+        results_df=results,
+        differences_df=differences,
+        auc_df=auc,
+        concentration_df=concentration,
+        max_budget=1200,
+    )
+
+    assert list(summary["c"]) == [0.25, 0.5]
+    row = summary.loc[summary["c"].eq(0.5)].iloc[0]
+    assert row["average_auc"] == 10.0
+    assert row["win_fraction_vs_uniform"] == 1.0
+    assert row["mean_l1_imbalance_at_1200"] == 20.0
+    notes = module._exploration_bonus_sensitivity_notes(summary)
+    assert notes["lowest_average_auc_c"] == 0.5
