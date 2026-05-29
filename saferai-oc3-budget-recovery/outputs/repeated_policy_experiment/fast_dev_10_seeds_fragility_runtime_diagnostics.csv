@@ -1,0 +1,131 @@
+policy_name,reveal_seed,recomputation_index,revealed_count_at_recomputation,runtime_seconds,total_loo_terms_available,total_loo_terms_used,max_loo_terms_per_step,loo_subsampled,top_fragile_step,top_fragility
+greedy_loo_fragility,101,1,45,0.6432268749922514,45,45,20,False,T1571 - Defense Evasion: Non-Standard Port,0.00020406627498152223
+greedy_loo_fragility,101,2,135,0.8546847499965224,135,60,20,True,T1595 - Reconnaissance: Active Scanning,8.626667617800175e-05
+greedy_loo_fragility,101,3,225,1.0520082090224605,225,75,20,True,T1498.002 - Impact: Reflection/Amplification Attack,8.31421166745339e-05
+greedy_loo_fragility,101,4,315,1.3273377919977065,315,90,20,True,T1595 - Reconnaissance: Active Scanning,7.824370503496726e-05
+greedy_loo_fragility,101,5,405,1.3301809590193443,405,90,20,True,T1595 - Reconnaissance: Active Scanning,8.385443928075919e-05
+greedy_loo_fragility,101,6,495,1.4619918749958742,495,105,20,True,T1595 - Reconnaissance: Active Scanning,7.941858186575015e-05
+greedy_loo_fragility,101,7,585,3.4547040829784237,585,120,20,True,T1595 - Reconnaissance: Active Scanning,8.19877294846482e-05
+greedy_loo_fragility,101,8,675,2.0702760000131093,675,120,20,True,T1595 - Reconnaissance: Active Scanning,8.110938852231997e-05
+greedy_loo_fragility,101,9,765,3.7625574999838136,765,135,20,True,T1595 - Reconnaissance: Active Scanning,8.644352893979092e-05
+greedy_loo_fragility,101,10,855,2.8185781670035794,855,135,20,True,T1595 - Reconnaissance: Active Scanning,6.860509915334015e-05
+greedy_loo_fragility,101,11,945,2.7043952090025414,945,135,20,True,T1595 - Reconnaissance: Active Scanning,6.53715705794873e-05
+greedy_loo_fragility,101,12,1035,2.320111832988914,1035,135,20,True,T1595 - Reconnaissance: Active Scanning,8.325315472642477e-05
+greedy_loo_fragility,101,13,1125,2.0167445830011275,1125,150,20,True,T1595 - Reconnaissance: Active Scanning,8.342093757562678e-05
+greedy_loo_fragility,202,1,45,0.5659000409941655,45,45,20,False,T1571 - Defense Evasion: Non-Standard Port,0.00015439833647091714
+greedy_loo_fragility,202,2,135,0.7645402500056662,135,60,20,True,T1595 - Reconnaissance: Active Scanning,8.833189087645452e-05
+greedy_loo_fragility,202,3,225,0.98253491599462,225,75,20,True,T1498.002 - Impact: Reflection/Amplification Attack,7.365326630274673e-05
+greedy_loo_fragility,202,4,315,1.1320676660106983,315,90,20,True,T1590 - Reconnaissance: Gather Victim Network Information,8.399598909089343e-05
+greedy_loo_fragility,202,5,405,1.6335399999807123,405,105,20,True,T1584.005 - Resource Development: Build/Compromise Botnet,8.104287066639062e-05
+greedy_loo_fragility,202,6,495,1.563050665979972,495,120,20,True,T1584.005 - Resource Development: Build/Compromise Botnet,8.458568936400065e-05
+greedy_loo_fragility,202,7,585,1.5896148750034627,585,120,20,True,T1584.005 - Resource Development: Build/Compromise Botnet,8.396074675580224e-05
+greedy_loo_fragility,202,8,675,1.5934742910030764,675,120,20,True,T1584.005 - Resource Development: Build/Compromise Botnet,8.161401236642462e-05
+greedy_loo_fragility,202,9,765,1.7969412919774186,765,135,20,True,T1584.005 - Resource Development: Build/Compromise Botnet,8.736355299701298e-05
+greedy_loo_fragility,202,10,855,1.7771515840140637,855,135,20,True,T1584.005 - Resource Development: Build/Compromise Botnet,8.417078477944086e-05
+greedy_loo_fragility,202,11,945,2.0153082920005545,945,150,20,True,T1498.001 - Impact: Direct Network Flood,7.797772325841703e-05
+greedy_loo_fragility,202,12,1035,2.2420172920101322,1035,165,20,True,T1584.005 - Resource Development: Build/Compromise Botnet,8.094355502773424e-05
+greedy_loo_fragility,202,13,1125,2.2696652920276392,1125,165,20,True,T1584.005 - Resource Development: Build/Compromise Botnet,8.043354738632891e-05
+greedy_loo_fragility,303,1,45,0.5983830410114024,45,45,20,False,T1571 - Defense Evasion: Non-Standard Port,0.00017135546173722532
+greedy_loo_fragility,303,2,135,0.7661019169900101,135,60,20,True,T1498.001 - Impact: Direct Network Flood,8.076513737687798e-05
+greedy_loo_fragility,303,3,225,0.9382280409918167,225,75,20,True,T1584.005 - Resource Development: Build/Compromise Botnet,7.912765610168428e-05
+greedy_loo_fragility,303,4,315,1.1427610410028137,315,90,20,True,T1590 - Reconnaissance: Gather Victim Network Information,7.261341876905028e-05
+greedy_loo_fragility,303,5,405,1.3230257089890074,405,105,20,True,T1498.001 - Impact: Direct Network Flood,6.928069751000699e-05
+greedy_loo_fragility,303,6,495,1.3619531670119613,495,105,20,True,T1498.001 - Impact: Direct Network Flood,7.113103672387189e-05
+greedy_loo_fragility,303,7,585,1.380999792017974,585,105,20,True,T1498.001 - Impact: Direct Network Flood,7.26158819554335e-05
+greedy_loo_fragility,303,8,675,1.5737009579897858,675,120,20,True,TA0011 - Command-and-Control,7.205240359144849e-05
+greedy_loo_fragility,303,9,765,1.824479083006736,765,135,20,True,T1498.001 - Impact: Direct Network Flood,9.200158320177625e-05
+greedy_loo_fragility,303,10,855,1.986534916999517,855,135,20,True,T1498.001 - Impact: Direct Network Flood,9.366200732373932e-05
+greedy_loo_fragility,303,11,945,1.828583875001641,945,135,20,True,T1595 - Reconnaissance: Active Scanning,8.927835494853005e-05
+greedy_loo_fragility,303,12,1035,2.0688733749848325,1035,135,20,True,T1595 - Reconnaissance: Active Scanning,8.867615762559934e-05
+greedy_loo_fragility,303,13,1125,2.083578999998281,1125,150,20,True,T1595 - Reconnaissance: Active Scanning,8.129087408375429e-05
+greedy_loo_fragility,404,1,45,0.5734721659973729,45,45,20,False,T1571 - Defense Evasion: Non-Standard Port,0.0001670092989513394
+greedy_loo_fragility,404,2,135,0.8380358329741284,135,60,20,True,T1584.005 - Resource Development: Build/Compromise Botnet,0.00012922169747927188
+greedy_loo_fragility,404,3,225,0.983219707995886,225,75,20,True,T1498.002 - Impact: Reflection/Amplification Attack,0.00013215628055806083
+greedy_loo_fragility,404,4,315,1.4303034160111565,315,90,20,True,T1036 - Defense Evasion: Masquerading,0.00010683413240896045
+greedy_loo_fragility,404,5,405,1.385713208001107,405,105,20,True,T1595 - Reconnaissance: Active Scanning,0.00011689999324551461
+greedy_loo_fragility,404,6,495,1.6709898749832064,495,120,20,True,T1595 - Reconnaissance: Active Scanning,0.0001037351981363069
+greedy_loo_fragility,404,7,585,1.6507730830053333,585,120,20,True,T1595 - Reconnaissance: Active Scanning,9.711377208544831e-05
+greedy_loo_fragility,404,8,675,1.8447133750014473,675,135,20,True,T1595 - Reconnaissance: Active Scanning,0.00010664908548146754
+greedy_loo_fragility,404,9,765,2.082979750004597,765,150,20,True,T1595 - Reconnaissance: Active Scanning,0.00010657242243749519
+greedy_loo_fragility,404,10,855,2.123958791984478,855,150,20,True,T1595 - Reconnaissance: Active Scanning,0.00010275421216119851
+greedy_loo_fragility,404,11,945,2.1188942919834517,945,150,20,True,T1595 - Reconnaissance: Active Scanning,0.00010527574370629042
+greedy_loo_fragility,404,12,1035,2.1557388750079554,1035,150,20,True,T1595 - Reconnaissance: Active Scanning,0.0001318453408701761
+greedy_loo_fragility,404,13,1125,2.1398211249907035,1125,150,20,True,T1498.002 - Impact: Reflection/Amplification Attack,0.0001217240185663575
+greedy_loo_fragility,505,1,45,0.5945215419924352,45,45,20,False,T1571 - Defense Evasion: Non-Standard Port,0.000129722566934143
+greedy_loo_fragility,505,2,135,0.792281041998649,135,60,20,True,T1036 - Defense Evasion: Masquerading,0.00012131406766287194
+greedy_loo_fragility,505,3,225,1.0159738340007607,225,75,20,True,T1498.002 - Impact: Reflection/Amplification Attack,9.236954130887402e-05
+greedy_loo_fragility,505,4,315,1.2386993330146652,315,90,20,True,T1595 - Reconnaissance: Active Scanning,0.00010156027832915525
+greedy_loo_fragility,505,5,405,1.4357889590028208,405,105,20,True,T1498.001 - Impact: Direct Network Flood,8.234907255163184e-05
+greedy_loo_fragility,505,6,495,1.633909083000617,495,120,20,True,T1498.001 - Impact: Direct Network Flood,8.407122064577447e-05
+greedy_loo_fragility,505,7,585,1.6708159580011852,585,120,20,True,T1498.001 - Impact: Direct Network Flood,8.227029967580417e-05
+greedy_loo_fragility,505,8,675,1.6929721249907743,675,120,20,True,T1595 - Reconnaissance: Active Scanning,7.690883553886289e-05
+greedy_loo_fragility,505,9,765,2.1595989170018584,765,135,20,True,T1595 - Reconnaissance: Active Scanning,7.605359961457178e-05
+greedy_loo_fragility,505,10,855,1.922497084015049,855,135,20,True,TA0011 - Command-and-Control,9.063487640842648e-05
+greedy_loo_fragility,505,11,945,2.3385184170037974,945,150,20,True,T1583.005 - Resource Development: Acquire Botnet,0.00012063353895129186
+greedy_loo_fragility,505,12,1035,2.346467750001466,1035,165,20,True,T1583.005 - Resource Development: Acquire Botnet,0.00010893649415498152
+greedy_loo_fragility,505,13,1125,2.3636742499948014,1125,165,20,True,T1583.005 - Resource Development: Acquire Botnet,0.00011237415819671099
+greedy_loo_fragility,606,1,45,0.5979136670066509,45,45,20,False,T1036 - Defense Evasion: Masquerading,5.819408183950873e-05
+greedy_loo_fragility,606,2,135,0.8181800419988576,135,60,20,True,T1498.002 - Impact: Reflection/Amplification Attack,6.024091018104542e-05
+greedy_loo_fragility,606,3,225,1.0400349169794936,225,75,20,True,T1571 - Defense Evasion: Non-Standard Port,6.0942695749622256e-05
+greedy_loo_fragility,606,4,315,1.2185465410002507,315,90,20,True,T1498.001 - Impact: Direct Network Flood,0.00012262899821555807
+greedy_loo_fragility,606,5,405,1.475507207971532,405,105,20,True,T1498.001 - Impact: Direct Network Flood,0.00011206118539910755
+greedy_loo_fragility,606,6,495,1.456000167003367,495,105,20,True,T1498.001 - Impact: Direct Network Flood,0.0001151482555709863
+greedy_loo_fragility,606,7,585,1.4446568330167793,585,105,20,True,T1498.001 - Impact: Direct Network Flood,8.715513410439418e-05
+greedy_loo_fragility,606,8,675,1.7079539580154233,675,120,20,True,T1583.005 - Resource Development: Acquire Botnet,0.00011476603180915818
+greedy_loo_fragility,606,9,765,1.9170284580031876,765,135,20,True,T1498.001 - Impact: Direct Network Flood,0.00010797555449874519
+greedy_loo_fragility,606,10,855,2.111339749972103,855,150,20,True,T1498.001 - Impact: Direct Network Flood,0.00010441208094037406
+greedy_loo_fragility,606,11,945,2.1868835409986787,945,150,20,True,T1498.001 - Impact: Direct Network Flood,0.0001063248297254307
+greedy_loo_fragility,606,12,1035,2.23201458301628,1035,150,20,True,T1498.001 - Impact: Direct Network Flood,0.00010921919545758573
+greedy_loo_fragility,606,13,1125,2.226423749991227,1125,150,20,True,T1498.001 - Impact: Direct Network Flood,0.00013477603871941567
+greedy_loo_fragility,707,1,45,0.5995985000045039,45,45,20,False,T1571 - Defense Evasion: Non-Standard Port,0.00010327173681464713
+greedy_loo_fragility,707,2,135,0.8450425829796586,135,60,20,True,T1595 - Reconnaissance: Active Scanning,8.515216713462968e-05
+greedy_loo_fragility,707,3,225,0.9980064580158796,225,75,20,True,T1498.001 - Impact: Direct Network Flood,7.62133934560878e-05
+greedy_loo_fragility,707,4,315,1.2260292089777067,315,90,20,True,T1498.001 - Impact: Direct Network Flood,7.857944816843621e-05
+greedy_loo_fragility,707,5,405,1.224053667014232,405,90,20,True,T1498.001 - Impact: Direct Network Flood,8.951592850333567e-05
+greedy_loo_fragility,707,6,495,1.4551005840185098,495,105,20,True,T1498.001 - Impact: Direct Network Flood,7.655435540930633e-05
+greedy_loo_fragility,707,7,585,1.446381540998118,585,105,20,True,T1498.001 - Impact: Direct Network Flood,7.602692367363925e-05
+greedy_loo_fragility,707,8,675,1.6873834589787293,675,105,20,True,T1498.001 - Impact: Direct Network Flood,7.905943407398145e-05
+greedy_loo_fragility,707,9,765,1.5355522079917137,765,105,20,True,TA0011 - Command-and-Control,0.00011559956446485215
+greedy_loo_fragility,707,10,855,1.8363606669881847,855,120,20,True,T1498.002 - Impact: Reflection/Amplification Attack,0.00010441494556461963
+greedy_loo_fragility,707,11,945,1.9678361249971204,945,135,20,True,T1498.001 - Impact: Direct Network Flood,0.00010341481054178209
+greedy_loo_fragility,707,12,1035,2.1427012079802807,1035,135,20,True,TA0011 - Command-and-Control,7.77374940128155e-05
+greedy_loo_fragility,707,13,1125,2.215885209006956,1125,150,20,True,T1498.001 - Impact: Direct Network Flood,6.397272522777539e-05
+greedy_loo_fragility,808,1,45,0.6339211250015069,45,45,20,False,T1571 - Defense Evasion: Non-Standard Port,0.00011745569447813909
+greedy_loo_fragility,808,2,135,0.7963520839984994,135,60,20,True,T1498.001 - Impact: Direct Network Flood,0.00017691132097808003
+greedy_loo_fragility,808,3,225,1.023693999974057,225,75,20,True,T1498.001 - Impact: Direct Network Flood,0.00014541011104010133
+greedy_loo_fragility,808,4,315,1.0404244579840451,315,75,20,True,T1498.001 - Impact: Direct Network Flood,0.00018059114261534146
+greedy_loo_fragility,808,5,405,1.28290029100026,405,90,20,True,T1498.001 - Impact: Direct Network Flood,0.00013269481560478216
+greedy_loo_fragility,808,6,495,2.0017771669954527,495,105,20,True,T1498.001 - Impact: Direct Network Flood,0.00011903217532169416
+greedy_loo_fragility,808,7,585,1.89356516598491,585,105,20,True,T1498.001 - Impact: Direct Network Flood,0.0001163707878274056
+greedy_loo_fragility,808,8,675,1.8951532499922905,675,105,20,True,T1498.001 - Impact: Direct Network Flood,0.0001217819020067347
+greedy_loo_fragility,808,9,765,1.7436293750070035,765,120,20,True,T1498.001 - Impact: Direct Network Flood,9.421169003095833e-05
+greedy_loo_fragility,808,10,855,1.7767694999929518,855,120,20,True,T1498.002 - Impact: Reflection/Amplification Attack,0.00017510348056622212
+greedy_loo_fragility,808,11,945,2.0285052079998422,945,135,20,True,T1498.001 - Impact: Direct Network Flood,0.00011665723656391683
+greedy_loo_fragility,808,12,1035,2.0666294590046164,1035,135,20,True,T1498.002 - Impact: Reflection/Amplification Attack,9.826280638642816e-05
+greedy_loo_fragility,808,13,1125,2.004488125006901,1125,135,20,True,T1498.002 - Impact: Reflection/Amplification Attack,0.00010268849723230395
+greedy_loo_fragility,909,1,45,0.6500504169962369,45,45,20,False,T1571 - Defense Evasion: Non-Standard Port,0.00015045788584943666
+greedy_loo_fragility,909,2,135,0.852715791988885,135,60,20,True,TA0011 - Command-and-Control,0.00011097927545606036
+greedy_loo_fragility,909,3,225,1.03436391701689,225,75,20,True,T1595 - Reconnaissance: Active Scanning,9.403926838493832e-05
+greedy_loo_fragility,909,4,315,1.3188079169776756,315,90,20,True,T1583.005 - Resource Development: Acquire Botnet,8.516259867977266e-05
+greedy_loo_fragility,909,5,405,1.7888299580081366,405,105,20,True,T1583.005 - Resource Development: Acquire Botnet,8.607553255317097e-05
+greedy_loo_fragility,909,6,495,1.5019974170136265,495,105,20,True,T1595 - Reconnaissance: Active Scanning,8.596014185915287e-05
+greedy_loo_fragility,909,7,585,1.4846883339923806,585,105,20,True,T1583.005 - Resource Development: Acquire Botnet,8.667989735496556e-05
+greedy_loo_fragility,909,8,675,1.7582119169819634,675,120,20,True,T1595 - Reconnaissance: Active Scanning,9.566433480217657e-05
+greedy_loo_fragility,909,9,765,1.7647184999950696,765,120,20,True,T1583.005 - Resource Development: Acquire Botnet,8.79772809350447e-05
+greedy_loo_fragility,909,10,855,1.7489885420072824,855,120,20,True,T1583.005 - Resource Development: Acquire Botnet,8.28108865894433e-05
+greedy_loo_fragility,909,11,945,1.983934957999736,945,135,20,True,T1595 - Reconnaissance: Active Scanning,0.00011452261790721
+greedy_loo_fragility,909,12,1035,2.234205999993719,1035,150,20,True,T1595 - Reconnaissance: Active Scanning,0.00011726845921606229
+greedy_loo_fragility,909,13,1125,2.5142888750124257,1125,150,20,True,T1595 - Reconnaissance: Active Scanning,0.00011976850618699076
+greedy_loo_fragility,1010,1,45,0.6296220000076573,45,45,20,False,T1571 - Defense Evasion: Non-Standard Port,7.222855405308997e-05
+greedy_loo_fragility,1010,2,135,0.8352290839829948,135,60,20,True,T1036 - Defense Evasion: Masquerading,7.872100353428034e-05
+greedy_loo_fragility,1010,3,225,1.050587124977028,225,75,20,True,T1583.005 - Resource Development: Acquire Botnet,8.832576401981091e-05
+greedy_loo_fragility,1010,4,315,1.246275625017006,315,90,20,True,T1595 - Reconnaissance: Active Scanning,7.249402649711668e-05
+greedy_loo_fragility,1010,5,405,1.50053749998915,405,105,20,True,T1595 - Reconnaissance: Active Scanning,6.541823557082999e-05
+greedy_loo_fragility,1010,6,495,1.5275464580045082,495,105,20,True,T1595 - Reconnaissance: Active Scanning,6.356525951915122e-05
+greedy_loo_fragility,1010,7,585,1.4950315000023693,585,105,20,True,T1595 - Reconnaissance: Active Scanning,6.648187700435666e-05
+greedy_loo_fragility,1010,8,675,1.5402286669996101,675,105,20,True,T1036 - Defense Evasion: Masquerading,6.752819844172773e-05
+greedy_loo_fragility,1010,9,765,1.5684018339961767,765,105,20,True,TA0011 - Command-and-Control,5.534659875789729e-05
+greedy_loo_fragility,1010,10,855,1.7653857500117738,855,120,20,True,T1036 - Defense Evasion: Masquerading,4.704898062437198e-05
+greedy_loo_fragility,1010,11,945,1.7963042080227751,945,120,20,True,T1584.005 - Resource Development: Build/Compromise Botnet,5.151052342746787e-05
+greedy_loo_fragility,1010,12,1035,1.9981395000068005,1035,135,20,True,T1584.005 - Resource Development: Build/Compromise Botnet,5.247841624147608e-05
+greedy_loo_fragility,1010,13,1125,2.002165084006265,1125,135,20,True,T1584.005 - Resource Development: Build/Compromise Botnet,5.499654927662291e-05

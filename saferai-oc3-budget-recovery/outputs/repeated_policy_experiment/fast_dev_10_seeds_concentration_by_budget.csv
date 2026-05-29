@@ -1,0 +1,13 @@
+policy_name,budget,n_runs,mean_step_count_l1_imbalance,median_step_count_l1_imbalance,max_step_count_l1_imbalance,mean_max_min_revealed_row_ratio,maximum_observed_revealed_row_count_any_step,minimum_observed_revealed_row_count_any_step,average_steps_above_initial_5,average_steps_still_at_initial_5
+greedy_loo_fragility,45,10,0.0,0.0,0.0,1.0,5,5,0.0,9.0
+greedy_loo_fragility,90,10,80.0,80.0,80.0,10.0,50,5,1.0,8.0
+greedy_loo_fragility,180,10,210.0,210.0,210.0,19.0,95,5,2.0,7.0
+greedy_loo_fragility,360,10,372.0,350.0,430.0,22.9,200,5,3.7,5.3
+greedy_loo_fragility,720,10,584.8,555.0,750.0,39.980000000000004,200,5,5.5,3.5
+greedy_loo_fragility,1200,10,621.4,653.0,664.0,40.0,200,5,7.4,1.6
+uniform_step_balanced,45,10,0.0,0.0,0.0,1.0,5,5,0.0,9.0
+uniform_step_balanced,90,10,0.0,0.0,0.0,1.0,10,10,9.0,0.0
+uniform_step_balanced,180,10,0.0,0.0,0.0,1.0,20,20,9.0,0.0
+uniform_step_balanced,360,10,0.0,0.0,0.0,1.0,40,40,9.0,0.0
+uniform_step_balanced,720,10,0.0,0.0,0.0,1.0,80,80,9.0,0.0
+uniform_step_balanced,1200,10,0.0,0.0,0.0,1.0075187969924815,134,133,9.0,0.0

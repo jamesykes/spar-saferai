@@ -1,0 +1,91 @@
+policy_name,reveal_seed,step_name,selected_count_after_initial_seed
+greedy_loo_fragility,101,T1036 - Defense Evasion: Masquerading,1
+greedy_loo_fragility,101,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,101,T1498.002 - Impact: Reflection/Amplification Attack,195
+greedy_loo_fragility,101,T1571 - Defense Evasion: Non-Standard Port,90
+greedy_loo_fragility,101,T1583.005 - Resource Development: Acquire Botnet,0
+greedy_loo_fragility,101,T1584.005 - Resource Development: Build/Compromise Botnet,90
+greedy_loo_fragility,101,T1590 - Reconnaissance: Gather Victim Network Information,194
+greedy_loo_fragility,101,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,101,TA0011 - Command-and-Control,195
+greedy_loo_fragility,202,T1036 - Defense Evasion: Masquerading,90
+greedy_loo_fragility,202,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,202,T1498.002 - Impact: Reflection/Amplification Attack,90
+greedy_loo_fragility,202,T1571 - Defense Evasion: Non-Standard Port,90
+greedy_loo_fragility,202,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,202,T1584.005 - Resource Development: Build/Compromise Botnet,194
+greedy_loo_fragility,202,T1590 - Reconnaissance: Gather Victim Network Information,194
+greedy_loo_fragility,202,T1595 - Reconnaissance: Active Scanning,107
+greedy_loo_fragility,202,TA0011 - Command-and-Control,0
+greedy_loo_fragility,303,T1036 - Defense Evasion: Masquerading,0
+greedy_loo_fragility,303,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,303,T1498.002 - Impact: Reflection/Amplification Attack,122
+greedy_loo_fragility,303,T1571 - Defense Evasion: Non-Standard Port,165
+greedy_loo_fragility,303,T1583.005 - Resource Development: Acquire Botnet,0
+greedy_loo_fragility,303,T1584.005 - Resource Development: Build/Compromise Botnet,194
+greedy_loo_fragility,303,T1590 - Reconnaissance: Gather Victim Network Information,194
+greedy_loo_fragility,303,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,303,TA0011 - Command-and-Control,90
+greedy_loo_fragility,404,T1036 - Defense Evasion: Masquerading,90
+greedy_loo_fragility,404,T1498.001 - Impact: Direct Network Flood,2
+greedy_loo_fragility,404,T1498.002 - Impact: Reflection/Amplification Attack,195
+greedy_loo_fragility,404,T1571 - Defense Evasion: Non-Standard Port,90
+greedy_loo_fragility,404,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,404,T1584.005 - Resource Development: Build/Compromise Botnet,194
+greedy_loo_fragility,404,T1590 - Reconnaissance: Gather Victim Network Information,194
+greedy_loo_fragility,404,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,404,TA0011 - Command-and-Control,0
+greedy_loo_fragility,505,T1036 - Defense Evasion: Masquerading,180
+greedy_loo_fragility,505,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,505,T1498.002 - Impact: Reflection/Amplification Attack,90
+greedy_loo_fragility,505,T1571 - Defense Evasion: Non-Standard Port,90
+greedy_loo_fragility,505,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,505,T1584.005 - Resource Development: Build/Compromise Botnet,60
+greedy_loo_fragility,505,T1590 - Reconnaissance: Gather Victim Network Information,0
+greedy_loo_fragility,505,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,505,TA0011 - Command-and-Control,150
+greedy_loo_fragility,606,T1036 - Defense Evasion: Masquerading,165
+greedy_loo_fragility,606,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,606,T1498.002 - Impact: Reflection/Amplification Attack,150
+greedy_loo_fragility,606,T1571 - Defense Evasion: Non-Standard Port,165
+greedy_loo_fragility,606,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,606,T1584.005 - Resource Development: Build/Compromise Botnet,0
+greedy_loo_fragility,606,T1590 - Reconnaissance: Gather Victim Network Information,0
+greedy_loo_fragility,606,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,606,TA0011 - Command-and-Control,90
+greedy_loo_fragility,707,T1036 - Defense Evasion: Masquerading,0
+greedy_loo_fragility,707,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,707,T1498.002 - Impact: Reflection/Amplification Attack,90
+greedy_loo_fragility,707,T1571 - Defense Evasion: Non-Standard Port,195
+greedy_loo_fragility,707,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,707,T1584.005 - Resource Development: Build/Compromise Botnet,0
+greedy_loo_fragility,707,T1590 - Reconnaissance: Gather Victim Network Information,90
+greedy_loo_fragility,707,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,707,TA0011 - Command-and-Control,195
+greedy_loo_fragility,808,T1036 - Defense Evasion: Masquerading,106
+greedy_loo_fragility,808,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,808,T1498.002 - Impact: Reflection/Amplification Attack,195
+greedy_loo_fragility,808,T1571 - Defense Evasion: Non-Standard Port,195
+greedy_loo_fragility,808,T1583.005 - Resource Development: Acquire Botnet,0
+greedy_loo_fragility,808,T1584.005 - Resource Development: Build/Compromise Botnet,194
+greedy_loo_fragility,808,T1590 - Reconnaissance: Gather Victim Network Information,0
+greedy_loo_fragility,808,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,808,TA0011 - Command-and-Control,75
+greedy_loo_fragility,909,T1036 - Defense Evasion: Masquerading,0
+greedy_loo_fragility,909,T1498.001 - Impact: Direct Network Flood,91
+greedy_loo_fragility,909,T1498.002 - Impact: Reflection/Amplification Attack,195
+greedy_loo_fragility,909,T1571 - Defense Evasion: Non-Standard Port,195
+greedy_loo_fragility,909,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,909,T1584.005 - Resource Development: Build/Compromise Botnet,0
+greedy_loo_fragility,909,T1590 - Reconnaissance: Gather Victim Network Information,194
+greedy_loo_fragility,909,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,909,TA0011 - Command-and-Control,90
+greedy_loo_fragility,1010,T1036 - Defense Evasion: Masquerading,195
+greedy_loo_fragility,1010,T1498.001 - Impact: Direct Network Flood,0
+greedy_loo_fragility,1010,T1498.002 - Impact: Reflection/Amplification Attack,61
+greedy_loo_fragility,1010,T1571 - Defense Evasion: Non-Standard Port,150
+greedy_loo_fragility,1010,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,1010,T1584.005 - Resource Development: Build/Compromise Botnet,194
+greedy_loo_fragility,1010,T1590 - Reconnaissance: Gather Victim Network Information,0
+greedy_loo_fragility,1010,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,1010,TA0011 - Command-and-Control,165
