@@ -1,0 +1,46 @@
+step_name,model,row_count
+T1036 - Defense Evasion: Masquerading,claude-haiku-4-5-20251001,40
+T1036 - Defense Evasion: Masquerading,claude-opus-4-7,40
+T1036 - Defense Evasion: Masquerading,claude-sonnet-4-6,40
+T1036 - Defense Evasion: Masquerading,gemini-3-flash-preview,40
+T1036 - Defense Evasion: Masquerading,gpt-5-mini,40
+T1498.001 - Impact: Direct Network Flood,claude-haiku-4-5-20251001,40
+T1498.001 - Impact: Direct Network Flood,claude-opus-4-7,40
+T1498.001 - Impact: Direct Network Flood,claude-sonnet-4-6,40
+T1498.001 - Impact: Direct Network Flood,gemini-3-flash-preview,40
+T1498.001 - Impact: Direct Network Flood,gpt-5-mini,40
+T1498.002 - Impact: Reflection/Amplification Attack,claude-haiku-4-5-20251001,40
+T1498.002 - Impact: Reflection/Amplification Attack,claude-opus-4-7,40
+T1498.002 - Impact: Reflection/Amplification Attack,claude-sonnet-4-6,40
+T1498.002 - Impact: Reflection/Amplification Attack,gemini-3-flash-preview,40
+T1498.002 - Impact: Reflection/Amplification Attack,gpt-5-mini,40
+T1571 - Defense Evasion: Non-Standard Port,claude-haiku-4-5-20251001,40
+T1571 - Defense Evasion: Non-Standard Port,claude-opus-4-7,40
+T1571 - Defense Evasion: Non-Standard Port,claude-sonnet-4-6,40
+T1571 - Defense Evasion: Non-Standard Port,gemini-3-flash-preview,40
+T1571 - Defense Evasion: Non-Standard Port,gpt-5-mini,40
+T1583.005 - Resource Development: Acquire Botnet,claude-haiku-4-5-20251001,40
+T1583.005 - Resource Development: Acquire Botnet,claude-opus-4-7,40
+T1583.005 - Resource Development: Acquire Botnet,claude-sonnet-4-6,40
+T1583.005 - Resource Development: Acquire Botnet,gemini-3-flash-preview,40
+T1583.005 - Resource Development: Acquire Botnet,gpt-5-mini,40
+T1584.005 - Resource Development: Build/Compromise Botnet,claude-haiku-4-5-20251001,40
+T1584.005 - Resource Development: Build/Compromise Botnet,claude-opus-4-7,40
+T1584.005 - Resource Development: Build/Compromise Botnet,claude-sonnet-4-6,39
+T1584.005 - Resource Development: Build/Compromise Botnet,gemini-3-flash-preview,40
+T1584.005 - Resource Development: Build/Compromise Botnet,gpt-5-mini,40
+T1590 - Reconnaissance: Gather Victim Network Information,claude-haiku-4-5-20251001,40
+T1590 - Reconnaissance: Gather Victim Network Information,claude-opus-4-7,40
+T1590 - Reconnaissance: Gather Victim Network Information,claude-sonnet-4-6,39
+T1590 - Reconnaissance: Gather Victim Network Information,gemini-3-flash-preview,40
+T1590 - Reconnaissance: Gather Victim Network Information,gpt-5-mini,40
+T1595 - Reconnaissance: Active Scanning,claude-haiku-4-5-20251001,40
+T1595 - Reconnaissance: Active Scanning,claude-opus-4-7,40
+T1595 - Reconnaissance: Active Scanning,claude-sonnet-4-6,40
+T1595 - Reconnaissance: Active Scanning,gemini-3-flash-preview,40
+T1595 - Reconnaissance: Active Scanning,gpt-5-mini,40
+TA0011 - Command-and-Control,claude-haiku-4-5-20251001,40
+TA0011 - Command-and-Control,claude-opus-4-7,40
+TA0011 - Command-and-Control,claude-sonnet-4-6,40
+TA0011 - Command-and-Control,gemini-3-flash-preview,40
+TA0011 - Command-and-Control,gpt-5-mini,40

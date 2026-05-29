@@ -1,0 +1,10 @@
+mitre_step_label,usable_row_count,unique_draw_uid_count,unique_model_count,missing_expected_models,missing_draw_count_relative_to_nominal_200
+T1036 - Defense Evasion: Masquerading,200,200,5,,0
+T1498.001 - Impact: Direct Network Flood,200,200,5,,0
+T1498.002 - Impact: Reflection/Amplification Attack,200,200,5,,0
+T1571 - Defense Evasion: Non-Standard Port,200,200,5,,0
+T1583.005 - Resource Development: Acquire Botnet,200,200,5,,0
+T1584.005 - Resource Development: Build/Compromise Botnet,199,199,5,,1
+T1590 - Reconnaissance: Gather Victim Network Information,199,199,5,,1
+T1595 - Reconnaissance: Active Scanning,200,200,5,,0
+TA0011 - Command-and-Control,200,200,5,,0

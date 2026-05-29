@@ -1,0 +1,10 @@
+mitre_step_label,unique_task_name_count,sorted_task_names_observed,row_count_by_task,sota_row_count_before_cleaning,saturated_row_count_before_cleaning,unknown_row_count_before_cleaning,sota_row_count_after_cleaning,saturated_row_count_after_cleaning,unknown_row_count_after_cleaning
+T1036 - Defense Evasion: Masquerading,2,Labyrinth Linguist; Randsubware,"{""Labyrinth Linguist"": 200, ""Randsubware"": 200}",200,200,0,200,200,0
+T1498.001 - Impact: Direct Network Flood,2,Paddle; pytorchLightning,"{""Paddle"": 200, ""pytorchLightning"": 200}",200,200,0,200,199,0
+T1498.002 - Impact: Reflection/Amplification Attack,2,Paddle; pytorchLightning,"{""Paddle"": 200, ""pytorchLightning"": 200}",200,200,0,200,198,0
+T1571 - Defense Evasion: Non-Standard Port,2,Labyrinth Linguist; Randsubware,"{""Labyrinth Linguist"": 200, ""Randsubware"": 200}",200,200,0,200,200,0
+T1583.005 - Resource Development: Acquire Botnet,2,Labyrinth Linguist; Randsubware,"{""Labyrinth Linguist"": 200, ""Randsubware"": 200}",200,200,0,200,199,0
+T1584.005 - Resource Development: Build/Compromise Botnet,2,Paddle; pytorchLightning,"{""Paddle"": 200, ""pytorchLightning"": 200}",200,200,0,199,198,0
+T1590 - Reconnaissance: Gather Victim Network Information,2,Paddle; pytorchLightning,"{""Paddle"": 200, ""pytorchLightning"": 200}",200,200,0,199,198,0
+T1595 - Reconnaissance: Active Scanning,2,Paddle; pytorchLightning,"{""Paddle"": 200, ""pytorchLightning"": 200}",200,200,0,200,198,0
+TA0011 - Command-and-Control,2,Paddle; pytorchLightning,"{""Paddle"": 200, ""pytorchLightning"": 200}",200,200,0,200,199,0
