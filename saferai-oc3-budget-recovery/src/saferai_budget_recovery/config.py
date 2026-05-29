@@ -12,6 +12,9 @@ RAW_DATA_PATH = (
 )
 PROCESSED_DATA_PATH = PROJECT_ROOT / "data" / "processed" / "cleaned_valid_rows.csv"
 SANITY_OUTPUT_DIR = PROJECT_ROOT / "outputs" / "sanity_checks"
+FITTED_DISTRIBUTIONS_DIR = PROJECT_ROOT / "outputs" / "fitted_distributions"
+SOTA_BETA_FITS_PATH = FITTED_DISTRIBUTIONS_DIR / "sota_beta_fits.csv"
+FORWARD_MODEL_SMOKE_TEST_DIR = PROJECT_ROOT / "outputs" / "forward_model_smoke_tests"
 
 QUARTILE_COLUMNS = (
     "percentile_25th",
@@ -55,4 +58,3 @@ EXPECTED_MITRE_STEP_LABELS = (
     "T1498.001 - Impact: Direct Network Flood",
     "T1498.002 - Impact: Reflection/Amplification Attack",
 )
-
