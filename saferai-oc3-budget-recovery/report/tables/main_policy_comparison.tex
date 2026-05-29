@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Main policy comparison. AUC is the area under the squared Wasserstein-2 error curve over the reported budget schedule. Lower AUC is better. Win fraction is paired against the step-balanced uniform baseline over available seed--budget comparisons.}
+\label{tab:main-policy-comparison}
+\begin{tabularx}{\textwidth}{llrrrrrX}
+\toprule
+Policy & Source run & Avg. AUC & Med. AUC & Win frac. & L1 at 1200 & Max/min at 1200 & Note \\
+\midrule
+Uniform step-balanced & all-policies dev & 0.029428 & 0.031931 & -- & 0 & 1.01 & baseline \\
+Greedy LOO-fragility & all-policies dev & 0.022822 & 0.018509 & 0.433 & 598.4 & 40 & pure fragility heuristic \\
+Epsilon-greedy ($\epsilon=0.2$) & all-policies dev & 0.034319 & 0.032652 & 0.367 & 478.8 & 3.31 & 20\% under-sampling exploration \\
+Exploration bonus ($c=0.5$) & all-policies dev & 0.027436 & 0.027506 & 0.467 & 594.8 & 23.29 & included sensitivity setting \\
+Exploration bonus ($c=1.0$) & bonus sensitivity dev & 0.021099 & 0.015229 & 0.467 & 537.2 & 5.88 & separate sensitivity run \\
+\bottomrule
+\end{tabularx}
+\end{table}
