@@ -1,0 +1,121 @@
+{
+  "budget_reports": {
+    "180": {
+      "max_fragility": 1.7355196890769163e-05,
+      "min_fragility": 1.1886621901454494e-05,
+      "n_finite_fragility_scores": 9,
+      "n_nan_fragility_scores": 0,
+      "runtime_seconds": 14.781297832989367,
+      "top_three_steps_by_loo_fragility": [
+        {
+          "loo_fragility": 1.7355196890769163e-05,
+          "n_revealed": 24,
+          "step_name": "TA0011 - Command-and-Control"
+        },
+        {
+          "loo_fragility": 1.568938520607404e-05,
+          "n_revealed": 24,
+          "step_name": "T1571 - Defense Evasion: Non-Standard Port"
+        },
+        {
+          "loo_fragility": 1.546440549468817e-05,
+          "n_revealed": 18,
+          "step_name": "T1036 - Defense Evasion: Masquerading"
+        }
+      ]
+    },
+    "360": {
+      "max_fragility": 1.0284252483223892e-05,
+      "min_fragility": 8.860628590525148e-06,
+      "n_finite_fragility_scores": 9,
+      "n_nan_fragility_scores": 0,
+      "runtime_seconds": 26.433193707984174,
+      "top_three_steps_by_loo_fragility": [
+        {
+          "loo_fragility": 1.0284252483223892e-05,
+          "n_revealed": 33,
+          "step_name": "T1036 - Defense Evasion: Masquerading"
+        },
+        {
+          "loo_fragility": 1.0276862395505471e-05,
+          "n_revealed": 46,
+          "step_name": "T1571 - Defense Evasion: Non-Standard Port"
+        },
+        {
+          "loo_fragility": 9.937630157649938e-06,
+          "n_revealed": 45,
+          "step_name": "T1498.002 - Impact: Reflection/Amplification Attack"
+        }
+      ]
+    },
+    "45": {
+      "max_fragility": 9.03072740754921e-05,
+      "min_fragility": 7.66571886268086e-06,
+      "n_finite_fragility_scores": 9,
+      "n_nan_fragility_scores": 0,
+      "runtime_seconds": 4.454449957993347,
+      "top_three_steps_by_loo_fragility": [
+        {
+          "loo_fragility": 9.03072740754921e-05,
+          "n_revealed": 5,
+          "step_name": "T1571 - Defense Evasion: Non-Standard Port"
+        },
+        {
+          "loo_fragility": 1.729713941878244e-05,
+          "n_revealed": 5,
+          "step_name": "T1036 - Defense Evasion: Masquerading"
+        },
+        {
+          "loo_fragility": 1.3831672862502722e-05,
+          "n_revealed": 5,
+          "step_name": "T1584.005 - Resource Development: Build/Compromise Botnet"
+        }
+      ]
+    },
+    "90": {
+      "max_fragility": 2.3147099679241952e-05,
+      "min_fragility": 1.1382893600896808e-05,
+      "n_finite_fragility_scores": 9,
+      "n_nan_fragility_scores": 0,
+      "runtime_seconds": 7.348755375016481,
+      "top_three_steps_by_loo_fragility": [
+        {
+          "loo_fragility": 2.3147099679241952e-05,
+          "n_revealed": 10,
+          "step_name": "T1571 - Defense Evasion: Non-Standard Port"
+        },
+        {
+          "loo_fragility": 1.74955356315228e-05,
+          "n_revealed": 8,
+          "step_name": "T1595 - Reconnaissance: Active Scanning"
+        },
+        {
+          "loo_fragility": 1.4285163801753079e-05,
+          "n_revealed": 16,
+          "step_name": "T1583.005 - Resource Development: Acquire Botnet"
+        }
+      ]
+    }
+  },
+  "budgets_used": [
+    45,
+    90,
+    180,
+    360
+  ],
+  "initial_seed_size": 45,
+  "n_grid": 501,
+  "n_samples": 5000,
+  "note": "This is a smoke test of the LOO output-fragility primitive, not the final allocation experiment or a value-of-information calculation.",
+  "seeds_used": {
+    "fragility_seed_for_budget": {
+      "180": 505180,
+      "360": 505360,
+      "45": 505045,
+      "90": 505090
+    },
+    "initial_seed_allocation": 12345,
+    "uniform_reveal_order": 12345
+  },
+  "total_usable_fitted_rows": 1798
+}

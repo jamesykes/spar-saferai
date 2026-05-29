@@ -1,0 +1,243 @@
+{
+  "actual_settings": {
+    "budgets": [
+      45,
+      90,
+      180,
+      360,
+      720
+    ],
+    "fragility_kwargs": {
+      "n_grid": 151,
+      "n_samples": 600
+    },
+    "fragility_recompute_every": 90,
+    "n_budget_samples": 10000,
+    "n_grid": 501,
+    "n_reference_samples": 30000,
+    "policies": [
+      "uniform_step_balanced",
+      "greedy_loo_fragility"
+    ],
+    "reference_seed_base": 907000,
+    "reveal_seeds": [
+      101,
+      202
+    ],
+    "sample_seed_base": 1008000
+  },
+  "budgets": [
+    45,
+    90,
+    180,
+    360,
+    720
+  ],
+  "greedy_better_count": 4,
+  "greedy_better_fraction": 0.4,
+  "greedy_concentration_diagnostics": {
+    "average_step_count_l1_by_budget": {
+      "180": 210.0,
+      "360": 420.0,
+      "45": 0.0,
+      "720": 630.0,
+      "90": 80.0
+    },
+    "max_observed_revealed_row_count_per_step_by_budget": {
+      "180": 95,
+      "360": 185,
+      "45": 5,
+      "720": 200,
+      "90": 50
+    },
+    "max_step_count_l1_by_budget": {
+      "180": 210.0,
+      "360": 420.0,
+      "45": 0.0,
+      "720": 660.0,
+      "90": 80.0
+    },
+    "selected_step_counts_aggregated": {
+      "T1036 - Defense Evasion: Masquerading": 90,
+      "T1498.001 - Impact: Direct Network Flood": 195,
+      "T1498.002 - Impact: Reflection/Amplification Attack": 345,
+      "T1571 - Defense Evasion: Non-Standard Port": 180,
+      "T1584.005 - Resource Development: Build/Compromise Botnet": 45,
+      "T1590 - Reconnaissance: Gather Victim Network Information": 105,
+      "T1595 - Reconnaissance: Active Scanning": 390
+    }
+  },
+  "initial_seed_size": 45,
+  "note": "This is a repeated development experiment using moderate Monte Carlo settings, not necessarily the final report run.",
+  "number_of_reveal_seeds": 2,
+  "policies_compared": [
+    "uniform_step_balanced",
+    "greedy_loo_fragility"
+  ],
+  "requested_settings": {
+    "budgets": [
+      45,
+      90,
+      180,
+      360,
+      720
+    ],
+    "fragility_kwargs": {
+      "n_grid": 201,
+      "n_samples": 1000
+    },
+    "fragility_recompute_every": 45,
+    "n_budget_samples": 20000,
+    "n_grid": 501,
+    "n_reference_samples": 50000,
+    "policies": [
+      "uniform_step_balanced",
+      "greedy_loo_fragility"
+    ],
+    "reveal_seeds": [
+      101,
+      202,
+      303,
+      404,
+      505
+    ]
+  },
+  "run_diagnostics": [
+    {
+      "budgets_used": [
+        45,
+        90,
+        180,
+        360,
+        720
+      ],
+      "decision_count": 675,
+      "fallback_count": 0,
+      "fragility_kwargs": {
+        "n_grid": 151,
+        "n_samples": 600
+      },
+      "fragility_recompute_every": 90,
+      "initial_seed_size": 45,
+      "n_budget_samples": 10000,
+      "n_grid": 501,
+      "n_reference_samples": 30000,
+      "policy_name": "uniform_step_balanced",
+      "reference_seed": 907101,
+      "reveal_seed": 101,
+      "runtime_seconds": 3.595697334007127,
+      "sample_seed_base": 1008000,
+      "selected_step_counts": {},
+      "total_usable_fitted_rows": 1798
+    },
+    {
+      "budgets_used": [
+        45,
+        90,
+        180,
+        360,
+        720
+      ],
+      "decision_count": 675,
+      "fallback_count": 0,
+      "fragility_kwargs": {
+        "n_grid": 151,
+        "n_samples": 600
+      },
+      "fragility_recompute_every": 90,
+      "initial_seed_size": 45,
+      "n_budget_samples": 10000,
+      "n_grid": 501,
+      "n_reference_samples": 30000,
+      "policy_name": "greedy_loo_fragility",
+      "reference_seed": 907101,
+      "reveal_seed": 101,
+      "runtime_seconds": 83.38836841698503,
+      "sample_seed_base": 1008000,
+      "selected_step_counts": {
+        "T1036 - Defense Evasion: Masquerading": 90,
+        "T1498.002 - Impact: Reflection/Amplification Attack": 195,
+        "T1571 - Defense Evasion: Non-Standard Port": 90,
+        "T1590 - Reconnaissance: Gather Victim Network Information": 105,
+        "T1595 - Reconnaissance: Active Scanning": 195
+      },
+      "total_usable_fitted_rows": 1798
+    },
+    {
+      "budgets_used": [
+        45,
+        90,
+        180,
+        360,
+        720
+      ],
+      "decision_count": 675,
+      "fallback_count": 0,
+      "fragility_kwargs": {
+        "n_grid": 151,
+        "n_samples": 600
+      },
+      "fragility_recompute_every": 90,
+      "initial_seed_size": 45,
+      "n_budget_samples": 10000,
+      "n_grid": 501,
+      "n_reference_samples": 30000,
+      "policy_name": "uniform_step_balanced",
+      "reference_seed": 907202,
+      "reveal_seed": 202,
+      "runtime_seconds": 9.585607999993954,
+      "sample_seed_base": 1008000,
+      "selected_step_counts": {},
+      "total_usable_fitted_rows": 1798
+    },
+    {
+      "budgets_used": [
+        45,
+        90,
+        180,
+        360,
+        720
+      ],
+      "decision_count": 675,
+      "fallback_count": 0,
+      "fragility_kwargs": {
+        "n_grid": 151,
+        "n_samples": 600
+      },
+      "fragility_recompute_every": 90,
+      "initial_seed_size": 45,
+      "n_budget_samples": 10000,
+      "n_grid": 501,
+      "n_reference_samples": 30000,
+      "policy_name": "greedy_loo_fragility",
+      "reference_seed": 907202,
+      "reveal_seed": 202,
+      "runtime_seconds": 166.3275160420162,
+      "sample_seed_base": 1008000,
+      "selected_step_counts": {
+        "T1498.001 - Impact: Direct Network Flood": 195,
+        "T1498.002 - Impact: Reflection/Amplification Attack": 150,
+        "T1571 - Defense Evasion: Non-Standard Port": 90,
+        "T1584.005 - Resource Development: Build/Compromise Botnet": 45,
+        "T1595 - Reconnaissance: Active Scanning": 195
+      },
+      "total_usable_fitted_rows": 1798
+    }
+  ],
+  "runtime_seconds": 262.9883550410159,
+  "settings_reduction_note": "The development run uses two reveal seeds, smaller Monte Carlo samples, and less frequent fragility recomputation than the requested moderate defaults to keep runtime practical in this pass. The exact settings are recorded above.",
+  "summary_by_policy": {
+    "greedy_loo_fragility": {
+      "average_auc": 0.019279743494590648,
+      "average_distance_across_all_budgets_and_seeds": 3.0440331745265366e-05,
+      "median_auc": 0.019279743494590648
+    },
+    "uniform_step_balanced": {
+      "average_auc": 0.02411588454518874,
+      "average_distance_across_all_budgets_and_seeds": 3.287190770912884e-05,
+      "median_auc": 0.02411588454518874
+    }
+  },
+  "total_seed_budget_comparisons": 10,
+  "total_usable_fitted_rows": 1798
+}
