@@ -1,0 +1,93 @@
+{
+  "audit_note": "This audit compares exact v8 LOO fragility with capped LOO-term subsampling on fixed step-balanced-uniform revealed states.",
+  "budgets": [
+    45,
+    180,
+    720
+  ],
+  "caps_evaluated": [
+    10,
+    20
+  ],
+  "heuristic_threshold_note": "A cap is flagged as appears_acceptable if top1 match rate >= 0.7 and mean top3 Jaccard >= 0.6. This is a rough diagnostic, not a scientific acceptance criterion.",
+  "n_grid": 201,
+  "n_samples": 700,
+  "number_of_comparisons": 12,
+  "requested_settings": {
+    "budgets": [
+      45,
+      90,
+      180,
+      360,
+      720
+    ],
+    "max_loo_terms_per_step_values": [
+      10,
+      20
+    ],
+    "n_grid": 201,
+    "n_samples": 1000,
+    "reveal_seeds": [
+      101,
+      202,
+      303
+    ]
+  },
+  "reveal_seeds": [
+    101,
+    202
+  ],
+  "runtime_reduction_notes": [
+    "Reduced reveal_seeds from [101, 202, 303] to [101, 202].",
+    "Reduced budgets from [45, 90, 180, 360, 720] to [45, 180, 720].",
+    "Reduced n_samples from 1000 to 700."
+  ],
+  "runtime_seconds": 47.93312125001103,
+  "settings_used": {
+    "budgets": [
+      45,
+      180,
+      720
+    ],
+    "max_loo_terms_per_step_values": [
+      10,
+      20
+    ],
+    "n_grid": 201,
+    "n_samples": 700,
+    "reveal_seeds": [
+      101,
+      202
+    ]
+  },
+  "summary_by_cap": {
+    "10": {
+      "exact_top_step_in_approx_top3_fraction": 0.8333333333333334,
+      "heuristic_warning_flag": "questionable",
+      "mean_approx_exact_max_score_ratio": 1.0614862946733967,
+      "mean_pearson_correlation": 0.5733872420750008,
+      "mean_relative_absolute_error": 0.07351747112656637,
+      "mean_spearman_correlation": 0.5472222222222223,
+      "mean_top3_jaccard": 0.5833333333333334,
+      "median_pearson_correlation": 0.7308194276079036,
+      "median_relative_absolute_error": 0.08522631686742282,
+      "median_spearman_correlation": 0.7083333333333334,
+      "n_comparisons": 6,
+      "top1_match_rate": 0.8333333333333334
+    },
+    "20": {
+      "exact_top_step_in_approx_top3_fraction": 1.0,
+      "heuristic_warning_flag": "appears_acceptable",
+      "mean_approx_exact_max_score_ratio": 0.9963429015422114,
+      "mean_pearson_correlation": 0.8375099629386149,
+      "mean_relative_absolute_error": 0.021367005824584423,
+      "mean_spearman_correlation": 0.8333333333333334,
+      "mean_top3_jaccard": 0.8333333333333334,
+      "median_pearson_correlation": 1.0,
+      "median_relative_absolute_error": 0.0,
+      "median_spearman_correlation": 1.0,
+      "n_comparisons": 6,
+      "top1_match_rate": 1.0
+    }
+  }
+}
