@@ -77,3 +77,18 @@ def test_repeated_experiment_script_exposes_fast_dev_10_seeds_mode() -> None:
     assert settings["policies"] == ["uniform_step_balanced", "greedy_loo_fragility"]
     assert settings["fragility_kwargs"]["max_loo_terms_per_step"] == 20
     assert 1200 in settings["budgets"]
+
+
+def test_repeated_experiment_script_exposes_v8_all_policies_mode() -> None:
+    script_path = Path(__file__).resolve().parents[1] / "scripts" / "07_run_repeated_policy_experiment.py"
+    spec = importlib.util.spec_from_file_location("run_repeated_policy_experiment_v8", script_path)
+    assert spec is not None
+    assert spec.loader is not None
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    settings = module.CONFIGURATIONS["V8_ALL_POLICIES_DEV"]
+    policy_names = {spec["name"] for spec in settings["policy_specs"]}
+    assert "epsilon_greedy_eps0.2" in policy_names
+    assert "exploration_bonus_c0.5" in policy_names
+    assert settings["fragility_kwargs"]["max_loo_terms_per_step"] == 20
+    assert module.MODE in module.CONFIGURATIONS

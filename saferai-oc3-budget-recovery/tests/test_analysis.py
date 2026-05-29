@@ -6,8 +6,11 @@ import pandas as pd
 from saferai_budget_recovery.analysis import (
     compute_auc_by_seed_policy,
     compute_policy_differences,
+    compute_policy_differences_against_baseline,
     summarize_policy_results,
     summarize_concentration_by_budget,
+    summarize_policy_win_rate_by_budget,
+    summarize_policy_win_rate_by_seed,
     summarize_win_rate_by_budget,
     summarize_win_rate_by_seed,
 )
@@ -63,6 +66,30 @@ def _results_df() -> pd.DataFrame:
                 "squared_wasserstein2_to_full_reference": 5.0,
                 "p_success_mean": 0.6,
                 "step_count_l1_from_perfect_balance": 20.0,
+            },
+            {
+                "policy_name": "epsilon_greedy_eps0.2",
+                "reveal_seed": 1,
+                "budget": 45,
+                "squared_wasserstein2_to_full_reference": 0.0,
+                "p_success_mean": 0.2,
+                "step_count_l1_from_perfect_balance": 0.0,
+            },
+            {
+                "policy_name": "epsilon_greedy_eps0.2",
+                "reveal_seed": 1,
+                "budget": 90,
+                "squared_wasserstein2_to_full_reference": 0.5,
+                "p_success_mean": 0.4,
+                "step_count_l1_from_perfect_balance": 5.0,
+            },
+            {
+                "policy_name": "epsilon_greedy_eps0.2",
+                "reveal_seed": 2,
+                "budget": 90,
+                "squared_wasserstein2_to_full_reference": 3.0,
+                "p_success_mean": 0.6,
+                "step_count_l1_from_perfect_balance": 8.0,
             },
         ]
     )
@@ -151,3 +178,38 @@ def test_summarize_concentration_by_budget_counts_initial_and_above_initial_step
     assert row["mean_step_count_l1_imbalance"] == 75.0
     assert row["average_steps_above_initial_5"] == 2.0
     assert row["average_steps_still_at_initial_5"] == 1.0
+
+
+def test_generalized_differences_vs_uniform_support_multiple_comparators() -> None:
+    diff = compute_policy_differences_against_baseline(_results_df())
+    assert set(diff["policy_name"]) == {"greedy_loo_fragility", "epsilon_greedy_eps0.2"}
+    row = diff.loc[
+        diff["policy_name"].eq("epsilon_greedy_eps0.2")
+        & diff["reveal_seed"].eq(1)
+        & diff["budget"].eq(90)
+    ].iloc[0]
+    assert row["difference_policy_minus_baseline"] == -1.5
+    assert bool(row["policy_better"]) is True
+
+
+def test_generalized_win_rate_by_budget_handles_multiple_policies() -> None:
+    diff = compute_policy_differences_against_baseline(_results_df())
+    win_rate = summarize_policy_win_rate_by_budget(diff)
+    assert set(win_rate["policy_name"]) == {"greedy_loo_fragility", "epsilon_greedy_eps0.2"}
+    row = win_rate.loc[
+        win_rate["policy_name"].eq("epsilon_greedy_eps0.2")
+        & win_rate["budget"].eq(90)
+    ].iloc[0]
+    assert row["policy_wins"] == 2
+    assert row["policy_win_fraction"] == 1.0
+
+
+def test_generalized_win_rate_by_seed_includes_auc_difference_for_multiple_policies() -> None:
+    results = _results_df()
+    diff = compute_policy_differences_against_baseline(results)
+    auc = compute_auc_by_seed_policy(results)
+    by_seed = summarize_policy_win_rate_by_seed(diff, auc)
+    assert {"policy_name", "policy_minus_baseline_auc", "policy_win_fraction"}.issubset(
+        by_seed.columns
+    )
+    assert set(by_seed["policy_name"]) == {"greedy_loo_fragility", "epsilon_greedy_eps0.2"}

@@ -19,8 +19,11 @@ from saferai_budget_recovery import config
 from saferai_budget_recovery.analysis import (
     compute_auc_by_seed_policy,
     compute_policy_differences,
+    compute_policy_differences_against_baseline,
     summarize_policy_results,
     summarize_concentration_by_budget,
+    summarize_policy_win_rate_by_budget,
+    summarize_policy_win_rate_by_seed,
     summarize_win_rate_by_budget,
     summarize_win_rate_by_seed,
 )
@@ -65,6 +68,78 @@ CONFIGURATIONS = {
         "reference_seed": 907000,
         "sample_seed_base": 1008000,
     },
+    "V8_ALL_POLICIES_DEV": {
+        "budgets": [45, 90, 180, 360, 720, 1200],
+        "reveal_seeds": [101, 202, 303, 404, 505],
+        "policy_specs": [
+            {"name": "uniform_step_balanced", "policy_name": "uniform_step_balanced", "policy_kwargs": {}},
+            {"name": "greedy_loo_fragility", "policy_name": "greedy_loo_fragility", "policy_kwargs": {}},
+            {
+                "name": "epsilon_greedy_eps0.2",
+                "policy_name": "epsilon_greedy_loo_fragility",
+                "policy_kwargs": {"epsilon": 0.2},
+            },
+            {
+                "name": "exploration_bonus_c0.5",
+                "policy_name": "exploration_bonus_loo_fragility",
+                "policy_kwargs": {"c": 0.5},
+            },
+        ],
+        "n_reference_samples": 40_000,
+        "n_budget_samples": 12_000,
+        "n_grid": 401,
+        "fragility_kwargs": {
+            "n_samples": 600,
+            "n_grid": 151,
+            "max_loo_terms_per_step": 20,
+        },
+        "fragility_recompute_every": 90,
+        "reference_seed": 907000,
+        "sample_seed_base": 1008000,
+        "requested_settings": {
+            "budgets": [45, 90, 180, 360, 720, 1200],
+            "reveal_seeds": [101, 202, 303, 404, 505, 606, 707, 808, 909, 1010],
+            "policy_specs": [
+                {"name": "uniform_step_balanced", "policy_name": "uniform_step_balanced", "policy_kwargs": {}},
+                {"name": "greedy_loo_fragility", "policy_name": "greedy_loo_fragility", "policy_kwargs": {}},
+                {
+                    "name": "epsilon_greedy_eps0.2",
+                    "policy_name": "epsilon_greedy_loo_fragility",
+                    "policy_kwargs": {"epsilon": 0.2},
+                },
+                {
+                    "name": "exploration_bonus_c0.25",
+                    "policy_name": "exploration_bonus_loo_fragility",
+                    "policy_kwargs": {"c": 0.25},
+                },
+                {
+                    "name": "exploration_bonus_c0.5",
+                    "policy_name": "exploration_bonus_loo_fragility",
+                    "policy_kwargs": {"c": 0.5},
+                },
+                {
+                    "name": "exploration_bonus_c1.0",
+                    "policy_name": "exploration_bonus_loo_fragility",
+                    "policy_kwargs": {"c": 1.0},
+                },
+            ],
+            "n_reference_samples": 40_000,
+            "n_budget_samples": 12_000,
+            "n_grid": 401,
+            "fragility_kwargs": {
+                "n_samples": 600,
+                "n_grid": 151,
+                "max_loo_terms_per_step": 20,
+            },
+            "fragility_recompute_every": 90,
+            "reference_seed": 907000,
+            "sample_seed_base": 1008000,
+        },
+        "runtime_reduction_notes": [
+            "Reduced reveal seeds from 10 to 5 after the unreduced all-policy run projected excessive runtime.",
+            "Removed exploration_bonus_c0.25 and exploration_bonus_c1.0 after the 5-seed all-c-values run was still too slow; kept exploration_bonus_c0.5.",
+        ],
+    },
     "MORE_EXACT_DEV": {
         "budgets": [45, 90, 180, 360, 720],
         "reveal_seeds": [101, 202, 303],
@@ -82,7 +157,7 @@ CONFIGURATIONS = {
         "sample_seed_base": 1008000,
     },
 }
-MODE = os.environ.get("SAFERAI_EXPERIMENT_MODE", "FAST_DEV_10_SEEDS")
+MODE = os.environ.get("SAFERAI_EXPERIMENT_MODE", "V8_ALL_POLICIES_DEV")
 
 
 def main() -> None:
@@ -94,8 +169,15 @@ def main() -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     if MODE not in CONFIGURATIONS:
         raise ValueError(f"Unknown MODE={MODE!r}; expected one of {sorted(CONFIGURATIONS)}.")
-    settings = CONFIGURATIONS[MODE]
-    requested_settings = settings.copy()
+    raw_settings = CONFIGURATIONS[MODE]
+    requested_settings = json.loads(json.dumps(raw_settings.get("requested_settings", raw_settings)))
+    settings = {
+        key: value
+        for key, value in raw_settings.items()
+        if key not in {"requested_settings", "runtime_reduction_notes"}
+    }
+    runtime_reduction_notes = list(raw_settings.get("runtime_reduction_notes", []))
+    policy_specs = _policy_specs(settings)
     prefix = MODE.lower()
 
     start = time.perf_counter()
@@ -107,6 +189,7 @@ def main() -> None:
     print("Repeated policy experiment")
     print(f"Mode: {MODE}")
     print(f"Settings: {settings}")
+    print(f"Policy specs: {policy_specs}")
     ref_start = time.perf_counter()
     reference_df = sample_full_reference_p_success(
         usable_df,
@@ -123,12 +206,14 @@ def main() -> None:
     fragility_runtime_rows: list[dict[str, Any]] = []
 
     for reveal_seed in settings["reveal_seeds"]:
-        for policy in settings["policies"]:
+        for spec in policy_specs:
             run_start = time.perf_counter()
-            print(f"Running reveal_seed={reveal_seed}, policy={policy}", flush=True)
+            print(f"Running reveal_seed={reveal_seed}, policy={spec['name']}", flush=True)
             result_df, diagnostics = run_policy_recovery(
                 fit_df,
-                policy_name=policy,
+                policy_name=spec["policy_name"],
+                policy_label=spec["name"],
+                policy_kwargs=spec.get("policy_kwargs", {}),
                 budgets=settings["budgets"],
                 reveal_seed=reveal_seed,
                 reference_seed=settings["reference_seed"],
@@ -149,23 +234,28 @@ def main() -> None:
 
     results_df = pd.concat(all_results, ignore_index=True)
     summary_df = summarize_policy_results(results_df)
-    differences_df = compute_policy_differences(results_df)
+    legacy_greedy_differences_df = (
+        compute_policy_differences(results_df)
+        if {"uniform_step_balanced", "greedy_loo_fragility"}.issubset(set(results_df["policy_name"]))
+        else pd.DataFrame()
+    )
+    differences_df = compute_policy_differences_against_baseline(results_df)
     auc_df = compute_auc_by_seed_policy(results_df)
-    win_by_budget_df = summarize_win_rate_by_budget(differences_df)
-    win_by_seed_df = summarize_win_rate_by_seed(differences_df, auc_df)
+    win_by_budget_df = summarize_policy_win_rate_by_budget(differences_df)
+    win_by_seed_df = summarize_policy_win_rate_by_seed(differences_df, auc_df)
     concentration_df = summarize_concentration_by_budget(results_df)
-    selected_step_counts_df = _greedy_selected_step_counts_df(run_diagnostics)
+    selected_step_counts_df = _selected_step_counts_df(run_diagnostics)
     fragility_runtime_df = pd.DataFrame(fragility_runtime_rows)
 
     paths = {
         "results": OUTPUT_DIR / f"{prefix}_repeated_policy_results.csv",
         "summary": OUTPUT_DIR / f"{prefix}_policy_summary_by_budget.csv",
-        "differences": OUTPUT_DIR / f"{prefix}_policy_differences_by_seed_budget.csv",
+        "differences": OUTPUT_DIR / f"{prefix}_policy_differences_vs_uniform.csv",
         "auc": OUTPUT_DIR / f"{prefix}_policy_auc_by_seed.csv",
         "win_by_budget": OUTPUT_DIR / f"{prefix}_win_rate_by_budget.csv",
         "win_by_seed": OUTPUT_DIR / f"{prefix}_win_rate_by_seed.csv",
         "concentration": OUTPUT_DIR / f"{prefix}_concentration_by_budget.csv",
-        "greedy_selected_step_counts": OUTPUT_DIR / f"{prefix}_greedy_selected_step_counts.csv",
+        "selected_step_counts": OUTPUT_DIR / f"{prefix}_selected_step_counts.csv",
         "report": OUTPUT_DIR / f"{prefix}_repeated_policy_experiment_report.json",
         "fragility_runtime": OUTPUT_DIR / f"{prefix}_fragility_runtime_diagnostics.csv",
     }
@@ -176,7 +266,7 @@ def main() -> None:
     win_by_budget_df.to_csv(paths["win_by_budget"], index=False)
     win_by_seed_df.to_csv(paths["win_by_seed"], index=False)
     concentration_df.to_csv(paths["concentration"], index=False)
-    selected_step_counts_df.to_csv(paths["greedy_selected_step_counts"], index=False)
+    selected_step_counts_df.to_csv(paths["selected_step_counts"], index=False)
     fragility_runtime_df.to_csv(paths["fragility_runtime"], index=False)
 
     runtime = time.perf_counter() - start
@@ -184,9 +274,12 @@ def main() -> None:
         mode=MODE,
         settings=settings,
         requested_settings=requested_settings,
+        runtime_reduction_notes=runtime_reduction_notes,
+        policy_specs=policy_specs,
         results_df=results_df,
         summary_df=summary_df,
         differences_df=differences_df,
+        legacy_greedy_differences_df=legacy_greedy_differences_df,
         auc_df=auc_df,
         win_by_budget_df=win_by_budget_df,
         win_by_seed_df=win_by_seed_df,
@@ -202,13 +295,14 @@ def main() -> None:
 
     distance_table = summary_df.pivot(index="budget", columns="policy_name", values="distance_mean")
     auc_summary = auc_df.groupby("policy_name")["auc_distance"].agg(["mean", "median"])
-    greedy_fraction = float(differences_df["greedy_better"].mean()) if len(differences_df) else 0.0
     print("Summary distance table (mean across reveal seeds):")
     print(distance_table.to_string())
-    print("Fraction of seed-budget comparisons where greedy beats uniform:")
-    print(greedy_fraction)
-    print("Greedy win fraction by budget:")
-    print(win_by_budget_df[["budget", "greedy_win_fraction", "mean_greedy_minus_uniform_distance"]].to_string(index=False))
+    print("Win fraction vs uniform by policy and budget:")
+    print(
+        win_by_budget_df[
+            ["policy_name", "budget", "policy_win_fraction", "mean_policy_minus_baseline_distance"]
+        ].to_string(index=False)
+    )
     print("AUC summary:")
     print(auc_summary.to_string())
     largest_budget = max(settings["budgets"])
@@ -236,9 +330,12 @@ def _make_report(
     mode: str,
     settings: dict[str, Any],
     requested_settings: dict[str, Any],
+    runtime_reduction_notes: list[str],
+    policy_specs: list[dict[str, Any]],
     results_df: pd.DataFrame,
     summary_df: pd.DataFrame,
     differences_df: pd.DataFrame,
+    legacy_greedy_differences_df: pd.DataFrame,
     auc_df: pd.DataFrame,
     win_by_budget_df: pd.DataFrame,
     win_by_seed_df: pd.DataFrame,
@@ -265,25 +362,26 @@ def _make_report(
     approximation_note = None
     if max_terms is not None:
         approximation_note = (
-            "Greedy LOO fragility used approximate LOO-term subsampling with "
+            "Fragility-guided policies used approximate LOO-term subsampling with "
             f"max_loo_terms_per_step={max_terms}. Previous approximation audit suggested cap 20 "
             "preserved top fragile-node rankings on reduced audit settings, but this remains an "
             "approximation to the exact v8 LOO definition. Exact LOO remains available by setting "
             "this to null."
         )
-    greedy_auc_mean = float(
-        auc_df.loc[auc_df["policy_name"].eq("greedy_loo_fragility"), "auc_distance"].mean()
-    )
     uniform_auc_mean = float(
         auc_df.loc[auc_df["policy_name"].eq("uniform_step_balanced"), "auc_distance"].mean()
     )
-    greedy_win_fraction = float(differences_df["greedy_better"].mean())
-    greedy_concentration = _greedy_concentration(results_df, run_diagnostics)
+    auc_by_policy = auc_df.groupby("policy_name")["auc_distance"].mean().to_dict()
+    best_auc_policy = min(auc_by_policy, key=auc_by_policy.get)
+    overall_win_rates = {
+        str(policy): float(group["policy_better"].mean())
+        for policy, group in differences_df.groupby("policy_name")
+    }
 
     return {
         "note": (
-            "This is a stronger development run, not the final report run. Greedy LOO fragility "
-            "uses approximate LOO-term subsampling with max_loo_terms_per_step=20. Previous "
+            "This is a v8 all-policies development run, not the final report run. Fragility-guided "
+            "policies use approximate LOO-term subsampling with max_loo_terms_per_step=20. Previous "
             "approximation audit suggested cap 20 preserved top fragile-node rankings on reduced "
             "audit settings, but this remains an approximation to the exact v8 LOO definition."
         ),
@@ -291,6 +389,8 @@ def _make_report(
         "settings": settings,
         "requested_settings": requested_settings,
         "settings_reduced_from_requested": settings != requested_settings,
+        "runtime_reduction_notes": runtime_reduction_notes,
+        "policy_specs": policy_specs,
         "approximation_note": approximation_note,
         "runtime_seconds": runtime,
         "reference_design": {
@@ -300,25 +400,37 @@ def _make_report(
         },
         "total_usable_fitted_rows": int(total_usable),
         "initial_seed_size": int(results_df["budget"].min()),
-        "policies_compared": settings["policies"],
+        "policies_compared": [spec["name"] for spec in policy_specs],
         "number_of_reveal_seeds": int(len(settings["reveal_seeds"])),
         "budgets": settings["budgets"],
         "runtime_diagnostics": _runtime_diagnostics(run_diagnostics),
         "summary_by_policy": policy_summary,
-        "greedy_better_count": int(differences_df["greedy_better"].sum()),
+        "overall_win_rates_vs_uniform": overall_win_rates,
+        "greedy_better_count": (
+            int(legacy_greedy_differences_df["greedy_better"].sum())
+            if not legacy_greedy_differences_df.empty
+            else None
+        ),
         "total_seed_budget_comparisons": int(len(differences_df)),
-        "greedy_better_fraction": greedy_win_fraction,
+        "greedy_better_fraction": (
+            float(legacy_greedy_differences_df["greedy_better"].mean())
+            if not legacy_greedy_differences_df.empty
+            else None
+        ),
         "win_rate_by_budget": win_by_budget_df.to_dict(orient="records"),
         "win_rate_by_seed": win_by_seed_df.to_dict(orient="records"),
         "concentration_by_budget": concentration_df.to_dict(orient="records"),
-        "greedy_concentration_diagnostics": greedy_concentration,
-        "greedy_selected_step_counts": selected_step_counts_df.to_dict(orient="records"),
+        "selected_step_counts": selected_step_counts_df.to_dict(orient="records"),
         "fragility_approximation_diagnostics": _fragility_approximation(fragility_runtime_df),
         "interpretation_notes": {
-            "greedy_has_lower_average_auc_than_uniform": bool(greedy_auc_mean < uniform_auc_mean),
-            "greedy_wins_majority_of_seed_budget_comparisons": bool(greedy_win_fraction > 0.5),
-            "greedy_advantage_if_any_comes_with_high_concentration": bool(
-                max(greedy_concentration["max_step_count_l1_by_budget"].values() or [0]) > 0
+            "best_average_auc_policy": str(best_auc_policy),
+            "best_average_auc": float(auc_by_policy[best_auc_policy]),
+            "uniform_average_auc": uniform_auc_mean,
+            "any_fragility_policy_has_lower_average_auc_than_uniform": bool(
+                any(policy != "uniform_step_balanced" and auc < uniform_auc_mean for policy, auc in auc_by_policy.items())
+            ),
+            "any_policy_wins_majority_vs_uniform": bool(
+                any(rate > 0.5 for rate in overall_win_rates.values())
             ),
             "do_not_overclaim": (
                 "These summaries are development diagnostics with approximate LOO fragility, "
@@ -357,6 +469,29 @@ def _runtime_diagnostics(run_diagnostics: list[dict[str, Any]]) -> dict[str, Any
     }
 
 
+def _policy_specs(settings: dict[str, Any]) -> list[dict[str, Any]]:
+    if "policy_specs" in settings:
+        specs = settings["policy_specs"]
+    else:
+        specs = [
+            {"name": policy, "policy_name": policy, "policy_kwargs": {}}
+            for policy in settings.get("policies", [])
+        ]
+    normalized: list[dict[str, Any]] = []
+    for spec in specs:
+        missing = {"name", "policy_name"} - set(spec)
+        if missing:
+            raise ValueError(f"Policy spec is missing required keys: {sorted(missing)}")
+        normalized.append(
+            {
+                "name": str(spec["name"]),
+                "policy_name": str(spec["policy_name"]),
+                "policy_kwargs": dict(spec.get("policy_kwargs", {})),
+            }
+        )
+    return normalized
+
+
 def _greedy_concentration(results_df: pd.DataFrame, run_diagnostics: list[dict[str, Any]]) -> dict[str, Any]:
     greedy_rows = results_df.loc[results_df["policy_name"].eq("greedy_loo_fragility")]
     return {
@@ -381,22 +516,53 @@ def _greedy_concentration(results_df: pd.DataFrame, run_diagnostics: list[dict[s
     }
 
 
-def _greedy_selected_step_counts_df(run_diagnostics: list[dict[str, Any]]) -> pd.DataFrame:
+def _selected_step_counts_df(run_diagnostics: list[dict[str, Any]]) -> pd.DataFrame:
     rows: list[dict[str, Any]] = []
     for diag in run_diagnostics:
-        if diag["policy_name"] != "greedy_loo_fragility":
+        if diag["policy_name"] == "uniform_step_balanced":
             continue
-        counts = {step: 0 for step in config.EXPECTED_MITRE_STEP_LABELS}
-        counts.update({str(k): int(v) for k, v in diag.get("selected_step_counts", {}).items()})
-        for step, count in counts.items():
+        base = {
+            "policy_name": str(diag["policy_name"]),
+            "base_policy_name": str(diag.get("base_policy_name", diag["policy_name"])),
+            "policy_kwargs": json.dumps(diag.get("policy_kwargs", {}), sort_keys=True),
+            "reveal_seed": int(diag["reveal_seed"]),
+        }
+        total_counts = {step: 0 for step in config.EXPECTED_MITRE_STEP_LABELS}
+        total_counts.update({str(k): int(v) for k, v in diag.get("selected_step_counts", {}).items()})
+        for step, count in total_counts.items():
             rows.append(
                 {
-                    "policy_name": "greedy_loo_fragility",
-                    "reveal_seed": int(diag["reveal_seed"]),
+                    **base,
+                    "decision_type": "all",
                     "step_name": step,
                     "selected_count_after_initial_seed": int(count),
                 }
             )
+        by_type = diag.get("selected_step_counts_by_decision_type", {})
+        for decision_type, counter in by_type.items():
+            counts = {step: 0 for step in config.EXPECTED_MITRE_STEP_LABELS}
+            counts.update({str(k): int(v) for k, v in counter.items()})
+            for step, count in counts.items():
+                rows.append(
+                    {
+                        **base,
+                        "decision_type": str(decision_type),
+                        "step_name": step,
+                        "selected_count_after_initial_seed": int(count),
+                    }
+                )
+    if not rows:
+        return pd.DataFrame(
+            columns=[
+                "policy_name",
+                "base_policy_name",
+                "policy_kwargs",
+                "reveal_seed",
+                "decision_type",
+                "step_name",
+                "selected_count_after_initial_seed",
+            ]
+        )
     return pd.DataFrame(rows).sort_values(["reveal_seed", "step_name"]).reset_index(drop=True)
 
 

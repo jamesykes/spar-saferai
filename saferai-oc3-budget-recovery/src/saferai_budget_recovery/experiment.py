@@ -16,6 +16,8 @@ from saferai_budget_recovery.distances import (
     squared_wasserstein2_from_quantiles,
 )
 from saferai_budget_recovery.policies import (
+    choose_next_epsilon_greedy_fragility,
+    choose_next_exploration_bonus_fragility,
     choose_next_greedy_fragility,
     choose_next_uniform_row_random,
     choose_next_uniform_step_balanced,
@@ -29,7 +31,13 @@ from saferai_budget_recovery.reveal import (
 from saferai_budget_recovery.sampling import sample_full_reference_p_success, sample_p_success_from_revealed
 
 
-VALID_POLICIES = {"uniform_step_balanced", "greedy_loo_fragility", "uniform_row_random"}
+VALID_POLICIES = {
+    "uniform_step_balanced",
+    "greedy_loo_fragility",
+    "epsilon_greedy_loo_fragility",
+    "exploration_bonus_loo_fragility",
+    "uniform_row_random",
+}
 
 
 def run_policy_recovery(
@@ -46,6 +54,8 @@ def run_policy_recovery(
     fragility_recompute_every: int = 1,
     reference_samples: np.ndarray | None = None,
     reference_quantiles: np.ndarray | None = None,
+    policy_kwargs: dict | None = None,
+    policy_label: str | None = None,
 ) -> tuple[pd.DataFrame, dict]:
     """Run a small recovery loop for one policy and one reveal seed."""
 
@@ -53,6 +63,8 @@ def run_policy_recovery(
         raise ValueError(f"Unknown policy_name={policy_name!r}; expected one of {sorted(VALID_POLICIES)}.")
     if fragility_recompute_every <= 0:
         raise ValueError("fragility_recompute_every must be positive.")
+    policy_kwargs = policy_kwargs or {}
+    output_policy_name = policy_label or policy_name
 
     start = time.perf_counter()
     usable_df = usable_fit_rows(fit_df)
@@ -86,6 +98,8 @@ def run_policy_recovery(
 
     rng = np.random.default_rng(reveal_seed)
     selected_step_counts: dict[str, int] = {}
+    selected_step_counts_by_decision_type: dict[str, dict[str, int]] = {}
+    decision_type_counts: dict[str, int] = {}
     fallback_count = 0
     decision_count = 0
     cached_fragility_scores: pd.DataFrame | None = None
@@ -110,11 +124,14 @@ def run_policy_recovery(
                 recompute = cached_fragility_scores is None or decisions_since_recompute >= fragility_recompute_every
                 if recompute:
                     fragility_start = time.perf_counter()
-                    selected_row_id, cached_fragility_scores = choose_next_greedy_fragility(
-                        revealed_df,
-                        unrevealed_df,
-                        rng,
+                    selected_row_id, cached_fragility_scores = _choose_fragility_policy(
+                        policy_name=policy_name,
+                        revealed_df=revealed_df,
+                        unrevealed_df=unrevealed_df,
+                        rng=rng,
                         fragility_kwargs=fragility_kwargs or {},
+                        policy_kwargs=policy_kwargs,
+                        fragility_scores=None,
                     )
                     fragility_elapsed = time.perf_counter() - fragility_start
                     fragility_runtime_seconds += fragility_elapsed
@@ -134,7 +151,8 @@ def run_policy_recovery(
                         top_fragility = float(top_row["loo_fragility"])
                     fragility_runtime_diagnostics.append(
                         {
-                            "policy_name": policy_name,
+                            "policy_name": output_policy_name,
+                            "base_policy_name": policy_name,
                             "reveal_seed": int(reveal_seed),
                             "recomputation_index": int(fragility_recomputation_count),
                             "revealed_count_at_recomputation": int(len(revealed_df)),
@@ -145,22 +163,30 @@ def run_policy_recovery(
                             "loo_subsampled": bool(cached_fragility_scores["loo_subsampled"].any()),
                             "top_fragile_step": top_fragile_step,
                             "top_fragility": top_fragility,
+                            "policy_kwargs": json.dumps(policy_kwargs, sort_keys=True),
                         }
                     )
                     decisions_since_recompute = 0
                 else:
-                    selected_row_id, cached_fragility_scores = choose_next_greedy_fragility(
-                        revealed_df,
-                        unrevealed_df,
-                        rng,
+                    selected_row_id, cached_fragility_scores = _choose_fragility_policy(
+                        policy_name=policy_name,
+                        revealed_df=revealed_df,
+                        unrevealed_df=unrevealed_df,
+                        rng=rng,
+                        fragility_kwargs=fragility_kwargs or {},
+                        policy_kwargs=policy_kwargs,
                         fragility_scores=cached_fragility_scores,
                     )
                 decisions_since_recompute += 1
                 if cached_fragility_scores.attrs.get("selection_fallback") is not None:
                     fallback_count += 1
                 selected_step = cached_fragility_scores.attrs.get("selected_step")
+                decision_type = str(cached_fragility_scores.attrs.get("decision_type", "unknown"))
+                decision_type_counts[decision_type] = decision_type_counts.get(decision_type, 0) + 1
                 if selected_step is not None:
                     selected_step_counts[str(selected_step)] = selected_step_counts.get(str(selected_step), 0) + 1
+                    by_type = selected_step_counts_by_decision_type.setdefault(decision_type, {})
+                    by_type[str(selected_step)] = by_type.get(str(selected_step), 0) + 1
 
             selected_row = unrevealed_df.loc[unrevealed_df[FITTED_ROW_UID_COLUMN].eq(selected_row_id)]
             if len(selected_row) != 1:
@@ -188,7 +214,9 @@ def run_policy_recovery(
         summary = _p_success_summary(budget_samples)
         rows.append(
             {
-                "policy_name": policy_name,
+                "policy_name": output_policy_name,
+                "base_policy_name": policy_name,
+                "policy_kwargs": json.dumps(policy_kwargs, sort_keys=True),
                 "reveal_seed": int(reveal_seed),
                 "budget": int(target_budget),
                 "additional_rows_beyond_initial_seed": int(target_budget - initial_size),
@@ -211,7 +239,9 @@ def run_policy_recovery(
     elapsed = time.perf_counter() - start
     result_df = pd.DataFrame(rows)
     diagnostics = {
-        "policy_name": policy_name,
+        "policy_name": output_policy_name,
+        "base_policy_name": policy_name,
+        "policy_kwargs": policy_kwargs,
         "reveal_seed": int(reveal_seed),
         "runtime_seconds": elapsed,
         "initial_seed_size": int(initial_size),
@@ -225,6 +255,8 @@ def run_policy_recovery(
         "fragility_kwargs": fragility_kwargs or {},
         "fragility_recompute_every": int(fragility_recompute_every),
         "selected_step_counts": selected_step_counts,
+        "selected_step_counts_by_decision_type": selected_step_counts_by_decision_type,
+        "decision_type_counts": decision_type_counts,
         "fallback_count": int(fallback_count),
         "decision_count": int(decision_count),
         "reference_sampling_seconds": float(reference_sampling_seconds),
@@ -248,6 +280,44 @@ def run_policy_recovery(
         "fragility_runtime_diagnostics": fragility_runtime_diagnostics,
     }
     return result_df, diagnostics
+
+
+def _choose_fragility_policy(
+    policy_name: str,
+    revealed_df: pd.DataFrame,
+    unrevealed_df: pd.DataFrame,
+    rng: np.random.Generator,
+    fragility_kwargs: dict,
+    policy_kwargs: dict,
+    fragility_scores: pd.DataFrame | None,
+) -> tuple[str, pd.DataFrame]:
+    if policy_name == "greedy_loo_fragility":
+        return choose_next_greedy_fragility(
+            revealed_df,
+            unrevealed_df,
+            rng,
+            fragility_kwargs=fragility_kwargs,
+            fragility_scores=fragility_scores,
+        )
+    if policy_name == "epsilon_greedy_loo_fragility":
+        return choose_next_epsilon_greedy_fragility(
+            revealed_df,
+            unrevealed_df,
+            rng,
+            epsilon=float(policy_kwargs.get("epsilon", 0.2)),
+            fragility_kwargs=fragility_kwargs,
+            fragility_scores=fragility_scores,
+        )
+    if policy_name == "exploration_bonus_loo_fragility":
+        return choose_next_exploration_bonus_fragility(
+            revealed_df,
+            unrevealed_df,
+            rng,
+            c=float(policy_kwargs.get("c", 0.5)),
+            fragility_kwargs=fragility_kwargs,
+            fragility_scores=fragility_scores,
+        )
+    raise ValueError(f"Policy {policy_name!r} is not a fragility policy.")
 
 
 def _p_success_summary(samples: np.ndarray) -> dict[str, float]:

@@ -78,6 +78,54 @@ def compute_policy_differences(
     return merged.sort_values(["reveal_seed", "budget"]).reset_index(drop=True)
 
 
+def compute_policy_differences_against_baseline(
+    results_df: pd.DataFrame,
+    baseline_policy: str = "uniform_step_balanced",
+) -> pd.DataFrame:
+    """Compute paired policy-minus-baseline distances for each comparator policy."""
+
+    _require_columns(results_df, {"policy_name", "reveal_seed", "budget", DISTANCE_COL})
+    baseline = results_df.loc[
+        results_df["policy_name"].eq(baseline_policy),
+        ["reveal_seed", "budget", DISTANCE_COL],
+    ].rename(columns={DISTANCE_COL: "baseline_distance"})
+    rows: list[pd.DataFrame] = []
+    for policy in sorted(set(results_df["policy_name"]) - {baseline_policy}):
+        policy_df = results_df.loc[
+            results_df["policy_name"].eq(policy),
+            ["reveal_seed", "budget", DISTANCE_COL],
+        ].rename(columns={DISTANCE_COL: "policy_distance"})
+        merged = baseline.merge(policy_df, on=["reveal_seed", "budget"], how="inner")
+        merged["policy_name"] = str(policy)
+        merged["baseline_policy"] = baseline_policy
+        merged["difference_policy_minus_baseline"] = (
+            merged["policy_distance"] - merged["baseline_distance"]
+        )
+        merged["relative_difference_policy_minus_baseline"] = np.where(
+            merged["baseline_distance"].to_numpy(dtype=float) == 0,
+            np.nan,
+            merged["difference_policy_minus_baseline"] / merged["baseline_distance"],
+        )
+        merged["policy_better"] = merged["policy_distance"] < merged["baseline_distance"]
+        rows.append(merged)
+    if not rows:
+        return pd.DataFrame()
+    out = pd.concat(rows, ignore_index=True)
+    return out[
+        [
+            "policy_name",
+            "baseline_policy",
+            "reveal_seed",
+            "budget",
+            "baseline_distance",
+            "policy_distance",
+            "difference_policy_minus_baseline",
+            "relative_difference_policy_minus_baseline",
+            "policy_better",
+        ]
+    ].sort_values(["policy_name", "reveal_seed", "budget"]).reset_index(drop=True)
+
+
 def compute_auc_by_seed_policy(
     results_df: pd.DataFrame,
     distance_col: str = DISTANCE_COL,
@@ -136,6 +184,42 @@ def summarize_win_rate_by_budget(differences_df: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(rows).sort_values("budget").reset_index(drop=True)
 
 
+def summarize_policy_win_rate_by_budget(differences_df: pd.DataFrame) -> pd.DataFrame:
+    """Summarize paired win rates against baseline by policy and budget."""
+
+    _require_columns(
+        differences_df,
+        {
+            "policy_name",
+            "budget",
+            "policy_better",
+            "difference_policy_minus_baseline",
+            "relative_difference_policy_minus_baseline",
+        },
+    )
+    rows: list[dict] = []
+    for (policy, budget), group in differences_df.groupby(["policy_name", "budget"], dropna=False):
+        rows.append(
+            {
+                "policy_name": str(policy),
+                "budget": int(budget),
+                "n_seeds": int(len(group)),
+                "policy_wins": int(group["policy_better"].sum()),
+                "policy_win_fraction": float(group["policy_better"].mean()),
+                "mean_policy_minus_baseline_distance": float(
+                    group["difference_policy_minus_baseline"].mean()
+                ),
+                "median_policy_minus_baseline_distance": float(
+                    group["difference_policy_minus_baseline"].median()
+                ),
+                "mean_relative_difference_policy_minus_baseline": _finite_mean(
+                    group["relative_difference_policy_minus_baseline"]
+                ),
+            }
+        )
+    return pd.DataFrame(rows).sort_values(["policy_name", "budget"]).reset_index(drop=True)
+
+
 def summarize_win_rate_by_seed(
     differences_df: pd.DataFrame,
     auc_df: pd.DataFrame,
@@ -161,6 +245,36 @@ def summarize_win_rate_by_seed(
             }
         )
     return pd.DataFrame(rows).sort_values("reveal_seed").reset_index(drop=True)
+
+
+def summarize_policy_win_rate_by_seed(
+    differences_df: pd.DataFrame,
+    auc_df: pd.DataFrame,
+    baseline_policy: str = "uniform_step_balanced",
+) -> pd.DataFrame:
+    """Summarize paired wins and AUC differences against baseline by policy and seed."""
+
+    _require_columns(differences_df, {"policy_name", "reveal_seed", "policy_better"})
+    _require_columns(auc_df, {"policy_name", "reveal_seed", "auc_distance"})
+    auc_wide = auc_df.pivot(index="reveal_seed", columns="policy_name", values="auc_distance")
+    rows: list[dict] = []
+    for (policy, seed), group in differences_df.groupby(["policy_name", "reveal_seed"], dropna=False):
+        baseline_auc = float(auc_wide.loc[seed, baseline_policy])
+        policy_auc = float(auc_wide.loc[seed, policy])
+        rows.append(
+            {
+                "policy_name": str(policy),
+                "baseline_policy": baseline_policy,
+                "reveal_seed": int(seed),
+                "n_budgets": int(len(group)),
+                "policy_wins": int(group["policy_better"].sum()),
+                "policy_win_fraction": float(group["policy_better"].mean()),
+                "policy_auc": policy_auc,
+                "baseline_auc": baseline_auc,
+                "policy_minus_baseline_auc": float(policy_auc - baseline_auc),
+            }
+        )
+    return pd.DataFrame(rows).sort_values(["policy_name", "reveal_seed"]).reset_index(drop=True)
 
 
 def summarize_concentration_by_budget(results_df: pd.DataFrame) -> pd.DataFrame:

@@ -193,3 +193,48 @@ def test_approximate_fragility_settings_are_recorded_in_diagnostics() -> None:
     assert diagnostics["fragility_kwargs"]["max_loo_terms_per_step"] == 2
     assert diagnostics["any_loo_subsampled"] is True
     assert diagnostics["total_loo_terms_used"] <= diagnostics["total_loo_terms_available"]
+
+
+def test_parameterized_policy_label_is_preserved_in_results_and_diagnostics() -> None:
+    results, diagnostics = run_policy_recovery(
+        _complete_fit_df(),
+        policy_name="epsilon_greedy_loo_fragility",
+        policy_label="epsilon_greedy_eps0.2",
+        policy_kwargs={"epsilon": 0.2},
+        budgets=[45, 50],
+        reveal_seed=11,
+        reference_seed=22,
+        sample_seed_base=33,
+        n_reference_samples=60,
+        n_budget_samples=40,
+        n_grid=21,
+        fragility_kwargs={"n_samples": 15, "n_grid": 7, "max_loo_terms_per_step": 2},
+        fragility_recompute_every=5,
+    )
+    assert set(results["policy_name"]) == {"epsilon_greedy_eps0.2"}
+    assert diagnostics["policy_name"] == "epsilon_greedy_eps0.2"
+    assert diagnostics["base_policy_name"] == "epsilon_greedy_loo_fragility"
+    assert diagnostics["policy_kwargs"]["epsilon"] == 0.2
+    assert "decision_type_counts" in diagnostics
+
+
+def test_exploration_bonus_policy_runs_in_tiny_synthetic_experiment() -> None:
+    results, diagnostics = run_policy_recovery(
+        _complete_fit_df(),
+        policy_name="exploration_bonus_loo_fragility",
+        policy_label="exploration_bonus_c0.5",
+        policy_kwargs={"c": 0.5},
+        budgets=[45, 50],
+        reveal_seed=11,
+        reference_seed=22,
+        sample_seed_base=33,
+        n_reference_samples=60,
+        n_budget_samples=40,
+        n_grid=21,
+        fragility_kwargs={"n_samples": 15, "n_grid": 7, "max_loo_terms_per_step": 2},
+        fragility_recompute_every=5,
+    )
+    assert list(results["budget"]) == [45, 50]
+    assert set(results["policy_name"]) == {"exploration_bonus_c0.5"}
+    assert diagnostics["policy_kwargs"]["c"] == 0.5
+    assert np.isfinite(results["squared_wasserstein2_to_full_reference"]).all()
