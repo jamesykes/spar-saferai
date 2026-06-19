@@ -409,6 +409,8 @@ def _sensitivity_latex(df: pd.DataFrame) -> str:
                     _fmt(row["win_fraction_vs_uniform"], 3),
                     _fmt(row["mean_l1_imbalance_at_1200"], 1),
                     _fmt(row["mean_max_min_ratio_at_1200"], 2),
+                    _fmt(row["min_step_count_at_1200_mean"], 1),
+                    _fmt(row["observed_min_step_count_at_1200"], 0),
                     _fmt(row["mean_l1_imbalance_at_1798"], 1),
                 ]
             )
@@ -420,9 +422,9 @@ def _sensitivity_latex(df: pd.DataFrame) -> str:
 \small
 \caption{{Locked exploration-bonus sensitivity. All settings use approximate LOO fragility with \texttt{{max\_loo\_terms\_per\_step=20}}.}}
 \label{{tab:exploration-bonus-sensitivity}}
-\begin{{tabular}}{{rrrrrrr}}
+\begin{{tabular}}{{rrrrrrrrr}}
 \toprule
-$c$ & Avg. AUC & Med. AUC & Win frac. & L1 1200 & Max/min 1200 & L1 1798 \\
+$c$ & Avg. AUC & Med. AUC & Win frac. & L1 1200 & Max/min 1200 & Mean min 1200 & Obs. min 1200 & L1 1798 \\
 \midrule
 {body}
 \bottomrule

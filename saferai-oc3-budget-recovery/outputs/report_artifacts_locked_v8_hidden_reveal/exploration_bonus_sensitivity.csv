@@ -1,4 +1,4 @@
-source_run,policy_name,c,average_auc,median_auc,win_fraction_vs_uniform,mean_l1_imbalance_at_1200,mean_max_min_ratio_at_1200,min_step_count_at_1200_mean,max_step_count_at_1200_mean,mean_l1_imbalance_at_1798,median_l1_imbalance_at_1798,max_l1_imbalance_at_1798,mean_max_min_ratio_at_1798
-locked_v8_hidden_reveal,exploration_bonus_c0.25,0.25,0.0171367661967161,0.0129002976070943,0.2857142857142857,627.2,28.999999999999993,5,200,0.0,0.0,0.0,1.0050251256281406
-locked_v8_hidden_reveal,exploration_bonus_c0.5,0.5,0.0101749139827538,0.0090762736201,0.3571428571428571,569.6,23.306500315574727,5,200,0.0,0.0,0.0,1.0050251256281406
-locked_v8_hidden_reveal,exploration_bonus_c1.0,1.0,0.009408920881175,0.00856121108155,0.3857142857142857,516.0,9.81959182341807,11,200,0.0,0.0,0.0,1.0050251256281406
+source_run,policy_name,c,average_auc,median_auc,win_fraction_vs_uniform,mean_l1_imbalance_at_1200,mean_max_min_ratio_at_1200,min_step_count_at_1200_mean,observed_min_step_count_at_1200,max_step_count_at_1200_mean,observed_max_step_count_at_1200,max_l1_imbalance_at_1200,mean_l1_imbalance_at_1798,median_l1_imbalance_at_1798,max_l1_imbalance_at_1798,mean_max_min_ratio_at_1798
+locked_v8_hidden_reveal,exploration_bonus_c0.25,0.25,0.0171367661967161,0.0129002976070943,0.2857142857142857,627.2,28.999999999999993,7.6,5,200.0,200,742.0,0.0,0.0,0.0,1.0050251256281406
+locked_v8_hidden_reveal,exploration_bonus_c0.5,0.5,0.0101749139827538,0.0090762736201,0.3571428571428571,569.6,23.306500315574727,14.4,5,200.0,200,674.0,0.0,0.0,0.0,1.0050251256281406
+locked_v8_hidden_reveal,exploration_bonus_c1.0,1.0,0.009408920881175,0.00856121108155,0.3857142857142857,516.0,9.81959182341807,30.2,11,200.0,200,620.0,0.0,0.0,0.0,1.0050251256281406

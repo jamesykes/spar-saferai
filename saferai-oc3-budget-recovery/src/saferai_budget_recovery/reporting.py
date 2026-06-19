@@ -246,6 +246,47 @@ def build_exploration_bonus_sensitivity(
             available_columns = [column for column in join_columns if column in concentration_rows.columns]
             df = df.merge(concentration_rows[available_columns], on="policy_name", how="left")
 
+    results = sensitivity_outputs.get("results", pd.DataFrame())
+    if not results.empty and "policy_name" in df.columns:
+        budget_results = results.loc[results["budget"].eq(concentration_budget)].copy()
+        if not budget_results.empty:
+            result_summary = (
+                budget_results.groupby("policy_name", as_index=False)
+                .agg(
+                    **{
+                        f"min_step_count_at_{concentration_budget}_mean": (
+                            "min_revealed_rows_per_step",
+                            "mean",
+                        ),
+                        f"observed_min_step_count_at_{concentration_budget}": (
+                            "min_revealed_rows_per_step",
+                            "min",
+                        ),
+                        f"max_step_count_at_{concentration_budget}_mean": (
+                            "max_revealed_rows_per_step",
+                            "mean",
+                        ),
+                        f"observed_max_step_count_at_{concentration_budget}": (
+                            "max_revealed_rows_per_step",
+                            "max",
+                        ),
+                        f"max_l1_imbalance_at_{concentration_budget}": (
+                            "step_count_l1_from_perfect_balance",
+                            "max",
+                        ),
+                    }
+                )
+            )
+            overwrite_columns = [
+                f"min_step_count_at_{concentration_budget}_mean",
+                f"observed_min_step_count_at_{concentration_budget}",
+                f"max_step_count_at_{concentration_budget}_mean",
+                f"observed_max_step_count_at_{concentration_budget}",
+                f"max_l1_imbalance_at_{concentration_budget}",
+            ]
+            df = df.drop(columns=[column for column in overwrite_columns if column in df.columns])
+            df = df.merge(result_summary, on="policy_name", how="left")
+
     prefix_columns = ["source_run", "policy_name"] if source_run is not None else ["policy_name"]
     preferred_columns = [
         *[column for column in prefix_columns if column in df.columns],
@@ -256,8 +297,12 @@ def build_exploration_bonus_sensitivity(
         f"mean_l1_imbalance_at_{concentration_budget}",
         f"mean_max_min_ratio_at_{concentration_budget}",
         f"min_step_count_at_{concentration_budget}_mean",
+        f"observed_min_step_count_at_{concentration_budget}",
         f"max_step_count_at_{concentration_budget}_mean",
+        f"observed_max_step_count_at_{concentration_budget}",
     ]
+    if f"max_l1_imbalance_at_{concentration_budget}" in df.columns:
+        preferred_columns.append(f"max_l1_imbalance_at_{concentration_budget}")
     for column in [
         "mean_l1_imbalance_at_1798",
         "median_l1_imbalance_at_1798",

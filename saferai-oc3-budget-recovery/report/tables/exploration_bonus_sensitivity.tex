@@ -3,13 +3,13 @@
 \small
 \caption{Locked exploration-bonus sensitivity. All settings use approximate LOO fragility with \texttt{max\_loo\_terms\_per\_step=20}.}
 \label{tab:exploration-bonus-sensitivity}
-\begin{tabular}{rrrrrrr}
+\begin{tabular}{rrrrrrrrr}
 \toprule
-$c$ & Avg. AUC & Med. AUC & Win frac. & L1 1200 & Max/min 1200 & L1 1798 \\
+$c$ & Avg. AUC & Med. AUC & Win frac. & L1 1200 & Max/min 1200 & Mean min 1200 & Obs. min 1200 & L1 1798 \\
 \midrule
-0.25 & 0.017137 & 0.0129 & 0.286 & 627.2 & 29 & 0 \\
-0.5 & 0.010175 & 0.009076 & 0.357 & 569.6 & 23.31 & 0 \\
-1 & 0.009409 & 0.008561 & 0.386 & 516 & 9.82 & 0 \\
+0.25 & 0.017137 & 0.0129 & 0.286 & 627.2 & 29 & 7.6 & 5 & 0 \\
+0.5 & 0.010175 & 0.009076 & 0.357 & 569.6 & 23.31 & 14.4 & 5 & 0 \\
+1 & 0.009409 & 0.008561 & 0.386 & 516 & 9.82 & 30.2 & 11 & 0 \\
 \bottomrule
 \end{tabular}
 \end{table}
