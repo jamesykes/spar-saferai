@@ -1,0 +1,64 @@
+{
+  "all_first_cycles_model_complete": true,
+  "all_initial_model_coverages_ok": true,
+  "all_initial_seed_sizes_ok": true,
+  "all_seed_coverages_ok": true,
+  "expected_initial_seed_size": 45,
+  "note": "This is a reveal-protocol smoke audit only. It does not run policy recovery experiments.",
+  "orders_differ_across_seeds": true,
+  "seed_summaries": [
+    {
+      "all_first_cycles_have_all_expected_models": true,
+      "all_initial_step_model_groups_present": true,
+      "coverage_ok": true,
+      "covered_row_count": 1798,
+      "duplicate_row_count": 0,
+      "extra_row_count": 0,
+      "first_cycle_steps_with_all_expected_models": 9,
+      "initial_seed_size": 45,
+      "initial_step_model_group_count": 45,
+      "metadata_coverage": {
+        "covered_row_count": 1798,
+        "covers_all_usable_rows_exactly_once": true,
+        "duplicate_row_count": 0,
+        "extra_row_count": 0,
+        "missing_row_count": 0,
+        "unique_covered_row_count": 1798,
+        "usable_row_count": 1798
+      },
+      "missing_row_count": 0,
+      "reveal_seed": 101,
+      "total_usable_fitted_rows": 1798,
+      "unique_covered_row_count": 1798
+    },
+    {
+      "all_first_cycles_have_all_expected_models": true,
+      "all_initial_step_model_groups_present": true,
+      "coverage_ok": true,
+      "covered_row_count": 1798,
+      "duplicate_row_count": 0,
+      "extra_row_count": 0,
+      "first_cycle_steps_with_all_expected_models": 9,
+      "initial_seed_size": 45,
+      "initial_step_model_group_count": 45,
+      "metadata_coverage": {
+        "covered_row_count": 1798,
+        "covers_all_usable_rows_exactly_once": true,
+        "duplicate_row_count": 0,
+        "extra_row_count": 0,
+        "missing_row_count": 0,
+        "unique_covered_row_count": 1798,
+        "usable_row_count": 1798
+      },
+      "missing_row_count": 0,
+      "reveal_seed": 202,
+      "total_usable_fitted_rows": 1798,
+      "unique_covered_row_count": 1798
+    }
+  ],
+  "seeds": [
+    101,
+    202
+  ],
+  "total_usable_fitted_rows": 1798
+}

@@ -1,0 +1,991 @@
+policy_name,base_policy_name,policy_kwargs,reveal_seed,decision_type,step_name,selected_count_after_initial_seed
+greedy_loo_fragility,greedy_loo_fragility,{},101,all,T1036 - Defense Evasion: Masquerading,195
+greedy_loo_fragility,greedy_loo_fragility,{},101,exploit,T1036 - Defense Evasion: Masquerading,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,all,T1036 - Defense Evasion: Masquerading,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,exploit,T1036 - Defense Evasion: Masquerading,149
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,explore,T1036 - Defense Evasion: Masquerading,46
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",101,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",101,bonus,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",101,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",101,bonus,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",101,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",101,bonus,T1036 - Defense Evasion: Masquerading,195
+greedy_loo_fragility,greedy_loo_fragility,{},101,all,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,greedy_loo_fragility,{},101,exploit,T1498.001 - Impact: Direct Network Flood,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,all,T1498.001 - Impact: Direct Network Flood,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,exploit,T1498.001 - Impact: Direct Network Flood,184
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,explore,T1498.001 - Impact: Direct Network Flood,11
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",101,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",101,bonus,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",101,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",101,bonus,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",101,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",101,bonus,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,greedy_loo_fragility,{},101,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+greedy_loo_fragility,greedy_loo_fragility,{},101,exploit,T1498.002 - Impact: Reflection/Amplification Attack,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,exploit,T1498.002 - Impact: Reflection/Amplification Attack,121
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,explore,T1498.002 - Impact: Reflection/Amplification Attack,74
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",101,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",101,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",101,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",101,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",101,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",101,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+greedy_loo_fragility,greedy_loo_fragility,{},101,all,T1571 - Defense Evasion: Non-Standard Port,195
+greedy_loo_fragility,greedy_loo_fragility,{},101,exploit,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,all,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,exploit,T1571 - Defense Evasion: Non-Standard Port,168
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,explore,T1571 - Defense Evasion: Non-Standard Port,27
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",101,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",101,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",101,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",101,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",101,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",101,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+greedy_loo_fragility,greedy_loo_fragility,{},101,all,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,greedy_loo_fragility,{},101,exploit,T1583.005 - Resource Development: Acquire Botnet,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,all,T1583.005 - Resource Development: Acquire Botnet,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,exploit,T1583.005 - Resource Development: Acquire Botnet,190
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,explore,T1583.005 - Resource Development: Acquire Botnet,5
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",101,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",101,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",101,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",101,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",101,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",101,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,greedy_loo_fragility,{},101,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+greedy_loo_fragility,greedy_loo_fragility,{},101,exploit,T1584.005 - Resource Development: Build/Compromise Botnet,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,exploit,T1584.005 - Resource Development: Build/Compromise Botnet,192
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,explore,T1584.005 - Resource Development: Build/Compromise Botnet,2
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",101,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",101,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",101,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",101,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",101,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",101,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+greedy_loo_fragility,greedy_loo_fragility,{},101,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+greedy_loo_fragility,greedy_loo_fragility,{},101,exploit,T1590 - Reconnaissance: Gather Victim Network Information,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,exploit,T1590 - Reconnaissance: Gather Victim Network Information,133
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,explore,T1590 - Reconnaissance: Gather Victim Network Information,61
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",101,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",101,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",101,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",101,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",101,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",101,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+greedy_loo_fragility,greedy_loo_fragility,{},101,all,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,greedy_loo_fragility,{},101,exploit,T1595 - Reconnaissance: Active Scanning,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,all,T1595 - Reconnaissance: Active Scanning,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,exploit,T1595 - Reconnaissance: Active Scanning,84
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,explore,T1595 - Reconnaissance: Active Scanning,111
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",101,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",101,bonus,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",101,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",101,bonus,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",101,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",101,bonus,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,greedy_loo_fragility,{},101,all,TA0011 - Command-and-Control,195
+greedy_loo_fragility,greedy_loo_fragility,{},101,exploit,TA0011 - Command-and-Control,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,all,TA0011 - Command-and-Control,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,exploit,TA0011 - Command-and-Control,165
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",101,explore,TA0011 - Command-and-Control,30
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",101,all,TA0011 - Command-and-Control,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",101,bonus,TA0011 - Command-and-Control,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",101,all,TA0011 - Command-and-Control,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",101,bonus,TA0011 - Command-and-Control,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",101,all,TA0011 - Command-and-Control,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",101,bonus,TA0011 - Command-and-Control,195
+greedy_loo_fragility,greedy_loo_fragility,{},202,all,T1036 - Defense Evasion: Masquerading,195
+greedy_loo_fragility,greedy_loo_fragility,{},202,exploit,T1036 - Defense Evasion: Masquerading,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,all,T1036 - Defense Evasion: Masquerading,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,exploit,T1036 - Defense Evasion: Masquerading,193
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,explore,T1036 - Defense Evasion: Masquerading,2
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",202,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",202,bonus,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",202,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",202,bonus,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",202,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",202,bonus,T1036 - Defense Evasion: Masquerading,195
+greedy_loo_fragility,greedy_loo_fragility,{},202,all,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,greedy_loo_fragility,{},202,exploit,T1498.001 - Impact: Direct Network Flood,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,all,T1498.001 - Impact: Direct Network Flood,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,exploit,T1498.001 - Impact: Direct Network Flood,106
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,explore,T1498.001 - Impact: Direct Network Flood,89
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",202,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",202,bonus,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",202,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",202,bonus,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",202,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",202,bonus,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,greedy_loo_fragility,{},202,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+greedy_loo_fragility,greedy_loo_fragility,{},202,exploit,T1498.002 - Impact: Reflection/Amplification Attack,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,exploit,T1498.002 - Impact: Reflection/Amplification Attack,179
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,explore,T1498.002 - Impact: Reflection/Amplification Attack,16
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",202,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",202,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",202,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",202,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",202,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",202,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+greedy_loo_fragility,greedy_loo_fragility,{},202,all,T1571 - Defense Evasion: Non-Standard Port,195
+greedy_loo_fragility,greedy_loo_fragility,{},202,exploit,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,all,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,exploit,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,explore,T1571 - Defense Evasion: Non-Standard Port,0
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",202,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",202,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",202,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",202,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",202,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",202,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+greedy_loo_fragility,greedy_loo_fragility,{},202,all,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,greedy_loo_fragility,{},202,exploit,T1583.005 - Resource Development: Acquire Botnet,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,all,T1583.005 - Resource Development: Acquire Botnet,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,exploit,T1583.005 - Resource Development: Acquire Botnet,189
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,explore,T1583.005 - Resource Development: Acquire Botnet,6
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",202,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",202,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",202,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",202,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",202,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",202,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,greedy_loo_fragility,{},202,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+greedy_loo_fragility,greedy_loo_fragility,{},202,exploit,T1584.005 - Resource Development: Build/Compromise Botnet,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,exploit,T1584.005 - Resource Development: Build/Compromise Botnet,140
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,explore,T1584.005 - Resource Development: Build/Compromise Botnet,54
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",202,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",202,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",202,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",202,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",202,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",202,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+greedy_loo_fragility,greedy_loo_fragility,{},202,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+greedy_loo_fragility,greedy_loo_fragility,{},202,exploit,T1590 - Reconnaissance: Gather Victim Network Information,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,exploit,T1590 - Reconnaissance: Gather Victim Network Information,73
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,explore,T1590 - Reconnaissance: Gather Victim Network Information,121
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",202,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",202,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",202,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",202,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",202,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",202,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+greedy_loo_fragility,greedy_loo_fragility,{},202,all,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,greedy_loo_fragility,{},202,exploit,T1595 - Reconnaissance: Active Scanning,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,all,T1595 - Reconnaissance: Active Scanning,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,exploit,T1595 - Reconnaissance: Active Scanning,182
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,explore,T1595 - Reconnaissance: Active Scanning,13
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",202,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",202,bonus,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",202,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",202,bonus,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",202,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",202,bonus,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,greedy_loo_fragility,{},202,all,TA0011 - Command-and-Control,195
+greedy_loo_fragility,greedy_loo_fragility,{},202,exploit,TA0011 - Command-and-Control,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,all,TA0011 - Command-and-Control,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,exploit,TA0011 - Command-and-Control,170
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",202,explore,TA0011 - Command-and-Control,25
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",202,all,TA0011 - Command-and-Control,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",202,bonus,TA0011 - Command-and-Control,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",202,all,TA0011 - Command-and-Control,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",202,bonus,TA0011 - Command-and-Control,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",202,all,TA0011 - Command-and-Control,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",202,bonus,TA0011 - Command-and-Control,195
+greedy_loo_fragility,greedy_loo_fragility,{},303,all,T1036 - Defense Evasion: Masquerading,195
+greedy_loo_fragility,greedy_loo_fragility,{},303,exploit,T1036 - Defense Evasion: Masquerading,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,all,T1036 - Defense Evasion: Masquerading,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,exploit,T1036 - Defense Evasion: Masquerading,105
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,explore,T1036 - Defense Evasion: Masquerading,90
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",303,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",303,bonus,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",303,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",303,bonus,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",303,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",303,bonus,T1036 - Defense Evasion: Masquerading,195
+greedy_loo_fragility,greedy_loo_fragility,{},303,all,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,greedy_loo_fragility,{},303,exploit,T1498.001 - Impact: Direct Network Flood,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,all,T1498.001 - Impact: Direct Network Flood,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,exploit,T1498.001 - Impact: Direct Network Flood,173
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,explore,T1498.001 - Impact: Direct Network Flood,22
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",303,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",303,bonus,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",303,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",303,bonus,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",303,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",303,bonus,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,greedy_loo_fragility,{},303,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+greedy_loo_fragility,greedy_loo_fragility,{},303,exploit,T1498.002 - Impact: Reflection/Amplification Attack,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,exploit,T1498.002 - Impact: Reflection/Amplification Attack,185
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,explore,T1498.002 - Impact: Reflection/Amplification Attack,10
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",303,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",303,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",303,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",303,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",303,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",303,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+greedy_loo_fragility,greedy_loo_fragility,{},303,all,T1571 - Defense Evasion: Non-Standard Port,195
+greedy_loo_fragility,greedy_loo_fragility,{},303,exploit,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,all,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,exploit,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,explore,T1571 - Defense Evasion: Non-Standard Port,0
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",303,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",303,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",303,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",303,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",303,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",303,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+greedy_loo_fragility,greedy_loo_fragility,{},303,all,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,greedy_loo_fragility,{},303,exploit,T1583.005 - Resource Development: Acquire Botnet,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,all,T1583.005 - Resource Development: Acquire Botnet,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,exploit,T1583.005 - Resource Development: Acquire Botnet,138
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,explore,T1583.005 - Resource Development: Acquire Botnet,57
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",303,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",303,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",303,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",303,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",303,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",303,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,greedy_loo_fragility,{},303,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+greedy_loo_fragility,greedy_loo_fragility,{},303,exploit,T1584.005 - Resource Development: Build/Compromise Botnet,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,exploit,T1584.005 - Resource Development: Build/Compromise Botnet,163
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,explore,T1584.005 - Resource Development: Build/Compromise Botnet,31
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",303,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",303,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",303,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",303,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",303,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",303,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+greedy_loo_fragility,greedy_loo_fragility,{},303,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+greedy_loo_fragility,greedy_loo_fragility,{},303,exploit,T1590 - Reconnaissance: Gather Victim Network Information,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,exploit,T1590 - Reconnaissance: Gather Victim Network Information,155
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,explore,T1590 - Reconnaissance: Gather Victim Network Information,39
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",303,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",303,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",303,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",303,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",303,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",303,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+greedy_loo_fragility,greedy_loo_fragility,{},303,all,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,greedy_loo_fragility,{},303,exploit,T1595 - Reconnaissance: Active Scanning,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,all,T1595 - Reconnaissance: Active Scanning,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,exploit,T1595 - Reconnaissance: Active Scanning,188
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,explore,T1595 - Reconnaissance: Active Scanning,7
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",303,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",303,bonus,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",303,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",303,bonus,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",303,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",303,bonus,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,greedy_loo_fragility,{},303,all,TA0011 - Command-and-Control,195
+greedy_loo_fragility,greedy_loo_fragility,{},303,exploit,TA0011 - Command-and-Control,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,all,TA0011 - Command-and-Control,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,exploit,TA0011 - Command-and-Control,137
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",303,explore,TA0011 - Command-and-Control,58
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",303,all,TA0011 - Command-and-Control,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",303,bonus,TA0011 - Command-and-Control,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",303,all,TA0011 - Command-and-Control,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",303,bonus,TA0011 - Command-and-Control,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",303,all,TA0011 - Command-and-Control,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",303,bonus,TA0011 - Command-and-Control,195
+greedy_loo_fragility,greedy_loo_fragility,{},404,all,T1036 - Defense Evasion: Masquerading,195
+greedy_loo_fragility,greedy_loo_fragility,{},404,exploit,T1036 - Defense Evasion: Masquerading,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,all,T1036 - Defense Evasion: Masquerading,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,exploit,T1036 - Defense Evasion: Masquerading,187
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,explore,T1036 - Defense Evasion: Masquerading,8
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",404,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",404,bonus,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",404,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",404,bonus,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",404,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",404,bonus,T1036 - Defense Evasion: Masquerading,195
+greedy_loo_fragility,greedy_loo_fragility,{},404,all,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,greedy_loo_fragility,{},404,exploit,T1498.001 - Impact: Direct Network Flood,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,all,T1498.001 - Impact: Direct Network Flood,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,exploit,T1498.001 - Impact: Direct Network Flood,157
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,explore,T1498.001 - Impact: Direct Network Flood,38
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",404,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",404,bonus,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",404,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",404,bonus,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",404,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",404,bonus,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,greedy_loo_fragility,{},404,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+greedy_loo_fragility,greedy_loo_fragility,{},404,exploit,T1498.002 - Impact: Reflection/Amplification Attack,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,exploit,T1498.002 - Impact: Reflection/Amplification Attack,192
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,explore,T1498.002 - Impact: Reflection/Amplification Attack,3
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",404,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",404,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",404,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",404,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",404,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",404,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+greedy_loo_fragility,greedy_loo_fragility,{},404,all,T1571 - Defense Evasion: Non-Standard Port,195
+greedy_loo_fragility,greedy_loo_fragility,{},404,exploit,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,all,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,exploit,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,explore,T1571 - Defense Evasion: Non-Standard Port,0
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",404,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",404,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",404,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",404,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",404,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",404,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+greedy_loo_fragility,greedy_loo_fragility,{},404,all,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,greedy_loo_fragility,{},404,exploit,T1583.005 - Resource Development: Acquire Botnet,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,all,T1583.005 - Resource Development: Acquire Botnet,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,exploit,T1583.005 - Resource Development: Acquire Botnet,181
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,explore,T1583.005 - Resource Development: Acquire Botnet,14
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",404,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",404,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",404,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",404,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",404,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",404,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,greedy_loo_fragility,{},404,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+greedy_loo_fragility,greedy_loo_fragility,{},404,exploit,T1584.005 - Resource Development: Build/Compromise Botnet,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,exploit,T1584.005 - Resource Development: Build/Compromise Botnet,79
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,explore,T1584.005 - Resource Development: Build/Compromise Botnet,115
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",404,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",404,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",404,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",404,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",404,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",404,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+greedy_loo_fragility,greedy_loo_fragility,{},404,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+greedy_loo_fragility,greedy_loo_fragility,{},404,exploit,T1590 - Reconnaissance: Gather Victim Network Information,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,exploit,T1590 - Reconnaissance: Gather Victim Network Information,144
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,explore,T1590 - Reconnaissance: Gather Victim Network Information,50
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",404,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",404,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",404,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",404,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",404,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",404,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+greedy_loo_fragility,greedy_loo_fragility,{},404,all,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,greedy_loo_fragility,{},404,exploit,T1595 - Reconnaissance: Active Scanning,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,all,T1595 - Reconnaissance: Active Scanning,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,exploit,T1595 - Reconnaissance: Active Scanning,170
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,explore,T1595 - Reconnaissance: Active Scanning,25
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",404,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",404,bonus,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",404,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",404,bonus,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",404,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",404,bonus,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,greedy_loo_fragility,{},404,all,TA0011 - Command-and-Control,195
+greedy_loo_fragility,greedy_loo_fragility,{},404,exploit,TA0011 - Command-and-Control,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,all,TA0011 - Command-and-Control,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,exploit,TA0011 - Command-and-Control,92
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",404,explore,TA0011 - Command-and-Control,103
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",404,all,TA0011 - Command-and-Control,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",404,bonus,TA0011 - Command-and-Control,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",404,all,TA0011 - Command-and-Control,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",404,bonus,TA0011 - Command-and-Control,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",404,all,TA0011 - Command-and-Control,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",404,bonus,TA0011 - Command-and-Control,195
+greedy_loo_fragility,greedy_loo_fragility,{},505,all,T1036 - Defense Evasion: Masquerading,195
+greedy_loo_fragility,greedy_loo_fragility,{},505,exploit,T1036 - Defense Evasion: Masquerading,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,all,T1036 - Defense Evasion: Masquerading,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,exploit,T1036 - Defense Evasion: Masquerading,168
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,explore,T1036 - Defense Evasion: Masquerading,27
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",505,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",505,bonus,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",505,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",505,bonus,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",505,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",505,bonus,T1036 - Defense Evasion: Masquerading,195
+greedy_loo_fragility,greedy_loo_fragility,{},505,all,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,greedy_loo_fragility,{},505,exploit,T1498.001 - Impact: Direct Network Flood,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,all,T1498.001 - Impact: Direct Network Flood,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,exploit,T1498.001 - Impact: Direct Network Flood,128
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,explore,T1498.001 - Impact: Direct Network Flood,67
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",505,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",505,bonus,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",505,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",505,bonus,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",505,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",505,bonus,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,greedy_loo_fragility,{},505,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+greedy_loo_fragility,greedy_loo_fragility,{},505,exploit,T1498.002 - Impact: Reflection/Amplification Attack,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,exploit,T1498.002 - Impact: Reflection/Amplification Attack,187
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,explore,T1498.002 - Impact: Reflection/Amplification Attack,8
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",505,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",505,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",505,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",505,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",505,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",505,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+greedy_loo_fragility,greedy_loo_fragility,{},505,all,T1571 - Defense Evasion: Non-Standard Port,195
+greedy_loo_fragility,greedy_loo_fragility,{},505,exploit,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,all,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,exploit,T1571 - Defense Evasion: Non-Standard Port,159
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,explore,T1571 - Defense Evasion: Non-Standard Port,36
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",505,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",505,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",505,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",505,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",505,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",505,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+greedy_loo_fragility,greedy_loo_fragility,{},505,all,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,greedy_loo_fragility,{},505,exploit,T1583.005 - Resource Development: Acquire Botnet,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,all,T1583.005 - Resource Development: Acquire Botnet,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,exploit,T1583.005 - Resource Development: Acquire Botnet,173
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,explore,T1583.005 - Resource Development: Acquire Botnet,22
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",505,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",505,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",505,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",505,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",505,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",505,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,greedy_loo_fragility,{},505,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+greedy_loo_fragility,greedy_loo_fragility,{},505,exploit,T1584.005 - Resource Development: Build/Compromise Botnet,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,exploit,T1584.005 - Resource Development: Build/Compromise Botnet,99
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,explore,T1584.005 - Resource Development: Build/Compromise Botnet,95
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",505,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",505,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",505,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",505,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",505,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",505,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+greedy_loo_fragility,greedy_loo_fragility,{},505,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+greedy_loo_fragility,greedy_loo_fragility,{},505,exploit,T1590 - Reconnaissance: Gather Victim Network Information,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,exploit,T1590 - Reconnaissance: Gather Victim Network Information,178
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,explore,T1590 - Reconnaissance: Gather Victim Network Information,16
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",505,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",505,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",505,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",505,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",505,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",505,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+greedy_loo_fragility,greedy_loo_fragility,{},505,all,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,greedy_loo_fragility,{},505,exploit,T1595 - Reconnaissance: Active Scanning,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,all,T1595 - Reconnaissance: Active Scanning,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,exploit,T1595 - Reconnaissance: Active Scanning,186
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,explore,T1595 - Reconnaissance: Active Scanning,9
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",505,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",505,bonus,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",505,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",505,bonus,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",505,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",505,bonus,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,greedy_loo_fragility,{},505,all,TA0011 - Command-and-Control,195
+greedy_loo_fragility,greedy_loo_fragility,{},505,exploit,TA0011 - Command-and-Control,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,all,TA0011 - Command-and-Control,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,exploit,TA0011 - Command-and-Control,139
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",505,explore,TA0011 - Command-and-Control,56
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",505,all,TA0011 - Command-and-Control,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",505,bonus,TA0011 - Command-and-Control,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",505,all,TA0011 - Command-and-Control,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",505,bonus,TA0011 - Command-and-Control,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",505,all,TA0011 - Command-and-Control,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",505,bonus,TA0011 - Command-and-Control,195
+greedy_loo_fragility,greedy_loo_fragility,{},606,all,T1036 - Defense Evasion: Masquerading,195
+greedy_loo_fragility,greedy_loo_fragility,{},606,exploit,T1036 - Defense Evasion: Masquerading,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,all,T1036 - Defense Evasion: Masquerading,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,exploit,T1036 - Defense Evasion: Masquerading,131
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,explore,T1036 - Defense Evasion: Masquerading,64
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",606,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",606,bonus,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",606,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",606,bonus,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",606,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",606,bonus,T1036 - Defense Evasion: Masquerading,195
+greedy_loo_fragility,greedy_loo_fragility,{},606,all,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,greedy_loo_fragility,{},606,exploit,T1498.001 - Impact: Direct Network Flood,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,all,T1498.001 - Impact: Direct Network Flood,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,exploit,T1498.001 - Impact: Direct Network Flood,170
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,explore,T1498.001 - Impact: Direct Network Flood,25
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",606,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",606,bonus,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",606,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",606,bonus,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",606,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",606,bonus,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,greedy_loo_fragility,{},606,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+greedy_loo_fragility,greedy_loo_fragility,{},606,exploit,T1498.002 - Impact: Reflection/Amplification Attack,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,exploit,T1498.002 - Impact: Reflection/Amplification Attack,177
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,explore,T1498.002 - Impact: Reflection/Amplification Attack,18
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",606,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",606,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",606,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",606,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",606,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",606,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+greedy_loo_fragility,greedy_loo_fragility,{},606,all,T1571 - Defense Evasion: Non-Standard Port,195
+greedy_loo_fragility,greedy_loo_fragility,{},606,exploit,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,all,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,exploit,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,explore,T1571 - Defense Evasion: Non-Standard Port,0
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",606,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",606,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",606,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",606,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",606,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",606,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+greedy_loo_fragility,greedy_loo_fragility,{},606,all,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,greedy_loo_fragility,{},606,exploit,T1583.005 - Resource Development: Acquire Botnet,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,all,T1583.005 - Resource Development: Acquire Botnet,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,exploit,T1583.005 - Resource Development: Acquire Botnet,184
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,explore,T1583.005 - Resource Development: Acquire Botnet,11
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",606,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",606,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",606,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",606,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",606,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",606,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,greedy_loo_fragility,{},606,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+greedy_loo_fragility,greedy_loo_fragility,{},606,exploit,T1584.005 - Resource Development: Build/Compromise Botnet,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,exploit,T1584.005 - Resource Development: Build/Compromise Botnet,163
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,explore,T1584.005 - Resource Development: Build/Compromise Botnet,31
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",606,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",606,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",606,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",606,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",606,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",606,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+greedy_loo_fragility,greedy_loo_fragility,{},606,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+greedy_loo_fragility,greedy_loo_fragility,{},606,exploit,T1590 - Reconnaissance: Gather Victim Network Information,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,exploit,T1590 - Reconnaissance: Gather Victim Network Information,37
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,explore,T1590 - Reconnaissance: Gather Victim Network Information,157
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",606,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",606,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",606,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",606,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",606,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",606,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+greedy_loo_fragility,greedy_loo_fragility,{},606,all,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,greedy_loo_fragility,{},606,exploit,T1595 - Reconnaissance: Active Scanning,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,all,T1595 - Reconnaissance: Active Scanning,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,exploit,T1595 - Reconnaissance: Active Scanning,192
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,explore,T1595 - Reconnaissance: Active Scanning,3
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",606,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",606,bonus,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",606,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",606,bonus,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",606,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",606,bonus,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,greedy_loo_fragility,{},606,all,TA0011 - Command-and-Control,195
+greedy_loo_fragility,greedy_loo_fragility,{},606,exploit,TA0011 - Command-and-Control,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,all,TA0011 - Command-and-Control,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,exploit,TA0011 - Command-and-Control,113
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",606,explore,TA0011 - Command-and-Control,82
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",606,all,TA0011 - Command-and-Control,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",606,bonus,TA0011 - Command-and-Control,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",606,all,TA0011 - Command-and-Control,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",606,bonus,TA0011 - Command-and-Control,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",606,all,TA0011 - Command-and-Control,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",606,bonus,TA0011 - Command-and-Control,195
+greedy_loo_fragility,greedy_loo_fragility,{},707,all,T1036 - Defense Evasion: Masquerading,195
+greedy_loo_fragility,greedy_loo_fragility,{},707,exploit,T1036 - Defense Evasion: Masquerading,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,all,T1036 - Defense Evasion: Masquerading,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,exploit,T1036 - Defense Evasion: Masquerading,187
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,explore,T1036 - Defense Evasion: Masquerading,8
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",707,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",707,bonus,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",707,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",707,bonus,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",707,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",707,bonus,T1036 - Defense Evasion: Masquerading,195
+greedy_loo_fragility,greedy_loo_fragility,{},707,all,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,greedy_loo_fragility,{},707,exploit,T1498.001 - Impact: Direct Network Flood,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,all,T1498.001 - Impact: Direct Network Flood,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,exploit,T1498.001 - Impact: Direct Network Flood,139
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,explore,T1498.001 - Impact: Direct Network Flood,56
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",707,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",707,bonus,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",707,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",707,bonus,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",707,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",707,bonus,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,greedy_loo_fragility,{},707,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+greedy_loo_fragility,greedy_loo_fragility,{},707,exploit,T1498.002 - Impact: Reflection/Amplification Attack,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,exploit,T1498.002 - Impact: Reflection/Amplification Attack,154
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,explore,T1498.002 - Impact: Reflection/Amplification Attack,41
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",707,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",707,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",707,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",707,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",707,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",707,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+greedy_loo_fragility,greedy_loo_fragility,{},707,all,T1571 - Defense Evasion: Non-Standard Port,195
+greedy_loo_fragility,greedy_loo_fragility,{},707,exploit,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,all,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,exploit,T1571 - Defense Evasion: Non-Standard Port,189
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,explore,T1571 - Defense Evasion: Non-Standard Port,6
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",707,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",707,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",707,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",707,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",707,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",707,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+greedy_loo_fragility,greedy_loo_fragility,{},707,all,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,greedy_loo_fragility,{},707,exploit,T1583.005 - Resource Development: Acquire Botnet,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,all,T1583.005 - Resource Development: Acquire Botnet,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,exploit,T1583.005 - Resource Development: Acquire Botnet,193
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,explore,T1583.005 - Resource Development: Acquire Botnet,2
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",707,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",707,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",707,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",707,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",707,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",707,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,greedy_loo_fragility,{},707,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+greedy_loo_fragility,greedy_loo_fragility,{},707,exploit,T1584.005 - Resource Development: Build/Compromise Botnet,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,exploit,T1584.005 - Resource Development: Build/Compromise Botnet,82
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,explore,T1584.005 - Resource Development: Build/Compromise Botnet,112
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",707,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",707,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",707,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",707,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",707,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",707,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+greedy_loo_fragility,greedy_loo_fragility,{},707,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+greedy_loo_fragility,greedy_loo_fragility,{},707,exploit,T1590 - Reconnaissance: Gather Victim Network Information,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,exploit,T1590 - Reconnaissance: Gather Victim Network Information,129
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,explore,T1590 - Reconnaissance: Gather Victim Network Information,65
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",707,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",707,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",707,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",707,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",707,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",707,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+greedy_loo_fragility,greedy_loo_fragility,{},707,all,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,greedy_loo_fragility,{},707,exploit,T1595 - Reconnaissance: Active Scanning,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,all,T1595 - Reconnaissance: Active Scanning,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,exploit,T1595 - Reconnaissance: Active Scanning,184
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,explore,T1595 - Reconnaissance: Active Scanning,11
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",707,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",707,bonus,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",707,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",707,bonus,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",707,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",707,bonus,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,greedy_loo_fragility,{},707,all,TA0011 - Command-and-Control,195
+greedy_loo_fragility,greedy_loo_fragility,{},707,exploit,TA0011 - Command-and-Control,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,all,TA0011 - Command-and-Control,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,exploit,TA0011 - Command-and-Control,156
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",707,explore,TA0011 - Command-and-Control,39
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",707,all,TA0011 - Command-and-Control,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",707,bonus,TA0011 - Command-and-Control,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",707,all,TA0011 - Command-and-Control,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",707,bonus,TA0011 - Command-and-Control,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",707,all,TA0011 - Command-and-Control,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",707,bonus,TA0011 - Command-and-Control,195
+greedy_loo_fragility,greedy_loo_fragility,{},808,all,T1036 - Defense Evasion: Masquerading,195
+greedy_loo_fragility,greedy_loo_fragility,{},808,exploit,T1036 - Defense Evasion: Masquerading,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,all,T1036 - Defense Evasion: Masquerading,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,exploit,T1036 - Defense Evasion: Masquerading,181
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,explore,T1036 - Defense Evasion: Masquerading,14
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",808,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",808,bonus,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",808,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",808,bonus,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",808,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",808,bonus,T1036 - Defense Evasion: Masquerading,195
+greedy_loo_fragility,greedy_loo_fragility,{},808,all,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,greedy_loo_fragility,{},808,exploit,T1498.001 - Impact: Direct Network Flood,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,all,T1498.001 - Impact: Direct Network Flood,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,exploit,T1498.001 - Impact: Direct Network Flood,192
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,explore,T1498.001 - Impact: Direct Network Flood,3
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",808,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",808,bonus,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",808,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",808,bonus,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",808,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",808,bonus,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,greedy_loo_fragility,{},808,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+greedy_loo_fragility,greedy_loo_fragility,{},808,exploit,T1498.002 - Impact: Reflection/Amplification Attack,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,exploit,T1498.002 - Impact: Reflection/Amplification Attack,179
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,explore,T1498.002 - Impact: Reflection/Amplification Attack,16
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",808,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",808,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",808,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",808,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",808,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",808,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+greedy_loo_fragility,greedy_loo_fragility,{},808,all,T1571 - Defense Evasion: Non-Standard Port,195
+greedy_loo_fragility,greedy_loo_fragility,{},808,exploit,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,all,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,exploit,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,explore,T1571 - Defense Evasion: Non-Standard Port,0
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",808,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",808,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",808,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",808,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",808,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",808,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+greedy_loo_fragility,greedy_loo_fragility,{},808,all,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,greedy_loo_fragility,{},808,exploit,T1583.005 - Resource Development: Acquire Botnet,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,all,T1583.005 - Resource Development: Acquire Botnet,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,exploit,T1583.005 - Resource Development: Acquire Botnet,188
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,explore,T1583.005 - Resource Development: Acquire Botnet,7
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",808,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",808,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",808,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",808,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",808,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",808,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,greedy_loo_fragility,{},808,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+greedy_loo_fragility,greedy_loo_fragility,{},808,exploit,T1584.005 - Resource Development: Build/Compromise Botnet,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,exploit,T1584.005 - Resource Development: Build/Compromise Botnet,125
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,explore,T1584.005 - Resource Development: Build/Compromise Botnet,69
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",808,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",808,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",808,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",808,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",808,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",808,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+greedy_loo_fragility,greedy_loo_fragility,{},808,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+greedy_loo_fragility,greedy_loo_fragility,{},808,exploit,T1590 - Reconnaissance: Gather Victim Network Information,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,exploit,T1590 - Reconnaissance: Gather Victim Network Information,72
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,explore,T1590 - Reconnaissance: Gather Victim Network Information,122
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",808,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",808,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",808,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",808,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",808,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",808,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+greedy_loo_fragility,greedy_loo_fragility,{},808,all,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,greedy_loo_fragility,{},808,exploit,T1595 - Reconnaissance: Active Scanning,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,all,T1595 - Reconnaissance: Active Scanning,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,exploit,T1595 - Reconnaissance: Active Scanning,169
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,explore,T1595 - Reconnaissance: Active Scanning,26
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",808,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",808,bonus,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",808,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",808,bonus,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",808,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",808,bonus,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,greedy_loo_fragility,{},808,all,TA0011 - Command-and-Control,195
+greedy_loo_fragility,greedy_loo_fragility,{},808,exploit,TA0011 - Command-and-Control,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,all,TA0011 - Command-and-Control,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,exploit,TA0011 - Command-and-Control,89
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",808,explore,TA0011 - Command-and-Control,106
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",808,all,TA0011 - Command-and-Control,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",808,bonus,TA0011 - Command-and-Control,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",808,all,TA0011 - Command-and-Control,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",808,bonus,TA0011 - Command-and-Control,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",808,all,TA0011 - Command-and-Control,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",808,bonus,TA0011 - Command-and-Control,195
+greedy_loo_fragility,greedy_loo_fragility,{},909,all,T1036 - Defense Evasion: Masquerading,195
+greedy_loo_fragility,greedy_loo_fragility,{},909,exploit,T1036 - Defense Evasion: Masquerading,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,all,T1036 - Defense Evasion: Masquerading,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,exploit,T1036 - Defense Evasion: Masquerading,182
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,explore,T1036 - Defense Evasion: Masquerading,13
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",909,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",909,bonus,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",909,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",909,bonus,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",909,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",909,bonus,T1036 - Defense Evasion: Masquerading,195
+greedy_loo_fragility,greedy_loo_fragility,{},909,all,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,greedy_loo_fragility,{},909,exploit,T1498.001 - Impact: Direct Network Flood,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,all,T1498.001 - Impact: Direct Network Flood,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,exploit,T1498.001 - Impact: Direct Network Flood,174
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,explore,T1498.001 - Impact: Direct Network Flood,21
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",909,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",909,bonus,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",909,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",909,bonus,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",909,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",909,bonus,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,greedy_loo_fragility,{},909,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+greedy_loo_fragility,greedy_loo_fragility,{},909,exploit,T1498.002 - Impact: Reflection/Amplification Attack,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,exploit,T1498.002 - Impact: Reflection/Amplification Attack,57
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,explore,T1498.002 - Impact: Reflection/Amplification Attack,138
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",909,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",909,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",909,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",909,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",909,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",909,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+greedy_loo_fragility,greedy_loo_fragility,{},909,all,T1571 - Defense Evasion: Non-Standard Port,195
+greedy_loo_fragility,greedy_loo_fragility,{},909,exploit,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,all,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,exploit,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,explore,T1571 - Defense Evasion: Non-Standard Port,0
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",909,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",909,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",909,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",909,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",909,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",909,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+greedy_loo_fragility,greedy_loo_fragility,{},909,all,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,greedy_loo_fragility,{},909,exploit,T1583.005 - Resource Development: Acquire Botnet,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,all,T1583.005 - Resource Development: Acquire Botnet,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,exploit,T1583.005 - Resource Development: Acquire Botnet,192
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,explore,T1583.005 - Resource Development: Acquire Botnet,3
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",909,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",909,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",909,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",909,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",909,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",909,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,greedy_loo_fragility,{},909,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+greedy_loo_fragility,greedy_loo_fragility,{},909,exploit,T1584.005 - Resource Development: Build/Compromise Botnet,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,exploit,T1584.005 - Resource Development: Build/Compromise Botnet,95
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,explore,T1584.005 - Resource Development: Build/Compromise Botnet,99
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",909,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",909,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",909,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",909,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",909,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",909,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+greedy_loo_fragility,greedy_loo_fragility,{},909,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+greedy_loo_fragility,greedy_loo_fragility,{},909,exploit,T1590 - Reconnaissance: Gather Victim Network Information,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,exploit,T1590 - Reconnaissance: Gather Victim Network Information,153
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,explore,T1590 - Reconnaissance: Gather Victim Network Information,41
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",909,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",909,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",909,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",909,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",909,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",909,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+greedy_loo_fragility,greedy_loo_fragility,{},909,all,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,greedy_loo_fragility,{},909,exploit,T1595 - Reconnaissance: Active Scanning,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,all,T1595 - Reconnaissance: Active Scanning,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,exploit,T1595 - Reconnaissance: Active Scanning,188
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,explore,T1595 - Reconnaissance: Active Scanning,7
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",909,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",909,bonus,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",909,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",909,bonus,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",909,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",909,bonus,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,greedy_loo_fragility,{},909,all,TA0011 - Command-and-Control,195
+greedy_loo_fragility,greedy_loo_fragility,{},909,exploit,TA0011 - Command-and-Control,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,all,TA0011 - Command-and-Control,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,exploit,TA0011 - Command-and-Control,167
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",909,explore,TA0011 - Command-and-Control,28
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",909,all,TA0011 - Command-and-Control,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",909,bonus,TA0011 - Command-and-Control,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",909,all,TA0011 - Command-and-Control,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",909,bonus,TA0011 - Command-and-Control,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",909,all,TA0011 - Command-and-Control,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",909,bonus,TA0011 - Command-and-Control,195
+greedy_loo_fragility,greedy_loo_fragility,{},1010,all,T1036 - Defense Evasion: Masquerading,195
+greedy_loo_fragility,greedy_loo_fragility,{},1010,exploit,T1036 - Defense Evasion: Masquerading,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,all,T1036 - Defense Evasion: Masquerading,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,explore,T1036 - Defense Evasion: Masquerading,7
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,exploit,T1036 - Defense Evasion: Masquerading,188
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",1010,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",1010,bonus,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",1010,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",1010,bonus,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",1010,all,T1036 - Defense Evasion: Masquerading,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",1010,bonus,T1036 - Defense Evasion: Masquerading,195
+greedy_loo_fragility,greedy_loo_fragility,{},1010,all,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,greedy_loo_fragility,{},1010,exploit,T1498.001 - Impact: Direct Network Flood,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,all,T1498.001 - Impact: Direct Network Flood,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,explore,T1498.001 - Impact: Direct Network Flood,17
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,exploit,T1498.001 - Impact: Direct Network Flood,178
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",1010,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",1010,bonus,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",1010,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",1010,bonus,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",1010,all,T1498.001 - Impact: Direct Network Flood,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",1010,bonus,T1498.001 - Impact: Direct Network Flood,195
+greedy_loo_fragility,greedy_loo_fragility,{},1010,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+greedy_loo_fragility,greedy_loo_fragility,{},1010,exploit,T1498.002 - Impact: Reflection/Amplification Attack,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,explore,T1498.002 - Impact: Reflection/Amplification Attack,53
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,exploit,T1498.002 - Impact: Reflection/Amplification Attack,142
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",1010,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",1010,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",1010,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",1010,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",1010,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",1010,bonus,T1498.002 - Impact: Reflection/Amplification Attack,195
+greedy_loo_fragility,greedy_loo_fragility,{},1010,all,T1571 - Defense Evasion: Non-Standard Port,195
+greedy_loo_fragility,greedy_loo_fragility,{},1010,exploit,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,all,T1571 - Defense Evasion: Non-Standard Port,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,explore,T1571 - Defense Evasion: Non-Standard Port,0
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,exploit,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",1010,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",1010,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",1010,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",1010,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",1010,all,T1571 - Defense Evasion: Non-Standard Port,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",1010,bonus,T1571 - Defense Evasion: Non-Standard Port,195
+greedy_loo_fragility,greedy_loo_fragility,{},1010,all,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,greedy_loo_fragility,{},1010,exploit,T1583.005 - Resource Development: Acquire Botnet,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,all,T1583.005 - Resource Development: Acquire Botnet,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,explore,T1583.005 - Resource Development: Acquire Botnet,73
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,exploit,T1583.005 - Resource Development: Acquire Botnet,122
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",1010,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",1010,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",1010,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",1010,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",1010,all,T1583.005 - Resource Development: Acquire Botnet,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",1010,bonus,T1583.005 - Resource Development: Acquire Botnet,195
+greedy_loo_fragility,greedy_loo_fragility,{},1010,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+greedy_loo_fragility,greedy_loo_fragility,{},1010,exploit,T1584.005 - Resource Development: Build/Compromise Botnet,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,explore,T1584.005 - Resource Development: Build/Compromise Botnet,70
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,exploit,T1584.005 - Resource Development: Build/Compromise Botnet,124
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",1010,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",1010,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",1010,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",1010,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",1010,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",1010,bonus,T1584.005 - Resource Development: Build/Compromise Botnet,194
+greedy_loo_fragility,greedy_loo_fragility,{},1010,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+greedy_loo_fragility,greedy_loo_fragility,{},1010,exploit,T1590 - Reconnaissance: Gather Victim Network Information,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,explore,T1590 - Reconnaissance: Gather Victim Network Information,87
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,exploit,T1590 - Reconnaissance: Gather Victim Network Information,107
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",1010,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",1010,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",1010,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",1010,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",1010,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",1010,bonus,T1590 - Reconnaissance: Gather Victim Network Information,194
+greedy_loo_fragility,greedy_loo_fragility,{},1010,all,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,greedy_loo_fragility,{},1010,exploit,T1595 - Reconnaissance: Active Scanning,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,all,T1595 - Reconnaissance: Active Scanning,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,explore,T1595 - Reconnaissance: Active Scanning,7
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,exploit,T1595 - Reconnaissance: Active Scanning,188
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",1010,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",1010,bonus,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",1010,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",1010,bonus,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",1010,all,T1595 - Reconnaissance: Active Scanning,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",1010,bonus,T1595 - Reconnaissance: Active Scanning,195
+greedy_loo_fragility,greedy_loo_fragility,{},1010,all,TA0011 - Command-and-Control,195
+greedy_loo_fragility,greedy_loo_fragility,{},1010,exploit,TA0011 - Command-and-Control,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,all,TA0011 - Command-and-Control,195
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,explore,TA0011 - Command-and-Control,9
+epsilon_greedy_eps0.2,epsilon_greedy_loo_fragility,"{""epsilon"": 0.2}",1010,exploit,TA0011 - Command-and-Control,186
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",1010,all,TA0011 - Command-and-Control,195
+exploration_bonus_c0.25,exploration_bonus_loo_fragility,"{""c"": 0.25}",1010,bonus,TA0011 - Command-and-Control,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",1010,all,TA0011 - Command-and-Control,195
+exploration_bonus_c0.5,exploration_bonus_loo_fragility,"{""c"": 0.5}",1010,bonus,TA0011 - Command-and-Control,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",1010,all,TA0011 - Command-and-Control,195
+exploration_bonus_c1.0,exploration_bonus_loo_fragility,"{""c"": 1.0}",1010,bonus,TA0011 - Command-and-Control,195

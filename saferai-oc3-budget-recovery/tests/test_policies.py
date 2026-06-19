@@ -10,6 +10,11 @@ from saferai_budget_recovery.policies import (
     choose_next_greedy_fragility,
     choose_next_uniform_row_random,
     choose_next_uniform_step_balanced,
+    choose_step_epsilon_greedy_fragility,
+    choose_step_exploration_bonus_fragility,
+    choose_step_greedy_fragility,
+    choose_step_uniform_row_random,
+    choose_step_uniform_step_balanced,
 )
 from saferai_budget_recovery.reveal import FITTED_ROW_UID_COLUMN, usable_fit_rows
 
@@ -336,3 +341,92 @@ def test_parameterized_policy_decisions_are_reproducible() -> None:
         fragility_scores=scores,
     )
     assert first == second
+
+
+def test_step_uniform_step_balanced_returns_step_name() -> None:
+    rows = _multi_rows()
+    revealed = rows.loc[rows["step_name"].eq("step-a")].head(2)
+    revealed = pd.concat([revealed, rows.loc[rows["step_name"].eq("step-b")].head(1)])
+    selected_step = choose_step_uniform_step_balanced(
+        revealed,
+        {"step-a", "step-b", "step-c"},
+        np.random.default_rng(123),
+    )
+    assert selected_step == "step-c"
+    assert selected_step not in set(rows[FITTED_ROW_UID_COLUMN])
+
+
+def test_step_uniform_row_random_returns_available_step_name() -> None:
+    selected_step = choose_step_uniform_row_random(
+        {"step-a", "step-b"},
+        {"step-a": 5, "step-b": 1},
+        np.random.default_rng(123),
+    )
+    assert selected_step in {"step-a", "step-b"}
+
+
+def test_step_greedy_fragility_returns_highest_available_step() -> None:
+    rows = _rows()
+    scores = pd.DataFrame(
+        {"step_name": ["step-a", "step-b", "step-c"], "loo_fragility": [1.0, 3.0, 2.0]}
+    )
+    selected_step = choose_step_greedy_fragility(
+        rows,
+        {"step-a", "step-c"},
+        np.random.default_rng(123),
+        scores,
+    )
+    assert selected_step == "step-c"
+    assert scores.attrs["decision_type"] == "exploit"
+
+
+def test_step_greedy_fragility_falls_back_to_step_balanced() -> None:
+    rows = _multi_rows()
+    revealed = rows.loc[rows["step_name"].eq("step-a")].head(2)
+    revealed = pd.concat([revealed, rows.loc[rows["step_name"].eq("step-b")].head(1)])
+    scores = pd.DataFrame(
+        {"step_name": ["step-a", "step-b", "step-c"], "loo_fragility": [np.nan, np.nan, np.nan]}
+    )
+    selected_step = choose_step_greedy_fragility(
+        revealed,
+        {"step-a", "step-b", "step-c"},
+        np.random.default_rng(123),
+        scores,
+    )
+    assert selected_step == "step-c"
+    assert scores.attrs["decision_type"] == "fallback"
+
+
+def test_step_epsilon_greedy_explore_returns_under_sampled_step() -> None:
+    rows = _multi_rows()
+    revealed = rows.loc[rows["step_name"].eq("step-a")].head(2)
+    revealed = pd.concat([revealed, rows.loc[rows["step_name"].eq("step-b")].head(1)])
+    scores = pd.DataFrame(
+        {"step_name": ["step-a", "step-b", "step-c"], "loo_fragility": [10.0, 10.0, 0.0]}
+    )
+    selected_step = choose_step_epsilon_greedy_fragility(
+        revealed,
+        {"step-a", "step-b", "step-c"},
+        np.random.default_rng(123),
+        epsilon=1.0,
+        fragility_scores=scores,
+    )
+    assert selected_step == "step-c"
+    assert scores.attrs["decision_type"] == "explore"
+
+
+def test_step_exploration_bonus_returns_step_and_records_score() -> None:
+    rows = _rows()
+    scores = pd.DataFrame(
+        {"step_name": ["step-a", "step-b", "step-c"], "loo_fragility": [1.0, 3.0, 2.0]}
+    )
+    selected_step = choose_step_exploration_bonus_fragility(
+        rows,
+        {"step-a", "step-b", "step-c"},
+        np.random.default_rng(123),
+        c=0.5,
+        fragility_scores=scores,
+    )
+    assert selected_step == "step-b"
+    assert scores.attrs["decision_type"] == "bonus"
+    assert scores.attrs["selected_acquisition_score"] > 0

@@ -37,6 +37,45 @@ from saferai_budget_recovery.sampling import sample_full_reference_p_success
 OUTPUT_DIR = config.PROJECT_ROOT / "outputs" / "repeated_policy_experiment"
 
 CONFIGURATIONS = {
+    "LOCKED_V8_HIDDEN_REVEAL": {
+        "budgets": [45, 90, 180, 360, 720, 1200, 1798],
+        "reveal_seeds": [101, 202, 303, 404, 505, 606, 707, 808, 909, 1010],
+        "policy_specs": [
+            {"name": "uniform_step_balanced", "policy_name": "uniform_step_balanced", "policy_kwargs": {}},
+            {"name": "greedy_loo_fragility", "policy_name": "greedy_loo_fragility", "policy_kwargs": {}},
+            {
+                "name": "epsilon_greedy_eps0.2",
+                "policy_name": "epsilon_greedy_loo_fragility",
+                "policy_kwargs": {"epsilon": 0.2},
+            },
+            {
+                "name": "exploration_bonus_c0.25",
+                "policy_name": "exploration_bonus_loo_fragility",
+                "policy_kwargs": {"c": 0.25},
+            },
+            {
+                "name": "exploration_bonus_c0.5",
+                "policy_name": "exploration_bonus_loo_fragility",
+                "policy_kwargs": {"c": 0.5},
+            },
+            {
+                "name": "exploration_bonus_c1.0",
+                "policy_name": "exploration_bonus_loo_fragility",
+                "policy_kwargs": {"c": 1.0},
+            },
+        ],
+        "n_reference_samples": 50_000,
+        "n_budget_samples": 20_000,
+        "n_grid": 501,
+        "fragility_kwargs": {
+            "n_samples": 800,
+            "n_grid": 201,
+            "max_loo_terms_per_step": 20,
+        },
+        "fragility_recompute_every": 90,
+        "reference_seed": 907000,
+        "sample_seed_base": 1008000,
+    },
     "FAST_DEV": {
         "budgets": [45, 90, 180, 360, 720],
         "reveal_seeds": [101, 202, 303, 404, 505],
@@ -191,7 +230,7 @@ CONFIGURATIONS = {
         "sample_seed_base": 1008000,
     },
 }
-MODE = os.environ.get("SAFERAI_EXPERIMENT_MODE", "EXPLORATION_BONUS_SENSITIVITY_DEV")
+MODE = os.environ.get("SAFERAI_EXPERIMENT_MODE", "LOCKED_V8_HIDDEN_REVEAL")
 
 
 def main() -> None:
@@ -298,6 +337,7 @@ def main() -> None:
         "concentration": OUTPUT_DIR / f"{prefix}_concentration_by_budget.csv",
         "selected_step_counts": OUTPUT_DIR / f"{prefix}_selected_step_counts.csv",
         "c_value_summary": OUTPUT_DIR / f"{prefix}_c_value_summary.csv",
+        "exploration_bonus_c_value_summary": OUTPUT_DIR / f"{prefix}_exploration_bonus_c_value_summary.csv",
         "report": OUTPUT_DIR / f"{prefix}_repeated_policy_experiment_report.json",
         "fragility_runtime": OUTPUT_DIR / f"{prefix}_fragility_runtime_diagnostics.csv",
     }
@@ -310,6 +350,7 @@ def main() -> None:
     concentration_df.to_csv(paths["concentration"], index=False)
     selected_step_counts_df.to_csv(paths["selected_step_counts"], index=False)
     c_value_summary_df.to_csv(paths["c_value_summary"], index=False)
+    c_value_summary_df.to_csv(paths["exploration_bonus_c_value_summary"], index=False)
     fragility_runtime_df.to_csv(paths["fragility_runtime"], index=False)
 
     runtime = time.perf_counter() - start
@@ -351,14 +392,17 @@ def main() -> None:
     print(auc_summary.to_string())
     if not c_value_summary_df.empty:
         print("Exploration-bonus c-value summary:")
+        max_budget = max(settings["budgets"])
+        l1_col = f"mean_l1_imbalance_at_{max_budget}"
+        ratio_col = f"mean_max_min_ratio_at_{max_budget}"
         print(
             c_value_summary_df[
                 [
                     "c",
                     "average_auc",
                     "win_fraction_vs_uniform",
-                    "mean_l1_imbalance_at_1200",
-                    "mean_max_min_ratio_at_1200",
+                    l1_col,
+                    ratio_col,
                 ]
             ].to_string(index=False)
         )
@@ -379,6 +423,11 @@ def main() -> None:
             ].to_string(index=False)
         )
     print(f"Runtime seconds: {runtime:.2f}")
+    print(f"Settings reduced from requested: {settings != requested_settings}")
+    if runtime_reduction_notes:
+        print("Runtime reduction notes:")
+        for note in runtime_reduction_notes:
+            print(f"  - {note}")
     for label, path in paths.items():
         print(f"{label}: {path}")
 
@@ -406,6 +455,10 @@ def _make_report(
     total_usable: int,
 ) -> dict[str, Any]:
     policy_summary: dict[str, Any] = {}
+    overall_win_rates = {
+        str(policy): float(group["policy_better"].mean())
+        for policy, group in differences_df.groupby("policy_name")
+    }
     for policy, group in results_df.groupby("policy_name"):
         auc_group = auc_df.loc[auc_df["policy_name"].eq(policy)]
         policy_summary[str(policy)] = {
@@ -414,6 +467,9 @@ def _make_report(
             ),
             "average_auc": float(auc_group["auc_distance"].mean()),
             "median_auc": float(auc_group["auc_distance"].median()),
+            "win_fraction_vs_uniform": (
+                None if str(policy) == "uniform_step_balanced" else overall_win_rates.get(str(policy))
+            ),
         }
 
     max_terms = settings["fragility_kwargs"].get("max_loo_terms_per_step")
@@ -431,29 +487,40 @@ def _make_report(
     )
     auc_by_policy = auc_df.groupby("policy_name")["auc_distance"].mean().to_dict()
     best_auc_policy = min(auc_by_policy, key=auc_by_policy.get)
-    overall_win_rates = {
-        str(policy): float(group["policy_better"].mean())
-        for policy, group in differences_df.groupby("policy_name")
-    }
+    uses_hidden_orders = bool(
+        run_diagnostics and all(diag.get("uses_hidden_reveal_orders") for diag in run_diagnostics)
+    )
+    runtime_diag = _runtime_diagnostics(run_diagnostics)
 
     return {
         "note": (
-            "This is a v8 all-policies development run, not the final report run. Fragility-guided "
-            "policies use approximate LOO-term subsampling with max_loo_terms_per_step=20. Previous "
-            "approximation audit suggested cap 20 preserved top fragile-node rankings on reduced "
-            "audit settings, but this remains an approximation to the exact v8 LOO definition."
+            "This locked run uses the v8 shared hidden reveal-order protocol. Policies choose "
+            "MITRE-step inputs; row identities are determined by seed-specific hidden per-step "
+            "reveal orders shared across policies. Fragility-guided policies use approximate LOO "
+            "fragility with max_loo_terms_per_step=20."
         ),
         "mode": mode,
         "settings": settings,
+        "actual_settings": settings,
         "requested_settings": requested_settings,
         "settings_reduced_from_requested": settings != requested_settings,
         "runtime_reduction_notes": runtime_reduction_notes,
+        "reduction_reasons": runtime_reduction_notes,
         "policy_specs": policy_specs,
+        "uses_hidden_reveal_orders": uses_hidden_orders,
+        "hidden_reveal_order_protocol": "shared_per_step_model_aware_orders",
         "approximation_note": approximation_note,
         "runtime_seconds": runtime,
         "reference_design": {
             "reference_sampled_once_globally": True,
             "reference_seed": settings["reference_seed"],
+            "n_reference_samples": settings["n_reference_samples"],
+            "reference_sampling_seconds": reference_sampling_seconds,
+        },
+        "reference_sample_design": {
+            "reference_sampled_once_globally": True,
+            "reference_seed": settings["reference_seed"],
+            "n_reference_samples": settings["n_reference_samples"],
             "reference_sampling_seconds": reference_sampling_seconds,
         },
         "total_usable_fitted_rows": int(total_usable),
@@ -461,7 +528,16 @@ def _make_report(
         "policies_compared": [spec["name"] for spec in policy_specs],
         "number_of_reveal_seeds": int(len(settings["reveal_seeds"])),
         "budgets": settings["budgets"],
-        "runtime_diagnostics": _runtime_diagnostics(run_diagnostics),
+        "reveal_seeds": settings["reveal_seeds"],
+        "fragility_approximation_settings": settings["fragility_kwargs"],
+        "fragility_recomputation_settings": {
+            "fragility_recompute_every": settings["fragility_recompute_every"],
+        },
+        "number_of_fragility_recomputations": runtime_diag["fragility_recomputation_count"],
+        "total_exact_loo_terms_available": runtime_diag["total_loo_terms_available"],
+        "total_loo_terms_used": runtime_diag["total_loo_terms_used"],
+        "fraction_available_loo_terms_used": runtime_diag["loo_terms_used_fraction"],
+        "runtime_diagnostics": runtime_diag,
         "summary_by_policy": policy_summary,
         "overall_win_rates_vs_uniform": overall_win_rates,
         "greedy_better_count": (
@@ -478,7 +554,14 @@ def _make_report(
         "win_rate_by_budget": win_by_budget_df.to_dict(orient="records"),
         "win_rate_by_seed": win_by_seed_df.to_dict(orient="records"),
         "concentration_by_budget": concentration_df.to_dict(orient="records"),
+        "concentration_summary_by_policy_at_budget_1200": _concentration_at_budget(
+            concentration_df, budget=1200
+        ),
+        "concentration_summary_by_policy_at_budget_1798": _concentration_at_budget(
+            concentration_df, budget=1798
+        ),
         "selected_step_counts": selected_step_counts_df.to_dict(orient="records"),
+        "selected_step_counts_by_policy": _selected_step_counts_by_policy(selected_step_counts_df),
         "exploration_bonus_c_value_summary": c_value_summary_df.to_dict(orient="records"),
         "exploration_bonus_sensitivity": _exploration_bonus_sensitivity_notes(c_value_summary_df),
         "fragility_approximation_diagnostics": _fragility_approximation(fragility_runtime_df),
@@ -499,6 +582,49 @@ def _make_report(
         },
         "run_diagnostics": run_diagnostics,
     }
+
+
+def _concentration_at_budget(concentration_df: pd.DataFrame, budget: int) -> dict[str, Any]:
+    rows = concentration_df.loc[concentration_df["budget"].eq(budget)]
+    return {
+        str(row["policy_name"]): {
+            "mean_step_count_l1_imbalance": float(row["mean_step_count_l1_imbalance"]),
+            "median_step_count_l1_imbalance": float(row["median_step_count_l1_imbalance"]),
+            "max_step_count_l1_imbalance": float(row["max_step_count_l1_imbalance"]),
+            "mean_max_min_revealed_row_ratio": float(row["mean_max_min_revealed_row_ratio"]),
+            "maximum_observed_revealed_row_count_any_step": int(
+                row["maximum_observed_revealed_row_count_any_step"]
+            ),
+            "minimum_observed_revealed_row_count_any_step": int(
+                row["minimum_observed_revealed_row_count_any_step"]
+            ),
+            "average_steps_above_initial_5": float(row["average_steps_above_initial_5"]),
+            "average_steps_still_at_initial_5": float(row["average_steps_still_at_initial_5"]),
+        }
+        for row in rows.to_dict(orient="records")
+    }
+
+
+def _selected_step_counts_by_policy(selected_step_counts_df: pd.DataFrame) -> dict[str, Any]:
+    if selected_step_counts_df.empty:
+        return {}
+    grouped = (
+        selected_step_counts_df.groupby(["policy_name", "decision_type", "step_name"], dropna=False)[
+            "selected_count_after_initial_seed"
+        ]
+        .sum()
+        .reset_index()
+    )
+    out: dict[str, Any] = {}
+    for policy, policy_group in grouped.groupby("policy_name"):
+        policy_out: dict[str, Any] = {}
+        for decision_type, decision_group in policy_group.groupby("decision_type"):
+            policy_out[str(decision_type)] = {
+                str(row["step_name"]): int(row["selected_count_after_initial_seed"])
+                for row in decision_group.to_dict(orient="records")
+            }
+        out[str(policy)] = policy_out
+    return out
 
 
 def _runtime_diagnostics(run_diagnostics: list[dict[str, Any]]) -> dict[str, Any]:

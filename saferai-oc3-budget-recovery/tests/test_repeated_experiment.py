@@ -112,7 +112,32 @@ def test_repeated_experiment_script_exposes_exploration_bonus_sensitivity_mode()
     assert settings["n_reference_samples"] == 40_000
     assert settings["n_budget_samples"] == 12_000
     assert settings["fragility_kwargs"]["max_loo_terms_per_step"] == 20
-    assert module.MODE == "EXPLORATION_BONUS_SENSITIVITY_DEV"
+    assert module.MODE in module.CONFIGURATIONS
+
+
+def test_repeated_experiment_script_defaults_to_locked_hidden_reveal_mode() -> None:
+    script_path = Path(__file__).resolve().parents[1] / "scripts" / "07_run_repeated_policy_experiment.py"
+    spec = importlib.util.spec_from_file_location("run_repeated_policy_experiment_locked", script_path)
+    assert spec is not None
+    assert spec.loader is not None
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    settings = module.CONFIGURATIONS["LOCKED_V8_HIDDEN_REVEAL"]
+    policy_names = {spec["name"] for spec in settings["policy_specs"]}
+    assert module.MODE == "LOCKED_V8_HIDDEN_REVEAL"
+    assert policy_names == {
+        "uniform_step_balanced",
+        "greedy_loo_fragility",
+        "epsilon_greedy_eps0.2",
+        "exploration_bonus_c0.25",
+        "exploration_bonus_c0.5",
+        "exploration_bonus_c1.0",
+    }
+    assert settings["budgets"] == [45, 90, 180, 360, 720, 1200, 1798]
+    assert len(settings["reveal_seeds"]) == 10
+    assert settings["n_reference_samples"] == 50_000
+    assert settings["n_budget_samples"] == 20_000
+    assert settings["fragility_kwargs"]["max_loo_terms_per_step"] == 20
 
 
 def test_exploration_bonus_c_value_summary() -> None:

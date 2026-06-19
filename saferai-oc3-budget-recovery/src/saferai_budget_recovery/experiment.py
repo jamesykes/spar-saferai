@@ -16,16 +16,18 @@ from saferai_budget_recovery.distances import (
     squared_wasserstein2_from_quantiles,
 )
 from saferai_budget_recovery.policies import (
-    choose_next_epsilon_greedy_fragility,
-    choose_next_exploration_bonus_fragility,
-    choose_next_greedy_fragility,
-    choose_next_uniform_row_random,
-    choose_next_uniform_step_balanced,
+    choose_step_epsilon_greedy_fragility,
+    choose_step_exploration_bonus_fragility,
+    choose_step_greedy_fragility,
+    choose_step_uniform_row_random,
+    choose_step_uniform_step_balanced,
 )
 from saferai_budget_recovery.reveal import (
     FITTED_ROW_UID_COLUMN,
-    make_initial_seed_reveal,
-    split_revealed_unrevealed,
+    initial_revealed_from_hidden_orders,
+    make_hidden_reveal_orders,
+    reveal_next_for_step,
+    unrevealed_steps_available,
     usable_fit_rows,
 )
 from saferai_budget_recovery.sampling import sample_full_reference_p_success, sample_p_success_from_revealed
@@ -68,8 +70,11 @@ def run_policy_recovery(
 
     start = time.perf_counter()
     usable_df = usable_fit_rows(fit_df)
-    initial_df = make_initial_seed_reveal(usable_df, seed=reveal_seed, strict=True)
-    revealed_df, unrevealed_df = split_revealed_unrevealed(usable_df, initial_df)
+    hidden_orders = make_hidden_reveal_orders(usable_df, reveal_seed=reveal_seed, strict=True)
+    initial_df = initial_revealed_from_hidden_orders(usable_df, hidden_orders)
+    revealed_row_ids_ordered = [str(row_id) for row_id in hidden_orders.initial_row_ids]
+    revealed_row_id_set = set(revealed_row_ids_ordered)
+    revealed_df = initial_df.copy().reset_index(drop=True)
     initial_size = len(revealed_df)
     total_usable = len(usable_df)
     budgets_used = sorted(set(int(budget) for budget in budgets if budget <= total_usable))
@@ -116,18 +121,28 @@ def run_policy_recovery(
     for target_budget in budgets_used:
         while len(revealed_df) < target_budget:
             decision_count += 1
+            available_steps = unrevealed_steps_available(hidden_orders, revealed_row_id_set)
+            if not available_steps:
+                raise ValueError(
+                    "No hidden reveal-order steps have unrevealed rows before target budget "
+                    f"{target_budget}."
+                )
             if policy_name == "uniform_row_random":
-                selected_row_id = choose_next_uniform_row_random(unrevealed_df, rng)
+                selected_step = choose_step_uniform_row_random(
+                    available_steps,
+                    _available_row_counts_by_step(hidden_orders, revealed_row_id_set),
+                    rng,
+                )
             elif policy_name == "uniform_step_balanced":
-                selected_row_id = choose_next_uniform_step_balanced(revealed_df, unrevealed_df, rng)
+                selected_step = choose_step_uniform_step_balanced(revealed_df, available_steps, rng)
             else:
                 recompute = cached_fragility_scores is None or decisions_since_recompute >= fragility_recompute_every
                 if recompute:
                     fragility_start = time.perf_counter()
-                    selected_row_id, cached_fragility_scores = _choose_fragility_policy(
+                    selected_step, cached_fragility_scores = _choose_fragility_policy(
                         policy_name=policy_name,
                         revealed_df=revealed_df,
-                        unrevealed_df=unrevealed_df,
+                        available_steps=available_steps,
                         rng=rng,
                         fragility_kwargs=fragility_kwargs or {},
                         policy_kwargs=policy_kwargs,
@@ -168,10 +183,10 @@ def run_policy_recovery(
                     )
                     decisions_since_recompute = 0
                 else:
-                    selected_row_id, cached_fragility_scores = _choose_fragility_policy(
+                    selected_step, cached_fragility_scores = _choose_fragility_policy(
                         policy_name=policy_name,
                         revealed_df=revealed_df,
-                        unrevealed_df=unrevealed_df,
+                        available_steps=available_steps,
                         rng=rng,
                         fragility_kwargs=fragility_kwargs or {},
                         policy_kwargs=policy_kwargs,
@@ -188,13 +203,18 @@ def run_policy_recovery(
                     by_type = selected_step_counts_by_decision_type.setdefault(decision_type, {})
                     by_type[str(selected_step)] = by_type.get(str(selected_step), 0) + 1
 
-            selected_row = unrevealed_df.loc[unrevealed_df[FITTED_ROW_UID_COLUMN].eq(selected_row_id)]
+            selected_row_id = reveal_next_for_step(
+                usable_df,
+                hidden_orders=hidden_orders,
+                revealed_row_ids=revealed_row_id_set,
+                step_name=str(selected_step),
+            )
+            selected_row = usable_df.loc[usable_df[FITTED_ROW_UID_COLUMN].eq(selected_row_id)]
             if len(selected_row) != 1:
-                raise ValueError(f"Selected fitted-row ID not found exactly once in unrevealed rows: {selected_row_id}")
+                raise ValueError(f"Selected hidden fitted-row ID not found exactly once in usable rows: {selected_row_id}")
+            revealed_row_ids_ordered.append(str(selected_row_id))
+            revealed_row_id_set.add(str(selected_row_id))
             revealed_df = pd.concat([revealed_df, selected_row], ignore_index=True)
-            unrevealed_df = unrevealed_df.loc[
-                ~unrevealed_df[FITTED_ROW_UID_COLUMN].eq(selected_row_id)
-            ].reset_index(drop=True)
 
         sample_seed = int(sample_seed_base + reveal_seed * 10_000 + target_budget)
         if len(revealed_df) == total_usable:
@@ -247,6 +267,12 @@ def run_policy_recovery(
         "initial_seed_size": int(initial_size),
         "total_usable_fitted_rows": int(total_usable),
         "budgets_used": budgets_used,
+        "uses_hidden_reveal_orders": True,
+        "hidden_reveal_order_metadata": _compact_hidden_reveal_metadata(hidden_orders.metadata),
+        "hidden_reveal_order_post_seed_lengths_by_step": hidden_orders.metadata.get(
+            "post_seed_order_lengths_by_step", {}
+        ),
+        "hidden_reveal_order_coverage": hidden_orders.metadata.get("coverage", {}),
         "reference_seed": int(reference_seed),
         "sample_seed_base": int(sample_seed_base),
         "n_reference_samples": int(n_reference_samples),
@@ -285,38 +311,45 @@ def run_policy_recovery(
 def _choose_fragility_policy(
     policy_name: str,
     revealed_df: pd.DataFrame,
-    unrevealed_df: pd.DataFrame,
+    available_steps: set[str],
     rng: np.random.Generator,
     fragility_kwargs: dict,
     policy_kwargs: dict,
     fragility_scores: pd.DataFrame | None,
 ) -> tuple[str, pd.DataFrame]:
+    if fragility_scores is None:
+        from saferai_budget_recovery.fragility import compute_loo_fragility_scores
+
+        fragility_scores = compute_loo_fragility_scores(revealed_df, **fragility_kwargs)
+    else:
+        fragility_scores = fragility_scores.copy()
+
     if policy_name == "greedy_loo_fragility":
-        return choose_next_greedy_fragility(
+        selected_step = choose_step_greedy_fragility(
             revealed_df,
-            unrevealed_df,
+            available_steps,
             rng,
-            fragility_kwargs=fragility_kwargs,
             fragility_scores=fragility_scores,
         )
+        return selected_step, fragility_scores
     if policy_name == "epsilon_greedy_loo_fragility":
-        return choose_next_epsilon_greedy_fragility(
+        selected_step = choose_step_epsilon_greedy_fragility(
             revealed_df,
-            unrevealed_df,
+            available_steps,
             rng,
             epsilon=float(policy_kwargs.get("epsilon", 0.2)),
-            fragility_kwargs=fragility_kwargs,
             fragility_scores=fragility_scores,
         )
+        return selected_step, fragility_scores
     if policy_name == "exploration_bonus_loo_fragility":
-        return choose_next_exploration_bonus_fragility(
+        selected_step = choose_step_exploration_bonus_fragility(
             revealed_df,
-            unrevealed_df,
+            available_steps,
             rng,
             c=float(policy_kwargs.get("c", 0.5)),
-            fragility_kwargs=fragility_kwargs,
             fragility_scores=fragility_scores,
         )
+        return selected_step, fragility_scores
     raise ValueError(f"Policy {policy_name!r} is not a fragility policy.")
 
 
@@ -353,3 +386,20 @@ def _step_balance_diagnostics(step_counts: dict[str, int], budget: int) -> dict[
         "step_count_std": float(np.std(counts)),
         "step_count_l1_from_perfect_balance": float(np.sum(np.abs(counts - target))),
     }
+
+
+def _available_row_counts_by_step(hidden_orders, revealed_row_ids: set[str]) -> dict[str, int]:
+    return {
+        step: int(sum(row_id not in revealed_row_ids for row_id in row_ids))
+        for step, row_ids in hidden_orders.orders_by_step.items()
+    }
+
+
+def _compact_hidden_reveal_metadata(metadata: dict[str, Any]) -> dict[str, Any]:
+    """Keep run diagnostics compact while retaining protocol/coverage evidence."""
+
+    out = dict(metadata)
+    # The full model sequence is useful for smoke audits, but repeating it in
+    # every policy x seed diagnostic bloats locked experiment reports.
+    out.pop("post_seed_model_sequence_by_step", None)
+    return out

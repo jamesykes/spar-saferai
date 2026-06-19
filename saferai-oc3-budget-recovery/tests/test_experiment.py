@@ -49,6 +49,7 @@ def test_tiny_synthetic_experiment_returns_requested_budgets_for_both_policies()
         assert list(results["budget"]) == [45, 50]
         assert diagnostics["initial_seed_size"] == 45
         assert diagnostics["total_usable_fitted_rows"] == 90
+        assert diagnostics["uses_hidden_reveal_orders"] is True
 
 
 def test_tiny_synthetic_experiment_budget_accounting_and_distances() -> None:
@@ -73,6 +74,24 @@ def test_tiny_synthetic_experiment_budget_accounting_and_distances() -> None:
         "revealed_rows_by_step",
     ]:
         assert col in results.columns
+
+
+def test_hidden_reveal_order_diagnostics_are_present() -> None:
+    _, diagnostics = run_policy_recovery(
+        _complete_fit_df(),
+        policy_name="uniform_step_balanced",
+        budgets=[45, 50],
+        reveal_seed=11,
+        reference_seed=22,
+        sample_seed_base=33,
+        n_reference_samples=60,
+        n_budget_samples=40,
+        n_grid=21,
+    )
+    assert diagnostics["uses_hidden_reveal_orders"] is True
+    assert diagnostics["hidden_reveal_order_metadata"]["uses_model_aware_cycling"] is True
+    assert diagnostics["hidden_reveal_order_coverage"]["covers_all_usable_rows_exactly_once"] is True
+    assert len(diagnostics["hidden_reveal_order_post_seed_lengths_by_step"]) == 9
 
 
 def test_tiny_synthetic_experiment_is_reproducible_with_same_seeds() -> None:
@@ -238,3 +257,31 @@ def test_exploration_bonus_policy_runs_in_tiny_synthetic_experiment() -> None:
     assert set(results["policy_name"]) == {"exploration_bonus_c0.5"}
     assert diagnostics["policy_kwargs"]["c"] == 0.5
     assert np.isfinite(results["squared_wasserstein2_to_full_reference"]).all()
+
+
+def test_all_primary_parameterized_policy_specs_run_with_hidden_orders() -> None:
+    specs = [
+        ("uniform_step_balanced", "uniform_step_balanced", {}),
+        ("greedy_loo_fragility", "greedy_loo_fragility", {}),
+        ("epsilon_greedy_loo_fragility", "epsilon_greedy_eps0.2", {"epsilon": 0.2}),
+        ("exploration_bonus_loo_fragility", "exploration_bonus_c1.0", {"c": 1.0}),
+    ]
+    for policy_name, label, kwargs in specs:
+        results, diagnostics = run_policy_recovery(
+            _complete_fit_df(),
+            policy_name=policy_name,
+            policy_label=label,
+            policy_kwargs=kwargs,
+            budgets=[45, 50],
+            reveal_seed=11,
+            reference_seed=22,
+            sample_seed_base=33,
+            n_reference_samples=60,
+            n_budget_samples=40,
+            n_grid=21,
+            fragility_kwargs={"n_samples": 15, "n_grid": 7, "max_loo_terms_per_step": 2},
+            fragility_recompute_every=5,
+        )
+        assert set(results["policy_name"]) == {label}
+        assert diagnostics["uses_hidden_reveal_orders"] is True
+        assert np.isfinite(results["squared_wasserstein2_to_full_reference"]).all()
