@@ -168,9 +168,9 @@ It is an internal retrospective reference, not truth.
 
 \subsection{Budgeted reveal protocol}
 
-All policies begin with the same initial seed allocation for each reveal seed: five rows per MITRE-step input, one from each LLM forecaster model, for a total initial budget of 45 SOTA elicitation rows. Additional allocation decisions reveal one fitted row at a selected MITRE-step input. Within a selected input, the implementation uses seed-controlled random selection from the remaining unrevealed rows. Policy comparisons are paired by reveal seed and use a common full-reference sample. This development implementation therefore gives reproducible paired policy comparisons, while keeping the budget unit as one LLM elicitation draw.
+For each outer reveal seed, the experiment pre-materializes a hidden reveal order for every MITRE-step input. Within each input, valid SOTA rows are split by LLM forecaster model, repeats are shuffled within model, a seed-specific model order is chosen, and post-seed rows are ordered by cycling through models while rows remain available. The same hidden orders are shared by all allocation policies under that reveal seed.
 
-The v8 plan describes a more explicitly materialised hidden reveal-order protocol, with model-aware cycling after the initial seed allocation. The present report uses the generated development outputs from the implemented seeded reveal machinery; this should be verified before a final locked experiment.
+All policies begin with the same initial seed allocation: five rows per MITRE-step input, one from each LLM forecaster model, for a total initial budget of 45 SOTA elicitation rows. After this initial seed allocation, a policy selects only the next MITRE-step input to reveal. When it selects input \(j\), it receives the next unused fitted row for \(j\) from the seed-specific hidden reveal order. This keeps policy comparisons paired by reveal seed and prevents within-step row identity from being chosen by the policy-specific random path.
 
 \subsection{LOO output fragility}
 
@@ -191,7 +191,7 @@ F_j^{\mathrm{LOO}}
 \]
 This score measures the output movement caused by removing currently observed draws from a node. It is a finite-sample instability diagnostic, not expected information gain.
 
-For runtime reasons, the development policy runs used approximate LOO-term subsampling with \(\texttt{max\_loo\_terms\_per\_step}=20\). A separate approximation audit compared exact LOO with capped subsampling on step-balanced revealed states. In that reduced audit, cap 20 preserved the exact top fragile node in all audited comparisons, had mean top-3 Jaccard approximately 0.833, and had mean Spearman rank correlation approximately 0.833. Cap 10 was noisier and was marked questionable by the audit heuristic. This supports cap 20 as a development approximation, but it is not a proof that the approximation is exact.
+For runtime reasons, the locked policy run used approximate LOO-term subsampling with \(\texttt{max\_loo\_terms\_per\_step}=20\). A separate approximation audit compared exact LOO with capped subsampling on step-balanced revealed states. In that reduced audit, cap 20 preserved the exact top fragile node in all audited comparisons, had mean top-3 Jaccard approximately 0.833, and had mean Spearman rank correlation approximately 0.833. Cap 10 was noisier and was marked questionable by the audit heuristic. This supports cap 20 as a pragmatic approximation, but it is not a proof that the approximation is exact.
 
 \subsection{Allocation policies}
 
@@ -208,10 +208,10 @@ The implemented v8 policy families are:
     \quad
     \lambda = c \cdot \mathrm{median}\{F_j^{\mathrm{LOO}}: F_j^{\mathrm{LOO}}>0\},
     \]
-    where \(n_j=|S_j|\). Sensitivity runs evaluated \(c\in\{0.25,0.5,1.0\}\).
+    where \(n_j=|S_j|\). The locked run evaluated \(c\in\{0.25,0.5,1.0\}\).
 \end{enumerate}
 
-Fragility scores are recomputed in batches in the development runs. This keeps the experiment feasible but means that each batch uses the most recently computed score table.
+Fragility scores are recomputed in batches in the locked run. This keeps the experiment feasible but means that each batch uses the most recently computed score table.
 
 \subsection{Evaluation metric}
 
@@ -235,15 +235,15 @@ The full-data exchangeable reference Monte Carlo sample had mean \(\psuccess\) a
 
 \subsection{Main policy comparison}
 
-Table~\ref{tab:main-policy-comparison} summarises the main policy comparison. The table combines the earlier \(\texttt{v8\_all\_policies\_dev}\) run with the later \(\texttt{exploration\_bonus\_sensitivity\_dev}\) run. The latter is used for \(c=1.0\), which was not included in the earlier reduced all-policy run. Source-run labels are therefore part of the result, not metadata to be hidden.
+Table~\ref{tab:main-policy-comparison} summarises the locked policy comparison. All six policies were run in the same \(\texttt{locked\_v8\_hidden\_reveal}\) experiment, using 10 reveal seeds and the budget grid \([45,90,180,360,720,1200,1798]\). The report JSON records \(\texttt{mode=LOCKED\_V8\_HIDDEN\_REVEAL}\), \(\texttt{uses\_hidden\_reveal\_orders=true}\), and \(\texttt{settings\_reduced\_from\_requested=false}\).
 
 \input{tables/main_policy_comparison.tex}
 
-In these development outputs, several fragility-guided policies had lower average AUC than the uniform baseline. Greedy LOO-fragility had average AUC 0.022822 compared with 0.029428 for uniform. Exploration-bonus \(c=1.0\), from the separate sensitivity run, had average AUC 0.021099. However, no fragility-guided policy beat uniform on a majority of paired seed-budget comparisons. The observed win fractions against uniform were about 0.433 for greedy, 0.367 for epsilon-greedy, 0.467 for exploration-bonus \(c=0.5\), and 0.467 for exploration-bonus \(c=1.0\).
+Under the corrected hidden reveal-order protocol, exploration-bonus \(c=1.0\) achieved the lowest average AUC, 0.009409, over the selected budget grid. The next lowest average AUC values were exploration-bonus \(c=0.5\) at 0.010175, epsilon-greedy at 0.010320, greedy LOO-fragility at 0.011005, and the uniform baseline at 0.011075. Exploration-bonus \(c=0.25\) performed worse, with average AUC 0.017137. However, all fragility-guided policies had paired win fractions below 0.5 against the uniform baseline: 0.386 for epsilon-greedy, 0.386 for exploration-bonus \(c=1.0\), 0.371 for greedy LOO-fragility, 0.357 for exploration-bonus \(c=0.5\), and 0.286 for exploration-bonus \(c=0.25\). The AUC advantage is therefore aggregation-dependent and should be interpreted cautiously.
 
 \subsection{Error-vs-budget curves}
 
-Figure~\ref{fig:error-vs-budget} shows mean squared \(W_2\) error by budget, with interquartile bands across reveal seeds. The full error-by-budget table appears in Appendix~\ref{app:additional-tables}. The curves are noisy at this number of reveal seeds. The stronger policies do not dominate uniform at every budget, but some fragility-guided policies reduce average AUC.
+Figure~\ref{fig:error-vs-budget} shows mean squared \(W_2\) error by budget, with interquartile bands across the 10 reveal seeds. The full error-by-budget table appears in Appendix~\ref{app:additional-tables}. The curves are noisy at this number of reveal seeds. The fragility-guided policies do not dominate uniform at every budget, but the stronger exploration-bonus setting reduces aggregate AUC over the selected grid.
 
 \begin{figure}[htbp]
 \centering
@@ -254,7 +254,7 @@ Figure~\ref{fig:error-vs-budget} shows mean squared \(W_2\) error by budget, wit
 
 \subsection{AUC summaries}
 
-Figure~\ref{fig:auc-by-policy} summarises average AUC by policy. AUC is a scalar diagnostic over the selected budget schedule; it should not be overinterpreted as a final statistical test. In the combined report artifacts, exploration-bonus \(c=1.0\) has the lowest average AUC among the displayed policies, followed by greedy LOO-fragility. Epsilon-greedy with \(\epsilon=0.2\) has worse average AUC than uniform in these development outputs.
+Figure~\ref{fig:auc-by-policy} summarises average AUC by policy. AUC is a scalar diagnostic over the selected budget schedule; it should not be overinterpreted as a final statistical test. In the locked run, exploration-bonus \(c=1.0\) has the lowest average AUC among the displayed policies, followed by exploration-bonus \(c=0.5\) and epsilon-greedy with \(\epsilon=0.2\). The pure greedy LOO-fragility policy is very close to the uniform baseline on average AUC.
 
 \begin{figure}[htbp]
 \centering
@@ -265,25 +265,25 @@ Figure~\ref{fig:auc-by-policy} summarises average AUC by policy. AUC is a scalar
 
 \subsection{Allocation concentration}
 
-Figure~\ref{fig:concentration-vs-budget} shows allocation concentration as mean L1 imbalance from a perfectly step-balanced allocation vector. Uniform allocation remains balanced by construction. Pure greedy LOO-fragility and exploration-bonus \(c=0.5\) are highly concentrated by budget 1200. Epsilon-greedy reduces concentration relative to greedy, but has worse AUC in the all-policy development run. Exploration-bonus \(c=1.0\) reduces concentration relative to \(c=0.5\) and \(c=0.25\), but still remains substantially more concentrated than uniform.
+Figure~\ref{fig:concentration-vs-budget} shows allocation concentration as mean L1 imbalance from a perfectly step-balanced allocation vector. Uniform allocation remains balanced by construction. At budget 1200, the mean L1 imbalances are 0.0 for uniform, 459.8 for epsilon-greedy, 516.0 for exploration-bonus \(c=1.0\), 569.6 for exploration-bonus \(c=0.5\), 595.4 for greedy LOO-fragility, and 627.2 for exploration-bonus \(c=0.25\). Thus concentration remains severe at intermediate budgets for the fragility-guided policies. At budget 1798, all policies have mean, median, and maximum L1 imbalance equal to zero, with minimum step count 199 and maximum step count 200. This convergence is expected because the full available fitted SOTA dataset has been revealed.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.95\textwidth]{figures/concentration_vs_budget.pdf}
-\caption{Mean L1 step-count imbalance by budget. Uniform allocation remains balanced; fragility-guided policies concentrate allocation to varying degrees.}
+\caption{Mean L1 step-count imbalance by budget. Uniform allocation remains balanced; fragility-guided policies concentrate allocation at intermediate budgets. All policies converge to zero imbalance at budget 1798 because the full fitted SOTA dataset has been revealed.}
 \label{fig:concentration-vs-budget}
 \end{figure}
 
 \subsection{Exploration-bonus sensitivity}
 
-Table~\ref{tab:exploration-bonus-sensitivity} and Figure~\ref{fig:bonus-sensitivity} summarise the exploration-bonus sensitivity run. The tested values were \(c=0.25\), \(c=0.5\), and \(c=1.0\). In this development run, increasing \(c\) reduced concentration monotonically and also improved average AUC. The best tested value by average AUC was \(c=1.0\). This should not be read as evidence that \(c=1.0\) is prospectively optimal; it is a small sensitivity check under approximate LOO fragility.
+Table~\ref{tab:exploration-bonus-sensitivity} and Figure~\ref{fig:bonus-sensitivity} summarise the exploration-bonus settings included in the locked run. The tested values were \(c=0.25\), \(c=0.5\), and \(c=1.0\). In this run, increasing \(c\) reduced concentration at budget 1200 and improved average AUC among the tested values. The best tested value by average AUC was \(c=1.0\). This should not be read as evidence that \(c=1.0\) is prospectively optimal; it is a small sensitivity check under approximate LOO fragility.
 
 \input{tables/exploration_bonus_sensitivity.tex}
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.9\textwidth]{figures/exploration_bonus_sensitivity.pdf}
-\caption{Exploration-bonus sensitivity over \(c\). In this development run, larger \(c\) reduced allocation concentration and improved average AUC among the tested settings.}
+\caption{Exploration-bonus sensitivity over \(c\). In the locked run, larger \(c\) reduced allocation concentration at budget 1200 and improved average AUC among the tested settings.}
 \label{fig:bonus-sensitivity}
 \end{figure}
 
@@ -291,11 +291,11 @@ Table~\ref{tab:exploration-bonus-sensitivity} and Figure~\ref{fig:bonus-sensitiv
 
 \subsection{Interpretation}
 
-The results suggest that output fragility contains some useful signal about where additional elicitation draws can reduce recovery error. Greedy LOO-fragility and exploration-bonus \(c=1.0\) both had lower average AUC than the step-balanced uniform baseline in the generated development outputs.
+Under the corrected hidden reveal-order protocol, exploration-bonus \(c=1.0\) achieved the lowest average AUC over the selected budget grid. However, all fragility-guided policies had paired win fractions below 0.5 against the uniform baseline. This suggests that the fragility signal is useful in some runs and budgets, but not uniformly reliable.
 
-At the same time, the evidence is mixed. No fragility-guided policy beat uniform on a majority of paired seed-budget comparisons. The policies with better AUC also concentrated elicitation effort strongly. This suggests that LOO output fragility can identify influential or unstable inputs, but using it too directly risks over-concentration. Exploration-aware variants partially mitigate this problem, with the \(c=1.0\) exploration-bonus setting looking best among the tested values in the current sensitivity run.
+The locked run therefore provides weak-to-moderate evidence that fragility-guided policies can improve aggregate recovery error, especially when paired with a stronger exploration bonus. The evidence remains mixed across paired comparisons. The policies with better AUC also concentrate elicitation effort strongly at intermediate budgets. LOO output fragility can identify influential or unstable inputs, but using it too directly risks over-concentration. Exploration-aware variants partially mitigate this problem, with the \(c=1.0\) exploration-bonus setting looking best among the tested values in the locked run.
 
-The appropriate conclusion is therefore not that fragility guidance is solved or optimal. A narrower conclusion is that the heuristic appears to have signal, but final conclusions require a locked final configuration, more reveal seeds if runtime permits, and careful reporting of concentration as well as recovery error.
+The appropriate conclusion is therefore not that fragility guidance is solved or optimal. A narrower conclusion is that the heuristic appears to have signal, but that signal is not uniformly reliable and should be reported alongside concentration diagnostics and paired win rates.
 
 \subsection{Limitations}
 
@@ -310,10 +310,12 @@ Several limitations are central to interpreting these results:
     \item The primary output is \(\psuccess\), not \(\log \psuccess\).
     \item Beta distributions are parametric approximations to elicited quartiles.
     \item LOO fragility is a finite-sample instability heuristic, not expected information gain.
-    \item Development policy runs used approximate LOO-term subsampling with \(\texttt{max\_loo\_terms\_per\_step}=20\).
-    \item Some comparisons in the report-ready tables combine outputs from different source runs. This is explicitly labelled and should not be hidden.
-    \item The number of reveal seeds is modest.
-    \item Runtime constraints shaped the experiment design, including batching of fragility recomputation and the reduced all-policy development run.
+    \item The locked policy run used approximate LOO-term subsampling with \(\texttt{max\_loo\_terms\_per\_step}=20\).
+    \item The number of reveal seeds is modest: the locked run used 10 reveal seeds.
+    \item Results are mixed across paired seed-budget comparisons; no fragility-guided policy beat uniform on a majority of paired comparisons.
+    \item Concentration remains severe at intermediate budgets for the fragility-guided policies.
+    \item All policies necessarily converge at full budget 1798 because the full available fitted SOTA dataset has been revealed.
+    \item Runtime constraints shaped the experiment design, including batching of fragility recomputation.
 \end{enumerate}
 
 \subsection{Future work}
@@ -322,7 +324,7 @@ Natural next steps include exact LOO final runs on a smaller budget schedule, st
 
 \section{Conclusion}
 
-This draft reports a retrospective budget-recovery experiment for the OC3 DoS \(\psuccess\) submodel using repeated LLM elicitation draws. The results provide preliminary evidence that output-fragility-guided allocation can reduce average recovery error in some settings, but also that greedy fragility guidance can severely over-concentrate elicitation effort. Exploration bonuses reduce concentration relative to lower-exploration variants, and \(c=1.0\) looked best among the tested exploration-bonus settings in the development sensitivity run. These findings are best viewed as evidence that the heuristic warrants further investigation, not as a final claim of optimal allocation.
+This draft reports a retrospective budget-recovery experiment for the OC3 DoS \(\psuccess\) submodel using repeated LLM elicitation draws. The locked hidden-reveal run provides weak-to-moderate evidence that output-fragility-guided allocation can reduce aggregate recovery error in some settings, especially with a stronger exploration bonus. However, no fragility-guided policy beat the uniform baseline on a majority of paired seed-budget comparisons, and fragility-guided policies remain highly concentrated at intermediate budgets. These findings are best viewed as evidence that the heuristic warrants further investigation, not as a final claim of optimal allocation.
 
 \appendix
 
@@ -334,9 +336,9 @@ This draft reports a retrospective budget-recovery experiment for the OC3 DoS \(
 
 \section{Implementation and reproducibility notes}
 
-The implementation is an ordinary Python package and script workflow rather than a notebook workflow. The generated report artifacts used here are located in \(\texttt{outputs/report\_artifacts/}\), and the figures are copied from \(\texttt{figures/}\). The report-ready tables combine \(\texttt{v8\_all\_policies\_dev}\) and \(\texttt{exploration\_bonus\_sensitivity\_dev}\) outputs. The former reports that its settings were reduced from the initially requested all-policy run; the latter was not reduced from its requested settings.
+The implementation is an ordinary Python package and script workflow rather than a notebook workflow. The generated locked report artifacts used here are located in \(\texttt{outputs/report\_artifacts\_locked\_v8\_hidden\_reveal/}\), and the figures are located in \(\texttt{report/figures/}\). The report-ready tables use only the \(\texttt{locked\_v8\_hidden\_reveal}\) outputs. The locked report JSON records that all requested settings were completed without reductions.
 
-The generated tests passed before this LaTeX draft was created. A final report run should record the exact git revision, Python version, package versions, random seeds, particle counts, fragility approximation settings, and any runtime-driven reductions.
+The locked run used 10 reveal seeds, the budget grid \([45,90,180,360,720,1200,1798]\), the shared hidden reveal-order protocol, and approximate LOO fragility with \(\texttt{max\_loo\_terms\_per\_step}=20\). A final archival version should record the exact git revision, Python version, package versions, random seeds, particle counts, and fragility approximation settings.
 
 \bibliographystyle{plainnat}
 \bibliography{references}

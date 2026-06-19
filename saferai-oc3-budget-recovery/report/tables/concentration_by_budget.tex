@@ -1,45 +1,57 @@
 \begin{landscape}
 \begin{scriptsize}
-\begin{longtable}{llrrrrrrrr}
-\caption{Allocation concentration by budget. L1 imbalance is measured against a perfectly step-balanced allocation vector.}\label{tab:concentration-by-budget}\\
+\begin{longtable}{lrrrrrrrr}
+\caption{Locked allocation concentration by budget. L1 imbalance is measured against a perfectly step-balanced allocation vector. All policies reach zero L1 imbalance at budget 1798 because all available fitted SOTA rows have been revealed.}\label{tab:concentration-by-budget}\\
 \toprule
-Policy & Source run & Budget & Seeds & Mean L1 & Med. L1 & Mean max/min & Mean min step & Mean max step & Steps at 5 \\
+Policy & Budget & Seeds & Mean L1 & Med. L1 & Mean max/min & Mean min step & Mean max step & Steps at 5 \\
 \midrule
 \endfirsthead
 \toprule
-Policy & Source run & Budget & Seeds & Mean L1 & Med. L1 & Mean max/min & Mean min step & Mean max step & Steps at 5 \\
+Policy & Budget & Seeds & Mean L1 & Med. L1 & Mean max/min & Mean min step & Mean max step & Steps at 5 \\
 \midrule
 \endhead
-Epsilon-greedy ($\epsilon=0.2$) & all-policies dev & 45 & 5 & 0 & 0 & 1 & 5 & 5 & 9 \\
-Epsilon-greedy ($\epsilon=0.2$) & all-policies dev & 90 & 5 & 62.4 & 62 & 7.45 & 5.6 & 41.2 & 0.6 \\
-Epsilon-greedy ($\epsilon=0.2$) & all-policies dev & 180 & 5 & 163.2 & 166 & 9.59 & 8.2 & 78.4 & 0 \\
-Epsilon-greedy ($\epsilon=0.2$) & all-policies dev & 360 & 5 & 295.6 & 314 & 8.72 & 14.2 & 121 & 0 \\
-Epsilon-greedy ($\epsilon=0.2$) & all-policies dev & 720 & 5 & 476.4 & 538 & 6.62 & 28.4 & 184 & 0 \\
-Epsilon-greedy ($\epsilon=0.2$) & all-policies dev & 1200 & 5 & 478.8 & 492 & 3.31 & 61.2 & 200 & 0 \\
-Exploration bonus ($c=0.5$) & all-policies dev & 45 & 5 & 0 & 0 & 1 & 5 & 5 & 9 \\
-Exploration bonus ($c=0.5$) & all-policies dev & 90 & 5 & 74.8 & 80 & 9.28 & 5 & 46.4 & 7.4 \\
-Exploration bonus ($c=0.5$) & all-policies dev & 180 & 5 & 187.2 & 186 & 17.8 & 5 & 89 & 5.6 \\
-Exploration bonus ($c=0.5$) & all-policies dev & 360 & 5 & 323.2 & 300 & 21.49 & 6.8 & 119.8 & 2.6 \\
-Exploration bonus ($c=0.5$) & all-policies dev & 720 & 5 & 552 & 538 & 33.33 & 7.2 & 200 & 0.6 \\
-Exploration bonus ($c=0.5$) & all-policies dev & 1200 & 5 & 594.8 & 620 & 23.29 & 14.6 & 200 & 0.2 \\
-Exploration bonus ($c=1.0$) & bonus sensitivity dev & 45 & 5 & 0 & 0 & 1 & 5 & 5 & 9 \\
-Exploration bonus ($c=1.0$) & bonus sensitivity dev & 90 & 5 & 71.6 & 80 & 8.52 & 5 & 42.6 & 6.8 \\
-Exploration bonus ($c=1.0$) & bonus sensitivity dev & 180 & 5 & 168.8 & 164 & 16.88 & 5 & 84.4 & 2.8 \\
-Exploration bonus ($c=1.0$) & bonus sensitivity dev & 360 & 5 & 263.2 & 250 & 16.94 & 8.4 & 115.2 & 0.6 \\
-Exploration bonus ($c=1.0$) & bonus sensitivity dev & 720 & 5 & 414.8 & 392 & 14.43 & 18.4 & 187.2 & 0 \\
-Exploration bonus ($c=1.0$) & bonus sensitivity dev & 1200 & 5 & 537.2 & 546 & 5.88 & 35.6 & 200 & 0 \\
-Greedy LOO-fragility & all-policies dev & 45 & 5 & 0 & 0 & 1 & 5 & 5 & 9 \\
-Greedy LOO-fragility & all-policies dev & 90 & 5 & 80 & 80 & 10 & 5 & 50 & 8 \\
-Greedy LOO-fragility & all-policies dev & 180 & 5 & 210 & 210 & 19 & 5 & 95 & 7 \\
-Greedy LOO-fragility & all-policies dev & 360 & 5 & 364 & 350 & 20.8 & 5 & 104 & 5.2 \\
-Greedy LOO-fragility & all-policies dev & 720 & 5 & 498 & 510 & 39.96 & 5 & 199.8 & 2.8 \\
-Greedy LOO-fragility & all-policies dev & 1200 & 5 & 598.4 & 600 & 40 & 5 & 200 & 1.2 \\
-Uniform step-balanced & all-policies dev & 45 & 5 & 0 & 0 & 1 & 5 & 5 & 9 \\
-Uniform step-balanced & all-policies dev & 90 & 5 & 0 & 0 & 1 & 10 & 10 & 0 \\
-Uniform step-balanced & all-policies dev & 180 & 5 & 0 & 0 & 1 & 20 & 20 & 0 \\
-Uniform step-balanced & all-policies dev & 360 & 5 & 0 & 0 & 1 & 40 & 40 & 0 \\
-Uniform step-balanced & all-policies dev & 720 & 5 & 0 & 0 & 1 & 80 & 80 & 0 \\
-Uniform step-balanced & all-policies dev & 1200 & 5 & 0 & 0 & 1.01 & 133 & 134 & 0 \\
+Uniform step-balanced & 45 & 10 & 0 & 0 & 1 & 5 & 5 & 9 \\
+Uniform step-balanced & 90 & 10 & 0 & 0 & 1 & 10 & 10 & 0 \\
+Uniform step-balanced & 180 & 10 & 0 & 0 & 1 & 20 & 20 & 0 \\
+Uniform step-balanced & 360 & 10 & 0 & 0 & 1 & 40 & 40 & 0 \\
+Uniform step-balanced & 720 & 10 & 0 & 0 & 1 & 80 & 80 & 0 \\
+Uniform step-balanced & 1200 & 10 & 0 & 0 & 1.01 & 133 & 134 & 0 \\
+Uniform step-balanced & 1798 & 10 & 0 & 0 & 1.01 & 199 & 200 & 0 \\
+Greedy LOO-fragility & 45 & 10 & 0 & 0 & 1 & 5 & 5 & 9 \\
+Greedy LOO-fragility & 90 & 10 & 80 & 80 & 10 & 5 & 50 & 8 \\
+Greedy LOO-fragility & 180 & 10 & 210 & 210 & 19 & 5 & 95 & 7 \\
+Greedy LOO-fragility & 360 & 10 & 371 & 350 & 23.5 & 5 & 117.5 & 5.3 \\
+Greedy LOO-fragility & 720 & 10 & 492 & 450 & 39.08 & 5 & 195.4 & 3.1 \\
+Greedy LOO-fragility & 1200 & 10 & 595.4 & 595 & 37 & 6.5 & 200 & 1.6 \\
+Greedy LOO-fragility & 1798 & 10 & 0 & 0 & 1.01 & 199 & 200 & 0 \\
+Epsilon-greedy eps=0.2 & 45 & 10 & 0 & 0 & 1 & 5 & 5 & 9 \\
+Epsilon-greedy eps=0.2 & 90 & 10 & 60.6 & 59 & 7.01 & 5.8 & 40.3 & 0.5 \\
+Epsilon-greedy eps=0.2 & 180 & 10 & 162.6 & 161 & 9.83 & 7.8 & 76.4 & 0 \\
+Epsilon-greedy eps=0.2 & 360 & 10 & 307.8 & 316 & 10.31 & 13.5 & 137.6 & 0 \\
+Epsilon-greedy eps=0.2 & 720 & 10 & 426.4 & 414 & 6.53 & 29.2 & 188.7 & 0 \\
+Epsilon-greedy eps=0.2 & 1200 & 10 & 459.8 & 463 & 3.15 & 65 & 200 & 0 \\
+Epsilon-greedy eps=0.2 & 1798 & 10 & 0 & 0 & 1.01 & 199 & 200 & 0 \\
+Exploration bonus c=0.25 & 45 & 10 & 0 & 0 & 1 & 5 & 5 & 9 \\
+Exploration bonus c=0.25 & 90 & 10 & 80 & 80 & 10 & 5 & 50 & 8 \\
+Exploration bonus c=0.25 & 180 & 10 & 197.8 & 202 & 19 & 5 & 95 & 6.3 \\
+Exploration bonus c=0.25 & 360 & 10 & 370.2 & 380 & 26.02 & 5 & 130.1 & 4 \\
+Exploration bonus c=0.25 & 720 & 10 & 545.8 & 570 & 35.06 & 5.9 & 193.3 & 1.3 \\
+Exploration bonus c=0.25 & 1200 & 10 & 627.2 & 657 & 29 & 7.6 & 200 & 0.3 \\
+Exploration bonus c=0.25 & 1798 & 10 & 0 & 0 & 1.01 & 199 & 200 & 0 \\
+Exploration bonus c=0.5 & 45 & 10 & 0 & 0 & 1 & 5 & 5 & 9 \\
+Exploration bonus c=0.5 & 90 & 10 & 80 & 80 & 10 & 5 & 50 & 8 \\
+Exploration bonus c=0.5 & 180 & 10 & 188.6 & 187 & 19 & 5 & 95 & 5.4 \\
+Exploration bonus c=0.5 & 360 & 10 & 300.2 & 290 & 21.6 & 5.2 & 110.7 & 1.9 \\
+Exploration bonus c=0.5 & 720 & 10 & 475.2 & 467 & 28.78 & 9 & 189.7 & 0.4 \\
+Exploration bonus c=0.5 & 1200 & 10 & 569.6 & 564 & 23.31 & 14.4 & 200 & 0.3 \\
+Exploration bonus c=0.5 & 1798 & 10 & 0 & 0 & 1.01 & 199 & 200 & 0 \\
+Exploration bonus c=1.0 & 45 & 10 & 0 & 0 & 1 & 5 & 5 & 9 \\
+Exploration bonus c=1.0 & 90 & 10 & 80 & 80 & 10 & 5 & 50 & 8 \\
+Exploration bonus c=1.0 & 180 & 10 & 173.6 & 171 & 19 & 5 & 95 & 3.9 \\
+Exploration bonus c=1.0 & 360 & 10 & 251.2 & 271 & 16.57 & 6.9 & 101 & 0.8 \\
+Exploration bonus c=1.0 & 720 & 10 & 457 & 447 & 18.4 & 14.1 & 195.9 & 0.1 \\
+Exploration bonus c=1.0 & 1200 & 10 & 516 & 523 & 9.82 & 30.2 & 200 & 0 \\
+Exploration bonus c=1.0 & 1798 & 10 & 0 & 0 & 1.01 & 199 & 200 & 0 \\
 \bottomrule
 \end{longtable}
 \end{scriptsize}

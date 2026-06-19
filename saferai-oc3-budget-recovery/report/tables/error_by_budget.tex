@@ -1,44 +1,56 @@
 \begin{scriptsize}
-\begin{longtable}{llrrrrrr}
-\caption{Squared Wasserstein-2 error by budget. Lower values indicate closer recovery of the full-data reference output distribution.}\label{tab:error-by-budget}\\
+\begin{longtable}{lrrrrrr}
+\caption{Locked squared Wasserstein-2 error by budget. All rows use \texttt{locked\_v8\_hidden\_reveal}. Lower values indicate closer recovery of the full-data reference output distribution.}\label{tab:error-by-budget}\\
 \toprule
-Policy & Source run & Budget & Seeds & Mean & Median & P25 & P75 \\
+Policy & Budget & Seeds & Mean & Median & P25 & P75 \\
 \midrule
 \endfirsthead
 \toprule
-Policy & Source run & Budget & Seeds & Mean & Median & P25 & P75 \\
+Policy & Budget & Seeds & Mean & Median & P25 & P75 \\
 \midrule
 \endhead
-Epsilon-greedy ($\epsilon=0.2$) & all-policies dev & 45 & 5 & 2.410371e-05 & 2.218045e-05 & 2.165843e-05 & 3.548953e-05 \\
-Epsilon-greedy ($\epsilon=0.2$) & all-policies dev & 90 & 5 & 7.301927e-05 & 5.874495e-05 & 4.575601e-05 & 8.544973e-05 \\
-Epsilon-greedy ($\epsilon=0.2$) & all-policies dev & 180 & 5 & 5.340189e-05 & 4.250724e-05 & 3.260545e-05 & 4.710184e-05 \\
-Epsilon-greedy ($\epsilon=0.2$) & all-policies dev & 360 & 5 & 3.765348e-05 & 3.309610e-05 & 2.878826e-05 & 3.480934e-05 \\
-Epsilon-greedy ($\epsilon=0.2$) & all-policies dev & 720 & 5 & 2.117663e-05 & 1.966665e-05 & 1.757790e-05 & 2.275830e-05 \\
-Epsilon-greedy ($\epsilon=0.2$) & all-policies dev & 1200 & 5 & 1.074253e-05 & 9.321950e-06 & 3.658785e-06 & 1.598717e-05 \\
-Exploration bonus ($c=0.5$) & all-policies dev & 45 & 5 & 2.410371e-05 & 2.218045e-05 & 2.165843e-05 & 3.548953e-05 \\
-Exploration bonus ($c=0.5$) & all-policies dev & 90 & 5 & 6.912425e-05 & 4.803016e-05 & 3.521404e-05 & 9.682917e-05 \\
-Exploration bonus ($c=0.5$) & all-policies dev & 180 & 5 & 3.048020e-05 & 2.492216e-05 & 1.229580e-05 & 3.509844e-05 \\
-Exploration bonus ($c=0.5$) & all-policies dev & 360 & 5 & 2.617713e-05 & 1.812695e-05 & 1.312074e-05 & 3.258956e-05 \\
-Exploration bonus ($c=0.5$) & all-policies dev & 720 & 5 & 1.905466e-05 & 1.884568e-05 & 1.371902e-05 & 1.964041e-05 \\
-Exploration bonus ($c=0.5$) & all-policies dev & 1200 & 5 & 1.267455e-05 & 8.687997e-06 & 6.346852e-06 & 1.296734e-05 \\
-Exploration bonus ($c=1.0$) & bonus sensitivity dev & 45 & 5 & 2.410371e-05 & 2.218045e-05 & 2.165843e-05 & 3.548953e-05 \\
-Exploration bonus ($c=1.0$) & bonus sensitivity dev & 90 & 5 & 7.786504e-05 & 4.803016e-05 & 3.435621e-05 & 1.386291e-04 \\
-Exploration bonus ($c=1.0$) & bonus sensitivity dev & 180 & 5 & 2.079470e-05 & 1.562176e-05 & 6.801680e-06 & 1.868465e-05 \\
-Exploration bonus ($c=1.0$) & bonus sensitivity dev & 360 & 5 & 1.094089e-05 & 8.481773e-06 & 8.037783e-06 & 1.605735e-05 \\
-Exploration bonus ($c=1.0$) & bonus sensitivity dev & 720 & 5 & 1.140924e-05 & 9.961277e-06 & 9.861432e-06 & 1.569840e-05 \\
-Exploration bonus ($c=1.0$) & bonus sensitivity dev & 1200 & 5 & 1.978192e-05 & 2.238206e-05 & 1.880617e-05 & 2.381196e-05 \\
-Greedy LOO-fragility & all-policies dev & 45 & 5 & 2.410371e-05 & 2.218045e-05 & 2.165843e-05 & 3.548953e-05 \\
-Greedy LOO-fragility & all-policies dev & 90 & 5 & 5.915269e-05 & 4.803016e-05 & 3.354680e-05 & 4.863861e-05 \\
-Greedy LOO-fragility & all-policies dev & 180 & 5 & 2.749521e-05 & 1.761689e-05 & 1.229580e-05 & 3.093103e-05 \\
-Greedy LOO-fragility & all-policies dev & 360 & 5 & 1.477460e-05 & 1.010967e-05 & 9.814572e-06 & 1.569582e-05 \\
-Greedy LOO-fragility & all-policies dev & 720 & 5 & 1.911217e-05 & 1.592571e-05 & 1.495580e-05 & 1.778880e-05 \\
-Greedy LOO-fragility & all-policies dev & 1200 & 5 & 1.066295e-05 & 9.099522e-06 & 7.786188e-06 & 1.242960e-05 \\
-Uniform step-balanced & all-policies dev & 45 & 5 & 2.410371e-05 & 2.218045e-05 & 2.165843e-05 & 3.548953e-05 \\
-Uniform step-balanced & all-policies dev & 90 & 5 & 4.297083e-05 & 2.775448e-05 & 2.687023e-05 & 3.883174e-05 \\
-Uniform step-balanced & all-policies dev & 180 & 5 & 5.093312e-05 & 4.681174e-05 & 2.231958e-05 & 5.075681e-05 \\
-Uniform step-balanced & all-policies dev & 360 & 5 & 3.420302e-05 & 3.242574e-05 & 2.880436e-05 & 4.882729e-05 \\
-Uniform step-balanced & all-policies dev & 720 & 5 & 1.623774e-05 & 1.420279e-05 & 1.253145e-05 & 2.222050e-05 \\
-Uniform step-balanced & all-policies dev & 1200 & 5 & 1.272518e-05 & 1.369984e-05 & 7.927187e-06 & 1.450471e-05 \\
+Uniform step-balanced & 45 & 10 & 4.398569e-05 & 3.119466e-05 & 2.405412e-05 & 6.818654e-05 \\
+Uniform step-balanced & 90 & 10 & 1.575325e-05 & 1.386495e-05 & 7.526553e-06 & 2.405327e-05 \\
+Uniform step-balanced & 180 & 10 & 1.546280e-05 & 1.182990e-05 & 7.844281e-06 & 1.649311e-05 \\
+Uniform step-balanced & 360 & 10 & 9.287861e-06 & 4.551448e-06 & 3.891371e-06 & 1.017132e-05 \\
+Uniform step-balanced & 720 & 10 & 5.885226e-06 & 4.768854e-06 & 4.016900e-06 & 7.546253e-06 \\
+Uniform step-balanced & 1200 & 10 & 3.626238e-06 & 3.400345e-06 & 2.081359e-06 & 4.164411e-06 \\
+Uniform step-balanced & 1798 & 10 & 0.000000e+00 & 0.000000e+00 & 0.000000e+00 & 0.000000e+00 \\
+Greedy LOO-fragility & 45 & 10 & 4.398569e-05 & 3.119466e-05 & 2.405412e-05 & 6.818654e-05 \\
+Greedy LOO-fragility & 90 & 10 & 2.021809e-05 & 1.602845e-05 & 8.780019e-06 & 2.844806e-05 \\
+Greedy LOO-fragility & 180 & 10 & 1.842958e-05 & 1.416216e-05 & 7.718502e-06 & 2.280078e-05 \\
+Greedy LOO-fragility & 360 & 10 & 9.004008e-06 & 5.027750e-06 & 3.273921e-06 & 1.029483e-05 \\
+Greedy LOO-fragility & 720 & 10 & 3.028625e-06 & 2.293446e-06 & 1.539791e-06 & 2.992240e-06 \\
+Greedy LOO-fragility & 1200 & 10 & 4.562324e-06 & 4.260679e-06 & 3.851775e-06 & 6.691884e-06 \\
+Greedy LOO-fragility & 1798 & 10 & 0.000000e+00 & 0.000000e+00 & 0.000000e+00 & 0.000000e+00 \\
+Epsilon-greedy eps=0.2 & 45 & 10 & 4.398569e-05 & 3.119466e-05 & 2.405412e-05 & 6.818654e-05 \\
+Epsilon-greedy eps=0.2 & 90 & 10 & 1.592454e-05 & 1.319826e-05 & 7.314331e-06 & 1.980111e-05 \\
+Epsilon-greedy eps=0.2 & 180 & 10 & 1.343828e-05 & 9.157423e-06 & 5.144438e-06 & 2.321003e-05 \\
+Epsilon-greedy eps=0.2 & 360 & 10 & 8.362163e-06 & 8.022225e-06 & 4.644997e-06 & 1.017750e-05 \\
+Epsilon-greedy eps=0.2 & 720 & 10 & 5.234170e-06 & 5.423847e-06 & 2.269083e-06 & 7.759152e-06 \\
+Epsilon-greedy eps=0.2 & 1200 & 10 & 3.682355e-06 & 2.281612e-06 & 1.662995e-06 & 5.860768e-06 \\
+Epsilon-greedy eps=0.2 & 1798 & 10 & 0.000000e+00 & 0.000000e+00 & 0.000000e+00 & 0.000000e+00 \\
+Exploration bonus c=0.25 & 45 & 10 & 4.398569e-05 & 3.119466e-05 & 2.405412e-05 & 6.818654e-05 \\
+Exploration bonus c=0.25 & 90 & 10 & 2.021809e-05 & 1.602845e-05 & 8.780019e-06 & 2.844806e-05 \\
+Exploration bonus c=0.25 & 180 & 10 & 1.670031e-05 & 1.670602e-05 & 7.182823e-06 & 2.416553e-05 \\
+Exploration bonus c=0.25 & 360 & 10 & 1.232233e-05 & 7.806546e-06 & 3.569197e-06 & 1.310780e-05 \\
+Exploration bonus c=0.25 & 720 & 10 & 1.093029e-05 & 5.858416e-06 & 4.026168e-06 & 1.884550e-05 \\
+Exploration bonus c=0.25 & 1200 & 10 & 8.553016e-06 & 3.788465e-06 & 2.414192e-06 & 7.298147e-06 \\
+Exploration bonus c=0.25 & 1798 & 10 & 0.000000e+00 & 0.000000e+00 & 0.000000e+00 & 0.000000e+00 \\
+Exploration bonus c=0.5 & 45 & 10 & 4.398569e-05 & 3.119466e-05 & 2.405412e-05 & 6.818654e-05 \\
+Exploration bonus c=0.5 & 90 & 10 & 2.021809e-05 & 1.602845e-05 & 8.780019e-06 & 2.844806e-05 \\
+Exploration bonus c=0.5 & 180 & 10 & 1.491447e-05 & 1.353027e-05 & 4.430377e-06 & 2.086935e-05 \\
+Exploration bonus c=0.5 & 360 & 10 & 5.480388e-06 & 4.757276e-06 & 1.804867e-06 & 6.372164e-06 \\
+Exploration bonus c=0.5 & 720 & 10 & 5.205355e-06 & 3.084193e-06 & 1.689302e-06 & 6.738256e-06 \\
+Exploration bonus c=0.5 & 1200 & 10 & 3.972370e-06 & 3.718652e-06 & 1.662362e-06 & 5.658140e-06 \\
+Exploration bonus c=0.5 & 1798 & 10 & 0.000000e+00 & 0.000000e+00 & 0.000000e+00 & 0.000000e+00 \\
+Exploration bonus c=1.0 & 45 & 10 & 4.398569e-05 & 3.119466e-05 & 2.405412e-05 & 6.818654e-05 \\
+Exploration bonus c=1.0 & 90 & 10 & 2.021809e-05 & 1.602845e-05 & 8.780019e-06 & 2.844806e-05 \\
+Exploration bonus c=1.0 & 180 & 10 & 1.425246e-05 & 1.142577e-05 & 7.500090e-06 & 2.071972e-05 \\
+Exploration bonus c=1.0 & 360 & 10 & 4.288573e-06 & 4.149767e-06 & 1.783388e-06 & 5.856941e-06 \\
+Exploration bonus c=1.0 & 720 & 10 & 4.110715e-06 & 4.420980e-06 & 2.888687e-06 & 4.721575e-06 \\
+Exploration bonus c=1.0 & 1200 & 10 & 4.167022e-06 & 2.821847e-06 & 2.130982e-06 & 3.745455e-06 \\
+Exploration bonus c=1.0 & 1798 & 10 & 0.000000e+00 & 0.000000e+00 & 0.000000e+00 & 0.000000e+00 \\
 \bottomrule
 \end{longtable}
 \end{scriptsize}

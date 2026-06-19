@@ -1,15 +1,15 @@
 \begin{table}[htbp]
 \centering
 \small
-\caption{Exploration-bonus sensitivity. All settings use approximate LOO fragility with max\_loo\_terms\_per\_step = 20.}
+\caption{Locked exploration-bonus sensitivity. All settings use approximate LOO fragility with \texttt{max\_loo\_terms\_per\_step=20}.}
 \label{tab:exploration-bonus-sensitivity}
-\begin{tabular}{rrrrrrrr}
+\begin{tabular}{rrrrrrr}
 \toprule
-$c$ & Avg. AUC & Med. AUC & Win frac. & L1 at 1200 & Max/min at 1200 & Mean min step & Mean max step \\
+$c$ & Avg. AUC & Med. AUC & Win frac. & L1 1200 & Max/min 1200 & L1 1798 \\
 \midrule
-0.25 & 0.030384 & 0.027058 & 0.367 & 616 & 34 & 6.6 & 200 \\
-0.5 & 0.027436 & 0.027506 & 0.467 & 594.8 & 23.29 & 14.6 & 200 \\
-1 & 0.021099 & 0.015229 & 0.467 & 537.2 & 5.88 & 35.6 & 200 \\
+0.25 & 0.017137 & 0.0129 & 0.286 & 627.2 & 29 & 0 \\
+0.5 & 0.010175 & 0.009076 & 0.357 & 569.6 & 23.31 & 0 \\
+1 & 0.009409 & 0.008561 & 0.386 & 516 & 9.82 & 0 \\
 \bottomrule
 \end{tabular}
 \end{table}

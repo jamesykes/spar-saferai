@@ -18,8 +18,12 @@ RUN_FILE_SUFFIXES = {
     "differences": "policy_differences_vs_uniform.csv",
     "concentration": "concentration_by_budget.csv",
     "selected_step_counts": "selected_step_counts.csv",
+    "summary_by_budget": "policy_summary_by_budget.csv",
+    "win_rate_by_budget": "win_rate_by_budget.csv",
+    "win_rate_by_seed": "win_rate_by_seed.csv",
+    "fragility_diagnostics": "fragility_runtime_diagnostics.csv",
     "report": "repeated_policy_experiment_report.json",
-    "c_value_summary": "c_value_summary.csv",
+    "c_value_summary": ("exploration_bonus_c_value_summary.csv", "c_value_summary.csv"),
 }
 
 
@@ -35,8 +39,15 @@ def load_experiment_outputs(base_dir: Path, run_names: list[str] | None = None) 
     outputs: dict[str, dict[str, Any]] = {}
     for run_name in run_names:
         run_outputs: dict[str, Any] = {}
-        for key, suffix in RUN_FILE_SUFFIXES.items():
-            path = base_dir / f"{run_name}_{suffix}"
+        for key, suffixes in RUN_FILE_SUFFIXES.items():
+            if isinstance(suffixes, str):
+                suffixes = (suffixes,)
+            path = next(
+                (base_dir / f"{run_name}_{suffix}" for suffix in suffixes if (base_dir / f"{run_name}_{suffix}").exists()),
+                None,
+            )
+            if path is None:
+                continue
             if not path.exists():
                 continue
             if key == "report":
@@ -55,8 +66,12 @@ def build_main_policy_comparison(
     run_outputs: dict[str, dict[str, Any]],
     policy_sources: list[dict[str, str]],
     max_budget: int = 1200,
+    concentration_budgets: tuple[int, ...] | None = None,
 ) -> pd.DataFrame:
     """Build one-row-per-policy summary table while preserving source-run labels."""
+
+    if concentration_budgets is None:
+        concentration_budgets = (max_budget,)
 
     rows: list[dict[str, Any]] = []
     for source in policy_sources:
@@ -70,13 +85,6 @@ def build_main_policy_comparison(
         report = outputs.get("report", {})
         settings = report.get("settings", {})
         fragility_settings = settings.get("fragility_kwargs", {})
-
-        at_max_budget = results.loc[results["budget"].eq(max_budget)]
-        concentration_at_max = concentration.loc[
-            concentration.get("policy_name", pd.Series(dtype=str)).eq(policy)
-            & concentration.get("budget", pd.Series(dtype=float)).eq(max_budget)
-        ]
-        concentration_row = concentration_at_max.iloc[0].to_dict() if not concentration_at_max.empty else {}
 
         if policy == "uniform_step_balanced":
             win_fraction = np.nan
@@ -97,18 +105,6 @@ def build_main_policy_comparison(
                 "median_auc": float(auc["auc_distance"].median()),
                 "average_distance_all_seed_budgets": float(results[DISTANCE_COL].mean()),
                 "win_fraction_vs_uniform": win_fraction,
-                f"mean_l1_imbalance_at_{max_budget}": _float_or_nan(
-                    concentration_row.get("mean_step_count_l1_imbalance")
-                ),
-                f"mean_max_min_ratio_at_{max_budget}": _float_or_nan(
-                    concentration_row.get("mean_max_min_revealed_row_ratio")
-                ),
-                f"min_step_count_at_{max_budget}_mean": _series_mean_or_nan(
-                    at_max_budget.get("min_revealed_rows_per_step")
-                ),
-                f"max_step_count_at_{max_budget}_mean": _series_mean_or_nan(
-                    at_max_budget.get("max_revealed_rows_per_step")
-                ),
                 "uses_approx_loo": uses_approx_loo,
                 "max_loo_terms_per_step": (
                     fragility_settings.get("max_loo_terms_per_step") if uses_approx_loo else np.nan
@@ -116,6 +112,31 @@ def build_main_policy_comparison(
                 "notes": source.get("notes", ""),
             }
         )
+        for budget in concentration_budgets:
+            at_budget = results.loc[results["budget"].eq(budget)]
+            concentration_at_budget = concentration.loc[
+                concentration.get("policy_name", pd.Series(dtype=str)).eq(policy)
+                & concentration.get("budget", pd.Series(dtype=float)).eq(budget)
+            ]
+            concentration_row = (
+                concentration_at_budget.iloc[0].to_dict() if not concentration_at_budget.empty else {}
+            )
+            rows[-1].update(
+                {
+                    f"mean_l1_imbalance_at_{budget}": _float_or_nan(
+                        concentration_row.get("mean_step_count_l1_imbalance")
+                    ),
+                    f"mean_max_min_ratio_at_{budget}": _float_or_nan(
+                        concentration_row.get("mean_max_min_revealed_row_ratio")
+                    ),
+                    f"min_step_count_at_{budget}_mean": _series_mean_or_nan(
+                        at_budget.get("min_revealed_rows_per_step")
+                    ),
+                    f"max_step_count_at_{budget}_mean": _series_mean_or_nan(
+                        at_budget.get("max_revealed_rows_per_step")
+                    ),
+                }
+            )
     return pd.DataFrame(rows)
 
 
@@ -190,6 +211,9 @@ def build_concentration_by_budget(
 
 def build_exploration_bonus_sensitivity(
     sensitivity_outputs: dict[str, Any],
+    *,
+    source_run: str | None = None,
+    concentration_budget: int = 1200,
 ) -> pd.DataFrame:
     """Return a clean exploration-bonus sensitivity table."""
 
@@ -197,16 +221,51 @@ def build_exploration_bonus_sensitivity(
         df = sensitivity_outputs["c_value_summary"].copy()
     else:
         raise ValueError("Sensitivity outputs are missing c_value_summary.")
+    if source_run is not None:
+        df.insert(0, "source_run", source_run)
+
+    if f"mean_l1_imbalance_at_{concentration_budget}" not in df.columns:
+        concentration = sensitivity_outputs.get("concentration", pd.DataFrame())
+        if not concentration.empty and "policy_name" in df.columns:
+            concentration_rows = concentration.loc[concentration["budget"].eq(concentration_budget)].copy()
+            concentration_rows = concentration_rows.rename(
+                columns={
+                    "mean_step_count_l1_imbalance": f"mean_l1_imbalance_at_{concentration_budget}",
+                    "mean_max_min_revealed_row_ratio": f"mean_max_min_ratio_at_{concentration_budget}",
+                    "minimum_observed_revealed_row_count_any_step": f"min_step_count_at_{concentration_budget}_mean",
+                    "maximum_observed_revealed_row_count_any_step": f"max_step_count_at_{concentration_budget}_mean",
+                }
+            )
+            join_columns = [
+                "policy_name",
+                f"mean_l1_imbalance_at_{concentration_budget}",
+                f"mean_max_min_ratio_at_{concentration_budget}",
+                f"min_step_count_at_{concentration_budget}_mean",
+                f"max_step_count_at_{concentration_budget}_mean",
+            ]
+            available_columns = [column for column in join_columns if column in concentration_rows.columns]
+            df = df.merge(concentration_rows[available_columns], on="policy_name", how="left")
+
+    prefix_columns = ["source_run", "policy_name"] if source_run is not None else ["policy_name"]
     preferred_columns = [
+        *[column for column in prefix_columns if column in df.columns],
         "c",
         "average_auc",
         "median_auc",
         "win_fraction_vs_uniform",
-        "mean_l1_imbalance_at_1200",
-        "mean_max_min_ratio_at_1200",
-        "min_step_count_at_1200_mean",
-        "max_step_count_at_1200_mean",
+        f"mean_l1_imbalance_at_{concentration_budget}",
+        f"mean_max_min_ratio_at_{concentration_budget}",
+        f"min_step_count_at_{concentration_budget}_mean",
+        f"max_step_count_at_{concentration_budget}_mean",
     ]
+    for column in [
+        "mean_l1_imbalance_at_1798",
+        "median_l1_imbalance_at_1798",
+        "max_l1_imbalance_at_1798",
+        "mean_max_min_ratio_at_1798",
+    ]:
+        if column in df.columns:
+            preferred_columns.append(column)
     missing = [column for column in preferred_columns if column not in df.columns]
     if missing:
         raise ValueError(f"c-value summary is missing required columns: {missing}")

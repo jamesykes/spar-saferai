@@ -1,17 +1,18 @@
 \begin{table}[htbp]
 \centering
 \small
-\caption{Main policy comparison. AUC is the area under the squared Wasserstein-2 error curve over the reported budget schedule. Lower AUC is better. Win fraction is paired against the step-balanced uniform baseline over available seed--budget comparisons.}
+\caption{Locked main policy comparison. All rows use \texttt{locked\_v8\_hidden\_reveal}. AUC is the area under the squared Wasserstein-2 error curve over the selected budget schedule; lower is better. Win fraction is paired against the step-balanced uniform baseline.}
 \label{tab:main-policy-comparison}
-\begin{tabularx}{\textwidth}{llrrrrrX}
+\begin{tabularx}{\textwidth}{lrrrrrX}
 \toprule
-Policy & Source run & Avg. AUC & Med. AUC & Win frac. & L1 at 1200 & Max/min at 1200 & Note \\
+Policy & Avg. AUC & Med. AUC & Win frac. & L1 1200 & L1 1798 & Note \\
 \midrule
-Uniform step-balanced & all-policies dev & 0.029428 & 0.031931 & -- & 0 & 1.01 & baseline \\
-Greedy LOO-fragility & all-policies dev & 0.022822 & 0.018509 & 0.433 & 598.4 & 40 & pure fragility heuristic \\
-Epsilon-greedy ($\epsilon=0.2$) & all-policies dev & 0.034319 & 0.032652 & 0.367 & 478.8 & 3.31 & 20\% under-sampling exploration \\
-Exploration bonus ($c=0.5$) & all-policies dev & 0.027436 & 0.027506 & 0.467 & 594.8 & 23.29 & included sensitivity setting \\
-Exploration bonus ($c=1.0$) & bonus sensitivity dev & 0.021099 & 0.015229 & 0.467 & 537.2 & 5.88 & separate sensitivity run \\
+Exploration bonus c=1.0 & 0.009409 & 0.008561 & 0.386 & 516 & 0 & LOO fragility plus exploration bonus, c=1.0. \\
+Exploration bonus c=0.5 & 0.010175 & 0.009076 & 0.357 & 569.6 & 0 & LOO fragility plus exploration bonus, c=0.5. \\
+Epsilon-greedy eps=0.2 & 0.01032 & 0.009659 & 0.386 & 459.8 & 0 & LOO fragility with epsilon=0.2 exploration. \\
+Greedy LOO-fragility & 0.011005 & 0.011141 & 0.371 & 595.4 & 0 & Pure LOO-fragility heuristic. \\
+Uniform step-balanced & 0.011075 & 0.009439 & -- & 0 & 0 & Step-balanced uniform baseline. \\
+Exploration bonus c=0.25 & 0.017137 & 0.0129 & 0.286 & 627.2 & 0 & LOO fragility plus exploration bonus, c=0.25. \\
 \bottomrule
 \end{tabularx}
 \end{table}
