@@ -1,0 +1,8 @@
+policy_name,budget,n_seeds,policy_wins,policy_win_fraction,mean_policy_minus_baseline_distance,median_policy_minus_baseline_distance,mean_relative_difference_policy_minus_baseline
+stochastic_normalized_fragility,45,30,0,0.0,0.0,0.0,0.0
+stochastic_normalized_fragility,90,30,8,0.26666666666666666,1.2762779966582927e-05,1.1659725259214184e-05,0.8766720587399442
+stochastic_normalized_fragility,180,30,7,0.23333333333333334,5.799501840442786e-06,3.3310217874824203e-06,1.054514512927882
+stochastic_normalized_fragility,360,30,15,0.5,3.4316789409285515e-07,1.276784874953659e-07,0.4546706248885697
+stochastic_normalized_fragility,720,30,19,0.6333333333333333,-8.0581599111506e-07,-1.3894823092734384e-07,0.08252646778808727
+stochastic_normalized_fragility,1200,30,13,0.43333333333333335,8.633089655227219e-07,2.7579761336910254e-07,0.48059419617205096
+stochastic_normalized_fragility,1798,30,0,0.0,0.0,0.0,

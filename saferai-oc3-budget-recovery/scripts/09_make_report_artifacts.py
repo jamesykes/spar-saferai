@@ -16,6 +16,7 @@ import matplotlib
 matplotlib.use("Agg")
 
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -136,6 +137,7 @@ def main() -> None:
         concentration_budget=1200,
     )
     win_counts_by_budget = _build_win_counts_by_budget(locked_outputs)
+    budget_permutation_tests = _build_budget_level_permutation_tests(locked_outputs)
 
     artifact_paths = _write_artifact_tables(
         main_comparison=main_comparison,
@@ -143,6 +145,7 @@ def main() -> None:
         concentration_by_budget=concentration_by_budget,
         sensitivity=sensitivity,
         win_counts_by_budget=win_counts_by_budget,
+        budget_permutation_tests=budget_permutation_tests,
     )
     latex_paths = _write_latex_tables(
         main_comparison=main_comparison,
@@ -192,6 +195,8 @@ def main() -> None:
     print(sensitivity.to_string(index=False))
     print("Win counts by budget:")
     print(win_counts_by_budget.to_string(index=False))
+    print("Budget-level permutation tests:")
+    print(budget_permutation_tests.to_string(index=False))
     print("Artifacts:")
     for label, path in artifact_paths.items():
         print(f"  {label}: {path}")
@@ -230,6 +235,7 @@ def _write_artifact_tables(
     concentration_by_budget: pd.DataFrame,
     sensitivity: pd.DataFrame,
     win_counts_by_budget: pd.DataFrame,
+    budget_permutation_tests: pd.DataFrame,
 ) -> dict[str, Path]:
     paths = {
         "main_policy_comparison_csv": REPORT_OUTPUT_DIR / "main_policy_comparison.csv",
@@ -242,17 +248,21 @@ def _write_artifact_tables(
         "exploration_bonus_sensitivity_md": REPORT_OUTPUT_DIR / "exploration_bonus_sensitivity.md",
         "win_counts_by_budget_csv": REPORT_OUTPUT_DIR / "win_counts_by_budget.csv",
         "win_counts_by_budget_md": REPORT_OUTPUT_DIR / "win_counts_by_budget.md",
+        "budget_level_permutation_tests_csv": REPORT_OUTPUT_DIR / "budget_level_permutation_tests.csv",
+        "budget_level_permutation_tests_md": REPORT_OUTPUT_DIR / "budget_level_permutation_tests.md",
     }
     main_comparison.to_csv(paths["main_policy_comparison_csv"], index=False)
     error_by_budget.to_csv(paths["error_by_budget_csv"], index=False)
     concentration_by_budget.to_csv(paths["concentration_by_budget_csv"], index=False)
     sensitivity.to_csv(paths["exploration_bonus_sensitivity_csv"], index=False)
     win_counts_by_budget.to_csv(paths["win_counts_by_budget_csv"], index=False)
+    budget_permutation_tests.to_csv(paths["budget_level_permutation_tests_csv"], index=False)
     write_markdown_table(main_comparison, paths["main_policy_comparison_md"])
     write_markdown_table(error_by_budget, paths["error_by_budget_md"])
     write_markdown_table(concentration_by_budget, paths["concentration_by_budget_md"])
     write_markdown_table(sensitivity, paths["exploration_bonus_sensitivity_md"])
     write_markdown_table(win_counts_by_budget, paths["win_counts_by_budget_md"])
+    write_markdown_table(budget_permutation_tests, paths["budget_level_permutation_tests_md"])
     return paths
 
 
@@ -390,6 +400,79 @@ def _build_win_counts_by_budget(locked_outputs: dict[str, Any]) -> pd.DataFrame:
             row[f"{policy}_wins"] = int(policy_rows["policy_wins"].iloc[0])
         rows.append(row)
     return pd.DataFrame(rows).sort_values("budget").reset_index(drop=True)
+
+
+def _build_budget_level_permutation_tests(locked_outputs: dict[str, Any]) -> pd.DataFrame:
+    differences = locked_outputs.get("differences")
+    if differences is None or differences.empty:
+        raise ValueError("Locked outputs are missing policy_differences_vs_uniform data.")
+
+    required = {
+        "policy_name",
+        "budget",
+        "reveal_seed",
+        "difference_policy_minus_baseline",
+    }
+    missing = sorted(required - set(differences.columns))
+    if missing:
+        raise ValueError(f"Missing required difference columns: {missing}")
+
+    rows: list[dict[str, Any]] = []
+    for (policy, budget), group in differences.groupby(["policy_name", "budget"], dropna=False):
+        diffs = group.sort_values("reveal_seed")["difference_policy_minus_baseline"].to_numpy(dtype=float)
+        rows.append(
+            {
+                "policy_name": str(policy),
+                "budget": int(budget),
+                "n_reveal_seeds": int(len(diffs)),
+                "policy_wins": int(np.sum(diffs < 0.0)),
+                "uniform_wins": int(np.sum(diffs > 0.0)),
+                "ties": int(np.sum(diffs == 0.0)),
+                "mean_policy_minus_uniform": float(np.mean(diffs)),
+                "median_policy_minus_uniform": float(np.median(diffs)),
+                "one_sided_p_lower_than_uniform": _one_sided_sign_flip_p_value(diffs),
+            }
+        )
+    out = pd.DataFrame(rows).sort_values(["policy_name", "budget"]).reset_index(drop=True)
+    out["holm_p_lower_than_uniform"] = _holm_adjusted_p_values(
+        out["one_sided_p_lower_than_uniform"].to_numpy(dtype=float)
+    )
+    return out
+
+
+def _one_sided_sign_flip_p_value(differences: np.ndarray) -> float:
+    diffs = np.asarray(differences, dtype=float)
+    if len(diffs) == 0:
+        return float("nan")
+    observed_mean = float(np.mean(diffs))
+    n = len(diffs)
+    total = 1 << n
+    as_extreme_or_better = 0
+    tolerance = 1e-18
+    for mask in range(total):
+        permuted_sum = 0.0
+        for i, value in enumerate(diffs):
+            sign = 1.0 if (mask >> i) & 1 else -1.0
+            permuted_sum += sign * float(value)
+        if (permuted_sum / n) <= observed_mean + tolerance:
+            as_extreme_or_better += 1
+    return float(as_extreme_or_better / total)
+
+
+def _holm_adjusted_p_values(p_values: np.ndarray) -> np.ndarray:
+    p = np.asarray(p_values, dtype=float)
+    adjusted = np.full_like(p, np.nan, dtype=float)
+    finite_indices = np.flatnonzero(np.isfinite(p))
+    if len(finite_indices) == 0:
+        return adjusted
+    ordered_indices = finite_indices[np.argsort(p[finite_indices])]
+    running_max = 0.0
+    m = len(ordered_indices)
+    for rank, original_index in enumerate(ordered_indices, start=1):
+        raw_adjusted = min(1.0, float((m - rank + 1) * p[original_index]))
+        running_max = max(running_max, raw_adjusted)
+        adjusted[original_index] = running_max
+    return adjusted
 
 
 def _main_policy_latex(df: pd.DataFrame) -> str:

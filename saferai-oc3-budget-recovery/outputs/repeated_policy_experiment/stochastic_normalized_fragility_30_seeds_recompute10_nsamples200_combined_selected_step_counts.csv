@@ -1,0 +1,541 @@
+policy_name,base_policy_name,policy_kwargs,reveal_seed,decision_type,step_name,selected_count_after_initial_seed
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},101,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},101,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},101,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},101,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},101,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},101,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},101,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},101,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},101,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},101,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},101,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},101,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},101,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},101,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},101,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},101,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},101,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},101,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},202,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},202,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},202,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},202,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},202,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},202,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},202,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},202,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},202,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},202,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},202,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},202,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},202,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},202,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},202,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},202,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},202,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},202,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},303,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},303,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},303,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},303,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},303,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},303,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},303,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},303,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},303,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},303,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},303,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},303,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},303,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},303,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},303,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},303,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},303,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},303,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},404,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},404,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},404,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},404,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},404,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},404,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},404,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},404,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},404,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},404,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},404,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},404,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},404,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},404,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},404,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},404,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},404,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},404,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},505,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},505,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},505,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},505,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},505,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},505,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},505,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},505,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},505,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},505,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},505,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},505,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},505,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},505,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},505,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},505,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},505,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},505,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},606,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},606,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},606,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},606,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},606,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},606,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},606,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},606,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},606,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},606,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},606,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},606,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},606,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},606,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},606,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},606,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},606,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},606,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},707,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},707,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},707,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},707,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},707,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},707,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},707,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},707,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},707,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},707,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},707,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},707,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},707,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},707,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},707,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},707,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},707,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},707,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},808,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},808,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},808,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},808,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},808,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},808,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},808,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},808,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},808,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},808,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},808,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},808,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},808,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},808,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},808,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},808,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},808,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},808,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},909,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},909,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},909,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},909,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},909,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},909,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},909,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},909,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},909,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},909,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},909,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},909,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},909,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},909,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},909,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},909,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},909,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},909,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1010,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1010,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1010,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1010,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1010,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1010,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1010,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1010,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1010,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1010,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1010,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1010,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1010,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1010,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1010,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1010,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1010,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1010,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1111,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1111,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1111,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1111,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1111,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1111,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1111,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1111,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1111,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1111,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1111,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1111,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1111,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1111,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1111,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1111,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1111,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1111,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1212,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1212,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1212,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1212,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1212,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1212,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1212,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1212,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1212,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1212,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1212,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1212,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1212,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1212,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1212,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1212,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1212,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1212,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1313,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1313,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1313,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1313,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1313,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1313,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1313,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1313,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1313,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1313,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1313,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1313,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1313,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1313,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1313,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1313,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1313,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1313,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1414,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1414,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1414,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1414,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1414,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1414,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1414,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1414,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1414,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1414,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1414,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1414,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1414,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1414,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1414,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1414,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1414,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1414,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1515,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1515,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1515,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1515,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1515,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1515,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1515,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1515,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1515,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1515,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1515,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1515,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1515,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1515,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1515,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1515,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1515,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1515,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1616,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1616,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1616,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1616,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1616,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1616,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1616,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1616,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1616,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1616,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1616,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1616,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1616,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1616,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1616,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1616,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1616,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1616,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1717,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1717,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1717,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1717,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1717,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1717,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1717,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1717,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1717,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1717,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1717,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1717,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1717,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1717,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1717,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1717,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1717,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1717,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1818,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1818,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1818,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1818,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1818,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1818,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1818,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1818,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1818,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1818,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1818,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1818,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1818,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1818,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1818,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1818,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1818,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1818,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1919,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1919,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1919,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1919,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1919,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1919,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1919,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1919,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1919,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1919,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1919,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1919,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1919,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1919,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1919,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1919,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1919,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},1919,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2020,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2020,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2020,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2020,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2020,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2020,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2020,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2020,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2020,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2020,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2020,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2020,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2020,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2020,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2020,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2020,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2020,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2020,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2121,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2121,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2121,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2121,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2121,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2121,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2121,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2121,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2121,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2121,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2121,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2121,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2121,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2121,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2121,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2121,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2121,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2121,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2222,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2222,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2222,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2222,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2222,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2222,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2222,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2222,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2222,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2222,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2222,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2222,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2222,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2222,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2222,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2222,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2222,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2222,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2323,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2323,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2323,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2323,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2323,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2323,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2323,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2323,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2323,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2323,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2323,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2323,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2323,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2323,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2323,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2323,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2323,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2323,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2424,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2424,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2424,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2424,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2424,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2424,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2424,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2424,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2424,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2424,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2424,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2424,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2424,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2424,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2424,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2424,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2424,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2424,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2525,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2525,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2525,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2525,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2525,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2525,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2525,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2525,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2525,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2525,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2525,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2525,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2525,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2525,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2525,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2525,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2525,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2525,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2626,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2626,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2626,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2626,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2626,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2626,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2626,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2626,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2626,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2626,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2626,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2626,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2626,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2626,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2626,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2626,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2626,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2626,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2727,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2727,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2727,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2727,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2727,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2727,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2727,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2727,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2727,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2727,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2727,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2727,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2727,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2727,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2727,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2727,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2727,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2727,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2828,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2828,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2828,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2828,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2828,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2828,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2828,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2828,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2828,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2828,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2828,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2828,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2828,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2828,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2828,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2828,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2828,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2828,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2929,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2929,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2929,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2929,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2929,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2929,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2929,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2929,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2929,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2929,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2929,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2929,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2929,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2929,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2929,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2929,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2929,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},2929,stochastic_fragility,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},3030,all,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},3030,stochastic_fragility,T1036 - Defense Evasion: Masquerading,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},3030,all,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},3030,stochastic_fragility,T1498.001 - Impact: Direct Network Flood,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},3030,all,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},3030,stochastic_fragility,T1498.002 - Impact: Reflection/Amplification Attack,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},3030,all,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},3030,stochastic_fragility,T1571 - Defense Evasion: Non-Standard Port,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},3030,all,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},3030,stochastic_fragility,T1583.005 - Resource Development: Acquire Botnet,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},3030,all,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},3030,stochastic_fragility,T1584.005 - Resource Development: Build/Compromise Botnet,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},3030,all,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},3030,stochastic_fragility,T1590 - Reconnaissance: Gather Victim Network Information,194
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},3030,all,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},3030,stochastic_fragility,T1595 - Reconnaissance: Active Scanning,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},3030,all,TA0011 - Command-and-Control,195
+stochastic_normalized_fragility,stochastic_normalized_loo_fragility,{},3030,stochastic_fragility,TA0011 - Command-and-Control,195

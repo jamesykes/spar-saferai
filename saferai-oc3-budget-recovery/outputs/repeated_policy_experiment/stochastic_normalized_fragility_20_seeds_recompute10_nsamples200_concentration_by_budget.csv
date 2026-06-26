@@ -1,0 +1,15 @@
+policy_name,budget,n_runs,mean_step_count_l1_imbalance,median_step_count_l1_imbalance,max_step_count_l1_imbalance,mean_max_min_revealed_row_ratio,maximum_observed_revealed_row_count_any_step,minimum_observed_revealed_row_count_any_step,average_steps_above_initial_5,average_steps_still_at_initial_5
+stochastic_normalized_fragility,45,20,0.0,0.0,0.0,1.0,5,5,0.0,9.0
+stochastic_normalized_fragility,90,20,15.2,14.0,26.0,2.082162698412698,17,5,8.9,0.1
+stochastic_normalized_fragility,180,20,29.5,29.0,40.0,1.9927369158619161,32,11,9.0,0.0
+stochastic_normalized_fragility,360,20,45.6,48.0,62.0,1.7122615150259015,59,24,9.0,0.0
+stochastic_normalized_fragility,720,20,71.1,74.0,100.0,1.5033262178179743,111,54,9.0,0.0
+stochastic_normalized_fragility,1200,20,97.7,100.0,144.0,1.3896835447792433,178,108,9.0,0.0
+stochastic_normalized_fragility,1798,20,0.0,0.0,0.0,1.0050251256281406,200,199,9.0,0.0
+uniform_step_balanced,45,20,0.0,0.0,0.0,1.0,5,5,0.0,9.0
+uniform_step_balanced,90,20,0.0,0.0,0.0,1.0,10,10,9.0,0.0
+uniform_step_balanced,180,20,0.0,0.0,0.0,1.0,20,20,9.0,0.0
+uniform_step_balanced,360,20,0.0,0.0,0.0,1.0,40,40,9.0,0.0
+uniform_step_balanced,720,20,0.0,0.0,0.0,1.0,80,80,9.0,0.0
+uniform_step_balanced,1200,20,0.0,0.0,0.0,1.0075187969924815,134,133,9.0,0.0
+uniform_step_balanced,1798,20,0.0,0.0,0.0,1.0050251256281406,200,199,9.0,0.0

@@ -97,6 +97,46 @@ def choose_step_greedy_fragility(
     return selected_step
 
 
+def choose_step_stochastic_normalized_fragility(
+    revealed_df: pd.DataFrame,
+    available_steps: set[str],
+    rng: np.random.Generator,
+    fragility_scores: pd.DataFrame,
+) -> str:
+    """Sample an available step with probability proportional to finite positive fragility."""
+
+    revealed = _ensure_stable_row_id(revealed_df)
+    eligible = _eligible_score_rows_for_steps(fragility_scores, available_steps)
+    scored = eligible.copy()
+    scored["fragility_for_probability"] = np.where(
+        np.isfinite(scored["loo_fragility"]) & scored["loo_fragility"].gt(0),
+        scored["loo_fragility"].to_numpy(dtype=float),
+        0.0,
+    )
+    total = float(scored["fragility_for_probability"].sum())
+    if total <= 0:
+        selected_step = choose_step_uniform_step_balanced(revealed, available_steps, rng)
+        fragility_scores.attrs["selection_fallback"] = "under_sampled_no_positive_fragility_mass"
+        fragility_scores.attrs["selected_step"] = selected_step
+        fragility_scores.attrs["decision_type"] = "fallback"
+        fragility_scores.attrs["normalized_fragility_total"] = total
+        return selected_step
+
+    candidates = scored.sort_values("step_name").reset_index(drop=True)
+    probabilities = candidates["fragility_for_probability"].to_numpy(dtype=float) / total
+    selected_index = int(rng.choice(len(candidates), p=probabilities))
+    selected = candidates.iloc[selected_index]
+    selected_step = str(selected["step_name"])
+
+    fragility_scores.attrs["selection_fallback"] = None
+    fragility_scores.attrs["selected_step"] = selected_step
+    fragility_scores.attrs["decision_type"] = "stochastic_fragility"
+    fragility_scores.attrs["normalized_fragility_total"] = total
+    fragility_scores.attrs["selected_fragility"] = float(selected["fragility_for_probability"])
+    fragility_scores.attrs["selected_probability"] = float(probabilities[selected_index])
+    return selected_step
+
+
 def choose_next_greedy_fragility(
     revealed_df: pd.DataFrame,
     unrevealed_df: pd.DataFrame,

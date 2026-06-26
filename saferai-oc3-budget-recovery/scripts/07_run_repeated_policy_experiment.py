@@ -4,8 +4,10 @@ from __future__ import annotations
 
 import json
 import os
+import subprocess
 import sys
 import time
+from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any
 
@@ -230,6 +232,55 @@ CONFIGURATIONS = {
         "sample_seed_base": 1008000,
     },
 }
+CONFIGURATIONS["LOCKED_V8_HIDDEN_REVEAL_30_SEEDS_RECOMPUTE45"] = json.loads(
+    json.dumps(CONFIGURATIONS["LOCKED_V8_HIDDEN_REVEAL"])
+)
+CONFIGURATIONS["LOCKED_V8_HIDDEN_REVEAL_30_SEEDS_RECOMPUTE45"]["reveal_seeds"] = [
+    101 * i for i in range(1, 31)
+]
+CONFIGURATIONS["LOCKED_V8_HIDDEN_REVEAL_30_SEEDS_RECOMPUTE45"]["fragility_recompute_every"] = 45
+CONFIGURATIONS["STOCHASTIC_NORMALIZED_FRAGILITY_10_SEEDS_RECOMPUTE10_NSAMPLES200"] = json.loads(
+    json.dumps(CONFIGURATIONS["LOCKED_V8_HIDDEN_REVEAL"])
+)
+CONFIGURATIONS["STOCHASTIC_NORMALIZED_FRAGILITY_10_SEEDS_RECOMPUTE10_NSAMPLES200"][
+    "policy_specs"
+] = [
+    {"name": "uniform_step_balanced", "policy_name": "uniform_step_balanced", "policy_kwargs": {}},
+    {
+        "name": "stochastic_normalized_fragility",
+        "policy_name": "stochastic_normalized_loo_fragility",
+        "policy_kwargs": {},
+    },
+]
+CONFIGURATIONS["STOCHASTIC_NORMALIZED_FRAGILITY_10_SEEDS_RECOMPUTE10_NSAMPLES200"][
+    "fragility_kwargs"
+] = {
+    "n_samples": 200,
+    "n_grid": 201,
+    "max_loo_terms_per_step": 20,
+}
+CONFIGURATIONS["STOCHASTIC_NORMALIZED_FRAGILITY_10_SEEDS_RECOMPUTE10_NSAMPLES200"][
+    "fragility_recompute_every"
+] = 10
+CONFIGURATIONS["STOCHASTIC_NORMALIZED_FRAGILITY_20_SEEDS_RECOMPUTE10_NSAMPLES200"] = json.loads(
+    json.dumps(CONFIGURATIONS["STOCHASTIC_NORMALIZED_FRAGILITY_10_SEEDS_RECOMPUTE10_NSAMPLES200"])
+)
+CONFIGURATIONS["STOCHASTIC_NORMALIZED_FRAGILITY_20_SEEDS_RECOMPUTE10_NSAMPLES200"][
+    "reveal_seeds"
+] = [101 * i for i in range(11, 31)]
+CONFIGURATIONS["STOCHASTIC_NORMALIZED_FRAGILITY_20_SEEDS_RECOMPUTE10_NSAMPLES200"][
+    "policy_specs"
+] = [
+    {
+        "name": "stochastic_normalized_fragility",
+        "policy_name": "stochastic_normalized_loo_fragility",
+        "policy_kwargs": {},
+    },
+    {"name": "uniform_step_balanced", "policy_name": "uniform_step_balanced", "policy_kwargs": {}},
+]
+CONFIGURATIONS["STOCHASTIC_NORMALIZED_FRAGILITY_20_SEEDS_RECOMPUTE10_NSAMPLES200"][
+    "job_order"
+] = "policy_major"
 MODE = os.environ.get("SAFERAI_EXPERIMENT_MODE", "LOCKED_V8_HIDDEN_REVEAL")
 
 
@@ -278,32 +329,20 @@ def main() -> None:
     run_diagnostics: list[dict[str, Any]] = []
     fragility_runtime_rows: list[dict[str, Any]] = []
 
-    for reveal_seed in settings["reveal_seeds"]:
-        for spec in policy_specs:
-            run_start = time.perf_counter()
-            print(f"Running reveal_seed={reveal_seed}, policy={spec['name']}", flush=True)
-            result_df, diagnostics = run_policy_recovery(
-                fit_df,
-                policy_name=spec["policy_name"],
-                policy_label=spec["name"],
-                policy_kwargs=spec.get("policy_kwargs", {}),
-                budgets=settings["budgets"],
-                reveal_seed=reveal_seed,
-                reference_seed=settings["reference_seed"],
-                sample_seed_base=settings["sample_seed_base"],
-                n_reference_samples=settings["n_reference_samples"],
-                n_budget_samples=settings["n_budget_samples"],
-                n_grid=settings["n_grid"],
-                fragility_kwargs=settings["fragility_kwargs"],
-                fragility_recompute_every=settings["fragility_recompute_every"],
-                reference_samples=reference_samples,
-                reference_quantiles=reference_quantiles,
-            )
-            elapsed = time.perf_counter() - run_start
-            print(f"  finished in {elapsed:.2f}s", flush=True)
-            all_results.append(result_df)
-            run_diagnostics.append(diagnostics)
-            fragility_runtime_rows.extend(diagnostics.get("fragility_runtime_diagnostics", []))
+    jobs = _build_jobs(settings=settings, policy_specs=policy_specs)
+    completed_jobs = _run_policy_jobs(
+        jobs=jobs,
+        fit_df=fit_df,
+        settings=settings,
+        reference_samples=reference_samples,
+        reference_quantiles=reference_quantiles,
+    )
+    for job_result in sorted(completed_jobs, key=lambda item: int(item["job_index"])):
+        result_df = job_result["result_df"]
+        diagnostics = job_result["diagnostics"]
+        all_results.append(result_df)
+        run_diagnostics.append(diagnostics)
+        fragility_runtime_rows.extend(diagnostics.get("fragility_runtime_diagnostics", []))
 
     results_df = pd.concat(all_results, ignore_index=True)
     summary_df = summarize_policy_results(results_df)
@@ -676,6 +715,164 @@ def _policy_specs(settings: dict[str, Any]) -> list[dict[str, Any]]:
             }
         )
     return normalized
+
+
+def _build_jobs(settings: dict[str, Any], policy_specs: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    reveal_seeds = settings["reveal_seeds"]
+    job_order = str(settings.get("job_order", "seed_major"))
+    if job_order == "policy_major":
+        pairs = ((reveal_seed, spec) for spec in policy_specs for reveal_seed in reveal_seeds)
+    elif job_order == "seed_major":
+        pairs = ((reveal_seed, spec) for reveal_seed in reveal_seeds for spec in policy_specs)
+    else:
+        raise ValueError(f"Unknown job_order={job_order!r}; expected 'seed_major' or 'policy_major'.")
+    return [
+        {"job_index": job_index, "reveal_seed": reveal_seed, "spec": spec}
+        for job_index, (reveal_seed, spec) in enumerate(pairs)
+    ]
+
+
+def _run_policy_jobs(
+    *,
+    jobs: list[dict[str, Any]],
+    fit_df: pd.DataFrame,
+    settings: dict[str, Any],
+    reference_samples: np.ndarray,
+    reference_quantiles: np.ndarray,
+) -> list[dict[str, Any]]:
+    n_workers = _worker_count()
+    if n_workers == 1:
+        completed = []
+        for job in jobs:
+            print(
+                f"Running reveal_seed={job['reveal_seed']}, policy={job['spec']['name']}",
+                flush=True,
+            )
+            result = _run_policy_job(
+                job=job,
+                fit_df=fit_df,
+                settings=settings,
+                reference_samples=reference_samples,
+                reference_quantiles=reference_quantiles,
+            )
+            print(f"  finished in {result['elapsed_seconds']:.2f}s", flush=True)
+            completed.append(result)
+        return completed
+
+    completed: list[dict[str, Any]] = []
+    worker_count = min(n_workers, len(jobs))
+    print(f"Running {len(jobs)} policy-seed jobs with {worker_count} workers", flush=True)
+    with ProcessPoolExecutor(max_workers=worker_count) as executor:
+        future_to_job = {
+            executor.submit(
+                _run_policy_job,
+                job=job,
+                fit_df=fit_df,
+                settings=settings,
+                reference_samples=reference_samples,
+                reference_quantiles=reference_quantiles,
+            ): job
+            for job in jobs
+        }
+        for future in as_completed(future_to_job):
+            job = future_to_job[future]
+            result = future.result()
+            print(
+                "  finished "
+                f"reveal_seed={job['reveal_seed']}, policy={job['spec']['name']} "
+                f"in {result['elapsed_seconds']:.2f}s",
+                flush=True,
+            )
+            completed.append(result)
+    return completed
+
+
+def _run_policy_job(
+    *,
+    job: dict[str, Any],
+    fit_df: pd.DataFrame,
+    settings: dict[str, Any],
+    reference_samples: np.ndarray,
+    reference_quantiles: np.ndarray,
+) -> dict[str, Any]:
+    run_start = time.perf_counter()
+    spec = job["spec"]
+    result_df, diagnostics = run_policy_recovery(
+        fit_df,
+        policy_name=spec["policy_name"],
+        policy_label=spec["name"],
+        policy_kwargs=spec.get("policy_kwargs", {}),
+        budgets=settings["budgets"],
+        reveal_seed=int(job["reveal_seed"]),
+        reference_seed=settings["reference_seed"],
+        sample_seed_base=settings["sample_seed_base"],
+        n_reference_samples=settings["n_reference_samples"],
+        n_budget_samples=settings["n_budget_samples"],
+        n_grid=settings["n_grid"],
+        fragility_kwargs=settings["fragility_kwargs"],
+        fragility_recompute_every=settings["fragility_recompute_every"],
+        reference_samples=reference_samples,
+        reference_quantiles=reference_quantiles,
+    )
+    return {
+        "job_index": int(job["job_index"]),
+        "result_df": result_df,
+        "diagnostics": diagnostics,
+        "elapsed_seconds": float(time.perf_counter() - run_start),
+    }
+
+
+def _worker_count() -> int:
+    raw = os.environ.get("SAFERAI_N_WORKERS", "1").strip().lower()
+    if raw == "auto":
+        value = _auto_worker_count()
+        print(f"SAFERAI_N_WORKERS=auto selected {value} workers", flush=True)
+        return value
+    try:
+        value = int(raw)
+    except ValueError as exc:
+        raise ValueError(f"SAFERAI_N_WORKERS must be an integer, got {raw!r}.") from exc
+    if value <= 0:
+        raise ValueError("SAFERAI_N_WORKERS must be positive.")
+    return value
+
+
+def _auto_worker_count() -> int:
+    cpu_count = os.cpu_count() or 1
+    performance_cores = _sysctl_int("hw.perflevel0.physicalcpu")
+    physical_cores = _sysctl_int("hw.physicalcpu")
+    cpu_limited = performance_cores or physical_cores or max(1, cpu_count - 1)
+
+    memory_bytes = _total_memory_bytes()
+    if memory_bytes is None:
+        memory_limited = cpu_limited
+    else:
+        memory_limited = max(1, int(memory_bytes // (2.5 * 1024**3)))
+
+    return max(1, min(cpu_limited, memory_limited, 6))
+
+
+def _total_memory_bytes() -> int | None:
+    try:
+        return os.sysconf("SC_PAGE_SIZE") * os.sysconf("SC_PHYS_PAGES")
+    except (AttributeError, OSError, ValueError):
+        return _sysctl_int("hw.memsize")
+
+
+def _sysctl_int(name: str) -> int | None:
+    try:
+        completed = subprocess.run(
+            ["sysctl", "-n", name],
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+    except (OSError, subprocess.CalledProcessError):
+        return None
+    try:
+        return int(completed.stdout.strip())
+    except ValueError:
+        return None
 
 
 def _greedy_concentration(results_df: pd.DataFrame, run_diagnostics: list[dict[str, Any]]) -> dict[str, Any]:

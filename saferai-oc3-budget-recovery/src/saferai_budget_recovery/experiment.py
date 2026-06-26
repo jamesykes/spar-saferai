@@ -19,6 +19,7 @@ from saferai_budget_recovery.policies import (
     choose_step_epsilon_greedy_fragility,
     choose_step_exploration_bonus_fragility,
     choose_step_greedy_fragility,
+    choose_step_stochastic_normalized_fragility,
     choose_step_uniform_row_random,
     choose_step_uniform_step_balanced,
 )
@@ -38,6 +39,7 @@ VALID_POLICIES = {
     "greedy_loo_fragility",
     "epsilon_greedy_loo_fragility",
     "exploration_bonus_loo_fragility",
+    "stochastic_normalized_loo_fragility",
     "uniform_row_random",
 }
 
@@ -326,6 +328,14 @@ def _choose_fragility_policy(
 
     if policy_name == "greedy_loo_fragility":
         selected_step = choose_step_greedy_fragility(
+            revealed_df,
+            available_steps,
+            rng,
+            fragility_scores=fragility_scores,
+        )
+        return selected_step, fragility_scores
+    if policy_name == "stochastic_normalized_loo_fragility":
+        selected_step = choose_step_stochastic_normalized_fragility(
             revealed_df,
             available_steps,
             rng,
