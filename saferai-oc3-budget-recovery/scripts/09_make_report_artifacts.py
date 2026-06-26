@@ -106,6 +106,11 @@ POLICY_LABELS = {
     "exploration_bonus_c1.0": "Exploration bonus c=1.0",
 }
 
+PLOT_POLICY_LABELS = {
+    **POLICY_LABELS,
+    "uniform_step_balanced": "Uniform",
+}
+
 
 def main() -> None:
     REPORT_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -130,12 +135,14 @@ def main() -> None:
         source_run=LOCKED_RUN_NAME,
         concentration_budget=1200,
     )
+    win_counts_by_budget = _build_win_counts_by_budget(locked_outputs)
 
     artifact_paths = _write_artifact_tables(
         main_comparison=main_comparison,
         error_by_budget=error_by_budget,
         concentration_by_budget=concentration_by_budget,
         sensitivity=sensitivity,
+        win_counts_by_budget=win_counts_by_budget,
     )
     latex_paths = _write_latex_tables(
         main_comparison=main_comparison,
@@ -183,6 +190,8 @@ def main() -> None:
     )
     print("Exploration-bonus sensitivity:")
     print(sensitivity.to_string(index=False))
+    print("Win counts by budget:")
+    print(win_counts_by_budget.to_string(index=False))
     print("Artifacts:")
     for label, path in artifact_paths.items():
         print(f"  {label}: {path}")
@@ -220,6 +229,7 @@ def _write_artifact_tables(
     error_by_budget: pd.DataFrame,
     concentration_by_budget: pd.DataFrame,
     sensitivity: pd.DataFrame,
+    win_counts_by_budget: pd.DataFrame,
 ) -> dict[str, Path]:
     paths = {
         "main_policy_comparison_csv": REPORT_OUTPUT_DIR / "main_policy_comparison.csv",
@@ -230,15 +240,19 @@ def _write_artifact_tables(
         "concentration_by_budget_md": REPORT_OUTPUT_DIR / "concentration_by_budget.md",
         "exploration_bonus_sensitivity_csv": REPORT_OUTPUT_DIR / "exploration_bonus_sensitivity.csv",
         "exploration_bonus_sensitivity_md": REPORT_OUTPUT_DIR / "exploration_bonus_sensitivity.md",
+        "win_counts_by_budget_csv": REPORT_OUTPUT_DIR / "win_counts_by_budget.csv",
+        "win_counts_by_budget_md": REPORT_OUTPUT_DIR / "win_counts_by_budget.md",
     }
     main_comparison.to_csv(paths["main_policy_comparison_csv"], index=False)
     error_by_budget.to_csv(paths["error_by_budget_csv"], index=False)
     concentration_by_budget.to_csv(paths["concentration_by_budget_csv"], index=False)
     sensitivity.to_csv(paths["exploration_bonus_sensitivity_csv"], index=False)
+    win_counts_by_budget.to_csv(paths["win_counts_by_budget_csv"], index=False)
     write_markdown_table(main_comparison, paths["main_policy_comparison_md"])
     write_markdown_table(error_by_budget, paths["error_by_budget_md"])
     write_markdown_table(concentration_by_budget, paths["concentration_by_budget_md"])
     write_markdown_table(sensitivity, paths["exploration_bonus_sensitivity_md"])
+    write_markdown_table(win_counts_by_budget, paths["win_counts_by_budget_md"])
     return paths
 
 
@@ -280,20 +294,17 @@ def _write_figures(
             continue
         x = group["budget"].to_numpy(dtype=float)
         y = group["mean_squared_w2_error"].to_numpy(dtype=float)
-        p25 = group["p25_squared_w2_error"].to_numpy(dtype=float)
-        p75 = group["p75_squared_w2_error"].to_numpy(dtype=float)
-        ax.plot(x, y, marker="o", linewidth=1.8, label=POLICY_LABELS.get(policy, policy))
-        ax.fill_between(x, p25, p75, alpha=0.10)
+        ax.plot(x, y, marker="o", linewidth=1.8, label=PLOT_POLICY_LABELS.get(policy, policy))
     ax.set_xlabel("Total revealed SOTA elicitation rows")
     ax.set_ylabel("Squared W2 error to full reference")
-    ax.set_title("Locked Hidden-Reveal Recovery Error vs Budget")
+    ax.set_title("Distance to Full Reference")
     ax.legend(fontsize=7.5)
     ax.grid(True, alpha=0.25)
     paths.extend(_save_figure(fig, "error_vs_budget"))
 
     fig, ax = plt.subplots(figsize=(8.2, 4.8))
     ordered_auc = main_comparison.sort_values("average_auc")
-    labels = [POLICY_LABELS.get(policy, policy) for policy in ordered_auc["policy"]]
+    labels = [PLOT_POLICY_LABELS.get(policy, policy) for policy in ordered_auc["policy"]]
     ax.bar(labels, ordered_auc["average_auc"].to_numpy(dtype=float))
     ax.set_ylabel("Average AUC of squared W2 error")
     ax.set_title("Locked Hidden-Reveal AUC by Policy")
@@ -311,7 +322,7 @@ def _write_figures(
             group["mean_l1_imbalance"].to_numpy(dtype=float),
             marker="o",
             linewidth=1.8,
-            label=POLICY_LABELS.get(policy, policy),
+            label=PLOT_POLICY_LABELS.get(policy, policy),
         )
     ax.set_xlabel("Total revealed SOTA elicitation rows")
     ax.set_ylabel("Mean L1 step-count imbalance")
@@ -352,12 +363,33 @@ def _write_figures(
 
 def _save_figure(fig: plt.Figure, stem: str) -> list[Path]:
     png_path = FIGURE_DIR / f"{stem}.png"
-    pdf_path = FIGURE_DIR / f"{stem}.pdf"
     fig.tight_layout()
     fig.savefig(png_path, dpi=220)
-    fig.savefig(pdf_path)
     plt.close(fig)
-    return [png_path, pdf_path]
+    return [png_path]
+
+
+def _build_win_counts_by_budget(locked_outputs: dict[str, Any]) -> pd.DataFrame:
+    win_rate = locked_outputs.get("win_rate_by_budget")
+    if win_rate is None or win_rate.empty:
+        raise ValueError("Locked outputs are missing win_rate_by_budget data.")
+
+    rows: list[dict[str, Any]] = []
+    for budget, group in win_rate.groupby("budget", dropna=False):
+        row: dict[str, Any] = {
+            "budget": int(budget),
+            "n_reveal_seeds": int(group["n_seeds"].max()),
+        }
+        for policy in POLICY_ORDER:
+            if policy == "uniform_step_balanced":
+                continue
+            policy_rows = group.loc[group["policy_name"].eq(policy)]
+            if policy_rows.empty:
+                row[f"{policy}_wins"] = pd.NA
+                continue
+            row[f"{policy}_wins"] = int(policy_rows["policy_wins"].iloc[0])
+        rows.append(row)
+    return pd.DataFrame(rows).sort_values("budget").reset_index(drop=True)
 
 
 def _main_policy_latex(df: pd.DataFrame) -> str:

@@ -243,12 +243,12 @@ Under the corrected hidden reveal-order protocol, exploration-bonus \(c=1.0\) ac
 
 \subsection{Error-vs-budget curves}
 
-Figure~\ref{fig:error-vs-budget} shows mean squared \(W_2\) error by budget, with interquartile bands across the 10 reveal seeds. The full error-by-budget table appears in Appendix~\ref{app:additional-tables}. The curves are noisy at this number of reveal seeds. The fragility-guided policies do not dominate uniform at every budget, but the stronger exploration-bonus setting reduces aggregate AUC over the selected grid.
+Figure~\ref{fig:error-vs-budget} shows mean squared \(W_2\) error by budget across the 10 reveal seeds. The full error-by-budget table appears in Appendix~\ref{app:additional-tables}. The curves are noisy at this number of reveal seeds. The fragility-guided policies do not dominate uniform at every budget, but the stronger exploration-bonus setting reduces aggregate AUC over the selected grid.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.95\textwidth]{figures/error_vs_budget.pdf}
-\caption{Mean squared Wasserstein-2 error to the full-data reference by revealed budget. Bands show the interquartile range across reveal seeds. Lower values are better.}
+\includegraphics[width=0.95\textwidth]{figures/error_vs_budget.png}
+\caption{Mean squared Wasserstein-2 error to the full-data reference by revealed budget. Lower values are better.}
 \label{fig:error-vs-budget}
 \end{figure}
 
@@ -258,7 +258,7 @@ Figure~\ref{fig:auc-by-policy} summarises average AUC by policy. AUC is a scalar
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.85\textwidth]{figures/auc_by_policy.pdf}
+\includegraphics[width=0.85\textwidth]{figures/auc_by_policy.png}
 \caption{Average area under the error-vs-budget curve by policy. Lower AUC indicates better budget recovery over the selected budget grid.}
 \label{fig:auc-by-policy}
 \end{figure}
@@ -269,7 +269,7 @@ Figure~\ref{fig:concentration-vs-budget} shows allocation concentration as mean 
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.95\textwidth]{figures/concentration_vs_budget.pdf}
+\includegraphics[width=0.95\textwidth]{figures/concentration_vs_budget.png}
 \caption{Mean L1 step-count imbalance by budget. Uniform allocation remains balanced; fragility-guided policies concentrate allocation at intermediate budgets. All policies converge to zero imbalance at budget 1798 because the full fitted SOTA dataset has been revealed.}
 \label{fig:concentration-vs-budget}
 \end{figure}
@@ -282,7 +282,7 @@ Table~\ref{tab:exploration-bonus-sensitivity} and Figure~\ref{fig:bonus-sensitiv
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth]{figures/exploration_bonus_sensitivity.pdf}
+\includegraphics[width=0.9\textwidth]{figures/exploration_bonus_sensitivity.png}
 \caption{Exploration-bonus sensitivity over \(c\). In the locked run, larger \(c\) reduced allocation concentration at budget 1200 and improved average AUC among the tested settings.}
 \label{fig:bonus-sensitivity}
 \end{figure}
