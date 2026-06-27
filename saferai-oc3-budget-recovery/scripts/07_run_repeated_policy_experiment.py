@@ -281,6 +281,53 @@ CONFIGURATIONS["STOCHASTIC_NORMALIZED_FRAGILITY_20_SEEDS_RECOMPUTE10_NSAMPLES200
 CONFIGURATIONS["STOCHASTIC_NORMALIZED_FRAGILITY_20_SEEDS_RECOMPUTE10_NSAMPLES200"][
     "job_order"
 ] = "policy_major"
+CONFIGURATIONS["DENSE_POLICY_SUITE_30_SEEDS_RECOMPUTE10_NSAMPLES200"] = json.loads(
+    json.dumps(CONFIGURATIONS["LOCKED_V8_HIDDEN_REVEAL"])
+)
+CONFIGURATIONS["DENSE_POLICY_SUITE_30_SEEDS_RECOMPUTE10_NSAMPLES200"]["budgets"] = [
+    45 * i for i in range(1, 40)
+] + [1798]
+CONFIGURATIONS["DENSE_POLICY_SUITE_30_SEEDS_RECOMPUTE10_NSAMPLES200"]["reveal_seeds"] = [
+    101 * i for i in range(1, 31)
+]
+CONFIGURATIONS["DENSE_POLICY_SUITE_30_SEEDS_RECOMPUTE10_NSAMPLES200"]["policy_specs"] = [
+    {"name": "greedy_loo_fragility", "policy_name": "greedy_loo_fragility", "policy_kwargs": {}},
+    {
+        "name": "epsilon_greedy_eps0.2",
+        "policy_name": "epsilon_greedy_loo_fragility",
+        "policy_kwargs": {"epsilon": 0.2},
+    },
+    {
+        "name": "exploration_bonus_c0.25",
+        "policy_name": "exploration_bonus_loo_fragility",
+        "policy_kwargs": {"c": 0.25},
+    },
+    {
+        "name": "exploration_bonus_c0.5",
+        "policy_name": "exploration_bonus_loo_fragility",
+        "policy_kwargs": {"c": 0.5},
+    },
+    {
+        "name": "exploration_bonus_c1.0",
+        "policy_name": "exploration_bonus_loo_fragility",
+        "policy_kwargs": {"c": 1.0},
+    },
+    {
+        "name": "stochastic_normalized_fragility",
+        "policy_name": "stochastic_normalized_loo_fragility",
+        "policy_kwargs": {},
+    },
+    {"name": "uniform_step_balanced", "policy_name": "uniform_step_balanced", "policy_kwargs": {}},
+]
+CONFIGURATIONS["DENSE_POLICY_SUITE_30_SEEDS_RECOMPUTE10_NSAMPLES200"]["fragility_kwargs"] = {
+    "n_samples": 200,
+    "n_grid": 101,
+    "max_loo_terms_per_step": 20,
+}
+CONFIGURATIONS["DENSE_POLICY_SUITE_30_SEEDS_RECOMPUTE10_NSAMPLES200"][
+    "fragility_recompute_every"
+] = 10
+CONFIGURATIONS["DENSE_POLICY_SUITE_30_SEEDS_RECOMPUTE10_NSAMPLES200"]["job_order"] = "policy_major"
 MODE = os.environ.get("SAFERAI_EXPERIMENT_MODE", "LOCKED_V8_HIDDEN_REVEAL")
 
 
@@ -741,6 +788,8 @@ def _run_policy_jobs(
     reference_quantiles: np.ndarray,
 ) -> list[dict[str, Any]]:
     n_workers = _worker_count()
+    total_jobs = len(jobs)
+    progress_start = time.perf_counter()
     if n_workers == 1:
         completed = []
         for job in jobs:
@@ -755,8 +804,15 @@ def _run_policy_jobs(
                 reference_samples=reference_samples,
                 reference_quantiles=reference_quantiles,
             )
-            print(f"  finished in {result['elapsed_seconds']:.2f}s", flush=True)
             completed.append(result)
+            _print_job_progress(
+                completed_count=len(completed),
+                total_jobs=total_jobs,
+                worker_count=1,
+                started_at=progress_start,
+                job=job,
+                result=result,
+            )
         return completed
 
     completed: list[dict[str, Any]] = []
@@ -777,14 +833,59 @@ def _run_policy_jobs(
         for future in as_completed(future_to_job):
             job = future_to_job[future]
             result = future.result()
-            print(
-                "  finished "
-                f"reveal_seed={job['reveal_seed']}, policy={job['spec']['name']} "
-                f"in {result['elapsed_seconds']:.2f}s",
-                flush=True,
-            )
             completed.append(result)
+            _print_job_progress(
+                completed_count=len(completed),
+                total_jobs=total_jobs,
+                worker_count=worker_count,
+                started_at=progress_start,
+                job=job,
+                result=result,
+            )
     return completed
+
+
+def _print_job_progress(
+    *,
+    completed_count: int,
+    total_jobs: int,
+    worker_count: int,
+    started_at: float,
+    job: dict[str, Any],
+    result: dict[str, Any],
+) -> None:
+    elapsed = time.perf_counter() - started_at
+    mean_completed_job_seconds = elapsed / completed_count if completed_count else 0.0
+    remaining_jobs = max(total_jobs - completed_count, 0)
+    eta_seconds = (
+        remaining_jobs * mean_completed_job_seconds / max(worker_count, 1)
+        if completed_count
+        else None
+    )
+    percent = 100.0 * completed_count / total_jobs if total_jobs else 100.0
+    eta_text = _format_duration(eta_seconds) if eta_seconds is not None else "unknown"
+    print(
+        f"[{completed_count}/{total_jobs} | {percent:.1f}%] "
+        f"finished reveal_seed={job['reveal_seed']}, policy={job['spec']['name']} "
+        f"in {_format_duration(float(result['elapsed_seconds']))}; "
+        f"elapsed={_format_duration(elapsed)}, "
+        f"mean_completed_job={_format_duration(mean_completed_job_seconds)}, "
+        f"ETA={eta_text}",
+        flush=True,
+    )
+
+
+def _format_duration(seconds: float | None) -> str:
+    if seconds is None:
+        return "unknown"
+    total_seconds = max(0, int(round(seconds)))
+    hours, remainder = divmod(total_seconds, 3600)
+    minutes, secs = divmod(remainder, 60)
+    if hours:
+        return f"{hours}h{minutes:02d}m{secs:02d}s"
+    if minutes:
+        return f"{minutes}m{secs:02d}s"
+    return f"{secs}s"
 
 
 def _run_policy_job(
