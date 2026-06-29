@@ -137,6 +137,37 @@ def choose_step_stochastic_normalized_fragility(
     return selected_step
 
 
+def choose_step_uniform_positive_fragility(
+    revealed_df: pd.DataFrame,
+    available_steps: set[str],
+    rng: np.random.Generator,
+    fragility_scores: pd.DataFrame,
+) -> str:
+    """Sample uniformly among available steps with finite positive fragility."""
+
+    revealed = _ensure_stable_row_id(revealed_df)
+    eligible = _eligible_score_rows_for_steps(fragility_scores, available_steps)
+    positive = eligible.loc[np.isfinite(eligible["loo_fragility"]) & eligible["loo_fragility"].gt(0)]
+    if positive.empty:
+        selected_step = choose_step_uniform_step_balanced(revealed, available_steps, rng)
+        fragility_scores.attrs["selection_fallback"] = "under_sampled_no_positive_fragility_mass"
+        fragility_scores.attrs["selected_step"] = selected_step
+        fragility_scores.attrs["decision_type"] = "fallback"
+        return selected_step
+
+    candidates = positive.sort_values("step_name").reset_index(drop=True)
+    selected_index = int(rng.integers(0, len(candidates)))
+    selected = candidates.iloc[selected_index]
+    selected_step = str(selected["step_name"])
+
+    fragility_scores.attrs["selection_fallback"] = None
+    fragility_scores.attrs["selected_step"] = selected_step
+    fragility_scores.attrs["decision_type"] = "uniform_positive_fragility"
+    fragility_scores.attrs["selected_fragility"] = float(selected["loo_fragility"])
+    fragility_scores.attrs["selected_probability"] = float(1.0 / len(candidates))
+    return selected_step
+
+
 def choose_next_greedy_fragility(
     revealed_df: pd.DataFrame,
     unrevealed_df: pd.DataFrame,
@@ -198,6 +229,37 @@ def choose_step_epsilon_greedy_fragility(
     fragility_scores.attrs["selection_fallback"] = None
     fragility_scores.attrs["selected_step"] = selected_step
     fragility_scores.attrs["decision_type"] = "exploit"
+    fragility_scores.attrs["epsilon"] = float(epsilon)
+    return selected_step
+
+
+def choose_step_stochastic_epsilon_greedy_fragility(
+    revealed_df: pd.DataFrame,
+    available_steps: set[str],
+    rng: np.random.Generator,
+    epsilon: float,
+    fragility_scores: pd.DataFrame,
+) -> str:
+    """Explore by step balance, otherwise sample proportional to positive fragility."""
+
+    if not 0 <= epsilon <= 1:
+        raise ValueError("epsilon must be in [0, 1].")
+    if float(rng.random()) < epsilon:
+        selected_step = choose_step_uniform_step_balanced(revealed_df, available_steps, rng)
+        fragility_scores.attrs["selection_fallback"] = None
+        fragility_scores.attrs["selected_step"] = selected_step
+        fragility_scores.attrs["decision_type"] = "explore"
+        fragility_scores.attrs["epsilon"] = float(epsilon)
+        return selected_step
+
+    selected_step = choose_step_stochastic_normalized_fragility(
+        revealed_df,
+        available_steps,
+        rng,
+        fragility_scores,
+    )
+    if fragility_scores.attrs.get("selection_fallback") is None:
+        fragility_scores.attrs["decision_type"] = "stochastic_exploit"
     fragility_scores.attrs["epsilon"] = float(epsilon)
     return selected_step
 
@@ -280,6 +342,71 @@ def choose_step_exploration_bonus_fragility(
     fragility_scores.attrs["selected_fragility"] = float(selected["fragility_for_score"])
     fragility_scores.attrs["selected_bonus"] = float(selected["exploration_bonus"])
     fragility_scores.attrs["selected_acquisition_score"] = float(selected["acquisition_score"])
+    return selected_step
+
+
+def choose_step_stochastic_exploration_bonus_fragility(
+    revealed_df: pd.DataFrame,
+    available_steps: set[str],
+    rng: np.random.Generator,
+    c: float,
+    fragility_scores: pd.DataFrame,
+) -> str:
+    """Sample a step proportional to LOO fragility plus c-scaled under-sampling bonus."""
+
+    if c < 0:
+        raise ValueError("c must be non-negative.")
+    revealed = _ensure_stable_row_id(revealed_df)
+    eligible = _eligible_score_rows_for_steps(fragility_scores, available_steps)
+    positive = eligible.loc[np.isfinite(eligible["loo_fragility"]) & eligible["loo_fragility"].gt(0)]
+    if positive.empty:
+        selected_step = choose_step_uniform_step_balanced(revealed, available_steps, rng)
+        fragility_scores.attrs["selection_fallback"] = "under_sampled_no_positive_fragility_scale"
+        fragility_scores.attrs["selected_step"] = selected_step
+        fragility_scores.attrs["decision_type"] = "fallback"
+        fragility_scores.attrs["exploration_bonus_c"] = float(c)
+        fragility_scores.attrs["exploration_bonus_lambda"] = None
+        return selected_step
+
+    scale = float(np.median(positive["loo_fragility"].to_numpy(dtype=float)))
+    lambda_value = float(c) * scale
+    revealed_counts = revealed.groupby("step_name").size().to_dict()
+    scored = eligible.copy()
+    scored["n_step"] = scored["step_name"].map(lambda step: max(int(revealed_counts.get(step, 0)), 1))
+    scored["fragility_for_score"] = np.where(
+        np.isfinite(scored["loo_fragility"]) & scored["loo_fragility"].gt(0),
+        scored["loo_fragility"].to_numpy(dtype=float),
+        0.0,
+    )
+    scored["exploration_bonus"] = 1.0 / np.sqrt(scored["n_step"].to_numpy(dtype=float))
+    scored["acquisition_score"] = (
+        scored["fragility_for_score"] + lambda_value * scored["exploration_bonus"]
+    )
+    total = float(scored["acquisition_score"].sum())
+    if total <= 0:
+        selected_step = choose_step_uniform_step_balanced(revealed, available_steps, rng)
+        fragility_scores.attrs["selection_fallback"] = "under_sampled_no_positive_acquisition_mass"
+        fragility_scores.attrs["selected_step"] = selected_step
+        fragility_scores.attrs["decision_type"] = "fallback"
+        fragility_scores.attrs["exploration_bonus_c"] = float(c)
+        fragility_scores.attrs["exploration_bonus_lambda"] = lambda_value
+        return selected_step
+
+    candidates = scored.sort_values("step_name").reset_index(drop=True)
+    probabilities = candidates["acquisition_score"].to_numpy(dtype=float) / total
+    selected_index = int(rng.choice(len(candidates), p=probabilities))
+    selected = candidates.iloc[selected_index]
+    selected_step = str(selected["step_name"])
+
+    fragility_scores.attrs["selection_fallback"] = None
+    fragility_scores.attrs["selected_step"] = selected_step
+    fragility_scores.attrs["decision_type"] = "stochastic_bonus"
+    fragility_scores.attrs["exploration_bonus_c"] = float(c)
+    fragility_scores.attrs["exploration_bonus_lambda"] = lambda_value
+    fragility_scores.attrs["selected_fragility"] = float(selected["fragility_for_score"])
+    fragility_scores.attrs["selected_bonus"] = float(selected["exploration_bonus"])
+    fragility_scores.attrs["selected_acquisition_score"] = float(selected["acquisition_score"])
+    fragility_scores.attrs["selected_probability"] = float(probabilities[selected_index])
     return selected_step
 
 

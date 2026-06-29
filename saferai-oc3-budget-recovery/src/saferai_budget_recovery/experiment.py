@@ -19,9 +19,12 @@ from saferai_budget_recovery.policies import (
     choose_step_epsilon_greedy_fragility,
     choose_step_exploration_bonus_fragility,
     choose_step_greedy_fragility,
+    choose_step_stochastic_epsilon_greedy_fragility,
+    choose_step_stochastic_exploration_bonus_fragility,
     choose_step_stochastic_normalized_fragility,
     choose_step_uniform_row_random,
     choose_step_uniform_step_balanced,
+    choose_step_uniform_positive_fragility,
 )
 from saferai_budget_recovery.reveal import (
     FITTED_ROW_UID_COLUMN,
@@ -40,6 +43,9 @@ VALID_POLICIES = {
     "epsilon_greedy_loo_fragility",
     "exploration_bonus_loo_fragility",
     "stochastic_normalized_loo_fragility",
+    "stochastic_epsilon_greedy_loo_fragility",
+    "stochastic_exploration_bonus_loo_fragility",
+    "uniform_positive_loo_fragility",
     "uniform_row_random",
 }
 
@@ -342,6 +348,14 @@ def _choose_fragility_policy(
             fragility_scores=fragility_scores,
         )
         return selected_step, fragility_scores
+    if policy_name == "uniform_positive_loo_fragility":
+        selected_step = choose_step_uniform_positive_fragility(
+            revealed_df,
+            available_steps,
+            rng,
+            fragility_scores=fragility_scores,
+        )
+        return selected_step, fragility_scores
     if policy_name == "epsilon_greedy_loo_fragility":
         selected_step = choose_step_epsilon_greedy_fragility(
             revealed_df,
@@ -351,8 +365,26 @@ def _choose_fragility_policy(
             fragility_scores=fragility_scores,
         )
         return selected_step, fragility_scores
+    if policy_name == "stochastic_epsilon_greedy_loo_fragility":
+        selected_step = choose_step_stochastic_epsilon_greedy_fragility(
+            revealed_df,
+            available_steps,
+            rng,
+            epsilon=float(policy_kwargs.get("epsilon", 0.2)),
+            fragility_scores=fragility_scores,
+        )
+        return selected_step, fragility_scores
     if policy_name == "exploration_bonus_loo_fragility":
         selected_step = choose_step_exploration_bonus_fragility(
+            revealed_df,
+            available_steps,
+            rng,
+            c=float(policy_kwargs.get("c", 0.5)),
+            fragility_scores=fragility_scores,
+        )
+        return selected_step, fragility_scores
+    if policy_name == "stochastic_exploration_bonus_loo_fragility":
+        selected_step = choose_step_stochastic_exploration_bonus_fragility(
             revealed_df,
             available_steps,
             rng,
