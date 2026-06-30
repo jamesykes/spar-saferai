@@ -364,6 +364,49 @@ CONFIGURATIONS["DENSE_STOCHASTIC_ABLATION_30_SEEDS_RECOMPUTE10_NSAMPLES200"]["po
     },
     {"name": "uniform_step_balanced", "policy_name": "uniform_step_balanced", "policy_kwargs": {}},
 ]
+CONFIGURATIONS["DENSE_SOFTMAX_TEMPERATURE_ABLATION_30_SEEDS_RECOMPUTE10_NSAMPLES200"] = json.loads(
+    json.dumps(CONFIGURATIONS["DENSE_POLICY_SUITE_30_SEEDS_RECOMPUTE10_NSAMPLES200"])
+)
+CONFIGURATIONS["DENSE_SOFTMAX_TEMPERATURE_ABLATION_30_SEEDS_RECOMPUTE10_NSAMPLES200"][
+    "policy_specs"
+] = [
+    {"name": "uniform_step_balanced", "policy_name": "uniform_step_balanced", "policy_kwargs": {}},
+    {
+        "name": "stochastic_normalized_fragility",
+        "policy_name": "stochastic_normalized_loo_fragility",
+        "policy_kwargs": {},
+    },
+    {
+        "name": "uniform_positive_fragility",
+        "policy_name": "uniform_positive_loo_fragility",
+        "policy_kwargs": {},
+    },
+    {
+        "name": "softmax_normalized_fragility_temp0.25",
+        "policy_name": "softmax_normalized_loo_fragility",
+        "policy_kwargs": {"temperature": 0.25},
+    },
+    {
+        "name": "softmax_normalized_fragility_temp0.5",
+        "policy_name": "softmax_normalized_loo_fragility",
+        "policy_kwargs": {"temperature": 0.5},
+    },
+    {
+        "name": "softmax_normalized_fragility_temp1.0",
+        "policy_name": "softmax_normalized_loo_fragility",
+        "policy_kwargs": {"temperature": 1.0},
+    },
+    {
+        "name": "softmax_normalized_fragility_temp2.0",
+        "policy_name": "softmax_normalized_loo_fragility",
+        "policy_kwargs": {"temperature": 2.0},
+    },
+    {
+        "name": "softmax_normalized_fragility_temp4.0",
+        "policy_name": "softmax_normalized_loo_fragility",
+        "policy_kwargs": {"temperature": 4.0},
+    },
+]
 MODE = os.environ.get("SAFERAI_EXPERIMENT_MODE", "LOCKED_V8_HIDDEN_REVEAL")
 
 

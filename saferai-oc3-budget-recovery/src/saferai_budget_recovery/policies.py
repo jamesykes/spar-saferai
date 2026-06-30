@@ -168,6 +168,69 @@ def choose_step_uniform_positive_fragility(
     return selected_step
 
 
+def choose_step_softmax_normalized_fragility(
+    revealed_df: pd.DataFrame,
+    available_steps: set[str],
+    rng: np.random.Generator,
+    temperature: float,
+    fragility_scores: pd.DataFrame,
+) -> str:
+    """Sample positive-fragility steps using median-scaled softmax weights."""
+
+    if temperature <= 0:
+        raise ValueError("temperature must be positive.")
+    revealed = _ensure_stable_row_id(revealed_df)
+    eligible = _eligible_score_rows_for_steps(fragility_scores, available_steps)
+    positive = eligible.loc[np.isfinite(eligible["loo_fragility"]) & eligible["loo_fragility"].gt(0)]
+    if positive.empty:
+        selected_step = choose_step_uniform_step_balanced(revealed, available_steps, rng)
+        fragility_scores.attrs["selection_fallback"] = "under_sampled_no_positive_fragility_mass"
+        fragility_scores.attrs["selected_step"] = selected_step
+        fragility_scores.attrs["decision_type"] = "fallback"
+        fragility_scores.attrs["softmax_temperature"] = float(temperature)
+        fragility_scores.attrs["softmax_fragility_scale"] = None
+        return selected_step
+
+    candidates = positive.sort_values("step_name").reset_index(drop=True)
+    fragility_values = candidates["loo_fragility"].to_numpy(dtype=float)
+    scale = float(np.median(fragility_values))
+    if not np.isfinite(scale) or scale <= 0:
+        selected_step = choose_step_uniform_step_balanced(revealed, available_steps, rng)
+        fragility_scores.attrs["selection_fallback"] = "under_sampled_invalid_softmax_scale"
+        fragility_scores.attrs["selected_step"] = selected_step
+        fragility_scores.attrs["decision_type"] = "fallback"
+        fragility_scores.attrs["softmax_temperature"] = float(temperature)
+        fragility_scores.attrs["softmax_fragility_scale"] = scale
+        return selected_step
+
+    logits = fragility_values / (scale * float(temperature))
+    logits = logits - float(np.max(logits))
+    weights = np.exp(logits)
+    total = float(weights.sum())
+    if not np.isfinite(total) or total <= 0:
+        selected_step = choose_step_uniform_step_balanced(revealed, available_steps, rng)
+        fragility_scores.attrs["selection_fallback"] = "under_sampled_invalid_softmax_mass"
+        fragility_scores.attrs["selected_step"] = selected_step
+        fragility_scores.attrs["decision_type"] = "fallback"
+        fragility_scores.attrs["softmax_temperature"] = float(temperature)
+        fragility_scores.attrs["softmax_fragility_scale"] = scale
+        return selected_step
+
+    probabilities = weights / total
+    selected_index = int(rng.choice(len(candidates), p=probabilities))
+    selected = candidates.iloc[selected_index]
+    selected_step = str(selected["step_name"])
+
+    fragility_scores.attrs["selection_fallback"] = None
+    fragility_scores.attrs["selected_step"] = selected_step
+    fragility_scores.attrs["decision_type"] = "softmax_fragility"
+    fragility_scores.attrs["softmax_temperature"] = float(temperature)
+    fragility_scores.attrs["softmax_fragility_scale"] = scale
+    fragility_scores.attrs["selected_fragility"] = float(selected["loo_fragility"])
+    fragility_scores.attrs["selected_probability"] = float(probabilities[selected_index])
+    return selected_step
+
+
 def choose_next_greedy_fragility(
     revealed_df: pd.DataFrame,
     unrevealed_df: pd.DataFrame,
