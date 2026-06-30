@@ -22,11 +22,11 @@ The final-report experiment is restricted to:
 - capability level: SOTA only;
 - elicitation budget unit: one LLM elicitation draw.
 
-See `../saferai_mixture_fragility_allocation_plan_v8.md` for the implementation plan and terminology.
+See `report/planning_docs/saferai_mixture_fragility_allocation_plan_v8.md` for the implementation plan and terminology.
 
 ## Run
 
-From this directory, using Python 3.12:
+From the repository root, using Python 3.12:
 
 ```bash
 python scripts/00_check_environment.py
@@ -37,8 +37,7 @@ pytest
 If `python` is not on `PATH`, use the repository virtual environment:
 
 ```bash
-../.venv/bin/python scripts/00_check_environment.py
-../.venv/bin/python scripts/01_clean_data.py
-../.venv/bin/python -m pytest
+.venv/bin/python scripts/00_check_environment.py
+.venv/bin/python scripts/01_clean_data.py
+.venv/bin/python -m pytest
 ```
-

@@ -2,3 +2,9 @@
 .idea/
 .venv/
 *pycache*
+.pytest_cache/
+__pycache__/
+*.py[cod]
+build/
+dist/
+*.egg-info/
