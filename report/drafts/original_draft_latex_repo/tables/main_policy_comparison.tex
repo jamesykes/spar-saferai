@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Comparison of policies}
+\label{tab:main-policy-comparison}
+\begin{tabularx}{\textwidth}{Xrrr}
+\toprule
+Policy & Mean AUC & Median AUC & Win Fraction \\
+\midrule
+Exploration bonus c=1.0 & 0.009409 & 0.008561 & 0.386 \\
+Exploration bonus c=0.5 & 0.010175 & 0.009076 & 0.357 \\
+Epsilon-greedy eps=0.2 & 0.01032 & 0.009659 & 0.386 \\
+Greedy LOO-fragility & 0.011005 & 0.011141 & 0.371 \\
+Uniform & 0.011075 & 0.009439 & -- \\
+Exploration bonus c=0.25 & 0.017137 & 0.0129 & 0.286 \\
+\bottomrule
+\end{tabularx}
+\end{table}

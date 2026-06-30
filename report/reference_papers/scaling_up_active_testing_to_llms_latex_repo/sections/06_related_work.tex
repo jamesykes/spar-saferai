@@ -1,0 +1,19 @@
+\section{Related work}
+
+The sampling-based approach to active testing that our approach builds on was proposed by \citet{kossen2021active}, using risk estimators from \citet{farquhar2021statistical}.
+Earlier work on active testing proposed alternative methods.
+\citet{bennett2010online}, \citet{ji2021active}, \citet{katariya2012active} and \citet{kumar2018classifier} explored stratification-based techniques, such as splitting the pool set into strata (based on a measure of model confidence) and sampling uniformly within each stratum.
+\citet{sawade2010active} and \citet{yilmaz2021sample} proposed importance-sampling and Poisson-sampling methods related to that of \citet{kossen2021active} but without the latter's innovations of adaptive, surrogate-based data acquisition and risk estimation that accounts for sampling without replacement.
+\citet{nguyen2018active} studied a special case of active testing focused on human vetting of noisy labels.
+
+Recent years have seen various extensions of this earlier active-testing work.
+\citet{huang2025active} introduced a clustering-based approach that relies on making predictions with the target model on the pool set, which we have argued is a barrier to scaling up.
+\citet{su2024metaat} proposed a technique tailored to ``dense'' recognition tasks in computer vision (e.g., image segmentation and object detection).
+\citet{yu2024actively} incorporated active testing into the process of training a model.
+\citet{ashurytahan2024label} and \citet{hara2024active} proposed methods for model selection.
+
+The idea of reducing model-evaluation costs by using carefully selected test datasets has been highlighted a number of times in recent work.
+\citet{maynez2023benchmarking} found that the datasets they studied could be substantially reduced in size, through uniform-random subsampling, while maintaining stable rankings of the models they were comparing.
+\citet{polo2024tinybenchmarks}, \citet{saranathan2024dele} and \citet{vivek2024anchor} demonstrated more sophisticated methods for achieving the same goal.
+The goal in these studies was to take an existing test dataset (with labels for all inputs) and reduce it in a way that supports comparisons between different models.
+This prior work is therefore complementary to our contribution: we primarily study the problem of acquiring new data with which to evaluate a model of interest; and we use a method that tailors data acquisition to that given model.

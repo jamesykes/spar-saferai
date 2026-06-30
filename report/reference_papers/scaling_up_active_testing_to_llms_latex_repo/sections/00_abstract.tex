@@ -1,0 +1,8 @@
+\begin{abstract}
+    Active testing enables label-efficient evaluation of predictive models through careful data acquisition, but it can pose a significant computational cost.
+    We identify cost-saving measures that enable active testing to be scaled up to large language models (LLMs).
+    In particular we show that the surrogate model used to guide data acquisition can be constructed cheaply using in-context learning, does not require updating within an active-testing loop, and can be smaller than the target model.
+    We even find we can make good data-acquisition decisions without making predictions with the target model.
+    As a result we are able to achieve much more accurate evaluations of LLM performance relative to using randomly acquired data.
+    We additionally introduce a bootstrap estimator of evaluation error, which we show to be a useful indicator of how well active testing is working within a single run.
+\end{abstract}

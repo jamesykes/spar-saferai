@@ -1,0 +1,13 @@
+\begin{figure}[t]
+    \centering
+    % trim={<left> <lower> <right> <upper>}
+    \includegraphics[width=0.95\linewidth,trim={0 5pt 0 0}]{
+        figures/pdf/70b_fewshot_filtered_pool_sst.pdf
+    }
+    \caption{
+        The failure of LURE-70B in efficiently evaluating the 70B-few model on the SST-2 dataset (left) is resolved by filtering incorrectly labelled datapoints from the pool set (middle, right).
+        Underlying this effect is the presence of incorrect labels in the original dataset: we find that inputs with high loss are often mislabelled.
+    }
+    \label{fig:70b_fewshot_filtered_pool}
+    \vspace{-8pt}
+\end{figure}

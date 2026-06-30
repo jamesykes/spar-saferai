@@ -1,0 +1,29 @@
+\section{Estimating risk-estimation error}\label{sec:error_estimation_method}
+
+Aside from its scalability, active testing poses a practical challenge in assessing the quality of the risk estimates it produces.
+In research we can construct repeatable simulations of active testing and record ground-truth risk-estimation errors across repeat runs.
+But practical deployment of active testing involves only a single run, without knowledge of the true risk.
+This leaves practitioners unaware of how well their implementation is working, making it harder to justify using active testing.
+
+We propose addressing this using a novel estimator of the mean squared error (over possible sequences of acquired indices, $i_{1:K} \sim q(i_{1:K})$, where $K \leq M$) of $\Rlure$.
+For a generic risk estimator, $\Rhat(i_{1:K})$, we can decompose the mean squared error into squared bias and variance:
+\begin{align}\label{eq:mse_decomposition}
+    \mathrm{MSE}(\Rhat)
+    = \mathbb{E}_{q(i_{1:K})}[(\Rhat(i_{1:K}) - R)^2]
+    = \underbrace{(\mathbb{E}_{q(i_{1:K})}[\Rhat(i_{1:K})] - R)^2}_{\mathrm{Bias}(\Rhat)^2} + \underbrace{\mathbb{V}_{q(i_{1:K})}[\Rhat(i_{1:K})]}_{\mathrm{Var}(\Rhat)}
+    .
+\end{align}
+Since $\mathrm{Bias}(\Rlure)=0$, our task is to estimate $\mathrm{Var}(\Rlure)=\mathrm{MSE}(\Rlure)$ from a single sequence of acquired indices, $i_{1:K}$.
+Letting $L = (v_m \ell(f(x_{i_m}), y_{i_m}))_{m=1}^K$ denote the first $K$ reweighted losses used in \Cref{eq:lure}, a bootstrap estimator \citep{efron1979bootstrap} of the risk, $R$, is
+\begin{align*}
+\Rboot = \frac{1}{K} \sum_{m=1}^K L_{j_m}, \quad j_m \sim \mathrm{Uniform}(1,2,\ldots,K)
+.
+\end{align*}
+If we have $B$ bootstrap estimates, $(\Rboot^b)_{b=1}^B$, we can form a bootstrap estimator of the variance:
+\begin{align}\label{eq:variance_estimator}
+    \widehat{\mathrm{Var}}_\mathrm{boot}(\Rlure) = \frac{1}{B-1} \sum_{b=1}^B (\Rboot^b - \bar{R}_\mathrm{boot})^2, \quad \bar{R}_\mathrm{boot} = \frac{1}{B} \sum_{b=1}^B \Rboot^b
+    .
+\end{align}
+It is important to note that $\Rboot$ is not a standard bootstrap estimator because the reweighted losses, $L_j$, are not independent and identically distributed (they are the result of active data acquisition), and the bootstrap resampling process does not capture the dependencies between the losses.
+As a result, the estimator lacks theoretical convergence guarantees.
+Nevertheless we find it to be reliably accurate in our experiments (\Cref{sec:boot}), suggesting it could be useful in practice.

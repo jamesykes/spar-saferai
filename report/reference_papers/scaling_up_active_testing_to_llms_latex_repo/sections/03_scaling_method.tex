@@ -1,0 +1,60 @@
+\section{Scaling up active testing}\label{sec:scaling_method}
+
+With an understanding of standard approaches to active testing, we can now identify and address barriers to scaling up to LLMs.
+We focus on three key computational bottlenecks: training the surrogate model, making predictions with the surrogate model, and making predictions with the target model.
+Our aim is to reduce the cost of these steps while maintaining the efficacy of active testing.
+
+
+\subsection{Surrogate-model training}\label{sec:surrogate_training}
+
+We argue that the top priority for reducing the cost of data acquisition is to rethink the training of the surrogate model.
+Existing approaches involve repeatedly running gradient-based training on the data acquired during testing, typically combined with the target model's training data.
+This can be very expensive, especially when working with large datasets and surrogates, as we are focusing on here.
+
+To avoid this expense we suggest a stripped-back approach: construct the surrogate model using in-context learning \citep{brown2020language} on a small amount of randomly acquired test data, then keep it fixed.
+This reduces the cost of surrogate-model training to essentially the minimum possible.
+
+This design decision has important implications for the relative merits of sampling-based and interpolation-based active testing.
+We are using a relatively crude surrogate model to reduce computational cost.
+This affects the sampling-based estimator solely through the data-acquisition step (and related corrective weights, $v_m$), whereas it affects the interpolation-based estimator not only through data acquisition but also much more directly through the expectation over $\pi_m(y|x)$ in \Cref{eq:ase}.
+Due to this difference in sensitivity between the approaches, we default to the sampling-based estimator for this choice of surrogate model, and demonstrate in \Cref{sec:experiments} that this is well-justified empirically.
+
+
+\subsection{Surrogate-model predictions}\label{sec:surrogate_prediction}
+
+Another cost is that of making predictions with the surrogate model.
+In sampling-based active testing these predictions arise when computing the acquisition distribution, $q_m(i)$, and in interpolation-based active testing they additionally arise when computing the risk estimate.
+
+Our choice to use a fixed surrogate model, $\pi_0$, automatically leads to a significant reduction in how many of these predictions are required: we only need to compute $\pi_0(y|x_j)$ once for each $x_j \in \Dpool$.
+On top of this we can make each individual forward pass cheaper by using a smaller surrogate model.
+
+
+\subsection{Target-model predictions}\label{sec:target_prediction}
+
+The third cost we aim to reduce is that of making predictions with the target model.
+The standard versions of both sampling-based and interpolation-based active testing require computing $f(x_j)$ for each $x_j \in \Dpool$, which is especially expensive for large target models and pool sets.
+
+This is unavoidable in the interpolation-based approach due to the construction of $\Rase$.
+But in the sampling-based approach there is scope for an approximation that can reduce the number of target-model predictions from $N$ to $M$, where often $M \ll N$.
+In particular, when computing the acquisition distribution, $q_m(i)$, we can use the surrogate model to approximate the target model's predictions on the pool set.
+This leads to a new acquisition function,
+\begin{align*}
+    \hat{a}_m(x) = \expectation{\pi_m(y|x)}{\ell(\psi[\pi_m(\cdot|x)], y)}
+    ,
+\end{align*}
+where $\psi$ denotes an operation that accounts for the fact that the first argument of $\ell$ might not be a probability distribution (e.g., if $\ell(\hat{y}, y) = \|\hat{y}-y\|_2^2$, then we require something like $\psi[\pi_m(\cdot|x)] = \expectation{\hat{y}
+\sim\pi_m(\cdot|x)}{\hat{y}}$).
+This acquisition function can be seen as an approximation to $a_m(x)$ in \Cref{eq:expected_loss_acq_fn}.
+If $\ell(\hat{p}, y) = -\log \hat{p}(y)$ then $\hat{a}_m(x) = \entropy{\pi_m(y|x)}$, the predictive entropy of the surrogate model.
+
+
+\subsection{Active testing for dataset curation}\label{sec:dataset_curation_method}
+
+The use of the surrogate model to approximate the target model during data acquisition also makes it possible to use active testing for dataset curation, where all the inputs in the pool set are already labelled and the goal is to reduce the number of target-model predictions required for evaluation \citep{maynez2023benchmarking,polo2024tinybenchmarks,saranathan2024dele,vivek2024anchor}.
+This can be viewed as a variation on standard active testing where here we want to use the surrogate model to select $M < N$ input-label pairs with which to evaluate the target model.
+The acquisition function in this case can depend on the labels as well as the inputs:
+\begin{align}\label{eq:label_aware_acq_fn}
+    a_m(x,y) = \ell(\psi[\pi_m(y|x)], y)
+    .
+\end{align}
+If we use the logarithmic loss as before, this recovers the negative log likelihood of the surrogate.

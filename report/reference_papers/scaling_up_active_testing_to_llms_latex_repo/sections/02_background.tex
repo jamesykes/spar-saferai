@@ -1,0 +1,59 @@
+\section{Background}\label{sec:background}
+
+Our aim is to evaluate a fixed target model, $f$, mapping inputs $x \in \mathcal{X}$ to outputs $y \in \mathcal{Y}$.
+We formalise evaluation as estimating a form of frequentist risk \citep{berger1985statistical}, namely an expected predictive loss of the form $R = \expectation{p_\mathrm{eval}(x,y)}{\ell(f(x), y)}$, where $p_\mathrm{eval}$ represents a reference system used as a source of ground truth, and $\ell$ denotes a loss function that represents the consequences of predictive errors.
+As in past work \citep{kossen2021active,kossen2022active}, we consider a pool-based setting \citep{lewis1994sequential} where we have access to a pool of $N$ unlabelled test inputs, $\Dpool = \{x_i\}_{i=1}^N$, but acquiring a label, $y \sim p_\mathrm{eval}(y|x)$, for any given $x$ is costly, so we can only afford to acquire $M < N$ labels.
+
+
+\subsection{Uniform-random sampling}
+
+A simple estimator of $R$ uses uniform-random samples from the pool:
+\begin{align*}
+\Runif = \frac{1}{M} \sum_{m=1}^M \ell(f(x_{i_m}), y_{i_m})
+,
+\end{align*}
+where $i_{1:M} \sim \mathrm{Uniform}(\{1, 2, \ldots, N\}, M)$ are indices sampled without replacement.
+If the pool was constructed by sampling $x_i \sim p_\mathrm{eval}(x)$ then $\Runif$ is known as the subsample empirical risk and is an unbiased estimator of $R$. 
+However, it will typically have high variance for small values of $M$.
+
+
+\subsection{Sampling-based active testing}
+
+Active testing deals with how to more carefully select the $M$ inputs for labelling to produce a more accurate estimate of $R$.
+This can be achieved through either a sampling-based approach or an interpolation-based approach.
+In sampling-based active testing we use Monte Carlo estimators of $R$, similar to $R_\mathrm{unif}$ but with pool indices sampled from a non-uniform distribution.
+At acquisition step $m$ we sample pool input $x_i$ with probability proportional to $a_m(x_i) \in \mathbb{R}^+$ where $a_m$ is an acquisition function that measures a notion of how useful we expect the label for a given input to be (the $m$ subscript denotes that it can depend on all the data available at step $m$, including the target model's training data).
+That is, we sample $i_m \sim q_m(i)$ where $q_m(i) = a_m(x_i) / \sum_{x_j\in\Dpool} a_m(x_j)$.
+
+\citet{farquhar2021statistical} showed that naive Monte Carlo with $i_m \sim q_m(i)$ is biased and, to address this, introduced the levelled unbiased risk estimator (LURE):
+\begin{align}\label{eq:lure}
+    \Rlure = \frac{1}{M} \sum_{m=1}^M v_m \ell(f(x_{i_m}), y_{i_m})
+    , \quad v_m = 1 + \frac{N-M}{N-m} \left(\frac{1}{(N-m+1) q_m(i_m)} - 1\right)
+    .
+\end{align}
+Given both $\Runif$ and $\Rlure$ are unbiased, any advantage that $\Rlure$ brings comes from variance reduction through a well-designed acquisition function, $a_m$.
+The optimal acquisition function is $a^*_m(x) = \expectation{p_\mathrm{eval}(y|x)}{\ell(f(x), y)}$, the expected loss under $p_\mathrm{eval}(y|x)$.
+Since this is unknown, \citet{kossen2021active} proposed approximating $p_\mathrm{eval}(y|x)$ with a surrogate model, $\pi_m(y|x)$, which is typically trained on the acquired test labels along with the target model's training data.
+This surrogate model then allows us to define a practical acquisition function:
+\begin{align}\label{eq:expected_loss_acq_fn}
+    a_m(x) = \expectation{\pi_m(y|x)}{\ell(f(x), y)}
+    .
+\end{align}
+If $f(x) = p_f(y|x)$ and $\ell(\hat{p}, y) = -\log \hat{p}(y)$ then the acquisition function becomes $a_m(x) = \crossentropy{\pi_m(y|x)}{p_f(y|x)}$, the cross entropy between the surrogate and target models.
+Intuitively we can understand this acquisition function as measuring the disagreement between the surrogate and target models, leading us to acquire labels for the inputs where the two models' predictions differ the most.
+
+
+\input{figures/algorithms.tex}
+
+
+\subsection{Interpolation-based active testing}
+
+\citet{kossen2022active} introduced an alternative approach to active testing that, like the sampling-based approach, uses a surrogate model to guide data acquisition, but also uses it to estimate the risk.
+Their active surrogate estimator (ASE) is
+\begin{align}\label{eq:ase}
+    \Rase = \frac{1}{N} \sum\nolimits_{x_i\in\Dpool} \mathbb{E}_{\pi_m(y|x_i)}[\ell(f(x_i),y)]
+    .
+\end{align}
+Here the risk is not directly estimated using labels acquired from $y \sim p_\mathrm{eval}(y|x)$ but instead using labels simulated from the surrogate model.
+The goal of data acquisition is then to improve the surrogate model in a way that leads to a more accurate estimate of the risk.
+\citet{kossen2022active} approached this using an acquisition function called the expected weighted disagreement (XWED).

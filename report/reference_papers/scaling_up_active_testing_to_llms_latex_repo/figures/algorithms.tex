@@ -1,0 +1,44 @@
+\begin{figure}[t]
+    \centering
+    \begin{minipage}[t]{0.47\textwidth}
+        \begin{algorithm}[H]
+            \caption{Sampling-based active testing}
+            \begin{algorithmic}[1]  % [1] means show the line numbers
+                \INPUT Target model, $f$; loss function, $\ell$; acquisition function, $a$; training set, $\Dtrain$; pool set, $\Dpool$; label budget, $M$
+                \STATE Compute $f(x_j)$ for all $x_j \in \Dpool$
+                \STATE Set $\Dtest = \emptyset$
+                \FOR{$m\in(1,2,\ldots,M)$}
+                    \STATE Train $\pi_m$ (e.g., on $\Dtrain \cup \Dtest$)
+                    \STATE Compute $a_m(x_j)$ for all $x_j \in \Dpool$
+                    \STATE Sample $i_m \sim q_m(i)$
+                    \STATE Sample $y_{i_m} \sim p_\mathrm{eval}(y|x_{i_m})$
+                    \STATE Set $\Dtest \leftarrow \Dtest \cup \{(x_{i_m},y_{i_m})\}$
+                \ENDFOR
+                \STATE Compute $\hat{R}_{\mathrm{LURE}}$
+                \OUTPUT Risk estimate, $\hat{R}_{\mathrm{LURE}}$
+            \end{algorithmic}
+            \label{alg:sampling}
+        \end{algorithm}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.47\textwidth}
+        \begin{algorithm}[H]
+            \caption{Interpolation-based active testing}
+            \begin{algorithmic}[1]  % [1] means show the line numbers
+                \INPUT Target model, $f$; loss function, $\ell$; acquisition function, $a$; training set, $\Dtrain$; pool set, $\Dpool$; label budget, $M$
+                \STATE Compute $f(x_j)$ for all $x_j \in \Dpool$
+                \STATE Set $\Dtest = \emptyset$
+                \FOR{$m\in(1,2,\ldots,M)$}
+                    \STATE Train $\pi_m$ (e.g., on $\Dtrain \cup \Dtest$)
+                    \STATE Compute $a_m(x_j)$ for all $x_j \in \Dpool$
+                    \STATE Select $i_m = \arg\max_j a_m(x_j)$
+                    \STATE Sample $y_{i_m} \sim p_\mathrm{eval}(y|x_{i_m})$
+                    \STATE Set $\Dtest \leftarrow \Dtest \cup \{(x_{i_m},y_{i_m})\}$
+                \ENDFOR
+                \STATE Compute $\hat{R}_{\mathrm{ASE}}$
+                \OUTPUT Risk estimate, $\hat{R}_{\mathrm{ASE}}$
+            \end{algorithmic}
+            \label{alg:interpolation}
+        \end{algorithm}
+    \end{minipage}
+\end{figure}

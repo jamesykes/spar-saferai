@@ -1,0 +1,139 @@
+\section{Experiment details}\label{sec:experiment_details}
+
+
+\subsection{Datasets}\label{datasets}
+
+Our experiments are based on five datasets: Stanford Sentiment Treebank 2 (SST2; \citealp{socher2013recursive}; unknown license), Subjectivity (Subj; \citealp{pang2004sentimental}; Creative Commons Attribution 4.0 International License), Financial Phrase-bank (FPB; \citealp{malo2013good}; Creative Commons Attribution Non Commercial Share Alike 3.0 Unported License), Hate Speech (HS; \citealp{degibert2018hate}; Creative Commons Attribution-Share Alike 3.0 Spain License) and Massive Multitask Language Understanding (MMLU; \citealp{hendrycks2021measuring}; MIT license).
+
+Each method, including uniform-random testing, acquires data from the same pool set (a set of candidate data for acquiring, with labels hidden until they are acquired), although its size may vary between experiments.
+We compare risk estimates against a ground-truth risk, which is computed on a separate test dataset in all cases except for FPB, where we use the pool set due to the small size of the original dataset.
+\Cref{tab:set_sizes} summarizes sizes of the pool and test sets for each dataset.
+
+\begin{table}[h]
+    \centering
+    \small
+    \begin{tabular}{r c c c c c}
+        \toprule
+        & SST-2 & Subj & FPB & HS & MMLU \\
+        \midrule
+        Pool set & 10,000 & 6,000 & 2,200 & 6,000 & 7,000\\
+        Test set & 10,000 & 4,000 & -- & 4,000 & 7,000 \\
+        \bottomrule
+    \end{tabular}
+    \vspace{1em}
+    \caption{Pool-set and test-set sizes for each dataset. Sets are randomly sampled so that they are disjoint.}
+    \label{tab:set_sizes}
+\end{table}
+
+
+\paragraph{Stanford Sentiment Treebank 2 (SST-2)}
+
+The Stanford Sentiment Treebank 2 dataset consists of 69,000 human-annotated sentences extracted from movie reviews.
+Each sentence is labeled as either ``positive'' or ``negative'', providing a benchmark for assessing sentiment-analysis capabilities.
+We use the predefined split of the dataset, concentrating on the training set, which contains 56\% positive and 44\% negative labels.
+We randomly select two subsets of 10,000 sentences each from the training set to form the pool and test sets.
+The instruction used for this dataset is
+
+\opus{Classify the sentiment of the following sentence as "positive" or "negative". Respond with "positive" or "negative".$\backslash$n}.
+
+The string \opus{"Answer"} is replaced by \opus{"Label"} for this dataset only.
+
+
+\paragraph{Subjectivity (Subj)}
+
+The Subjectivity dataset is composed of 5,000 subjective sentences from movie reviews and 5,000 objective sentences from plot summaries.
+This dataset is used to determine sentiment polarity.
+The task is to classify each sentence as either ``subjective'' or ``objective''.
+This dataset is balanced, with 49.5\% of objective and 50.5\% of subjective sentences.
+We randomly split the 10,000-sentence train set into a 6,000-sentence pool set and a 4,000-sentence test set.
+Examples for in-context-learning are selected from the separate 2,000-sentence test set.
+The instruction used for this dataset is
+
+\opus{Is the following sentence `objective` or `subjective`. Respond with `objective` or `subjective`.$\backslash$n}.
+
+
+\paragraph{Financial Phrase-bank (FPB)}
+
+The Financial Phrase-bank dataset consists of 4,800 English financial news articles that were classified as ``positive'', ``neutral'' and ``negative'' by human experts.
+We select the training subset of 2,200 sentences for which all 16 annotators agreed. This set contains 13\% of negative, 25\% of positive and 61\% of neutral sentences.
+Due to its reduced size, the whole set is used as the pool set, and the approximation of the exact loss is the loss over the whole set.
+The instruction used for this dataset is
+
+\opus{Classify the sentiment of the following sentence as "negative", "neutral" or "positive". Respond with "negative", "neutral" or "positive".$\backslash$n}.
+
+
+\paragraph{Hate Speech (HS)}
+
+The Hate Speech dataset is composed of 9,900 sentences extracted from Stormfront, a white-supremacist forum, from which we select the 9,600 sentences which are classified as ``hate'' or ``no hate'' to obtain a binary-classification task.
+The dataset is highly unbalanced, with 11\% classified as hate speech and 89\% as non-hate speech.
+We randomly split this dataset into a pool set of size $\sim$6,000 and a test set of size $\sim$4,000.
+The instruction used for this dataset is
+
+\opus{Does the sentence contain hate speech? Respond with "yes" or "no".$\backslash$n}.
+
+
+\paragraph{Massive Multitask Language Understanding (MMLU)}
+
+The Massive Multitask Language Understanding dataset is composed of 116,000 sentences across 57 tasks asssing world knowledge and problem-solving.
+Each question is multiple-choice, with four choices available.
+We randomly split this dataset into a pool set of size 7,000 and a test set of size 7,000.
+The instruction used for this dataset is
+
+\opus{Answer the question with the correct letter. Respond with only 'A', 'B', 'C' or 'D'.$\backslash$n}.
+
+
+\subsection{Models}\label{models}
+
+We use the 7B and 70B models from the Llama 2 family (\citealp{touvron2023llama};  Llama 2 Community License).
+We use 8 bit-quantisation for the 7B model and half-precision floating-point numbers for the 70B model; \citet{kossen2024context} showed that these approximations do not significantly affect performance.
+We additionally use Gemma-3 4B (\citealp{kamath2025gemma}; Gemma License).
+
+
+\subsection{Prompt formatting}
+
+To evaluate a model on a classification task, we follow the formatting guidelines from \citet{kossen2024context} in how we generate the input sentence.
+We begin with a dataset-specific instruction, such as
+
+\opus{Classify the sentiment of the following sentence as "[label1]" or "[label2]". Respond with "[label1]" or "[label2]".$\backslash$n}.
+
+Then we introduce the sentence to be classified and ask for the corresponding label.
+The prompt is formatted as
+
+\opus{Sentence: '[sentence]' $\backslash$nAnswer:}.
+
+
+\subsection{In-context examples}
+
+We randomly select in-context examples such that each class is represented in proportion to its actual proportion in the dataset, which we found improved the model's accuracy. These examples are included in the input between the instruction and the prompt. Each input example is formatted as
+
+\opus{Sentence: '[sentence]' $\backslash$nAnswer: [label]$\backslash$n$\backslash$n}.
+
+All few-shot models are given 50 in-context examples for all datasets, except for the MMLU dataset, for which models receive only 5 examples due to token limit.
+Examples are ordered randomly once and fixed for all evaluations, ensuring that all models receive the same context.
+The set of in-context examples is therefore fixed beforehand and is common to both the target model and the surrogate model, for label efficiency and fair comparison.
+
+
+\subsection{Generating and processing model outputs}
+
+To obtain deterministic, reproducible token generation, we set the maximum number of tokens to 1, do not set a top-$k$ nor top-$p$ value and output the logits directly, from which we compute probabilities.
+
+For each input, the model outputs a logit value for each token in the vocabulary.
+We select the logits corresponding to the labels of the dataset and apply the softmax function to obtain a final probability distribution over the possible labels.
+Any logit that does not correspond to one of the labels is ignored.
+
+In cases where a model represents a task label with multiple tokens \citep{kossen2024context}, we select only the relevant token that corresponds to the core of the word.
+For instance, the Llama 2 tokeniser encodes the word ``objective'' as \opus{[12091]} but ``subjective'' as \opus{[4967, 573]}, which are tokens for ``subject'' and ``ive''.
+In this case we select \opus{[12091]} for ``objective'' and  \opus{[4967]} for ``subjective''.
+
+
+\subsection{Data acquisition}
+
+Following \citet{kossen2021active}, we clip values of the acquisition function to ensure no zero-mass inputs and thus guarantee that the LURE is unbiased.
+All acquisition probabilities below $\alpha=0.1$ times the probability corresponding to uniform-random acquisition are brought up to this limit value.
+
+
+\subsection{Computational resources}\label{sec:computational_resources}
+
+Our experiments are designed to be computationally efficient and therefore do not require substantial resources.
+Generating model outputs over the pool set is the main computational cost, typically requiring two GPUs for Llama 2 70B and one GPU for all other models used in this work.
+Aside from this, the active-testing procedure itself can be run efficiently on a small number of CPUs.

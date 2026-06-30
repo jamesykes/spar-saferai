@@ -1,0 +1,132 @@
+\documentclass{article}
+
+\usepackage[main,final]{neurips_2025}
+
+\usepackage{
+    algorithm,  % For algorithms
+    algorithmic,  % For algorithms
+    amsmath,  % For maths
+    amssymb,  % For \mathbb
+    amsthm,  % For theorems
+    booktabs,  % For tables
+    enumitem,  % For lists
+    graphicx,  % For figures
+    microtype,  % For better typesetting
+    multirow,  % For tables
+    placeins,  % For \FloatBarrier
+}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[hyperfootnotes=false]{hyperref}
+\usepackage[capitalize,nameinlink,noabbrev]{cleveref}
+\usepackage[font=small,labelfont=bf,labelsep=quad,justification=justified,singlelinecheck=false]{caption}
+\usepackage[font=small,labelfont=bf,justification=centering]{subcaption}
+
+% https://tex.stackexchange.com/questions/823/remove-ugly-borders-around-clickable-cross-references-and-hyperlinks
+\hypersetup{
+    colorlinks,
+    linkcolor={blue!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!50!black},
+}
+
+\creflabelformat{equation}{#2\textup{#1}#3}
+
+\bibliographystyle{apalike_ampersand_etal.bst}
+
+\renewcommand*\ttdefault{cmtt}
+
+% https://tex.stackexchange.com/a/86055
+\setlist[enumerate]{itemsep=0pt,topsep=0pt,leftmargin=*}
+
+\newcommand{\shorturl}[1]{\href{https://#1}{\nolinkurl{#1}}}
+
+\renewcommand{\arraystretch}{1.2}
+
+\newcommand{\Dpool}[0]{\mathcal{D}_\mathrm{pool}}
+\newcommand{\Dtrain}[0]{\mathcal{D}_\mathrm{train}}
+\newcommand{\Dtest}[0]{\mathcal{D}_\mathrm{test}}
+\newcommand{\Rhat}[0]{\hat{R}}
+\newcommand{\Runif}[0]{\hat{R}_\mathrm{unif}}
+\newcommand{\Rnaive}[0]{\hat{R}_\mathrm{naive}}
+\newcommand{\Rlure}[0]{\hat{R}_\mathrm{LURE}}
+\newcommand{\Rase}[0]{\hat{R}_\mathrm{ASE}}
+\newcommand{\Rboot}[0]{\hat{R}_\mathrm{boot}}
+
+\newcommand{\crossentropy}[2]{\mathrm{H} \! \left[ #1 \, \| \, #2 \right]}
+\newcommand{\entropy}[1]{\mathrm{H} \! \left[ #1 \right]}
+\newcommand{\expectation}[2]{\mathbb{E}_{#1} \! \left[ #2 \right]}
+\newcommand{\variance}[2]{\mathbb{V}_{#1} \! \left[ #2 \right]}
+
+\newcommand{\opus}[1]{%
+  \begingroup
+    \spaceskip=\fontdimen2\font plus \fontdimen3\font minus \fontdimen4\font
+    \xspaceskip=\fontdimen7\font\relax
+    \ttfamily
+    %\hyphenchar\font=`\-
+    #1%
+  \endgroup
+}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+
+\title{Scaling Up Active Testing to Large Language Models}
+
+\author{%
+    Gabrielle Berrada$^{1}$\thanks{Equal contribution}
+    \phantom{1}
+    Jannik Kossen$^{1}$\footnotemark[1]
+    \phantom{1}
+    Freddie Bickford Smith$^{2}$
+    \phantom{1}
+    Muhammed Razzak$^{1}$\\[0.5em]
+    \textbf{
+    \phantom{1}
+    Yarin Gal$^{1}$ 
+    \phantom{1}
+    Tom Rainforth$^{2}$\thanks{Correspondence to \texttt{rainforth@stats.ox.ac.uk}.}}
+    \\[1em]
+    $^1$ OATML, Department of Computer Science, University of Oxford \\
+    $^2$ Department of Statistics, University of Oxford
+    \vspace{-1em}
+}
+
+
+\begin{document}
+
+\raggedbottom
+
+\maketitle
+
+\input{sections/00_abstract.tex}
+\input{sections/01_introduction.tex}
+\input{sections/02_background.tex}
+\input{sections/03_scaling_method.tex}
+\input{sections/04_error_estimation_method.tex}
+\input{sections/05_experiments.tex}
+\input{sections/06_related_work.tex}
+\input{sections/07_conclusion.tex}
+\input{sections/08_acknowledgements.tex}
+
+\bibliography{references.bib}
+
+\clearpage
+\input{sections/09_paper_checklist.tex}
+
+\clearpage
+\appendix
+
+\input{sections/apdx_impact_statement.tex}
+\input{sections/apdx_experiment_details.tex}
+\input{sections/apdx_extra_results.tex}
+
+\end{document}
