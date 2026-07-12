@@ -10,8 +10,6 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{subcaption}
-\usepackage[numbers]{natbib}
-\usepackage[numbers,sort&compress]{natbib}
 \usepackage[hidelinks]{hyperref}
 \usepackage[style=apa, version=7]{biblatex}
 \addbibresource{bib.bib}
@@ -203,31 +201,100 @@ For one-dimensional empirical distributions with quantile functions $Q_A$ and $Q
 Hence, the error is a mean squared quantile discrepancy between the current budgeted output distribution and the full-data reference (\cite{villani2009optimal}).
 
 \section{Results}
-All six policies were run using 10 reveal seeds and the budget grid $[45,90,180,360,720,1200,1798]$. In what follows, AUC is the area under the squared Wasserstein-2 error curve over the selected budget schedule. The win fractions provided are when the given policy is paired against the uniform sampling policy.
 
-\input{tables/main_policy_comparison.tex}
+This section reports three dense retrospective budget-recovery experiments. All three experiments use the same reveal seeds, budget grid, Monte Carlo settings, full-data reference distribution, and step-balanced uniform baseline. The results are therefore best read as a sequence of ablations around a common question: does LOO output fragility contain useful information for elicitation allocation, and if so, how should that information be converted into a reveal policy?
+
+For each policy $p$, reveal seed $s$, and budget $b$, let
+\[
+E_{p,s,b}
+=
+\wtsq\left(T(M_{p,s,b}),T(M^{\mathrm{full}})\right)
+\]
+denote the squared Wasserstein-2 error to the full-data reference. We report mean and median error by budget. We also use paired comparisons against the step-balanced uniform policy $U$, since policies are evaluated under shared hidden reveal orders for each reveal seed. The paired relative error is
+\[
+R_{p,s,b} = \frac{E_{p,s,b}}{E_{U,s,b}},
+\]
+computed within reveal seed before averaging or taking medians across seeds. Values below one indicate lower error than uniform for the same seed and budget. We also report paired win rate,
+\[
+\frac{1}{S}\sum_s \mathbf{1}\{E_{p,s,b}<E_{U,s,b}\}.
+\]
+At the initial budget of 45 rows, all policies have the same seeded allocation. At the terminal budget of 1798 rows, all policies have revealed the full fitted SOTA dataset, so the error is zero by construction. The terminal point is therefore not informative for relative-error or win-rate plots.
+
+The exact unsmoothed by-budget values are reported in Appendix~\ref{app:additional-tables}. The main figures use a centered five-budget moving average for readability, applied after computing each by-budget statistic. Since budgets are spaced every 45 rows, this is a 225-row display window. This smoothing is used only to make the budget-dependent trends legible; it is not a separate evaluation metric.
+
+\subsection{Initial dense policy suite}
+
+The first dense experiment compares the original fragility-guided policy family against the step-balanced uniform baseline. It includes deterministic greedy LOO-fragility allocation, epsilon-greedy allocation, exploration-bonus allocation, and the stochastic proportional-fragility policy. The key question is whether direct use of LOO fragility improves recovery of the full-data reference distribution.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.95\textwidth]{figures/error_vs_budget.pdf}
-\caption{Mean squared Wasserstein-2 error to the full-data reference by revealed budget. Bands show the interquartile range across reveal seeds.}
-\label{fig:error-vs-budget}
+\includegraphics[width=0.92\textwidth]{figures/results/initial_suite_smoothed_median_relative_error.pdf}
+\caption{Initial dense policy suite. The plotted quantity is smoothed median seedwise relative error against step-balanced uniform. The dashed horizontal line marks parity with uniform; values below one indicate lower error than uniform.}
+\label{fig:initial-suite-relative-error}
 \end{figure}
+
+The deterministic fragility policies perform poorly. In Figure~\ref{fig:initial-suite-relative-error}, greedy LOO-fragility and exploration-bonus allocation remain well above uniform across most budgets. Greedy LOO-fragility is especially unstable: after smoothing, its median relative error is typically several times the uniform error. The exploration-bonus policy with $c=1.0$ is less extreme than pure greedy allocation, but still far from competitive in this dense run.
+
+The main exception is \texttt{stochastic\_normalized\_fragility}, which samples among positive-fragility nodes with probability proportional to the current fragility score. This policy is much closer to uniform than the deterministic policies. Across the non-boundary budgets, its median relative error is below one at 19 of 38 budgets, and its paired win rate is at least 0.5 at 20 of 38 budgets. This is not enough to show clear dominance over uniform, but it changes the interpretation of the initial experiment: the problem is not simply that LOO fragility contains no useful signal. Rather, deterministic or too-concentrated use of that signal appears brittle.
+
+This motivates the second experiment. If the stochastic proportional-fragility policy is the only competitive member of the initial suite, the next question is whether its useful feature is proportional weighting by raw fragility magnitude, or instead the weaker act of randomizing among nodes with positive fragility.
+
+\subsection{Stochastic fragility ablation}
+
+The second dense experiment keeps the same experimental settings but replaces deterministic allocation rules with stochastic variants. The policies compared here are the step-balanced uniform baseline, stochastic proportional fragility, uniform-positive fragility, stochastic epsilon-greedy fragility, and stochastic exploration-bonus variants. The most important comparison is between stochastic proportional fragility and uniform-positive fragility.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.95\textwidth]{figures/concentration_vs_budget.pdf}
-\caption{Mean L1 step-count imbalance by budget. Uniform allocation remains balanced; fragility-guided policies concentrate allocation at intermediate budgets. All policies converge to zero imbalance at budget 1798 because the full fitted SOTA dataset has been revealed.}
-\label{fig:concentration-vs-budget}
+\includegraphics[width=0.92\textwidth]{figures/results/stochastic_ablation_smoothed_median_relative_error.pdf}
+\caption{Stochastic fragility ablation. The main comparison is between proportional weighting by raw positive fragility and uniform sampling among positive-fragility nodes. The plotted quantity is smoothed median seedwise relative error against step-balanced uniform.}
+\label{fig:stochastic-ablation-relative-error}
 \end{figure}
 
-Table~\ref{tab:main-policy-comparison} summarizes the comparison of policies. Figure~\ref{fig:error-vs-budget} shows mean squared $W_2$ error by budget, with interquartile bands across the 10 reveal seeds. The full error-by-budget table appears in Appendix~\ref{app:additional-tables}. The curves are noisy at this number of reveal seeds, and no fragility-guided policy dominates the uniform baseline at every budget. However, exploration-bonus (c=1.0) achieved the lowest average AUC over the selected budget grid, followed by exploration-bonus (c=0.5), epsilon-greedy, greedy LOO-fragility, and then the uniform baseline. Exploration-bonus (c=0.25) performed worse than uniform.
+The stochasticized policies are much more competitive than the deterministic fragility policies in the initial suite. None of them uniformly dominates the step-balanced baseline at every budget, but their relative-error curves stay close to one rather than diverging by large factors.
 
-This AUC result should be interpreted cautiously. All fragility-guided policies had paired win fractions below 0.5 against the uniform baseline over the reported budget grid. This suggests that the fragility signal is useful in some reveal seeds and budgets, but not uniformly reliable. In other words, the best fragility-guided policy by average AUC did not consistently beat uniform in paired comparisons.
+Uniform-positive fragility is the most informative diagnostic policy in this experiment. It ignores raw fragility magnitudes after using fragility only to identify nodes with positive finite scores. Despite this simpler rule, it performs at least as well as stochastic proportional fragility in the main budget-dependent comparisons. Across the 38 non-boundary budgets, uniform-positive fragility has median relative error below one at 20 budgets and paired win rate above 0.5 at 20 budgets. Stochastic proportional fragility has median relative error below one at 19 budgets and win rate above 0.5 at 14 budgets.
 
-Figure~\ref{fig:concentration-vs-budget} shows allocation concentration as mean $L_1$ imbalance from a perfectly balanced allocation vector. Uniform allocation remains balanced by construction. At budget 1200, the mean $L_1$ imbalances are 0.0 for uniform, 459.8 for epsilon-greedy, 516.0 for exploration-bonus (c=1.0), 569.6 for exploration-bonus (c=0.5), 595.4 for greedy LOO-fragility, and 627.2 for exploration-bonus (c=0.25). Thus, concentration remains severe at intermediate budgets for the fragility-guided policies. At budget 1798, all policies have mean, median, and maximum $L_1$ imbalance equal to zero, with minimum step count 199 and maximum step count 200. This convergence is expected because the full available fitted SOTA dataset has been revealed.
+The stochastic epsilon-greedy policy is also competitive, with median relative error below one at 22 of the 38 non-boundary budgets and win rate above 0.5 at 21 budgets. The stochastic exploration-bonus policy with $c=1.0$ is close to the baseline, but does not clearly improve on the simpler stochastic rules.
 
-Overall, the results provide suggestive but mixed evidence for fragility-guided allocation. They support the idea that output fragility contains some useful signal for elicitation allocation, especially when combined with explicit exploration. However, the signal is not reliable enough for the LOO fragility heuristic to be treated as a clearly superior allocation rule. The main lesson is that output-sensitive allocation seems worth further investigation, but should be evaluated alongside paired comparisons and concentration diagnostics rather than average AUC alone.
+These results suggest that positive LOO fragility does contain useful allocation information, but that the raw magnitudes are not well calibrated as sampling probabilities. A policy that randomizes among positive-fragility nodes can perform comparably to, and in some comparisons better than, a policy that samples in direct proportion to the fragility scores.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.92\textwidth]{figures/results/stochastic_ablation_smoothed_win_rate.pdf}
+\caption{Paired win rate against step-balanced uniform for selected stochastic fragility policies. Win rate is a reliability diagnostic and should be interpreted alongside relative-error magnitude. The dashed horizontal line marks a win rate of 0.5.}
+\label{fig:stochastic-ablation-win-rate}
+\end{figure}
+
+\subsection{Softmax temperature ablation}
+
+The third dense experiment tests whether the proportional-fragility policy can be improved by softmax temperature scaling. The motivation is that raw LOO fragility scores may rank or identify useful nodes while still being too poorly calibrated to use directly as probabilities. Softmax scaling provides a controlled way to vary the sharpness of magnitude-weighted sampling.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.92\textwidth]{figures/results/softmax_ablation_smoothed_median_relative_error.pdf}
+\caption{Softmax temperature ablation. Lower temperatures make sampling sharper and closer to greedy selection; higher temperatures flatten the distribution over positive-fragility nodes. The plotted quantity is smoothed median seedwise relative error against step-balanced uniform.}
+\label{fig:softmax-ablation-relative-error}
+\end{figure}
+
+The softmax results support the calibration interpretation. The sharpest tested softmax policy, $T=0.25$, performs poorly: across non-boundary budgets, its median relative error is below one at only 3 of 38 budgets. In Figure~\ref{fig:softmax-ablation-relative-error}, it remains above uniform for most of the budget range. This is consistent with the failure mode seen in deterministic fragility policies: over-sharp use of a noisy fragility signal leads to over-concentration.
+
+Flatter softmax policies are more competitive. The $T=2.0$ and $T=4.0$ variants stay much closer to uniform and to the stochastic ablation policies. The $T=4.0$ variant has median relative error below one at 20 of 38 non-boundary budgets, similar to uniform-positive fragility. However, the softmax variants do not clearly improve on the simpler uniform-positive rule. The empirical lesson is therefore not that temperature scaling solves the problem, but that reducing the sharpness of magnitude-weighted sampling helps.
+
+Taken together, the stochastic and softmax ablations point to the same conclusion. LOO output fragility appears to identify nodes where additional elicitation can be useful, but the raw fragility magnitudes should not be treated as calibrated probabilities. The most promising policies in these experiments are those that use fragility to restrict or soften the candidate set while preserving substantial randomization.
+
+\subsection{Summary of empirical findings}
+
+The dense experiments support four main findings.
+
+First, the step-balanced uniform policy is a strong baseline. This matters because the evaluation target is a full-data exchangeable reference distribution, and uniform allocation is naturally well matched to recovering nodewise mixtures when no reliable prioritization signal is available.
+
+Second, deterministic use of LOO fragility is not competitive in this setting. Greedy and exploration-bonus policies over-concentrate allocation and often have much larger error than uniform.
+
+Third, stochastic use of positive fragility is substantially more promising. The proportional-fragility policy from the initial suite is close enough to uniform to motivate follow-up, and the uniform-positive and stochastic epsilon-greedy ablations perform at least as well in the budget-dependent comparisons.
+
+Fourth, softmax temperature scaling improves over very sharp magnitude-weighted sampling, but does not clearly beat the simpler uniform-positive policy. This suggests that the sign or positivity of LOO fragility is more reliable than the exact raw magnitude.
+
+These results should be interpreted as exploratory. They do not identify an optimal allocation rule, and they do not show that fragility-guided elicitation allocation universally beats uniform allocation. They do, however, provide evidence that output-sensitive allocation is worth further study, especially through stochastic policies that avoid over-committing to noisy fragility estimates.
 
 \section{Limitations and Future Work}
 
@@ -250,9 +317,11 @@ This report outlines a retrospective budget-recovery experiment for the OC3 DoS 
 
 \appendix
 
-\section{Additional Table}
+\section{Additional Tables}
 \label{app:additional-tables}
 
-\input{tables/error_by_budget.tex}
+\input{tables/dense_by_budget/dense_policy_suite_by_budget_metrics.tex}
+\input{tables/dense_by_budget/stochastic_ablation_by_budget_metrics.tex}
+\input{tables/dense_by_budget/softmax_temperature_ablation_by_budget_metrics.tex}
 
 \end{document}
