@@ -10,6 +10,8 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
 \usepackage[hidelinks]{hyperref}
 \usepackage[style=apa, version=7]{biblatex}
 \addbibresource{bib.bib}
@@ -148,6 +150,30 @@ T(M^{\mathrm{full}})=\law\left(P_{M^{\mathrm{full}}}(\mathrm{success})\right).
 
 For each ``reveal seed'', the experiment has a specified reveal order for each node. For each of these, repeats are shuffled for each of the five LLMs to obtain a random order for that seed and model. All policies begin with the same initial seed allocation: five rows for each node, one from each LLM, for a total initial budget of 45 SOTA elicitation rows. After this initial seed allocation, a policy selects the next node. When it selects node $j$, it receives the next unused fitted row for $j$ from the seed-specific reveal order. This ensures that, under a given reveal seed, policies differ only in which node they choose to reveal next, not in the hidden ordering of rows within each node.
 
+\begin{algorithm}[htbp]
+\caption{Retrospective budget-recovery experiment for one reveal seed and policy}
+\label{alg:budget-recovery}
+\begin{algorithmic}[1]
+\Require Fitted elicitation-row pools $\{D_{j,d}\}$ for nodes $j=1,\ldots,9$; hidden reveal orders $\{\pi_j\}_{j=1}^9$; allocation policy $\mathcal{A}$; budget grid $\mathcal{B}$; full-data reference distribution $T(M^{\mathrm{full}})$
+\State Initialize each revealed set $S_j$ with one row from each LLM forecaster model
+\State Set total revealed budget $b \gets \sum_{j=1}^9 |S_j| = 45$
+\State Estimate $T(M(S_1,\ldots,S_9))$ by Monte Carlo sampling and record error to $T(M^{\mathrm{full}})$ at budget $b$
+\While{$b < \max(\mathcal{B})$}
+    \If{fragility scores are required by $\mathcal{A}$ and due for recomputation}
+        \State Estimate current LOO fragility scores $\{F_j^{\mathrm{LOO}}\}_{j=1}^9$
+    \EndIf
+    \State Let $\mathcal{J}_{\mathrm{eligible}} \gets \{j : \pi_j \text{ has at least one unrevealed row}\}$
+    \State Choose next node $j^\star \sim \mathcal{A}\!\left(\{S_j\}_{j=1}^9,\{F_j^{\mathrm{LOO}}\}_{j=1}^9,\mathcal{J}_{\mathrm{eligible}}\right)$
+    \State Reveal the next unused row for node $j^\star$ according to $\pi_{j^\star}$ and add it to $S_{j^\star}$
+    \State Set $b \gets b+1$
+    \If{$b \in \mathcal{B}$}
+        \State Estimate $T(M(S_1,\ldots,S_9))$ by Monte Carlo sampling
+        \State Record squared Wasserstein-2 error to $T(M^{\mathrm{full}})$
+    \EndIf
+\EndWhile
+\end{algorithmic}
+\end{algorithm}
+
 \subsection{LOO output fragility}
 
 Given revealed draw sets $S_1,\ldots,S_9$, let $M$ be the current exchangeable nodewise mixture model. For a draw $d\in S_j$, define
@@ -228,8 +254,8 @@ The first dense experiment compares the original fragility-guided policy family 
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.92\textwidth]{figures/results/initial_suite_smoothed_median_relative_error.pdf}
-\caption{Initial dense policy suite. The plotted quantity is smoothed median seedwise relative error against step-balanced uniform. The dashed horizontal line marks parity with uniform; values below one indicate lower error than uniform.}
+\includegraphics[width=\textwidth]{figures/results/initial_suite_smoothed_relative_error_and_win_rate.pdf}
+\caption{Initial dense policy suite. Left: smoothed median seedwise relative error against step-balanced uniform. Right: smoothed paired win rate against step-balanced uniform. The dashed horizontal lines mark parity with uniform.}
 \label{fig:initial-suite-relative-error}
 \end{figure}
 
@@ -245,8 +271,8 @@ The second dense experiment keeps the same experimental settings but replaces de
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.92\textwidth]{figures/results/stochastic_ablation_smoothed_median_relative_error.pdf}
-\caption{Stochastic fragility ablation. The main comparison is between proportional weighting by raw positive fragility and uniform sampling among positive-fragility nodes. The plotted quantity is smoothed median seedwise relative error against step-balanced uniform.}
+\includegraphics[width=\textwidth]{figures/results/stochastic_ablation_smoothed_relative_error_and_win_rate.pdf}
+\caption{Stochastic fragility ablation. The main comparison is between proportional weighting by raw positive fragility and uniform sampling among positive-fragility nodes. Left: smoothed median seedwise relative error against step-balanced uniform. Right: smoothed paired win rate against step-balanced uniform.}
 \label{fig:stochastic-ablation-relative-error}
 \end{figure}
 
@@ -258,21 +284,14 @@ The stochastic epsilon-greedy policy is also competitive, with median relative e
 
 These results suggest that positive LOO fragility does contain useful allocation information, but that the raw magnitudes are not well calibrated as sampling probabilities. A policy that randomizes among positive-fragility nodes can perform comparably to, and in some comparisons better than, a policy that samples in direct proportion to the fragility scores.
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.92\textwidth]{figures/results/stochastic_ablation_smoothed_win_rate.pdf}
-\caption{Paired win rate against step-balanced uniform for selected stochastic fragility policies. Win rate is a reliability diagnostic and should be interpreted alongside relative-error magnitude. The dashed horizontal line marks a win rate of 0.5.}
-\label{fig:stochastic-ablation-win-rate}
-\end{figure}
-
 \subsection{Softmax temperature ablation}
 
 The third dense experiment tests whether the proportional-fragility policy can be improved by softmax temperature scaling. The motivation is that raw LOO fragility scores may rank or identify useful nodes while still being too poorly calibrated to use directly as probabilities. Softmax scaling provides a controlled way to vary the sharpness of magnitude-weighted sampling.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.92\textwidth]{figures/results/softmax_ablation_smoothed_median_relative_error.pdf}
-\caption{Softmax temperature ablation. Lower temperatures make sampling sharper and closer to greedy selection; higher temperatures flatten the distribution over positive-fragility nodes. The plotted quantity is smoothed median seedwise relative error against step-balanced uniform.}
+\includegraphics[width=\textwidth]{figures/results/softmax_ablation_smoothed_relative_error_and_win_rate.pdf}
+\caption{Softmax temperature ablation. Lower temperatures make sampling sharper and closer to greedy selection; higher temperatures flatten the distribution over positive-fragility nodes. Left: smoothed median seedwise relative error against step-balanced uniform. Right: smoothed paired win rate against step-balanced uniform.}
 \label{fig:softmax-ablation-relative-error}
 \end{figure}
 

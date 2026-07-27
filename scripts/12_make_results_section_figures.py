@@ -152,6 +152,49 @@ FIGURE_SPECS = [
     },
 ]
 
+COMBINED_FIGURE_SPECS = [
+    {
+        "stem": "initial_suite_smoothed_relative_error_and_win_rate",
+        "title": "Initial Dense Policy Suite",
+        "metrics_file": "dense_policy_suite_by_budget_metrics.csv",
+        "policies": [
+            "stochastic_normalized_fragility",
+            "epsilon_greedy_eps0.2",
+            "exploration_bonus_c1.0",
+            "greedy_loo_fragility",
+        ],
+        "relative_ylim": (0.5, 7.8),
+        "win_ylim": (0.0, 0.8),
+    },
+    {
+        "stem": "stochastic_ablation_smoothed_relative_error_and_win_rate",
+        "title": "Stochastic Fragility Ablation",
+        "metrics_file": "stochastic_ablation_by_budget_metrics.csv",
+        "policies": [
+            "stochastic_normalized_fragility",
+            "uniform_positive_fragility",
+            "stochastic_epsilon_greedy_eps0.2",
+            "stochastic_exploration_bonus_c1.0",
+        ],
+        "relative_ylim": (0.65, 1.6),
+        "win_ylim": (0.15, 0.75),
+    },
+    {
+        "stem": "softmax_ablation_smoothed_relative_error_and_win_rate",
+        "title": "Softmax Temperature Ablation",
+        "metrics_file": "softmax_temperature_ablation_by_budget_metrics.csv",
+        "policies": [
+            "uniform_positive_fragility",
+            "stochastic_normalized_fragility",
+            "softmax_normalized_fragility_temp0.25",
+            "softmax_normalized_fragility_temp2.0",
+            "softmax_normalized_fragility_temp4.0",
+        ],
+        "relative_ylim": (0.65, 1.85),
+        "win_ylim": (0.15, 0.75),
+    },
+]
+
 
 def main() -> None:
     DRAFT_FIGURE_DIR.mkdir(parents=True, exist_ok=True)
@@ -160,6 +203,8 @@ def main() -> None:
     written: list[Path] = []
     for spec in FIGURE_SPECS:
         written.extend(_write_figure(spec))
+    for spec in COMBINED_FIGURE_SPECS:
+        written.extend(_write_combined_figure(spec))
 
     print("Results-section figures generated:")
     for path in written:
@@ -213,6 +258,91 @@ def _write_figure(spec: dict[str, object]) -> list[Path]:
         written.extend([pdf_path, png_path])
     plt.close(fig)
     return written
+
+
+def _write_combined_figure(spec: dict[str, object]) -> list[Path]:
+    metrics_path = ARTIFACT_DIR / str(spec["metrics_file"])
+    if not metrics_path.exists():
+        raise FileNotFoundError(f"Missing metrics file: {metrics_path}")
+
+    data = pd.read_csv(metrics_path)
+    data = data.loc[~data["budget"].isin(EXCLUDED_PLOT_BUDGETS)].copy()
+
+    fig, axes = plt.subplots(1, 2, figsize=(11.0, 4.8), sharex=True)
+    _plot_smoothed_panel(
+        ax=axes[0],
+        data=data,
+        policies=list(spec["policies"]),
+        metric="median_relative_error_vs_uniform",
+        ylabel="Median relative error vs uniform",
+        reference=1.0,
+        ylim=tuple(spec["relative_ylim"]),
+    )
+    _plot_smoothed_panel(
+        ax=axes[1],
+        data=data,
+        policies=list(spec["policies"]),
+        metric="win_rate_vs_uniform",
+        ylabel="Paired win rate vs uniform",
+        reference=0.5,
+        ylim=tuple(spec["win_ylim"]),
+    )
+    axes[0].set_title("Median relative error")
+    axes[1].set_title("Win rate")
+    for ax in axes:
+        ax.set_xlabel("Total revealed SOTA elicitation rows")
+    handles, labels = axes[0].get_legend_handles_labels()
+    axes[0].legend().remove()
+    axes[1].legend().remove()
+    fig.legend(handles, labels, loc="lower center", ncol=min(len(labels), 5), fontsize=7.5, frameon=True)
+    fig.suptitle(str(spec["title"]), y=0.99)
+    fig.tight_layout(rect=(0, 0.16, 1, 0.94))
+
+    written: list[Path] = []
+    for directory in (DRAFT_FIGURE_DIR, REPORT_FIGURE_DIR):
+        pdf_path = directory / f"{spec['stem']}.pdf"
+        png_path = directory / f"{spec['stem']}.png"
+        fig.savefig(pdf_path, bbox_inches="tight")
+        fig.savefig(png_path, dpi=220, bbox_inches="tight")
+        written.extend([pdf_path, png_path])
+    plt.close(fig)
+    return written
+
+
+def _plot_smoothed_panel(
+    *,
+    ax: plt.Axes,
+    data: pd.DataFrame,
+    policies: list[str],
+    metric: str,
+    ylabel: str,
+    reference: float,
+    ylim: tuple[float, float],
+) -> None:
+    for policy in policies:
+        policy_data = data.loc[data["policy_name"].eq(policy)].sort_values("budget").copy()
+        if policy_data.empty:
+            raise ValueError(f"Missing policy {policy}")
+        y = (
+            policy_data[metric]
+            .rolling(window=ROLLING_WINDOW, center=True, min_periods=ROLLING_MIN_PERIODS)
+            .mean()
+            .to_numpy(dtype=float)
+        )
+        ax.plot(
+            policy_data["budget"].to_numpy(dtype=float),
+            y,
+            linewidth=1.25,
+            color=POLICY_COLORS.get(policy),
+            label=POLICY_LABELS.get(policy, policy),
+        )
+
+    ax.axhline(reference, color="black", linewidth=0.9, linestyle="--", alpha=0.65)
+    ax.set_ylabel(ylabel)
+    ax.set_xlim(80, 1770)
+    ax.set_ylim(*ylim)
+    ax.grid(True, alpha=0.22, linewidth=0.7)
+    ax.legend(fontsize=7.5, frameon=True)
 
 
 if __name__ == "__main__":
