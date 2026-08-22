@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "saferai-budget-recovery"
 version = "0.1.0"
-description = "Data cleaning workflow for the SaferAI OC3 DoS budget-recovery experiment."
+description = "Fragility-guided elicitation budget experiments for the SaferAI OC3 DoS risk model."
 requires-python = ">=3.12"
 dependencies = [
     "pandas",
@@ -26,4 +26,3 @@ where = ["src"]
 testpaths = ["tests"]
 pythonpath = ["src"]
 addopts = "-q"
-

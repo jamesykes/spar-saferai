@@ -24,7 +24,6 @@ from saferai_budget_recovery import config
 
 
 ARTIFACT_DIR = config.PROJECT_ROOT / "outputs" / "report_artifacts_dense_by_budget"
-DRAFT_FIGURE_DIR = config.PROJECT_ROOT / "report" / "drafts" / "original_draft_latex_repo" / "figures" / "results"
 REPORT_FIGURE_DIR = config.PROJECT_ROOT / "report" / "figures" / "results"
 
 ROLLING_WINDOW = 5
@@ -197,7 +196,6 @@ COMBINED_FIGURE_SPECS = [
 
 
 def main() -> None:
-    DRAFT_FIGURE_DIR.mkdir(parents=True, exist_ok=True)
     REPORT_FIGURE_DIR.mkdir(parents=True, exist_ok=True)
 
     written: list[Path] = []
@@ -250,7 +248,7 @@ def _write_figure(spec: dict[str, object]) -> list[Path]:
     fig.tight_layout()
 
     written: list[Path] = []
-    for directory in (DRAFT_FIGURE_DIR, REPORT_FIGURE_DIR):
+    for directory in (REPORT_FIGURE_DIR,):
         pdf_path = directory / f"{spec['stem']}.pdf"
         png_path = directory / f"{spec['stem']}.png"
         fig.savefig(pdf_path)
@@ -299,7 +297,7 @@ def _write_combined_figure(spec: dict[str, object]) -> list[Path]:
     fig.tight_layout(rect=(0, 0.16, 1, 0.94))
 
     written: list[Path] = []
-    for directory in (DRAFT_FIGURE_DIR, REPORT_FIGURE_DIR):
+    for directory in (REPORT_FIGURE_DIR,):
         pdf_path = directory / f"{spec['stem']}.pdf"
         png_path = directory / f"{spec['stem']}.png"
         fig.savefig(pdf_path, bbox_inches="tight")

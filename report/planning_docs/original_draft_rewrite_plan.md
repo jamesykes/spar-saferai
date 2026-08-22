@@ -2,9 +2,7 @@
 
 Status: working planning memo for discussion, not report prose.
 
-Baseline draft: `report/drafts/original_draft_latex_repo/main.tex`
-
-Do not treat `report/main.tex` as the source of truth for this rewrite. The relevant draft is the original LaTeX source in `report/drafts/original_draft_latex_repo/`.
+Baseline draft: `report/main.tex`
 
 ## 1. What This Memo Is For
 

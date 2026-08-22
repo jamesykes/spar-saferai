@@ -1,4 +1,4 @@
-"""Print basic environment checks for the data-cleaning workflow."""
+"""Print basic environment checks for the budget-recovery workflow."""
 
 from __future__ import annotations
 
@@ -24,10 +24,15 @@ def main() -> None:
         print(f"{package}: {version}")
     print(f"Current working directory: {os.getcwd()}")
     print(f"Raw CSV exists: {config.RAW_DATA_PATH.exists()} ({config.RAW_DATA_PATH})")
-    plan_path = PROJECT_ROOT.parent / "saferai_mixture_fragility_allocation_plan_v8.md"
-    print(f"v8 plan exists: {plan_path.exists()} ({plan_path})")
+    print(
+        f"Processed data exists: {config.PROCESSED_DATA_PATH.exists()} "
+        f"({config.PROCESSED_DATA_PATH})"
+    )
+    print(
+        f"Fitted SOTA data exists: {config.SOTA_BETA_FITS_PATH.exists()} "
+        f"({config.SOTA_BETA_FITS_PATH})"
+    )
 
 
 if __name__ == "__main__":
     main()
-

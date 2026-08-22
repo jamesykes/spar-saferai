@@ -1,5 +1,0 @@
-policy_name,reveal_seed,auc_distance,mean_distance_across_budgets
-greedy_loo_fragility,101,0.020560875241541016,3.226023999801115e-05
-greedy_loo_fragility,202,0.01799861174764028,2.8620423492519576e-05
-uniform_step_balanced,101,0.0322405371099133,3.92922973212557e-05
-uniform_step_balanced,202,0.015991231980464173,2.6451518097001988e-05

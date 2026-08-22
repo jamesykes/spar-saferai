@@ -2,6 +2,7 @@
 
 \usepackage[margin=1in]{geometry}
 \usepackage{amsmath, amssymb}
+\usepackage{authblk}
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{longtable}
@@ -9,23 +10,32 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{subcaption}
-\usepackage[numbers,sort&compress]{natbib}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
 \usepackage[hidelinks]{hyperref}
+\usepackage[style=apa, version=7]{biblatex}
+\addbibresource{references.bib}
 
-\newcommand{\psuccess}{P(\mathrm{success})}
+\newcommand{\psuccess}{P(\text{success})}
 \newcommand{\law}{\mathcal{L}}
 \newcommand{\wtsq}{W_2^2}
 
-\title{Fragility-Guided Elicitation Budget Recovery for the OC3 Denial-of-Service \texorpdfstring{$P(\mathrm{success})$}{P(success)} Submodel}
-\author{SPAR / SaferAI draft}
-\date{\today}
+\title{Toward Fragility-Guided Elicitation Budget Allocation for \\ AI-Cyber Risk Modeling with Bayesian Networks}
+
+\author[1]{James Sykes}
+\author[2]{Jakub Kry\'{s}}
+\author[2]{Matthew Smith}
+
+\affil[1]{Department of Statistics, University of Warwick}
+\affil[2]{SaferAI}
+\date{}
 
 \begin{document}
 
 \maketitle
 
 \begin{abstract}
-SaferAI-style quantitative risk models require many uncertain input distributions. When elicitation budget is limited, a natural question is whether additional elicitation effort should be allocated uniformly or preferentially to inputs for which the current model output is most fragile. This draft reports a scoped retrospective budget-recovery experiment for the OC3 Denial-of-Service risk model, restricted to the SOTA capability condition and the \(\psuccess\) submodel. The budget unit is one additional LLM elicitation draw. The experiment compares a step-balanced uniform allocation baseline with several leave-one-out (LOO) output-fragility-guided allocation heuristics. The goal is not to derive an optimal acquisition function, a Bayesian experimental design procedure, or a value-of-information estimate. It is to test whether a simple output-fragility heuristic contains enough signal to recover a full-data reference distribution faster than uniform allocation in this dataset.
+SaferAI’s quantitative AI-cyber risk models are parametrized with probability distributions elicited from experts, and this expert elicitation process often proves to be an expensive bottleneck. This report investigates whether elicitation effort can be allocated more efficiently by prioritizing inputs that appear to have the greatest effect on the output probability distribution. In order to investigate this, we perform a retrospective budget-recovery experiment on SaferAI’s OC3 Denial-of-Service risk model, restricted to the SOTA capability condition and the $P(\text{success})$ submodel. The experiment compares a uniform baseline with several fragility-guided allocation heuristics. The results support further investigation of non-uniform elicitation allocation, but they do not clearly support the use of this particular fragility-guided heuristic.
 \end{abstract}
 
 \tableofcontents
@@ -33,59 +43,74 @@ SaferAI-style quantitative risk models require many uncertain input distribution
 
 \section{Introduction}
 
-SaferAI-style quantitative AI risk models often require eliciting many uncertain input distributions. If elicitation effort is expensive, repeated, or rate-limited, then the allocation of additional elicitation draws becomes a practical modelling question. A uniform strategy is simple and defensible: each uncertain input receives additional draws at roughly the same rate. However, a model's output uncertainty may be more sensitive to some inputs than to others. This motivates a retrospective diagnostic question: can we use output fragility in the current partially revealed model to decide where to allocate additional elicitation draws?
+SaferAI's current approach to quantitative AI-cyber risk modeling relies on eliciting probability distributions from experts\footnote{For simplicity, we refer to both humans and LLMs who provide probability distributions to parametrize risk models as ``experts''.} in order to parametrize a Bayesian network-based risk model (\cite{barrett2025toward}). This is an inherently expensive process to undertake, both in terms of the time required and the expense, a problem commonly referred to as ``the elicitation burden'' (\cite{barons2022balancing}). While LLM-based expert elicitation is increasingly being regarded as a viable way of eliciting the required information in a cheaper manner (\cite{halawi2024approaching}), the cost of doing this remains far from negligible. As a result, there is a strong motivation for us to develop methods to improve the efficiency of the expert elicitation process.
 
-This project evaluates that question in a deliberately scoped setting. It asks whether a simple output-fragility heuristic can improve recovery of a full-data reference distribution under a limited elicitation budget. The central experiment compares LOO-fragility-guided allocation of additional LLM elicitation draws against a step-balanced uniform allocation baseline. The recovery target is the full-data exchangeable nodewise reference distribution for the OC3 Denial-of-Service \(\psuccess\) submodel.
+There is little existing work on this problem, partly because AI-cyber risk modeling is still a nascent field. We take inspiration from the experimental design literature, particularly that on active learning (\cite{settles2009active}). Active learning deals with the intelligent collection of data to train a machine learning model, via the use of an acquisition function, which assigns a score at each ``sampling opportunity'' to every point in the input space as to how desirable it would be to sample there. While the machinery we use does not fall under the remit of active learning, our approach is similar: we score the desirability of potential information we could elicit, and then use this to decide which nodes of the Bayesian network to elicit information for at each stage of the process.
 
-The claim is modest. The method is an active-learning-inspired heuristic, but it is not optimal active learning. It is not Bayesian experimental design, and it is not a true value-of-information calculation. LOO fragility measures finite-sample instability of a current nodewise mixture; it does not prove that an additional draw at that input will reduce error. The experiment is therefore best read as a pilot diagnostic: does this kind of output-fragility signal appear useful enough to warrant further investigation?
-
-\section{Background and motivation}
-
-The broader motivation is elicitation prioritisation in structured quantitative risk models. In a multi-input risk model, collecting additional probability distributions for every input may be infeasible. A model builder may want an allocation rule that spends more effort on inputs where current uncertainty is downstream-relevant. The natural baseline is uniform allocation across model inputs. A useful heuristic should be compared against this baseline on a fixed retrospective dataset, where all candidate elicitation draws are already available but are hidden from the policy until revealed.
-
-The present experiment follows the SaferAI cyber-risk modelling context at a limited proof-of-concept scale \citep{saferai-methodology-placeholder, saferai-cyber-risk-placeholder}. It uses MITRE ATT\&CK technique labels to define the leaf inputs in the OC3 Denial-of-Service success-probability submodel \citep{mitre-attack}. The evaluation metric is squared Wasserstein-2 distance between one-dimensional empirical output distributions, equivalent in this setting to integrated squared quantile discrepancy \citep{villani2009optimal}.
-
-\section{Experiment scope}
-
-The final-report scope is intentionally narrow:
-
-\begin{center}
-\begin{tabular}{ll}
-\toprule
-Risk model & OC3 Denial of Service \\
-Component & \(\psuccess\) submodel only \\
-Capability level & SOTA only \\
-Output & Distribution of \(\psuccess\) \\
-Budget unit & One additional LLM elicitation draw \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-The experiment does not model the full total-risk equation. It excludes multiplicative factors such as the number of actors, attempts per actor, and damage conditional on success. The primary output is
-\[
-T(M)=\law\left(P_M(\mathrm{success})\right),
-\]
-where \(M\) is the current collection of nodewise elicitation mixtures and \(\law(X)\) denotes the law, or probability distribution, of \(X\). It does not denote a likelihood.
-
-The analysis is retrospective. The full-data reference distribution is not ground truth. It is the output distribution obtained by using all valid SOTA LLM elicitation rows under the exchangeable nodewise mixture approximation.
-
-\section{Data and preprocessing}
-
-The raw dataset contains 3600 rows:
-\[
-40 \text{ repeats} \times 5 \text{ LLM forecaster models} \times 9 \text{ MITRE-step inputs} \times 2 \text{ capability levels}.
-\]
-Rows include elicited probability quartiles \(\texttt{percentile\_25th}\), \(\texttt{percentile\_50th}\), and \(\texttt{percentile\_75th}\). The \(\texttt{estimate}\) column is treated as equivalent to the median only for sanity checks; fitting uses the quartile columns directly.
-
-The cleaning layer excludes rows with API or parsing errors, missing quartiles, invalid quartile ordering, or quartiles outside \([0,1]\). It constructs a globally unique draw identifier from the tuple \((\texttt{model}, \texttt{run\_id}, \texttt{repeat\_index})\); \(\texttt{repeat\_index}\) alone is not unique enough.
-
-The cleaning report found 13 invalid rows and 3587 usable rows. The SOTA subset contains 1798 usable rows, two fewer than the nominal 1800. The two missing SOTA rows occur in \texttt{T1584.005 - Resource Development: Build/Compromise Botnet} and \texttt{T1590 - Reconnaissance: Gather Victim Network Information}. All SOTA MITRE-step inputs retain rows from all five expected LLM forecaster models. The capability mapping from task names to SOTA or saturated condition was audited by MITRE-step label.
+Motivated by the assumption that the output distribution is more sensitive to some parts of the risk model than others, we investigate the use of a simple ``leave-one-out'' (LOO) heuristic as the basis for an acquisition function to inform the allocation of our elicitation budget. We experiment with several different policies for budget allocation, each relying on the same LOO heuristic, and then compare these to uniform sampling. Specifically, we examine whether our heuristic can improve the recovery of a full-data reference output distribution when we are given a limited elicitation budget. We then discuss limitations of our approach and potential ways to develop this work from here.
 
 \section{Methods}
+\subsection{Scope of experiments}
+For our experiments, we utilize a submodel of SaferAI's OC3 Denial of Service risk model (\cite{barrett2025toward}). Specifically, we retain all the nodes\footnote{In what follows, we refer to the random variables of a Bayesian network as nodes.} in the original model with the exception of \texttt{Rate of Successful Attempt}, \texttt{Number of Successful Attacks}, \texttt{Total Risk}, and the parents of these nodes, \texttt{Number of Attempts per Actor}, \texttt{Number of Actors}, and \texttt{Damage per Attack}. Consequently, our experiments do not model the full total-risk equation. That is, rather than consider our output to be the probability distribution of \texttt{Total Risk}, we consider it to be the probability distribution of \texttt{Successful Attack Rate}. Hereafter, we refer to \texttt{Successful Attack Rate} as $\psuccess$ when in the context of it being the output of the risk model under consideration.
 
-\subsection{Fitting elicitation distributions}
+More formally, we write that our output is
+\begin{equation} \label{output function}
+    T(M)=\law\left(P_M(\mathrm{success})\right),
+\end{equation}
+where we use $T$ to denote a function that maps the current 9-tuple $M$ of nodewise elicitation mixtures to the output distribution under consideration. Here, $M = (M_1,\dots,M_9)$, where $M_j$ is the mixture distribution for node $j$. Also, note that $\law(X)$ denotes the law, or probability distribution, of $X$.
 
-Each valid SOTA elicitation row gives three quartiles \((q_{25},q_{50},q_{75})\) for one MITRE-step probability. The implementation fits one Beta distribution on \([0,1]\) to each row by quantile matching:
+An additional simplification we make is to fix the inputs of our risk model to the state-of-the-art (SOTA) levels\footnote{Here, the SOTA level for the CyBench benchmark is \texttt{Labyrinth Linguist} and for BountyBench it is \texttt{Paddle}.}. This is sufficient for our objectives, since we consider our sample space to be node--expert pairs --- we want the capability inputs to the risk model to be fixed. This would remain the case even if we considered many (or even all) of the possible combinations of inputs to the risk model.
+
+Five LLM models were used as the forecasters to provide us with data to run retrospective experiments, as if we were truly collecting new data according to what our policy tells us is best to do. The five LLM models used were \texttt{Claude Haiku 4.5}, \texttt{Claude Sonnet 4.6}, \texttt{Claude Opus 4.7}\footnote{These three Claude models were chosen because they were the latest models in each of their respective families at the time the elicitation was performed.}, \texttt{GPT-5 Mini} and \texttt{Gemini 3 Flash Preview}. We performed 40 runs for each of the nine nodes and each of the LLM forecasters, giving us a total of 1800 observations\footnote{Note that two observations are not valid due to API timeouts, and have therefore been excluded from the subsequent experiments.}. Each of these observations\footnote{Hereafter, we refer to these as `elicitations'.} contains 25\%, 50\% and 75\% probability quartiles.
+
+\subsection{OC3 DoS \texorpdfstring{$P(\mathrm{success})$}{P(success)} submodel}
+
+The OC3 DoS $\psuccess$ submodel has nine nodes (each is a MITRE ATT\&CK technique) for which probability distributions were directly elicited:
+\[
+\begin{array}{ll}
+p_{\mathrm{active}} & \text{T1595 -- Reconnaissance: Active Scanning},\\
+p_{\mathrm{gather}} & \text{T1590 -- Reconnaissance: Gather Victim Network Information},\\
+p_{\mathrm{acquire}} & \text{T1583.005 -- Resource Development: Acquire Botnet},\\
+p_{\mathrm{build}} & \text{T1584.005 -- Resource Development: Build/Compromise Botnet},\\
+p_{\mathrm{masq}} & \text{T1036 -- Defense Evasion: Masquerading},\\
+p_{\mathrm{port}} & \text{T1571 -- Defense Evasion: Non-Standard Port},\\
+p_{\mathrm{c2}} & \text{TA0011 -- Command-and-Control},\\
+p_{\mathrm{direct}} & \text{T1498.001 -- Impact: Direct Network Flood},\\
+p_{\mathrm{refl}} & \text{T1498.002 -- Impact: Reflection/Amplification Attack}.
+\end{array}
+\]
+
+These technique-level probabilities are aggregated into the following tactic-level quantities:
+\[
+\begin{array}{ll}
+p_{\mathrm{rec}} & \text{TA0043 -- Reconnaissance},\\
+p_{\mathrm{res}} & \text{TA0042 -- Resource Development},\\
+p_{\mathrm{def}} & \text{TA0030 -- Defense Evasion},\\
+p_{\mathrm{imp}} & \text{TA0040 -- Impact}
+\end{array}
+\]
+
+Each is either an AND or an OR gate:
+\begin{align*}
+p_{\mathrm{rec}} &= p_{\mathrm{active}} + p_{\mathrm{gather}} - p_{\mathrm{active}}p_{\mathrm{gather}}, \tag*{(OR gate)}\\
+p_{\mathrm{res}} &= p_{\mathrm{build}} + p_{\mathrm{acquire}} - p_{\mathrm{build}}p_{\mathrm{acquire}}, \tag*{(OR gate)}\\
+p_{\mathrm{def}} &= p_{\mathrm{port}}p_{\mathrm{masq}}, \tag*{(AND gate)}\\
+p_{\mathrm{imp}} &= p_{\mathrm{direct}} + p_{\mathrm{refl}} - p_{\mathrm{direct}}p_{\mathrm{refl}} \tag*{(OR gate)}.
+\end{align*}
+The final success probability is
+\[
+\psuccess
+=
+p_{\mathrm{rec}}p_{\mathrm{res}}p_{\mathrm{def}}p_{\mathrm{c2}}p_{\mathrm{imp}}.
+\]
+
+\subsection{Mixture and reference distributions}
+
+For a given node $j$, let $S_j$ be the set of currently revealed draws. The current node mixture distribution is
+\[
+M_j(S_j)=\frac{1}{|S_j|}\sum_{d\in S_j}D_{j,d},
+\]
+where $D_{j,d}$ is the fitted Beta distribution for draw $d$ at node $j$. To fit the Beta distributions, quantile matching is used (\cite{sgouropoulos2015matching}):
 \[
 (\hat{\alpha},\hat{\beta})
 =
@@ -93,125 +118,203 @@ Each valid SOTA elicitation row gives three quartiles \((q_{25},q_{50},q_{75})\)
 \sum_{\tau \in \{0.25,0.50,0.75\}}
 \left[
 Q_{\mathrm{Beta}}(\tau;\alpha,\beta)-q_{\tau}
-\right]^2.
+\right]^2,
 \]
-Optimisation is performed in log-parameter space so that \(\alpha,\beta>0\). Exact endpoint quartiles would be clipped for fitting, but no SOTA rows required endpoint clipping in the generated fits.
+where, letting $X \sim \mu$, we use that \[Q_{\mu}(\tau) = \inf\{x: \mathbb{P}(X\leq x) \geq \tau\}.\]
 
-Across 1798 SOTA rows, 1790 fits were flagged \(\texttt{ok}\), 8 were flagged \(\texttt{warn}\), and 0 failed. The median RMSE was approximately 0.00222, the 95th percentile RMSE was approximately 0.00688, and the maximum RMSE was approximately 0.02536. This is adequate for a proof-of-concept, but it remains a parametric approximation to elicited quartiles.
+We then sample from $M_j$ by choosing a revealed fitted elicitation uniformly and then sampling from its Beta distribution. These samples are drawn independently across the nine nodes and then propagated through the risk model.
 
-\subsection{OC3 DoS \texorpdfstring{$P(\mathrm{success})$}{P(success)} forward model}
-
-The OC3 DoS \(\psuccess\) submodel has nine elicited leaf inputs. The short variables and model labels are:
-\[
-\begin{array}{ll}
-p_{\mathrm{active}} & \text{T1595 - Reconnaissance: Active Scanning},\\
-p_{\mathrm{gather}} & \text{T1590 - Reconnaissance: Gather Victim Network Information},\\
-p_{\mathrm{acquire}} & \text{T1583.005 - Resource Development: Acquire Botnet},\\
-p_{\mathrm{build}} & \text{T1584.005 - Resource Development: Build/Compromise Botnet},\\
-p_{\mathrm{masq}} & \text{T1036 - Defense Evasion: Masquerading},\\
-p_{\mathrm{port}} & \text{T1571 - Defense Evasion: Non-Standard Port},\\
-p_{\mathrm{c2}} & \text{TA0011 - Command-and-Control},\\
-p_{\mathrm{direct}} & \text{T1498.001 - Impact: Direct Network Flood},\\
-p_{\mathrm{refl}} & \text{T1498.002 - Impact: Reflection/Amplification Attack}.
-\end{array}
-\]
-
-The tactic-level gates are:
-\begin{align}
-p_{\mathrm{rec}} &= p_{\mathrm{active}} + p_{\mathrm{gather}} - p_{\mathrm{active}}p_{\mathrm{gather}},\\
-p_{\mathrm{res}} &= p_{\mathrm{build}} + p_{\mathrm{acquire}} - p_{\mathrm{build}}p_{\mathrm{acquire}},\\
-p_{\mathrm{def}} &= p_{\mathrm{port}}p_{\mathrm{masq}},\\
-p_{\mathrm{imp}} &= p_{\mathrm{direct}} + p_{\mathrm{refl}} - p_{\mathrm{direct}}p_{\mathrm{refl}}.
-\end{align}
-Command and Control is elicited directly as \(p_{\mathrm{c2}}\). The final success probability is
-\[
-\psuccess
-=
-p_{\mathrm{rec}}p_{\mathrm{res}}p_{\mathrm{def}}p_{\mathrm{c2}}p_{\mathrm{imp}}.
-\]
-Equivalently,
-\[
-\psuccess =
-\left(p_{\mathrm{active}} + p_{\mathrm{gather}} - p_{\mathrm{active}}p_{\mathrm{gather}}\right)
-\left(p_{\mathrm{build}} + p_{\mathrm{acquire}} - p_{\mathrm{build}}p_{\mathrm{acquire}}\right)
-\left(p_{\mathrm{port}}p_{\mathrm{masq}}\right)
-p_{\mathrm{c2}}
-\left(p_{\mathrm{direct}} + p_{\mathrm{refl}} - p_{\mathrm{direct}}p_{\mathrm{refl}}\right).
-\]
-
-Forward-model smoke tests produced a full-reference Monte Carlo mean of approximately 0.2244 and median of approximately 0.2197. Deterministic plug-in checks were close: the mean fitted-Beta mean plug-in produced \(\psuccess \approx 0.2247\), and the median elicited-median plug-in produced \(\psuccess \approx 0.2203\).
-
-\subsection{Exchangeable nodewise mixtures}
-
-For MITRE-step input \(j\), let \(S_j\) be the set of currently revealed valid SOTA draws. The current node mixture is
-\[
-M_j(S_j)=\frac{1}{|S_j|}\sum_{d\in S_j}D_{j,d},
-\]
-where \(D_{j,d}\) is the fitted Beta distribution for draw \(d\) at node \(j\). To sample from \(M_j\), the implementation chooses a revealed fitted row uniformly and then samples from its Beta distribution. Node samples are drawn independently across the nine MITRE-step inputs before propagation through the forward model.
-
-This exchangeable nodewise mixture is a modelling approximation. It captures the marginal spread of elicited views at each node, but it does not preserve cross-node coherence from a single LLM forecaster model or repeat.
-
-\subsection{Full-data reference distribution}
-
-The full-data reference uses all valid SOTA rows for each node:
+Shortly, we will introduce a number of policies for the budget allocation process. Fundamental to the definition of these is the idea of a ``full-data reference distribution''. In the absence of ground truth, we use this to perform retrospective experiments to observe how well the elicitation process would have performed had it been done in a non-uniform well. This full-data reference uses all elicitations for each node:
 \[
 M_j^{\mathrm{full}}
 =
 \frac{1}{|S_j^{\mathrm{full}}|}
 \sum_{d\in S_j^{\mathrm{full}}}D_{j,d}.
 \]
-The reference output distribution is
+This provides us with the full-data model $M^{\mathrm{full}} = (M^{\mathrm{full}}_1,\dots,M^{\mathrm{full}}_9)$.
+Then, the reference output distribution, as implied by (\ref{output function}), is
 \[
 T(M^{\mathrm{full}})=\law\left(P_{M^{\mathrm{full}}}(\mathrm{success})\right).
 \]
-It is an internal retrospective reference, not truth.
 
-\subsection{Budgeted reveal protocol}
+\subsection{Allocation policies}
 
-For each outer reveal seed, the experiment pre-materializes a hidden reveal order for every MITRE-step input. Within each input, valid SOTA rows are split by LLM forecaster model, repeats are shuffled within model, a seed-specific model order is chosen, and post-seed rows are ordered by cycling through models while rows remain available. The same hidden orders are shared by all allocation policies under that reveal seed.
-
-All policies begin with the same initial seed allocation: five rows per MITRE-step input, one from each LLM forecaster model, for a total initial budget of 45 SOTA elicitation rows. After this initial seed allocation, a policy selects only the next MITRE-step input to reveal. When it selects input \(j\), it receives the next unused fitted row for \(j\) from the seed-specific hidden reveal order. This keeps policy comparisons paired by reveal seed and prevents within-step row identity from being chosen by the policy-specific random path.
-
-\subsection{LOO output fragility}
-
-Given revealed draw sets \(S_1,\ldots,S_9\), let \(M\) be the current exchangeable nodewise mixture model. For a draw \(d\in S_j\), define
+We define what we call a ``leave-one-out (LOO) fragility score'' and use this as the basis of our non-uniform allocation policies. Given revealed draw sets $S_1,\ldots,S_9$, let $M$ be the current exchangeable nodewise mixture model. For a draw $d\in S_j$, define
 \[
 M_j^{(-d)}
 =
 \frac{1}{|S_j|-1}
 \sum_{d'\in S_j,\,d'\neq d}D_{j,d'}.
 \]
-Let \(M^{(j,-d)}\) be the full model equal to \(M\) except that node \(j\)'s mixture is replaced by \(M_j^{(-d)}\). The LOO fragility score is
+Let $M^{(j,-d)}$ be the model equal to $M$ except that node $j$'s mixture is replaced by $M_j^{(-d)}$. That is, \[M^{(j,-d)} = (M_1,\dots,M_{j-1},M_j^{(-d)},M_{j+1},\dots,M_9).\]
+The LOO fragility score is then an average of distances between the output distributions when using the LOO models and when using the current model:
 \[
 F_j^{\mathrm{LOO}}
 =
 \frac{1}{|S_j|}
 \sum_{d\in S_j}
-\wtsq\left(T(M^{(j,-d)}),T(M)\right).
+\wtsq\left(T(M^{(j,-d)}),T(M)\right),
 \]
-This score measures the output movement caused by removing currently observed draws from a node. It is a finite-sample instability diagnostic, not expected information gain.
+where $W_2$ is the Wasserstein-2 distance (\cite{villani2009optimal}).
 
-For runtime reasons, the locked policy run used approximate LOO-term subsampling with \(\texttt{max\_loo\_terms\_per\_step}=20\). A separate approximation audit compared exact LOO with capped subsampling on step-balanced revealed states. In that reduced audit, cap 20 preserved the exact top fragile node in all audited comparisons, had mean top-3 Jaccard approximately 0.833, and had mean Spearman rank correlation approximately 0.833. Cap 10 was noisier and was marked questionable by the audit heuristic. This supports cap 20 as a pragmatic approximation, but it is not a proof that the approximation is exact.
+At any budget $b$, let $\mathcal{J}_b$ be the set of eligible nodes, meaning nodes for which at least one elicitation remains unrevealed. Let $n_j = |S_j|$ denote the number of currently revealed elicitations for node $j$, and write $F_j = F_j^{\mathrm{LOO}}$. For policies that require non-negative weights, we use the positive finite part
+\[
+F_j^+
+=
+\begin{cases}
+F_j, & \text{if } F_j > 0 \text{ and } F_j \text{ is finite},\\
+0, & \text{otherwise}.
+\end{cases}
+\]
+All policies select a node $j^\star \in \mathcal{J}_b$, after which the next hidden elicitation for that node is revealed. When a fragility-guided policy has no usable fragility information, it falls back to the step-balanced uniform baseline defined below.
 
-\subsection{Allocation policies}
+\paragraph{Step-balanced uniform baseline.}
+The baseline policy allocates to one of the currently least-sampled eligible nodes:
+\[
+\mathcal{U}_b
+=
+\left\{
+j\in\mathcal{J}_b:
+n_j = \min_{k\in\mathcal{J}_b} n_k
+\right\},
+\qquad
+j^\star \sim \operatorname{Unif}(\mathcal{U}_b).
+\]
+This is the main comparator throughout the experiments. It is uniform over nodes rather than over individual remaining elicitations, so it keeps the revealed sample sizes approximately balanced across the nine nodes.
 
-The implemented v8 policy families are:
-\begin{enumerate}
-    \item \textbf{Step-balanced uniform allocation.} Allocate to eligible MITRE-step inputs with the smallest current revealed count. This is the main baseline.
-    \item \textbf{Greedy LOO-fragility allocation.} Allocate to the eligible input with the largest current \(F_j^{\mathrm{LOO}}\).
-    \item \textbf{Epsilon-greedy LOO-fragility allocation.} With probability \(0.8\), exploit by choosing the eligible input with largest fragility. With probability \(0.2\), explore by choosing among currently under-sampled eligible inputs.
-    \item \textbf{Exploration-bonus LOO-fragility allocation.} Choose the eligible input maximizing
-    \[
-    A_j = F_j^{\mathrm{LOO}} + \lambda b(n_j),
-    \quad
-    b(n_j)=\frac{1}{\sqrt{n_j}},
-    \quad
-    \lambda = c \cdot \mathrm{median}\{F_j^{\mathrm{LOO}}: F_j^{\mathrm{LOO}}>0\},
-    \]
-    where \(n_j=|S_j|\). The locked run evaluated \(c\in\{0.25,0.5,1.0\}\).
-\end{enumerate}
+\paragraph{Deterministic fragility policies.}
+The simplest fragility-guided policy is greedy LOO-fragility allocation:
+\[
+j^\star \in \arg\max_{j\in\mathcal{J}_b} F_j.
+\]
+This policy directly exploits the current fragility estimate by allocating the next elicitation to the eligible node whose leave-one-out perturbations currently have the largest estimated effect on the output distribution.
 
-Fragility scores are recomputed in batches in the locked run. This keeps the experiment feasible but means that each batch uses the most recently computed score table.
+The epsilon-greedy variant mixes this greedy rule with step-balanced exploration. With probability $\varepsilon$ it follows the step-balanced uniform baseline, and with probability $1-\varepsilon$ it follows the greedy fragility rule:
+\[
+j^\star \sim
+\begin{cases}
+\operatorname{Unif}(\mathcal{U}_b), & \text{with probability } \varepsilon,\\
+\arg\max_{j\in\mathcal{J}_b} F_j, & \text{with probability } 1-\varepsilon.
+\end{cases}
+\]
+We use $\varepsilon=0.2$.
+
+The deterministic exploration-bonus policy adds an explicit bonus for nodes with fewer revealed elicitations. For each eligible node, define
+\[
+A_j
+=
+F_j^{\mathrm{score}}
++ \lambda\frac{1}{\sqrt{n_j}},
+\qquad
+\lambda
+=
+c\cdot \operatorname{median}\{F_k:k\in\mathcal{J}_b,\ F_k>0,\ F_k \text{ finite}\},
+\]
+where $F_j^{\mathrm{score}}=F_j$ when $F_j$ is finite and $F_j^{\mathrm{score}}=0$ otherwise. The selected node is
+\[
+j^\star \in \arg\max_{j\in\mathcal{J}_b} A_j.
+\]
+We evaluate $c\in\{0.25,0.5,1.0\}$.
+
+\paragraph{Stochastic fragility policies.}
+The stochastic normalized-fragility policy replaces deterministic maximization with sampling proportional to positive fragility:
+\[
+\mathbb{P}(j^\star=j)
+=
+\frac{F_j^+}{\sum_{k\in\mathcal{J}_b}F_k^+},
+\qquad j\in\mathcal{J}_b,
+\]
+provided that the denominator is positive. This policy tests whether LOO fragility is useful as a sampling weight, rather than as a score to maximize.
+
+The uniform-positive fragility policy uses only the sign of the fragility estimate. Let
+\[
+\mathcal{P}_b
+=
+\{j\in\mathcal{J}_b:F_j>0 \text{ and } F_j \text{ is finite}\}.
+\]
+Then
+\[
+j^\star \sim \operatorname{Unif}(\mathcal{P}_b),
+\]
+when $\mathcal{P}_b$ is non-empty. This is an ablation of stochastic normalized fragility: it preserves the restriction to positive-fragility nodes but discards the raw fragility magnitudes.
+
+The stochastic epsilon-greedy policy is analogous to the deterministic epsilon-greedy policy, but its exploitation step samples proportional to positive fragility rather than taking an argmax:
+\[
+j^\star \sim
+\begin{cases}
+\operatorname{Unif}(\mathcal{U}_b), & \text{with probability } \varepsilon,\\
+\text{Categorical}\left(\left\{F_j^+/\sum_{k\in\mathcal{J}_b}F_k^+\right\}_{j\in\mathcal{J}_b}\right), & \text{with probability } 1-\varepsilon.
+\end{cases}
+\]
+Again, we use $\varepsilon=0.2$.
+
+The stochastic exploration-bonus policy uses the same exploration-bonus acquisition score as above, except that fragility enters through $F_j^+$:
+\[
+A_j^{+}
+=
+F_j^+
++ \lambda\frac{1}{\sqrt{n_j}},
+\qquad
+\lambda
+=
+c\cdot \operatorname{median}\{F_k:k\in\mathcal{J}_b,\ F_k>0,\ F_k \text{ finite}\}.
+\]
+It then samples according to
+\[
+\mathbb{P}(j^\star=j)
+=
+\frac{A_j^{+}}{\sum_{k\in\mathcal{J}_b}A_k^{+}},
+\qquad j\in\mathcal{J}_b.
+\]
+We evaluate $c\in\{0.25,0.5,1.0\}$.
+
+\paragraph{Softmax-normalized fragility policies.}
+Finally, we evaluate a temperature-scaled version of stochastic fragility allocation. This is intended to interpolate between very concentrated sampling and nearly uniform sampling over positive-fragility nodes. For $j\in\mathcal{P}_b$, let
+\[
+s_b = \operatorname{median}\{F_k:k\in\mathcal{P}_b\}.
+\]
+For temperature $\tau>0$, the softmax policy samples according to
+\[
+\mathbb{P}(j^\star=j)
+=
+\frac{
+\exp\left(F_j/(s_b\tau)\right)
+}{
+\sum_{k\in\mathcal{P}_b}\exp\left(F_k/(s_b\tau)\right)
+},
+\qquad j\in\mathcal{P}_b.
+\]
+Lower temperatures make the policy more concentrated on the largest current fragility estimates, while higher temperatures flatten the probabilities toward uniform-positive fragility. We evaluate $\tau\in\{0.25,0.5,1.0,2.0,4.0\}$.
+
+In the dense experiments, LOO fragility is recomputed every 10 revealed elicitations for policies that use fragility scores. The fragility estimates used for allocation are approximate, using 200 Monte Carlo samples, a 101-point quantile grid, and at most 20 leave-one-out terms per node.
+
+\subsection{Budgeted reveal protocol}
+
+For each ``reveal seed'', the experiment has a specified reveal order for each node. For each of these, repeats are shuffled for each of the five LLMs to obtain a random order for that seed and model. All policies begin with the same initial seed allocation: five elicitations for each node, one from each LLM, for a total initial budget of 45 SOTA elicitations. After this initial seed allocation, a policy selects the next node. When it selects node $j$, it receives the next unused fitted elicitation for $j$ from the seed-specific reveal order. This ensures that, under a given reveal seed, policies differ only in which node they choose to reveal next, not in the hidden ordering of elicitations within each node.
+
+\begin{algorithm}[htbp]
+\caption{Retrospective budget-recovery experiment for one reveal seed and policy}
+\label{alg:budget-recovery}
+\begin{algorithmic}[1]
+\Require Fitted elicitation pools $\{D_{j,d}\}$ for nodes $j=1,\ldots,9$; hidden reveal orders $\{\pi_j\}_{j=1}^9$; allocation policy $\mathcal{A}$; budget grid $\mathcal{B}$; full-data reference distribution $T(M^{\mathrm{full}})$
+\State Initialize each revealed set $S_j$ with one elicitation from each LLM forecaster model
+\State Set total revealed budget $b \gets \sum_{j=1}^9 |S_j| = 45$
+\State Estimate $T(M(S_1,\ldots,S_9))$ by Monte Carlo sampling and record error to $T(M^{\mathrm{full}})$ at budget $b$
+\While{$b < \max(\mathcal{B})$}
+    \If{fragility scores are required by $\mathcal{A}$ and due for recomputation}
+        \State Estimate current LOO fragility scores $\{F_j^{\mathrm{LOO}}\}_{j=1}^9$
+    \EndIf
+    \State Let $\mathcal{J}_{\mathrm{eligible}} \gets \{j : \pi_j \text{ has at least one unrevealed elicitation}\}$
+    \State Choose next node $j^\star \sim \mathcal{A}\!\left(\{S_j\}_{j=1}^9,\{F_j^{\mathrm{LOO}}\}_{j=1}^9,\mathcal{J}_{\mathrm{eligible}}\right)$
+    \State Reveal the next unused elicitation for node $j^\star$ according to $\pi_{j^\star}$ and add it to $S_{j^\star}$
+    \State Set $b \gets b+1$
+    \If{$b \in \mathcal{B}$}
+        \State Estimate $T(M(S_1,\ldots,S_9))$ by Monte Carlo sampling
+        \State Record squared Wasserstein-2 error to $T(M^{\mathrm{full}})$
+    \EndIf
+\EndWhile
+\end{algorithmic}
+\end{algorithm}
 
 \subsection{Evaluation metric}
 
@@ -219,128 +322,127 @@ The main error metric is squared Wasserstein-2 distance to the full-data referen
 \[
 \mathrm{Err}(M)=\wtsq\left(T(M),T(M^{\mathrm{full}})\right).
 \]
-For one-dimensional empirical distributions with quantile functions \(Q_A\) and \(Q_B\),
+For one-dimensional empirical distributions with quantile functions $Q_A$ and $Q_B$,
 \[
 \wtsq(A,B)=\int_0^1 \left(Q_A(u)-Q_B(u)\right)^2\,du.
 \]
-Thus the reported error is a mean squared quantile discrepancy between the current budgeted output distribution and the full-data reference.
+Hence, the error is a mean squared quantile discrepancy between the current budgeted output distribution and the full-data reference (\cite{villani2009optimal}).
 
 \section{Results}
 
-\subsection{Beta-fitting and forward-model sanity checks}
+This section reports three dense retrospective budget-recovery experiments. All three experiments use the same reveal seeds, budget grid, Monte Carlo settings, full-data reference distribution, and step-balanced uniform baseline. The results are therefore best read as a sequence of ablations around a common question: does LOO output fragility contain useful information for elicitation allocation, and if so, how should that information be converted into a reveal policy?
 
-The data cleaning, Beta fitting, and forward-model smoke tests did not reveal blocking issues. The SOTA cleaning output retained 1798 usable rows. Beta quantile matching produced 1790 \(\texttt{ok}\) fits, 8 \(\texttt{warn}\) fits, and no failed fits. The warned fits were retained in the fitted dataset and used by the mixture model.
+For each policy $p$, reveal seed $s$, and budget $b$, let
+\[
+E_{p,s,b}
+=
+\wtsq\left(T(M_{p,s,b}),T(M^{\mathrm{full}})\right)
+\]
+denote the squared Wasserstein-2 error to the full-data reference. We report mean and median error by budget. We also use paired comparisons against the step-balanced uniform policy $U$, since policies are evaluated under shared hidden reveal orders for each reveal seed. The paired relative error is
+\[
+R_{p,s,b} = \frac{E_{p,s,b}}{E_{U,s,b}},
+\]
+computed within reveal seed before averaging or taking medians across seeds. Values below one indicate lower error than uniform for the same seed and budget. We also report paired win rate,
+\[
+\frac{1}{S}\sum_s \mathbf{1}\{E_{p,s,b}<E_{U,s,b}\}.
+\]
+At the initial budget of 45 elicitations, all policies have the same seeded allocation. At the terminal budget of 1798 elicitations, all policies have revealed the full fitted SOTA dataset, so the error is zero by construction. The terminal point is therefore not informative for relative-error or win-rate plots.
 
-The full-data exchangeable reference Monte Carlo sample had mean \(\psuccess\) approximately 0.2244 and median approximately 0.2197. The deterministic plug-in checks based on fitted Beta means and elicited medians were close to this range. These checks support the implementation of the forward-model mapping and gate structure.
+The exact unsmoothed by-budget values are reported in Appendix~\ref{app:additional-tables}. The main figures use a centered five-budget moving average for readability, applied after computing each by-budget statistic. Since budgets are spaced every 45 elicitations, this is a 225-elicitation display window. This smoothing is used only to make the budget-dependent trends legible; it is not a separate evaluation metric.
 
-\subsection{Main policy comparison}
+\subsection{Initial dense policy suite}
 
-Table~\ref{tab:main-policy-comparison} summarises the locked policy comparison. All six policies were run in the same \(\texttt{locked\_v8\_hidden\_reveal}\) experiment, using 10 reveal seeds and the budget grid \([45,90,180,360,720,1200,1798]\). The report JSON records \(\texttt{mode=LOCKED\_V8\_HIDDEN\_REVEAL}\), \(\texttt{uses\_hidden\_reveal\_orders=true}\), and \(\texttt{settings\_reduced\_from\_requested=false}\).
-
-\input{tables/main_policy_comparison.tex}
-
-Under the corrected hidden reveal-order protocol, exploration-bonus \(c=1.0\) achieved the lowest average AUC, 0.009409, over the selected budget grid. The next lowest average AUC values were exploration-bonus \(c=0.5\) at 0.010175, epsilon-greedy at 0.010320, greedy LOO-fragility at 0.011005, and the uniform baseline at 0.011075. Exploration-bonus \(c=0.25\) performed worse, with average AUC 0.017137. However, all fragility-guided policies had paired win fractions below 0.5 against the uniform baseline: 0.386 for epsilon-greedy, 0.386 for exploration-bonus \(c=1.0\), 0.371 for greedy LOO-fragility, 0.357 for exploration-bonus \(c=0.5\), and 0.286 for exploration-bonus \(c=0.25\). The AUC advantage is therefore aggregation-dependent and should be interpreted cautiously.
-
-\subsection{Error-vs-budget curves}
-
-Figure~\ref{fig:error-vs-budget} shows mean squared \(W_2\) error by budget across the 10 reveal seeds. The full error-by-budget table appears in Appendix~\ref{app:additional-tables}. The curves are noisy at this number of reveal seeds. The fragility-guided policies do not dominate uniform at every budget, but the stronger exploration-bonus setting reduces aggregate AUC over the selected grid.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.95\textwidth]{figures/error_vs_budget.png}
-\caption{Mean squared Wasserstein-2 error to the full-data reference by revealed budget. Lower values are better.}
-\label{fig:error-vs-budget}
-\end{figure}
-
-\subsection{AUC summaries}
-
-Figure~\ref{fig:auc-by-policy} summarises average AUC by policy. AUC is a scalar diagnostic over the selected budget schedule; it should not be overinterpreted as a final statistical test. In the locked run, exploration-bonus \(c=1.0\) has the lowest average AUC among the displayed policies, followed by exploration-bonus \(c=0.5\) and epsilon-greedy with \(\epsilon=0.2\). The pure greedy LOO-fragility policy is very close to the uniform baseline on average AUC.
+The first dense experiment compares the original fragility-guided policy family against the step-balanced uniform baseline. It includes deterministic greedy LOO-fragility allocation, epsilon-greedy allocation, exploration-bonus allocation, and the stochastic proportional-fragility policy. The key question is whether direct use of LOO fragility improves recovery of the full-data reference distribution.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.85\textwidth]{figures/auc_by_policy.png}
-\caption{Average area under the error-vs-budget curve by policy. Lower AUC indicates better budget recovery over the selected budget grid.}
-\label{fig:auc-by-policy}
+\includegraphics[width=\textwidth]{figures/results/initial_suite_smoothed_relative_error_and_win_rate.pdf}
+\caption{Initial dense policy suite. Left: smoothed median seedwise relative error against step-balanced uniform. Right: smoothed paired win rate against step-balanced uniform. The dashed horizontal lines mark parity with uniform.}
+\label{fig:initial-suite-relative-error}
 \end{figure}
 
-\subsection{Allocation concentration}
+The deterministic fragility policies perform poorly. In Figure~\ref{fig:initial-suite-relative-error}, greedy LOO-fragility and exploration-bonus allocation remain well above uniform across most budgets. Greedy LOO-fragility is especially unstable: after smoothing, its median relative error is typically several times the uniform error. The exploration-bonus policy with $c=1.0$ is less extreme than pure greedy allocation, but still far from competitive in this dense run.
 
-Figure~\ref{fig:concentration-vs-budget} shows allocation concentration as mean L1 imbalance from a perfectly step-balanced allocation vector. Uniform allocation remains balanced by construction. At budget 1200, the mean L1 imbalances are 0.0 for uniform, 459.8 for epsilon-greedy, 516.0 for exploration-bonus \(c=1.0\), 569.6 for exploration-bonus \(c=0.5\), 595.4 for greedy LOO-fragility, and 627.2 for exploration-bonus \(c=0.25\). Thus concentration remains severe at intermediate budgets for the fragility-guided policies. At budget 1798, all policies have mean, median, and maximum L1 imbalance equal to zero, with minimum step count 199 and maximum step count 200. This convergence is expected because the full available fitted SOTA dataset has been revealed.
+The main exception is \texttt{stochastic\_normalized\_fragility}, which samples among positive-fragility nodes with probability proportional to the current fragility score. This policy is much closer to uniform than the deterministic policies. Across the non-boundary budgets, its median relative error is below one at 19 of 38 budgets, and its paired win rate is at least 0.5 at 20 of 38 budgets. This is not enough to show clear dominance over uniform, but it changes the interpretation of the initial experiment: the problem is not simply that LOO fragility contains no useful signal. Rather, deterministic or too-concentrated use of that signal appears brittle.
+
+This motivates the second experiment. If the stochastic proportional-fragility policy is the only competitive member of the initial suite, the next question is whether its useful feature is proportional weighting by raw fragility magnitude, or instead the weaker act of randomizing among nodes with positive fragility.
+
+\subsection{Stochastic fragility ablation}
+
+The second dense experiment keeps the same experimental settings but replaces deterministic allocation rules with stochastic variants. The policies compared here are the step-balanced uniform baseline, stochastic proportional fragility, uniform-positive fragility, stochastic epsilon-greedy fragility, and stochastic exploration-bonus variants. The most important comparison is between stochastic proportional fragility and uniform-positive fragility.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.95\textwidth]{figures/concentration_vs_budget.png}
-\caption{Mean L1 step-count imbalance by budget. Uniform allocation remains balanced; fragility-guided policies concentrate allocation at intermediate budgets. All policies converge to zero imbalance at budget 1798 because the full fitted SOTA dataset has been revealed.}
-\label{fig:concentration-vs-budget}
+\includegraphics[width=\textwidth]{figures/results/stochastic_ablation_smoothed_relative_error_and_win_rate.pdf}
+\caption{Stochastic fragility ablation. The main comparison is between proportional weighting by raw positive fragility and uniform sampling among positive-fragility nodes. Left: smoothed median seedwise relative error against step-balanced uniform. Right: smoothed paired win rate against step-balanced uniform.}
+\label{fig:stochastic-ablation-relative-error}
 \end{figure}
 
-\subsection{Exploration-bonus sensitivity}
+The stochasticized policies are much more competitive than the deterministic fragility policies in the initial suite. None of them uniformly dominates the step-balanced baseline at every budget, but their relative-error curves stay close to one rather than diverging by large factors.
 
-Table~\ref{tab:exploration-bonus-sensitivity} and Figure~\ref{fig:bonus-sensitivity} summarise the exploration-bonus settings included in the locked run. The tested values were \(c=0.25\), \(c=0.5\), and \(c=1.0\). In this run, increasing \(c\) reduced concentration at budget 1200 and improved average AUC among the tested values. The best tested value by average AUC was \(c=1.0\). This should not be read as evidence that \(c=1.0\) is prospectively optimal; it is a small sensitivity check under approximate LOO fragility.
+Uniform-positive fragility is the most informative diagnostic policy in this experiment. It ignores raw fragility magnitudes after using fragility only to identify nodes with positive finite scores. Despite this simpler rule, it performs at least as well as stochastic proportional fragility in the main budget-dependent comparisons. Across the 38 non-boundary budgets, uniform-positive fragility has median relative error below one at 20 budgets and paired win rate above 0.5 at 20 budgets. Stochastic proportional fragility has median relative error below one at 19 budgets and win rate above 0.5 at 14 budgets.
 
-\input{tables/exploration_bonus_sensitivity.tex}
+The stochastic epsilon-greedy policy is also competitive, with median relative error below one at 22 of the 38 non-boundary budgets and win rate above 0.5 at 21 budgets. The stochastic exploration-bonus policy with $c=1.0$ is close to the baseline, but does not clearly improve on the simpler stochastic rules.
+
+These results suggest that positive LOO fragility does contain useful allocation information, but that the raw magnitudes are not well calibrated as sampling probabilities. A policy that randomizes among positive-fragility nodes can perform comparably to, and in some comparisons better than, a policy that samples in direct proportion to the fragility scores.
+
+\subsection{Softmax temperature ablation}
+
+The third dense experiment tests whether the proportional-fragility policy can be improved by softmax temperature scaling. The motivation is that raw LOO fragility scores may rank or identify useful nodes while still being too poorly calibrated to use directly as probabilities. Softmax scaling provides a controlled way to vary the sharpness of magnitude-weighted sampling.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth]{figures/exploration_bonus_sensitivity.png}
-\caption{Exploration-bonus sensitivity over \(c\). In the locked run, larger \(c\) reduced allocation concentration at budget 1200 and improved average AUC among the tested settings.}
-\label{fig:bonus-sensitivity}
+\includegraphics[width=\textwidth]{figures/results/softmax_ablation_smoothed_relative_error_and_win_rate.pdf}
+\caption{Softmax temperature ablation. Lower temperatures make sampling sharper and closer to greedy selection; higher temperatures flatten the distribution over positive-fragility nodes. Left: smoothed median seedwise relative error against step-balanced uniform. Right: smoothed paired win rate against step-balanced uniform.}
+\label{fig:softmax-ablation-relative-error}
 \end{figure}
 
-\section{Discussion}
+The softmax results support the calibration interpretation. The sharpest tested softmax policy, $T=0.25$, performs poorly: across non-boundary budgets, its median relative error is below one at only 3 of 38 budgets. In Figure~\ref{fig:softmax-ablation-relative-error}, it remains above uniform for most of the budget range. This is consistent with the failure mode seen in deterministic fragility policies: over-sharp use of a noisy fragility signal leads to over-concentration.
 
-\subsection{Interpretation}
+Flatter softmax policies are more competitive. The $T=2.0$ and $T=4.0$ variants stay much closer to uniform and to the stochastic ablation policies. The $T=4.0$ variant has median relative error below one at 20 of 38 non-boundary budgets, similar to uniform-positive fragility. However, the softmax variants do not clearly improve on the simpler uniform-positive rule. The empirical lesson is therefore not that temperature scaling solves the problem, but that reducing the sharpness of magnitude-weighted sampling helps.
 
-Under the corrected hidden reveal-order protocol, exploration-bonus \(c=1.0\) achieved the lowest average AUC over the selected budget grid. However, all fragility-guided policies had paired win fractions below 0.5 against the uniform baseline. This suggests that the fragility signal is useful in some runs and budgets, but not uniformly reliable.
+Taken together, the stochastic and softmax ablations point to the same conclusion. LOO output fragility appears to identify nodes where additional elicitation can be useful, but the raw fragility magnitudes should not be treated as calibrated probabilities. The most promising policies in these experiments are those that use fragility to restrict or soften the candidate set while preserving substantial randomization.
 
-The locked run therefore provides weak-to-moderate evidence that fragility-guided policies can improve aggregate recovery error, especially when paired with a stronger exploration bonus. The evidence remains mixed across paired comparisons. The policies with better AUC also concentrate elicitation effort strongly at intermediate budgets. LOO output fragility can identify influential or unstable inputs, but using it too directly risks over-concentration. Exploration-aware variants partially mitigate this problem, with the \(c=1.0\) exploration-bonus setting looking best among the tested values in the locked run.
+\subsection{Summary of empirical findings}
 
-The appropriate conclusion is therefore not that fragility guidance is solved or optimal. A narrower conclusion is that the heuristic appears to have signal, but that signal is not uniformly reliable and should be reported alongside concentration diagnostics and paired win rates.
+The dense experiments support four main findings.
 
-\subsection{Limitations}
+First, the step-balanced uniform policy is a strong baseline. This matters because the evaluation target is a full-data exchangeable reference distribution, and uniform allocation is naturally well matched to recovering nodewise mixtures when no reliable prioritization signal is available.
 
-Several limitations are central to interpreting these results:
+Second, deterministic use of LOO fragility is not competitive in this setting. Greedy and exploration-bonus policies over-concentrate allocation and often have much larger error than uniform.
 
-\begin{enumerate}
-    \item The budget unit is an LLM elicitation draw, not an independent human expert.
-    \item The experiment is retrospective. All candidate draws already exist and are hidden from the policy until revealed.
-    \item The full-data reference is not ground truth. It is constructed from finite repeated LLM draws.
-    \item The analysis is restricted to OC3 Denial of Service, the SOTA condition, and the \(\psuccess\) submodel.
-    \item The report does not model full total-risk uncertainty.
-    \item The primary output is \(\psuccess\), not \(\log \psuccess\).
-    \item Beta distributions are parametric approximations to elicited quartiles.
-    \item LOO fragility is a finite-sample instability heuristic, not expected information gain.
-    \item The locked policy run used approximate LOO-term subsampling with \(\texttt{max\_loo\_terms\_per\_step}=20\).
-    \item The number of reveal seeds is modest: the locked run used 10 reveal seeds.
-    \item Results are mixed across paired seed-budget comparisons; no fragility-guided policy beat uniform on a majority of paired comparisons.
-    \item Concentration remains severe at intermediate budgets for the fragility-guided policies.
-    \item All policies necessarily converge at full budget 1798 because the full available fitted SOTA dataset has been revealed.
-    \item Runtime constraints shaped the experiment design, including batching of fragility recomputation.
-\end{enumerate}
+Third, stochastic use of positive fragility is substantially more promising. The proportional-fragility policy from the initial suite is close enough to uniform to motivate follow-up, and the uniform-positive and stochastic epsilon-greedy ablations perform at least as well in the budget-dependent comparisons.
 
-\subsection{Future work}
+Fourth, softmax temperature scaling improves over very sharp magnitude-weighted sampling, but does not clearly beat the simpler uniform-positive policy. This suggests that the sign or positivity of LOO fragility is more reliable than the exact raw magnitude.
 
-Natural next steps include exact LOO final runs on a smaller budget schedule, stronger approximation audits, alternative acquisition rules, model-balanced and model-coherent reference distributions, a log-output analysis, extension to full total risk once the remaining factors are elicited, application to human expert elicitation data, bootstrap fragility, and replication on other SaferAI risk models.
+These results should be interpreted as exploratory. They do not identify an optimal allocation rule, and they do not show that fragility-guided elicitation allocation universally beats uniform allocation. They do, however, provide evidence that output-sensitive allocation is worth further study, especially through stochastic policies that avoid over-committing to noisy fragility estimates.
+
+\section{Limitations and Future Work}
+
+\paragraph{Restriction to OC3 Denial of Service submodel} While the risk model we used here for the experiments is helpful for an initial investigation of the utility of our methodology, ideally we would test with the other (if not all of the) risk models developed by SaferAI that were provided in (\cite{barrett2025toward}). Also, with this OC3 Denial of Service model, we did not work with the entire risk model, and therefore did not consider how well this works at recovering a similar estimate for the total-risk probability distribution to that of the full model. This introduces additional considerations, including whether we ought to work with $\log(\text{TotalRisk})$ rather than simply $\text{TotalRisk}$, since our primary objective is directional, rather than absolute, correctness.
+
+\paragraph{Use of only SOTA inputs} Ideally, we would have performed experiments across various (if not all) potential inputs. There are many open questions in this direction. Namely, there is the question of how best to weight performance at different inputs, and how to update this weighting as time goes on and LLM capabilities improve.
+
+\paragraph{Assumption each expert has identical cost} The budget unit is an LLM elicitation draw, not an independent human expert, so it is already an imperfect modeling assumption. Beyond this, though, we should remember that when using real human experts, it may well be the case that it is cheaper to ``use them'' the more information they are asked to provide. We would expect this to be the case to a lesser extent with ``LLM experts'', and given the way the field is moving towards this, our assumption, while imperfect, may become less of an issue in the years to come.
+
+\paragraph{Lack of ground truth} The full-data reference is not ground truth. This is an inherent difficulty we have whenever we are working on ways to improve quantitative AI risk modeling methodologies of this kind, but it is a limitation nonetheless. Our proposed methodology is best viewed as an attempt to produce a good output distribution with a reduced budget.
+
+\paragraph{LOO fragility is merely an instability heuristic} While we would expect that our heuristic provides a reasonable approximation of the benefit of obtaining an additional draw for a certain node in the model, there are no guarantees that this ought to be the case. It could be possible to develop a heuristic in a more principled way, by using previous draws to give an estimate of the distribution of future probability distribution draws, and use this to form the basis of our heuristic. This would be following an approach similar to that used in Bayesian experimental design. It would likely be far more computationally expensive, so the feasibility of this remains an open question.
+
+\paragraph{Computational limitations} The number of reveal seeds is modest and batching was used for fragility recomputation. For runtime reasons, the policy runs used approximate LOO-term subsampling with $\texttt{max\_loo\_terms\_per\_step}=20$. A separate approximation audit compared exact LOO with capped subsampling on revealed states. In that reduced audit, cap 20 preserved the exact top fragile node in all audited comparisons, had mean top-3 Jaccard approximately 0.833, and had mean Spearman rank correlation approximately 0.833. Cap 10 was noisier and was marked questionable by the audit heuristic. This supports cap 20 as a development approximation, but it is not a proof that the approximation is exact.
 
 \section{Conclusion}
+This report outlines a retrospective budget-recovery experiment for the OC3 DoS \(\psuccess\) submodel using repeated LLM elicitation draws. The results provide preliminary evidence that output-fragility-guided allocation can reduce average recovery error in some settings, but also that greedy fragility guidance can severely over-concentrate elicitation effort. Exploration bonuses reduce concentration relative to lower-exploration variants, and \(c=1.0\) looked best among the tested exploration-bonus settings in the development sensitivity run. As a result, these findings are best viewed as evidence that this problem warrants further investigation, rather than evidence that the LOO heuristic is a desirable one in its own right.
 
-This draft reports a retrospective budget-recovery experiment for the OC3 DoS \(\psuccess\) submodel using repeated LLM elicitation draws. The locked hidden-reveal run provides weak-to-moderate evidence that output-fragility-guided allocation can reduce aggregate recovery error in some settings, especially with a stronger exploration bonus. However, no fragility-guided policy beat the uniform baseline on a majority of paired seed-budget comparisons, and fragility-guided policies remain highly concentrated at intermediate budgets. These findings are best viewed as evidence that the heuristic warrants further investigation, not as a final claim of optimal allocation.
+\printbibliography
 
 \appendix
 
-\section{Additional tables}
+\section{Additional Tables}
 \label{app:additional-tables}
 
-\input{tables/error_by_budget.tex}
-\input{tables/concentration_by_budget.tex}
-
-\section{Implementation and reproducibility notes}
-
-The implementation is an ordinary Python package and script workflow rather than a notebook workflow. The generated locked report artifacts used here are located in \(\texttt{outputs/report\_artifacts\_locked\_v8\_hidden\_reveal/}\), and the figures are located in \(\texttt{report/figures/}\). The report-ready tables use only the \(\texttt{locked\_v8\_hidden\_reveal}\) outputs. The locked report JSON records that all requested settings were completed without reductions.
-
-The locked run used 10 reveal seeds, the budget grid \([45,90,180,360,720,1200,1798]\), the shared hidden reveal-order protocol, and approximate LOO fragility with \(\texttt{max\_loo\_terms\_per\_step}=20\). A final archival version should record the exact git revision, Python version, package versions, random seeds, particle counts, and fragility approximation settings.
-
-\bibliographystyle{plainnat}
-\bibliography{references}
+\input{tables/dense_by_budget/dense_policy_suite_by_budget_metrics.tex}
+\input{tables/dense_by_budget/stochastic_ablation_by_budget_metrics.tex}
+\input{tables/dense_by_budget/softmax_temperature_ablation_by_budget_metrics.tex}
 
 \end{document}

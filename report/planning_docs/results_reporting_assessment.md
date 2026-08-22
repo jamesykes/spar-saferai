@@ -2,7 +2,7 @@
 
 Status: planning memo for discussion, not report prose.
 
-Baseline report draft: `report/drafts/original_draft_latex_repo/main.tex`
+Baseline report draft: `report/main.tex`
 
 ## 1. Diagnosis
 

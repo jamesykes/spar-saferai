@@ -1,4 +1,8 @@
-# Report build notes
+# Report
+
+`main.tex` is the current manuscript. Its figures and generated tables are kept in the adjacent `figures/` and `tables/` directories.
+
+## Build
 
 Build from this directory:
 
@@ -10,9 +14,9 @@ If `latexmk` is unavailable, use:
 
 ```bash
 pdflatex main.tex
-bibtex main
+biber main
 pdflatex main.tex
 pdflatex main.tex
 ```
 
-The draft includes copied figures from `../figures/` and generated LaTeX tables in `tables/`.
+The manuscript uses `biblatex`; a full build therefore requires Biber rather than BibTeX.
